@@ -350,6 +350,8 @@ body {
 
 h1 {
   font: bold 36px "futura-pt", sans-serif; }
+  h1 + p {
+    text-transform: lowercase; }
 
 dl.colours {
   font-size: 0; }
@@ -357,12 +359,15 @@ dl.colours {
 dt.colour {
   display: inline-block;
   margin: 6px;
+  padding: 8px;
   width: 96px;
   height: 96px;
   border-radius: 2px;
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.25);
-  font-size: 16px;
+  font: bold 16px/18px "futura-pt", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   vertical-align: middle; }
   dt.colour:hover, dt.colour:focus {
     color: rgba(255, 255, 255, 0.5);
