@@ -52,14 +52,14 @@ a { color: inherit; text-decoration: none; }
 body {
   background-color: $body;
   color: $foreground;
-  font: 16px $monospace;
+  font: 1em $monospace;
   text-align: center;
 }
 
 // Typography
 h1 {
   margin-bottom: 0;
-  font: bold 36px $display;
+  font: bold 2.25em $display;
 
   + p {
     margin-top: 0;
@@ -72,7 +72,7 @@ h1 {
 
     span.caret {
       display: inline-block;
-      margin-left: .4em;
+      margin-left: .5em;
       color: $invisibles;
       background-color: $invisibles;
     }
@@ -87,15 +87,15 @@ dl.colours {
 // Colour
 dt.colour {
   display: inline-block;
-  margin: 6px;
-  padding: 8px;
-  width: 96px;
-  height: 96px;
-  border-radius: 2px;
-  box-shadow: inset 0 -2px 0 transparentize(#000, .75);
+  margin: .375em;
+  padding: .5em;
+  width: 6em;
+  height: 6em;
+  border-radius: .125em;
+  box-shadow: inset 0 -.125em 0 transparentize(#000, .75);
   color: transparentize(#000, .75);
-  font: bold 16px/18px $display;
-  letter-spacing: 0.1em;
+  font: bold 16px/1.125em $display;
+  letter-spacing: 0.125em;
   text-transform: uppercase;
   vertical-align: middle;
 
