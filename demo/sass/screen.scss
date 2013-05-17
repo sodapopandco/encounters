@@ -58,10 +58,24 @@ body {
 
 // Typography
 h1 {
+  margin-bottom: 0;
   font: bold 36px $display;
 
   + p {
+    margin-top: 0;
     text-transform: lowercase;
+
+    &:before {
+      content: '>: ';
+      color: $primary-green;
+    }
+
+    span.caret {
+      display: inline-block;
+      margin-left: .4em;
+      color: $invisibles;
+      background-color: $invisibles;
+    }
   }
 }
 

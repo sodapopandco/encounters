@@ -349,9 +349,19 @@ body {
   text-align: center; }
 
 h1 {
+  margin-bottom: 0;
   font: bold 36px "futura-pt", sans-serif; }
   h1 + p {
+    margin-top: 0;
     text-transform: lowercase; }
+    h1 + p:before {
+      content: '>: ';
+      color: #5eb250; }
+    h1 + p span.caret {
+      display: inline-block;
+      margin-left: .4em;
+      color: #404040;
+      background-color: #404040; }
 
 dl.colours {
   font-size: 0; }
