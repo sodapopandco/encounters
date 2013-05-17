@@ -89,12 +89,13 @@ ul.colours {
   font-size: 0; // So that inline-blocks don't have extra margins
 
   > li {
-    display: inline-block;
+    display: table;
+    float: left;
     position: relative;
     margin: .375em;
     padding: .5em;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     border-radius: .125em;
     box-shadow: inset 0 -.125em 0 transparentize(#000, .75);
     font: bold $base $display;
@@ -285,6 +286,11 @@ ul.colours {
         font-style: normal;
       }
     }
+  }
+
+  b {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 

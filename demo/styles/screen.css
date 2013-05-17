@@ -370,12 +370,13 @@ h1 {
 ul.colours {
   font-size: 0; }
   ul.colours > li {
-    display: inline-block;
+    display: table;
+    float: left;
     position: relative;
     margin: .375em;
     padding: .5em;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     border-radius: .125em;
     box-shadow: inset 0 -0.125em 0 rgba(0, 0, 0, 0.25);
     font: bold 16px "futura-pt", sans-serif;
@@ -505,6 +506,9 @@ ul.colours {
       ul.colours > li > ul em {
         color: #181818;
         font-style: normal; }
+  ul.colours b {
+    display: table-cell;
+    vertical-align: middle; }
 
 @keyframes caretAnimation {
   0%, 24%, 76%, 100% {
