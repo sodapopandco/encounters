@@ -78,7 +78,7 @@ h1 {
       animation: caretAnimation 1.5s infinite;
       margin-left: .5em;
       width: .125em;
-      background-color: $primary-yellow;
+      background-color: saturate($primary-yellow, 25%);
       color: $body;
       text-indent: -9999px;
     }
