@@ -61,6 +61,7 @@ body {
 // Typography
 h1 {
   margin-bottom: 0;
+  color: $highlight;
   font: bold 2.25em $display;
 
   + p {
