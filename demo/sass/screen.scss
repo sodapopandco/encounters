@@ -93,99 +93,145 @@ dt.colour {
   height: 6em;
   border-radius: .125em;
   box-shadow: inset 0 -.125em 0 transparentize(#000, .75);
-  color: transparentize(#000, .75);
   font: bold 16px/1.125em $display;
   letter-spacing: 0.125em;
   text-transform: uppercase;
   vertical-align: middle;
 
   &:hover, &:focus {
-    color: transparentize(#fff, .5);
     cursor: pointer;
   }
 
   // Neutral
   &.background {
     background-color: $background;
+    color: lighten($background, 12.5%);
+    text-shadow: 0 -1px 0 darken($background, 12.5%);
   }
   &.line {
     background-color: $line;
+    color: lighten($line, 12.5%);
+    text-shadow: 0 -1px 0 darken($line, 12.5%);
   }
   &.selection {
     background-color: $selection;
+    color: lighten($selection, 12.5%);
+    text-shadow: 0 -1px 0 darken($selection, 12.5%);
   }
   &.invisibles {
     background-color: $invisibles;
+    color: lighten($invisibles, 12.5%);
+    text-shadow: 0 -1px 0 darken($invisibles, 12.5%);
   }
   &.comments {
     background-color: $comments;
+    color: darken($comments, 12.5%);
+    text-shadow: 0 1px 0 lighten($comments, 12.5%);
   }
   &.punctuation {
     background-color: $punctuation;
+    color: darken($punctuation, 12.5%);
+    text-shadow: 0 1px 0 lighten($punctuation, 12.5%);
   }
   &.foreground {
     background-color: $foreground;
+    color: darken($foreground, 12.5%);
+    text-shadow: 0 1px 0 lighten($foreground, 12.5%);
   }
   &.highlight {
     background-color: $highlight;
+    color: darken($highlight, 12.5%);
+    text-shadow: 0 1px 0 lighten($highlight, 12.5%);
   }
 
   // Primary
   &.red {
     background-color: $primary-red;
+    color: darken($primary-red, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-red, 12.5%);
   }
 
   &.orange {
     background-color: $primary-orange;
+    color: darken($primary-orange, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-orange, 12.5%);
   }
 
   &.yellow {
     background-color: $primary-yellow;
+    color: darken($primary-yellow, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-yellow, 12.5%);
   }
 
   &.green {
     background-color: $primary-green;
+    color: darken($primary-green, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-green, 12.5%);
   }
 
   &.aqua {
     background-color: $primary-aqua;
+    color: darken($primary-aqua, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-aqua, 12.5%);
   }
 
   &.blue {
     background-color: $primary-blue;
+    color: darken($primary-blue, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-blue, 12.5%);
   }
 
   &.purple {
     background-color: $primary-purple;
+    color: darken($primary-purple, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-purple, 12.5%);
   }
 
   &.pink {
     background-color: $primary-pink;
+    color: darken($primary-pink, 12.5%);
+    text-shadow: 0 1px 0 lighten($primary-pink, 12.5%);
   }
 
   // Secondary
   &.dim-red {
     background-color: $secondary-red;
+    color: darken($secondary-red, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-red, 12.5%);
   }
   &.dim-orange {
     background-color: $secondary-orange;
+    color: darken($secondary-orange, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-orange, 12.5%);
   }
   &.dim-yellow {
     background-color: $secondary-yellow;
+    color: darken($secondary-yellow, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-yellow, 12.5%);
   }
   &.dim-green {
     background-color: $secondary-green;
+    color: darken($secondary-green, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-green, 12.5%);
   }
   &.dim-aqua {
     background-color: $secondary-aqua;
+    color: darken($secondary-aqua, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-aqua, 12.5%);
   }
   &.dim-blue {
     background-color: $secondary-blue;
+    color: darken($secondary-blue, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-blue, 12.5%);
   }
   &.dim-purple {
     background-color: $secondary-purple;
+    color: darken($secondary-purple, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-purple, 12.5%);
   }
   &.dim-pink {
     background-color: $secondary-pink;
+    color: darken($secondary-pink, 12.5%);
+    text-shadow: 0 1px 0 lighten($secondary-pink, 12.5%);
   }
 }
