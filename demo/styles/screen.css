@@ -453,35 +453,35 @@ ul.colours {
       background-color: #ed91c6;
       color: #e45aaa;
       text-shadow: 0 1px 0 #f1acd4; }
-    ul.colours > li.dim-red {
+    ul.colours > li.alt-red {
       background-color: #812b2b;
       color: #511b1b;
       text-shadow: 0 1px 0 #993333; }
-    ul.colours > li.dim-orange {
+    ul.colours > li.alt-orange {
       background-color: #8d572f;
       color: #5d391f;
       text-shadow: 0 1px 0 #a56637; }
-    ul.colours > li.dim-yellow {
+    ul.colours > li.alt-yellow {
       background-color: #8f7930;
       color: #5f5120;
       text-shadow: 0 1px 0 #a78d38; }
-    ul.colours > li.dim-green {
+    ul.colours > li.alt-green {
       background-color: #236823;
       color: #133813;
       text-shadow: 0 1px 0 #2b802b; }
-    ul.colours > li.dim-aqua {
+    ul.colours > li.alt-aqua {
       background-color: #1e5957;
       color: #0e2928;
       text-shadow: 0 1px 0 #26716e; }
-    ul.colours > li.dim-blue {
+    ul.colours > li.alt-blue {
       background-color: #2b5481;
       color: #1b3551;
       text-shadow: 0 1px 0 #336499; }
-    ul.colours > li.dim-purple {
+    ul.colours > li.alt-purple {
       background-color: #5e246c;
       color: #34143c;
       text-shadow: 0 1px 0 #732c84; }
-    ul.colours > li.dim-pink {
+    ul.colours > li.alt-pink {
       background-color: #9e6183;
       color: #774962;
       text-shadow: 0 1px 0 #aa7593; }
