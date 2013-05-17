@@ -73,10 +73,12 @@ h1 {
 
     span.caret {
       display: inline-block;
-      margin-left: .5em;
-      color: $invisibles;
-      background-color: $invisibles;
       animation: caretAnimation 1.5s infinite;
+      margin-left: .5em;
+      width: .125em;
+      background-color: $primary-yellow;
+      color: $body;
+      text-indent: -9999px;
     }
   }
 }

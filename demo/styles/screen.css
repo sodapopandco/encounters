@@ -358,10 +358,12 @@ h1 {
       color: #5eb250; }
     h1 + p span.caret {
       display: inline-block;
+      animation: caretAnimation 1.5s infinite;
       margin-left: .5em;
-      color: #404040;
-      background-color: #404040;
-      animation: caretAnimation 1.5s infinite; }
+      width: .125em;
+      background-color: #e8c761;
+      color: #101010;
+      text-indent: -9999px; }
 
 dl.colours {
   font-size: 0; }
