@@ -38,7 +38,8 @@ $secondary-blue: #385d86;
 $secondary-purple: #682a70;
 $secondary-pink: #b87490;
 
-// Fonts
+// Typography
+$base: 16px;
 $display: "futura-pt", sans-serif;
 $monospace: "source-code-pro", monospace;
 
@@ -52,7 +53,7 @@ a { color: inherit; text-decoration: none; }
 body {
   background-color: $body;
   color: $foreground;
-  font: 1em $monospace;
+  font: $base $monospace;
   text-align: center;
 }
 
@@ -93,8 +94,9 @@ dt.colour {
   height: 6em;
   border-radius: .125em;
   box-shadow: inset 0 -.125em 0 transparentize(#000, .75);
-  font: bold 16px/1.125em $display;
+  font: bold $base $display;
   letter-spacing: .0625em;
+  line-height: 1.125em;
   text-transform: uppercase;
   vertical-align: middle;
 
