@@ -356,7 +356,7 @@ h1 {
     margin-top: 0;
     text-transform: lowercase; }
     h1 + p:before {
-      content: '>: ';
+      content: '> ';
       color: #5eb250; }
     h1 + p span.caret {
       display: inline-block;
