@@ -361,7 +361,7 @@ h1 {
       margin-left: .5em;
       color: #404040;
       background-color: #404040;
-      -webkit-animation: caretAnimation 1.5s infinite; }
+      animation: caretAnimation 1.5s infinite; }
 
 dl.colours {
   font-size: 0; }
@@ -478,7 +478,7 @@ dt.colour {
     color: #9c506f;
     text-shadow: 0 1px 0 #ce9eb2; }
 
-@-webkit-keyframes caretAnimation {
+@keyframes caretAnimation {
   0%, 24%, 76%, 100% {
     opacity: 0; }
 
