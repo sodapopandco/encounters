@@ -382,8 +382,7 @@ ul.colours {
     font: bold 16px "futura-pt", sans-serif;
     letter-spacing: .0625em;
     line-height: 1.125em;
-    text-transform: uppercase;
-    vertical-align: middle; }
+    text-transform: uppercase; }
     ul.colours > li:hover, ul.colours > li:focus {
       cursor: pointer; }
       ul.colours > li:hover > ul, ul.colours > li:focus > ul {
@@ -438,7 +437,7 @@ ul.colours {
       background-color: #51b951;
       color: #3a903a;
       text-shadow: 0 1px 0 #68c268; }
-    ul.colours > li.aqua {
+    ul.colours > li.cyan {
       background-color: #4fa8a5;
       color: #3b7d7a;
       text-shadow: 0 1px 0 #62b5b2; }
@@ -446,7 +445,7 @@ ul.colours {
       background-color: #5692d6;
       color: #2e72be;
       text-shadow: 0 1px 0 #70a3dc; }
-    ul.colours > li.purple {
+    ul.colours > li.violet {
       background-color: #a952bf;
       color: #853999;
       text-shadow: 0 1px 0 #b569c8; }
@@ -470,7 +469,7 @@ ul.colours {
       background-color: #236823;
       color: #133813;
       text-shadow: 0 1px 0 #2b802b; }
-    ul.colours > li.alt-aqua {
+    ul.colours > li.alt-cyan {
       background-color: #1e5957;
       color: #0e2928;
       text-shadow: 0 1px 0 #26716e; }
@@ -478,7 +477,7 @@ ul.colours {
       background-color: #2b5481;
       color: #1b3551;
       text-shadow: 0 1px 0 #336499; }
-    ul.colours > li.alt-purple {
+    ul.colours > li.alt-violet {
       background-color: #5e246c;
       color: #34143c;
       text-shadow: 0 1px 0 #732c84; }

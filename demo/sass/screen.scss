@@ -23,9 +23,9 @@ $red: #d65656;
 $orange: #e59458;
 $yellow: #e7c758;
 $green: #51b951;
-$aqua: #4fa8a5;
+$cyan: #4fa8a5;
 $blue: #5692d6;
-$purple: #a952bf;
+$violet: #a952bf;
 $pink: #ed91c6;
 
 // Secondary
@@ -33,9 +33,9 @@ $alt-red: #812b2b;
 $alt-orange: #8d572f;
 $alt-yellow: #8f7930;
 $alt-green: #236823;
-$alt-aqua: #1e5957;
+$alt-cyan: #1e5957;
 $alt-blue: #2b5481;
-$alt-purple: #5e246c;
+$alt-violet: #5e246c;
 $alt-pink: #9e6183;
 
 // Typography
@@ -102,7 +102,6 @@ ul.colours {
     letter-spacing: .0625em;
     line-height: 1.125em;
     text-transform: uppercase;
-    vertical-align: middle;
 
     &:hover, &:focus {
       cursor: pointer;
@@ -188,10 +187,10 @@ ul.colours {
       text-shadow: 0 1px 0 lighten($green, 6.25%);
     }
 
-    &.aqua {
-      background-color: $aqua;
-      color: darken($aqua, 12.5%);
-      text-shadow: 0 1px 0 lighten($aqua, 6.25%);
+    &.cyan {
+      background-color: $cyan;
+      color: darken($cyan, 12.5%);
+      text-shadow: 0 1px 0 lighten($cyan, 6.25%);
     }
 
     &.blue {
@@ -200,10 +199,10 @@ ul.colours {
       text-shadow: 0 1px 0 lighten($blue, 6.25%);
     }
 
-    &.purple {
-      background-color: $purple;
-      color: darken($purple, 12.5%);
-      text-shadow: 0 1px 0 lighten($purple, 6.25%);
+    &.violet {
+      background-color: $violet;
+      color: darken($violet, 12.5%);
+      text-shadow: 0 1px 0 lighten($violet, 6.25%);
     }
 
     &.pink {
@@ -237,10 +236,10 @@ ul.colours {
       text-shadow: 0 1px 0 lighten($alt-green, 6.25%);
     }
 
-    &.alt-aqua {
-      background-color: $alt-aqua;
-      color: darken($alt-aqua, 12.5%);
-      text-shadow: 0 1px 0 lighten($alt-aqua, 6.25%);
+    &.alt-cyan {
+      background-color: $alt-cyan;
+      color: darken($alt-cyan, 12.5%);
+      text-shadow: 0 1px 0 lighten($alt-cyan, 6.25%);
     }
 
     &.alt-blue {
@@ -249,10 +248,10 @@ ul.colours {
       text-shadow: 0 1px 0 lighten($alt-blue, 6.25%);
     }
 
-    &.alt-purple {
-      background-color: $alt-purple;
-      color: darken($alt-purple, 12.5%);
-      text-shadow: 0 1px 0 lighten($alt-purple, 6.25%);
+    &.alt-violet {
+      background-color: $alt-violet;
+      color: darken($alt-violet, 12.5%);
+      text-shadow: 0 1px 0 lighten($alt-violet, 6.25%);
     }
 
     &.alt-pink {
