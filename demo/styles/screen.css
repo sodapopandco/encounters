@@ -361,9 +361,6 @@ dt.colour {
   font-size: 16px;
   vertical-align: middle; }
   dt.colour:hover, dt.colour:focus {
-    margin: 4px;
-    width: 100px;
-    height: 100px;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer; }
   dt.colour.background {
