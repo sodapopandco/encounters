@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'public/css/screen.css': [
+          'styles/screen.css': [
             'components/normalize-css/normalize.css',
             'sass/screen.scss'
           ]
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     cssmin: {
       compress: {
         files: {
-          'styles/screen.css': ['styles/screen.css']
+          'styles/screen.min.css': ['styles/screen.css']
         }
       }
     },
