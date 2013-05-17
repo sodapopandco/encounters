@@ -390,7 +390,8 @@ ul.colours {
       cursor: pointer; }
       ul.colours > li:hover > ul, ul.colours > li:focus > ul {
         opacity: 1;
-        bottom: 7.333333333em; }
+        bottom: 20%;
+        transform: rotate(-2deg); }
     ul.colours > li.background {
       background-color: #181818;
       color: #383838;
@@ -491,16 +492,17 @@ ul.colours {
       opacity: 0;
       position: absolute;
       z-index: 1;
-      bottom: 6.666666667em;
+      bottom: 0;
       left: -20%;
       padding: .75em 1em;
       width: 140%;
       background-color: #f0f0f0;
       border-radius: .333333333em;
-      box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
+      box-shadow: -0.08333em 0.33333em 0 rgba(0, 0, 0, 0.125);
       color: gray;
       font: 12px/1.16667em "source-code-pro", monospace;
-      text-shadow: none; }
+      text-shadow: none;
+      transform: rotate(-8deg); }
       ul.colours > li > ul li {
         list-style: none; }
       ul.colours > li > ul em {
