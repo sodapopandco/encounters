@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "grunt": "0.4.x",
-    "grunt-contrib-sass": "0.3.x"
+    "grunt-contrib-sass": "0.3.x",
+    "grunt-contrib-watch": "0.4.x",
+    "matchdep": "0.1.x"
   }
 }
