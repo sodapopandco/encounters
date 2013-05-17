@@ -335,11 +335,16 @@ table {
   A smooth little colour scheme for a better world.
 =================================================================== */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .25s ease-in-out; }
 
 a {
   color: inherit;
   text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 body {
   background-color: #101010;
@@ -365,120 +370,142 @@ h1 {
       color: #101010;
       text-indent: -9999px; }
 
-dl.colours {
+ul.colours {
   font-size: 0; }
-
-dt.colour {
-  display: inline-block;
-  margin: .375em;
-  padding: .5em;
-  width: 6em;
-  height: 6em;
-  border-radius: .125em;
-  box-shadow: inset 0 -0.125em 0 rgba(0, 0, 0, 0.25);
-  font: bold 16px "futura-pt", sans-serif;
-  letter-spacing: .0625em;
-  line-height: 1.125em;
-  text-transform: uppercase;
-  vertical-align: middle; }
-  dt.colour:hover, dt.colour:focus {
-    cursor: pointer; }
-  dt.colour.background {
-    background-color: #181818;
-    color: #383838;
-    text-shadow: 0 -1px 0 black; }
-  dt.colour.line {
-    background-color: #202020;
-    color: #404040;
-    text-shadow: 0 -1px 0 black; }
-  dt.colour.selection {
-    background-color: #303030;
-    color: #505050;
-    text-shadow: 0 -1px 0 #101010; }
-  dt.colour.invisibles {
-    background-color: #404040;
-    color: #606060;
-    text-shadow: 0 -1px 0 #202020; }
-  dt.colour.comments {
-    background-color: gray;
-    color: #606060;
-    text-shadow: 0 1px 0 #a0a0a0; }
-  dt.colour.punctuation {
-    background-color: #a0a0a0;
-    color: gray;
-    text-shadow: 0 1px 0 silver; }
-  dt.colour.foreground {
-    background-color: #d0d0d0;
-    color: #b0b0b0;
-    text-shadow: 0 1px 0 #f0f0f0; }
-  dt.colour.highlight {
-    background-color: #f0f0f0;
-    color: #d0d0d0;
-    text-shadow: 0 1px 0 white; }
-  dt.colour.red {
-    background-color: #cd5954;
-    color: #ae3833;
-    text-shadow: 0 1px 0 #db8985; }
-  dt.colour.orange {
-    background-color: #e39457;
-    color: #d77224;
-    text-shadow: 0 1px 0 #ecb78e; }
-  dt.colour.yellow {
-    background-color: #e8c761;
-    color: #e0b329;
-    text-shadow: 0 1px 0 #f0db99; }
-  dt.colour.green {
-    background-color: #5eb250;
-    color: #46873b;
-    text-shadow: 0 1px 0 #87c57c; }
-  dt.colour.aqua {
-    background-color: #5ea59b;
-    color: #467d75;
-    text-shadow: 0 1px 0 #87bcb4; }
-  dt.colour.blue {
-    background-color: #5f8fc5;
-    color: #3d6fa8;
-    text-shadow: 0 1px 0 #8eb0d6; }
-  dt.colour.purple {
-    background-color: #a455b0;
-    color: #7d3f87;
-    text-shadow: 0 1px 0 #bb81c4; }
-  dt.colour.pink {
-    background-color: #ed95b9;
-    color: #e45f95;
-    text-shadow: 0 1px 0 #f6cbdd; }
-  dt.colour.dim-red {
-    background-color: #8c322f;
-    color: #5c211f;
-    text-shadow: 0 1px 0 #bc433f; }
-  dt.colour.dim-orange {
-    background-color: #a36637;
-    color: #734827;
-    text-shadow: 0 1px 0 #c58654; }
-  dt.colour.dim-yellow {
-    background-color: #a98f40;
-    color: #7b682e;
-    text-shadow: 0 1px 0 #c4ad64; }
-  dt.colour.dim-green {
-    background-color: #307126;
-    color: #1c4116;
-    text-shadow: 0 1px 0 #44a136; }
-  dt.colour.dim-aqua {
-    background-color: #316760;
-    color: #1c3c38;
-    text-shadow: 0 1px 0 #469288; }
-  dt.colour.dim-blue {
-    background-color: #385d86;
-    color: #253e59;
-    text-shadow: 0 1px 0 #4b7cb3; }
-  dt.colour.dim-purple {
-    background-color: #682a70;
-    color: #3d1942;
-    text-shadow: 0 1px 0 #933b9e; }
-  dt.colour.dim-pink {
-    background-color: #b87490;
-    color: #9c506f;
-    text-shadow: 0 1px 0 #ce9eb2; }
+  ul.colours > li {
+    display: inline-block;
+    position: relative;
+    margin: .375em;
+    padding: .5em;
+    width: 6em;
+    height: 6em;
+    border-radius: .125em;
+    box-shadow: inset 0 -0.125em 0 rgba(0, 0, 0, 0.25);
+    font: bold 16px "futura-pt", sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.125em;
+    text-transform: uppercase;
+    vertical-align: middle; }
+    ul.colours > li:hover, ul.colours > li:focus {
+      cursor: pointer; }
+      ul.colours > li:hover > ul, ul.colours > li:focus > ul {
+        opacity: 1;
+        bottom: 7.333333333em; }
+    ul.colours > li.background {
+      background-color: #181818;
+      color: #383838;
+      text-shadow: 0 -1px 0 black; }
+    ul.colours > li.line {
+      background-color: #202020;
+      color: #404040;
+      text-shadow: 0 -1px 0 black; }
+    ul.colours > li.selection {
+      background-color: #303030;
+      color: #505050;
+      text-shadow: 0 -1px 0 #101010; }
+    ul.colours > li.invisibles {
+      background-color: #404040;
+      color: #606060;
+      text-shadow: 0 -1px 0 #202020; }
+    ul.colours > li.comments {
+      background-color: gray;
+      color: #606060;
+      text-shadow: 0 1px 0 #a0a0a0; }
+    ul.colours > li.punctuation {
+      background-color: #a0a0a0;
+      color: gray;
+      text-shadow: 0 1px 0 silver; }
+    ul.colours > li.foreground {
+      background-color: #d0d0d0;
+      color: #b0b0b0;
+      text-shadow: 0 1px 0 #f0f0f0; }
+    ul.colours > li.highlight {
+      background-color: #f0f0f0;
+      color: #d0d0d0;
+      text-shadow: 0 1px 0 white; }
+    ul.colours > li.red {
+      background-color: #cd5954;
+      color: #ae3833;
+      text-shadow: 0 1px 0 #db8985; }
+    ul.colours > li.orange {
+      background-color: #e39457;
+      color: #d77224;
+      text-shadow: 0 1px 0 #ecb78e; }
+    ul.colours > li.yellow {
+      background-color: #e8c761;
+      color: #e0b329;
+      text-shadow: 0 1px 0 #f0db99; }
+    ul.colours > li.green {
+      background-color: #5eb250;
+      color: #46873b;
+      text-shadow: 0 1px 0 #87c57c; }
+    ul.colours > li.aqua {
+      background-color: #5ea59b;
+      color: #467d75;
+      text-shadow: 0 1px 0 #87bcb4; }
+    ul.colours > li.blue {
+      background-color: #5f8fc5;
+      color: #3d6fa8;
+      text-shadow: 0 1px 0 #8eb0d6; }
+    ul.colours > li.purple {
+      background-color: #a455b0;
+      color: #7d3f87;
+      text-shadow: 0 1px 0 #bb81c4; }
+    ul.colours > li.pink {
+      background-color: #ed95b9;
+      color: #e45f95;
+      text-shadow: 0 1px 0 #f6cbdd; }
+    ul.colours > li.dim-red {
+      background-color: #8c322f;
+      color: #5c211f;
+      text-shadow: 0 1px 0 #bc433f; }
+    ul.colours > li.dim-orange {
+      background-color: #a36637;
+      color: #734827;
+      text-shadow: 0 1px 0 #c58654; }
+    ul.colours > li.dim-yellow {
+      background-color: #a98f40;
+      color: #7b682e;
+      text-shadow: 0 1px 0 #c4ad64; }
+    ul.colours > li.dim-green {
+      background-color: #307126;
+      color: #1c4116;
+      text-shadow: 0 1px 0 #44a136; }
+    ul.colours > li.dim-aqua {
+      background-color: #316760;
+      color: #1c3c38;
+      text-shadow: 0 1px 0 #469288; }
+    ul.colours > li.dim-blue {
+      background-color: #385d86;
+      color: #253e59;
+      text-shadow: 0 1px 0 #4b7cb3; }
+    ul.colours > li.dim-purple {
+      background-color: #682a70;
+      color: #3d1942;
+      text-shadow: 0 1px 0 #933b9e; }
+    ul.colours > li.dim-pink {
+      background-color: #b87490;
+      color: #9c506f;
+      text-shadow: 0 1px 0 #ce9eb2; }
+    ul.colours > li > ul {
+      opacity: 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 6.666666667em;
+      left: -20%;
+      padding: .75em 1em;
+      width: 140%;
+      background-color: #f0f0f0;
+      border-radius: .333333333em;
+      box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
+      color: gray;
+      font: 12px/1.16667em "source-code-pro", monospace;
+      text-shadow: none; }
+      ul.colours > li > ul li {
+        list-style: none; }
+      ul.colours > li > ul em {
+        color: #181818;
+        font-style: normal; }
 
 @keyframes caretAnimation {
   0%, 24%, 76%, 100% {
