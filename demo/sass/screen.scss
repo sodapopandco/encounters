@@ -51,19 +51,14 @@ a { color: inherit; text-decoration: none; }
 // Layout
 body {
   background-color: $body;
-}
-
-// Typography
-body {
   color: $foreground;
   font: 16px $monospace;
   text-align: center;
 }
 
-header {
-  h1 {
-    font: bold 36px $display;
-  }
+// Typography
+h1 {
+  font: bold 36px $display;
 }
 
 // Colours

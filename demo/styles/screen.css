@@ -343,14 +343,12 @@ a {
   text-decoration: none; }
 
 body {
-  background-color: #101010; }
-
-body {
+  background-color: #101010;
   color: #d0d0d0;
   font: 16px "source-code-pro", monospace;
   text-align: center; }
 
-header h1 {
+h1 {
   font: bold 36px "futura-pt", sans-serif; }
 
 dl.colours {
