@@ -1,6 +1,6 @@
 {
   "name": "encounters-demo",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "devDependencies": {
     "grunt": "0.4.x",
     "grunt-contrib-sass": "0.3.x",
