@@ -10,7 +10,7 @@ $selection: #303030;
 $invisibles: #404040;
 $comments: #808080;
 $punctuation: #a0a0a0;
-$foreground: #c0c0c0;
+$foreground: #d0d0d0;
 $highlight: #f0f0f0;
 
 // Primary Colours
@@ -32,3 +32,9 @@ $secondary-aqua: #316760;
 $secondary-blue: #385d86;
 $secondary-purple: #682a70;
 $secondary-pink: #b87490;
+
+body {
+  background-color: $body;
+  color: $foreground;
+  text-align: center;
+}
