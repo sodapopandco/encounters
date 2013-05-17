@@ -7,7 +7,10 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'styles/screen.css': ['sass/screen.scss']
+          'public/css/screen.css': [
+            'components/normalize-css/normalize.css',
+            'sass/screen.scss'
+          ]
         }
       }
     },
