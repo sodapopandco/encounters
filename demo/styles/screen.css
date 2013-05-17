@@ -499,7 +499,7 @@ ul.colours {
       width: 140%;
       background-color: #f0f0f0;
       border-radius: .333333333em;
-      box-shadow: -0.08333em 0.33333em 0 rgba(0, 0, 0, 0.125);
+      box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
       color: gray;
       font: 12px/1.16667em "source-code-pro", monospace;
       text-shadow: none;
