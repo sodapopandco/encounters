@@ -76,6 +76,7 @@ h1 {
       margin-left: .5em;
       color: $invisibles;
       background-color: $invisibles;
+      -webkit-animation: caretAnimation 1.5s infinite;
     }
   }
 }
@@ -236,4 +237,10 @@ dt.colour {
     color: darken($secondary-pink, 12.5%);
     text-shadow: 0 1px 0 lighten($secondary-pink, 12.5%);
   }
+}
+
+// Animations
+@-webkit-keyframes caretAnimation {
+  0%, 24%, 76%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
 }
