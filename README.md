@@ -1,4 +1,4 @@
-encounter
+Encounter
 =========
 
-A smooth little coding colour scheme for a better world.
+A smooth little colour scheme for a better world.
