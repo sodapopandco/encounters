@@ -335,8 +335,7 @@ table {
   A smooth little colour scheme for a better world.
 =================================================================== */
 * {
-  box-sizing: border-box;
-  -webkit-transition: all .25s ease; }
+  box-sizing: border-box; }
 
 a {
   color: inherit;
