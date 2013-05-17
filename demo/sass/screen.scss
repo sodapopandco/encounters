@@ -68,6 +68,14 @@ dt.colour {
   font-size: 16px;
   vertical-align: middle;
 
+  &:hover, &:focus {
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    color: $highlight;
+    cursor: pointer;
+  }
+
   // Neutral
   &.background {
     background-color: $background;

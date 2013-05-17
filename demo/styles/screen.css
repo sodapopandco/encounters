@@ -358,6 +358,12 @@ dt.colour {
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
   font-size: 16px;
   vertical-align: middle; }
+  dt.colour:hover, dt.colour:focus {
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    color: #f0f0f0;
+    cursor: pointer; }
   dt.colour.background {
     background-color: #181818; }
   dt.colour.line {
