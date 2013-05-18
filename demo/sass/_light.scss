@@ -94,13 +94,6 @@ body.light {
       color: $base-04;
     }
 
-    &.colour {
-      box-shadow:
-        inset 0 -.125em 0 transparentize(#000, .875),
-        0 .125em 0 transparentize(#000, .9375)
-      ;
-    }
-
     // Primary
     &.red-01 {
       background: $red-01;
