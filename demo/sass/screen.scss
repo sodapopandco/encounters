@@ -62,6 +62,7 @@ ul.code {
   width: 47.25em;
   border-radius: .125em;
   counter-reset: li;
+  line-height: 1.3125em;
   list-style: none;
 
   li {
@@ -69,6 +70,7 @@ ul.code {
       content: counter(li);
       position: absolute;
       width: 1.5em;
+      font-size: 14px;
       counter-increment: li;
       text-align: right;
     }
@@ -77,8 +79,8 @@ ul.code {
 
 pre {
   margin: 0;
-  padding-left: 3em;
-  font: 14px $monospace;
+  padding-left: 32px;
+  font: 14px/1.3125em $monospace;
   text-align: left;
 }
 
