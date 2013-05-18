@@ -343,10 +343,15 @@ a {
   text-decoration: none; }
 
 body {
+  padding: .375em;
   background-color: #101010;
   color: #d0d0d0;
   font: 16px "source-code-pro", monospace;
   text-align: center; }
+
+[role="main"] {
+  margin: 0 auto;
+  width: 54em; }
 
 h1 {
   margin-bottom: 0;
@@ -368,6 +373,8 @@ h1 {
       text-indent: -9999px; }
 
 ul.colours {
+  margin: 0;
+  padding: 0;
   font-size: 0; }
   ul.colours > li {
     display: table;
@@ -508,6 +515,12 @@ ul.colours {
   ul.colours b {
     display: table-cell;
     vertical-align: middle; }
+
+.group:before, .group:after {
+  content: " ";
+  display: table; }
+.group:after {
+  clear: both; }
 
 @keyframes caretAnimation {
   0%, 24%, 76%, 100% {
