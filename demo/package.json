@@ -6,6 +6,7 @@
     "grunt-contrib-cssmin": "0.6.x",
     "grunt-contrib-sass": "0.3.x",
     "grunt-contrib-watch": "0.4.x",
+    "grunt-autoprefixer": "0.1.x",
     "matchdep": "0.1.x"
   }
 }

@@ -5,12 +5,20 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
-      dist: {
+      compile: {
         files: {
           'styles/screen.css': [
             'components/normalize-css/normalize.css',
             'sass/screen.scss'
           ]
+        }
+      }
+    },
+
+    autoprefixer: {
+      prefix: {
+        files: {
+          'styles/screen.css': ['styles/screen.css']
         }
       }
     },
@@ -25,11 +33,11 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['sass/*.scss'],
-      tasks: 'sass'
+      tasks: ['sass', 'autoprefixer']
     }
   });
 
-  grunt.registerTask('build', ['sass', 'cssmin']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'cssmin']);
 
-  grunt.registerTask('default', ['sass', 'watch']);
+  grunt.registerTask('default', ['watch']);
 }
