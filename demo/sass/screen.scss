@@ -17,6 +17,7 @@ body {
   opacity: 1;
   padding: .375em;
   font: $base $monospace;
+  -webkit-font-smoothing: antialiased; // Get rid of the aliasing jump after the fade in
   text-align: center;
   transition: opacity 2s;
 }

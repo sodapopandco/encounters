@@ -418,6 +418,7 @@ body {
   opacity: 1;
   padding: .375em;
   font: 16px "source-code-pro", monospace;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   -webkit-transition: opacity 2s;
   -o-transition: opacity 2s;
