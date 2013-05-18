@@ -574,6 +574,11 @@ body.dark ul.code li:before {
   color: #404040
 }
 
+body.dark .comment {
+  color: gray
+}
+
+body.dark .variable,
 body.dark .support.function {
   color: #d65656
 }
@@ -586,8 +591,18 @@ body.dark .attribute {
   color: #e59458
 }
 
-body.dark .string {
+body.dark .string,
+body.dark .number,
+body.dark .unit {
   color: #51b951
+}
+
+body.dark .support.constant {
+  color: #4fa8a5
+}
+
+body.dark .support.type {
+  color: #5692d6
 }
 
 body.dark .keyword {

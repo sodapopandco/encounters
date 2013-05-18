@@ -8,7 +8,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body class="light">
+<body class="dark">
   <header>
     <h1>Encounters</h1>
 
@@ -17,7 +17,7 @@
 
   <div role="main" class="group">
     <ul class="code">
-      <li><pre><span class="tag">&lt;!doctype html&gt;</span></pre></li>
+      <!-- <li><pre><span class="tag">&lt;!doctype html&gt;</span></pre></li>
       <li><pre><span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span></pre></li>
       <li><pre><span class="tag">&lt;head&gt;</span></pre></li>
       <li><pre>  <span class="tag">&lt;meta <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></pre></li>
@@ -31,7 +31,23 @@
       <li><pre>  <span class="tag">&lt;header&gt;</span></pre></li>
       <li><pre>    <span class="tag">&lt;h1&gt;<span class="source">Encounters</span>&lt;/h1&gt;</span></pre></li>
       <li><pre>    <span class="tag">&lt;p&gt;<span class="source">Better reading, better writing, better<span class="tag">&lt;span <span class="attribute">class</span>=<span class="string">"caret"</span>&gt;<span class="source">…</span>&lt;/span&gt;</span></span>&lt;/p&gt;</span></pre></li>
-      <li><pre>  <span class="tag">&lt;/header&gt;</span></pre></li>
+      <li><pre>  <span class="tag">&lt;/header&gt;</span></pre></li> -->
+
+      <li><pre><span class="comment">// Imports</span></pre></li>
+      <li><pre><span class="keyword">@import</span> <span class="string">"dark"</span>;</pre></li>
+      <li><pre><span class="keyword">@import</span> <span class="string">"light"</span>;</pre></li>
+      <li><pre><br></pre></li>
+      <li><pre><span class="comment">// Variables</span></pre></li>
+      <li><pre><span class="variable">$base</span>: <span class="number unit">16px</span>;</pre></li>
+      <li><pre><span class="variable">$display</span>: <span class="string">"futura-pt"</span>, <span class="support constant">sans-serif</span>;</pre></li>
+      <li><pre><span class="variable">$monospace</span>: <span class="string">"source-code-pro"</span>, <span class="support constant">monospace</span>;</pre></li>
+      <li><pre><br></pre></li>
+      <li><pre><span class="comment">// Global</span></pre></li>
+      <li><pre><span class="tag">*</span> { <span class="support type">box-sizing</span>: <span class="support constant">border-box</span>; <span class="support type">text-rendering</span>: <span class="support constant">optimizeLegibility</span>; -webkit-<span class="support type">font-smoothing</span>: <span class="support constant">antialiased</span>; }</pre></li>
+      <li><pre><span class="tag">a</span> { <span class="support type">color</span>: <span class="support constant">inherit</span>; <span class="support type">text-decoration</span>: <span class="support constant">none</span>; }</pre></li>
+      <li><pre><br></pre></li>
+      <li><pre><span class="comment">// Layout</span></pre></li>
+      <li><pre><span class="tag">body</span> {</pre></li>
     </ul>
 
     <ul class="neutral colours">

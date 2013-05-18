@@ -58,7 +58,11 @@ body.dark {
     }
   }
 
-  .support.function {
+  .comment {
+    color: $comments;
+  }
+
+  .variable, .support.function {
     color: $red;
   }
 
@@ -70,8 +74,16 @@ body.dark {
     color: $orange;
   }
 
-  .string {
+  .string, .number, .unit {
     color: $green;
+  }
+
+  .support.constant {
+    color: $cyan;
+  }
+
+  .support.type {
+    color: $blue;
   }
 
   .keyword {
