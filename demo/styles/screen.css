@@ -418,7 +418,7 @@ body {
 
 h1 {
   margin-bottom: 0;
-  font: bold 2.25em "futura-pt", sans-serif
+  font: bold 2.25em "futura-pt", "Futura", sans-serif
 }
 
 h1.section {
@@ -489,7 +489,7 @@ li.colour {
   height: 5em;
   border-radius: .125em;
   box-shadow: inset 0 -0.125em 0 rgba(0, 0, 0, 0.25);
-  font: 16px "futura-pt", sans-serif;
+  font: 16px "futura-pt", "Futura", sans-serif;
   letter-spacing: .0625em;
   line-height: 1.125em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
@@ -509,6 +509,54 @@ li.colour:focus > ul {
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg)
+}
+
+li.base-01 {
+  background: #181818;
+  color: #383838;
+  text-shadow: 0 -0.07143em 0 #080808
+}
+
+li.base-02 {
+  background: #202020;
+  color: #404040;
+  text-shadow: 0 -0.07143em 0 #101010
+}
+
+li.base-03 {
+  background: #303030;
+  color: #505050;
+  text-shadow: 0 -0.07143em 0 #202020
+}
+
+li.base-04 {
+  background: #606060;
+  color: gray;
+  text-shadow: 0 -0.07143em 0 #505050
+}
+
+li.base-05 {
+  background: #b0b0b0;
+  color: #909090;
+  text-shadow: 0 0.07143em 0 silver
+}
+
+li.base-06 {
+  background: #e0e0e0;
+  color: silver;
+  text-shadow: 0 0.07143em 0 #f0f0f0
+}
+
+li.base-07 {
+  background: #f0f0f0;
+  color: #d0d0d0;
+  text-shadow: 0 0.07143em 0 white
+}
+
+li.base-08 {
+  background: #f8f8f8;
+  color: #d8d8d8;
+  text-shadow: 0 0.07143em 0 white
 }
 
 li b {
@@ -546,233 +594,192 @@ li em {
 }
 
 body.dark {
-  background-color: #101010;
-  color: #d0d0d0
+  background: #101010;
+  color: #e0e0e0
 }
 
 body.dark h1 {
-  color: #f0f0f0
+  color: #f8f8f8
+}
+
+body.dark h1 + p {
+  color: #b0b0b0
 }
 
 body.dark h1 + p:before {
-  color: #51b951
+  color: #49c249
 }
 
 body.dark span.caret {
-  background-color: #ffd440;
-  color: #101010
+  background: #ffd440
 }
 
 body.dark ul.code {
-  background-color: #181818
+  background: #181818
 }
 
 body.dark ul.code li:before {
-  color: #404040
+  color: #303030
 }
 
 body.dark .comment {
-  color: gray
+  color: #606060
 }
 
 body.dark .variable,
-body.dark .support.function {
-  color: #d65656
+body.dark .support {
+  color: #e14b4b
 }
 
 body.dark .function,
 body.dark .tag {
-  color: #e7c758
+  color: #f3cd4c
 }
 
 body.dark .storage,
 body.dark .attribute {
-  color: #e59458
+  color: #f1924c
 }
 
 body.dark .string,
 body.dark .number,
 body.dark .unit {
-  color: #51b951
+  color: #49c249
 }
 
 body.dark .support.constant {
-  color: #4fa8a5
+  color: #48afac
 }
 
 body.dark .variable.parameter,
 body.dark .support.type {
-  color: #5692d6
+  color: #4b92e1
 }
 
 body.dark .keyword {
-  color: #a952bf
+  color: #ae49c8
 }
 
 body.dark .source {
-  color: #d0d0d0
+  color: #e0e0e0
 }
 
 body.dark li > ul {
-  background-color: #f0f0f0;
-  color: gray
+  background: #f8f8f8;
+  color: #606060
 }
 
 body.dark li em {
   color: #181818
 }
 
-body.dark li.background {
-  background-color: #181818;
-  color: black;
-  text-shadow-color: #282828
+body.dark li.red-01 {
+  background: #e14b4b;
+  color: #cb2222;
+  text-shadow: 0 0.07143em 0 #e66666
 }
 
-body.dark li.line {
-  background-color: #202020;
-  color: black;
-  text-shadow-color: #303030
+body.dark li.orange-01 {
+  background: #f1924c;
+  color: #eb6e12;
+  text-shadow: 0 0.07143em 0 #f3a46a
 }
 
-body.dark li.selection {
-  background-color: #303030;
-  color: #101010;
-  text-shadow-color: #404040
+body.dark li.yellow-01 {
+  background: #f3cd4c;
+  color: #efbc10;
+  text-shadow: 0 0.07143em 0 #f5d56a
 }
 
-body.dark li.invisibles {
-  background-color: #404040;
-  color: #202020;
-  text-shadow-color: #505050
+body.dark li.green-01 {
+  background: #49c249;
+  color: #339833;
+  text-shadow: 0 0.07143em 0 #61ca61
 }
 
-body.dark li.comments {
-  background-color: gray;
-  color: #606060;
-  text-shadow-color: #909090
+body.dark li.cyan-01 {
+  background: #48afac;
+  color: #358280;
+  text-shadow: 0 0.07143em 0 #5bbcb9
 }
 
-body.dark li.punctuation {
-  background-color: #a0a0a0;
-  color: gray;
-  text-shadow-color: #b0b0b0
+body.dark li.blue-01 {
+  background: #4b92e1;
+  color: #2272cb;
+  text-shadow: 0 0.07143em 0 #66a3e6
 }
 
-body.dark li.foreground {
-  background-color: #d0d0d0;
-  color: #b0b0b0;
-  text-shadow-color: #e0e0e0
+body.dark li.violet-01 {
+  background: #ae49c8;
+  color: #8a31a1;
+  text-shadow: 0 0.07143em 0 #b961cf
 }
 
-body.dark li.highlight {
-  background-color: #f0f0f0;
-  color: #d0d0d0;
-  text-shadow-color: white
+body.dark li.pink-01 {
+  background: #f58ac7;
+  color: #f04fab;
+  text-shadow: 0 0.07143em 0 #f8a7d5
 }
 
-body.dark li.red {
-  background-color: #d65656;
-  color: #be2e2e;
-  text-shadow-color: #dc7070
+body.dark li.red-02 {
+  background: #963232;
+  color: #7e2a2a;
+  text-shadow: 0 0.07143em 0 #a23636
 }
 
-body.dark li.orange {
-  background-color: #e59458;
-  color: #db7122;
-  text-shadow-color: #e9a674
+body.dark li.orange-02 {
+  background: #a46537;
+  color: #8c562f;
+  text-shadow: 0 0.07143em 0 #b06c3b
 }
 
-body.dark li.yellow {
-  background-color: #e7c758;
-  color: #dfb420;
-  text-shadow-color: #ebd074
+body.dark li.yellow-02 {
+  background: #a68d38;
+  color: #8e7930;
+  text-shadow: 0 0.07143em 0 #b2973c
 }
 
-body.dark li.green {
-  background-color: #51b951;
-  color: #3a903a;
-  text-shadow-color: #68c268
+body.dark li.green-02 {
+  background: #297929;
+  color: #216121;
+  text-shadow: 0 0.07143em 0 #2d852d
 }
 
-body.dark li.cyan {
-  background-color: #4fa8a5;
-  color: #3b7d7a;
-  text-shadow-color: #62b5b2
+body.dark li.cyan-02 {
+  background: #236765;
+  color: #1b4f4e;
+  text-shadow: 0 0.07143em 0 #277371
 }
 
-body.dark li.blue {
-  background-color: #5692d6;
-  color: #2e72be;
-  text-shadow-color: #70a3dc
+body.dark li.blue-02 {
+  background: #326196;
+  color: #2a527e;
+  text-shadow: 0 0.07143em 0 #3669a2
 }
 
-body.dark li.violet {
-  background-color: #a952bf;
-  color: #853999;
-  text-shadow-color: #b569c8
+body.dark li.violet-02 {
+  background: #6d2a7e;
+  color: #582266;
+  text-shadow: 0 0.07143em 0 #772e8a
 }
 
-body.dark li.pink {
-  background-color: #ed91c6;
-  color: #e45aaa;
-  text-shadow-color: #f1acd4
-}
-
-body.dark li.alt.red {
-  background-color: #812b2b;
-  color: #511b1b;
-  text-shadow-color: #993333
-}
-
-body.dark li.alt.orange {
-  background-color: #8d572f;
-  color: #5d391f;
-  text-shadow-color: #a56637
-}
-
-body.dark li.alt.yellow {
-  background-color: #8f7930;
-  color: #5f5120;
-  text-shadow-color: #a78d38
-}
-
-body.dark li.alt.green {
-  background-color: #236823;
-  color: #133813;
-  text-shadow-color: #2b802b
-}
-
-body.dark li.alt.cyan {
-  background-color: #1e5957;
-  color: #0e2928;
-  text-shadow-color: #26716e
-}
-
-body.dark li.alt.blue {
-  background-color: #2b5481;
-  color: #1b3551;
-  text-shadow-color: #336499
-}
-
-body.dark li.alt.violet {
-  background-color: #5e246c;
-  color: #34143c;
-  text-shadow-color: #732c84
-}
-
-body.dark li.alt.pink {
-  background-color: #9e6183;
-  color: #774962;
-  text-shadow-color: #aa7593
+body.dark li.pink-02 {
+  background: #b77199;
+  color: #ac5c8a;
+  text-shadow: 0 0.07143em 0 #bc7ca1
 }
 
 body.light {
-  background-color: #fcfcfc;
-  color: #505050
+  background: #fcfcfc;
+  color: #303030
 }
 
 body.light h1 {
-  color: #202020
+  color: #181818
+}
+
+body.light h1 + p {
+  color: #606060
 }
 
 body.light h1 + p:before {
@@ -780,24 +787,23 @@ body.light h1 + p:before {
 }
 
 body.light span.caret {
-  background-color: #52a3ff;
-  color: #fcfcfc
+  background: #2d90ff
 }
 
 body.light ul.code {
-  background-color: #f8f8f8
+  background: #f8f8f8
 }
 
 body.light ul.code li:before {
-  color: #d0d0d0
+  color: #e0e0e0
 }
 
 body.light .comment {
-  color: #909090
+  color: #b0b0b0
 }
 
 body.light .variable,
-body.light .support.function {
+body.light .support {
   color: #ac0000
 }
 
@@ -818,7 +824,7 @@ body.light .unit {
 }
 
 body.light .support.constant {
-  color: #007773
+  color: #007772
 }
 
 body.light .variable.parameter,
@@ -831,164 +837,116 @@ body.light .keyword {
 }
 
 body.light .source {
-  color: #505050
+  color: #303030
 }
 
 body.light li > ul {
-  background-color: #f8f8f8;
-  color: #909090
+  background: #f8f8f8;
+  color: #b0b0b0
 }
 
 body.light li em {
-  color: #505050
+  color: #606060
 }
 
 body.light li.colour {
   box-shadow: inset 0 -0.125em 0 rgba(0, 0, 0, 0.125), 0 0.125em 0 rgba(0, 0, 0, 0.0625)
 }
 
-body.light li.background {
-  background-color: #f8f8f8;
-  color: #d8d8d8;
-  text-shadow-color: white
+body.light li.red-01 {
+  background: #ac0000;
+  color: #8c0000;
+  text-shadow: 0 0.07143em 0 #bc0000
 }
 
-body.light li.line {
-  background-color: #f0f0f0;
-  color: #d0d0d0;
-  text-shadow-color: white
+body.light li.orange-01 {
+  background: #bd5000;
+  color: #9d4300;
+  text-shadow: 0 0.07143em 0 #cd5700
 }
 
-body.light li.selection {
-  background-color: #e0e0e0;
-  color: silver;
-  text-shadow-color: #f0f0f0
+body.light li.yellow-01 {
+  background: #bf9400;
+  color: #9f7b00;
+  text-shadow: 0 0.07143em 0 #cfa000
 }
 
-body.light li.invisibles {
-  background-color: #d0d0d0;
-  color: #b0b0b0;
-  text-shadow-color: #e0e0e0
+body.light li.green-01 {
+  background: #008b00;
+  color: #006b00;
+  text-shadow: 0 0.07143em 0 #009b00
 }
 
-body.light li.comments {
-  background-color: #909090;
-  color: #707070;
-  text-shadow-color: #a0a0a0
+body.light li.cyan-01 {
+  background: #007772;
+  color: #005753;
+  text-shadow: 0 0.07143em 0 #008781
 }
 
-body.light li.punctuation {
-  background-color: #707070;
-  color: #505050;
-  text-shadow-color: gray
+body.light li.blue-01 {
+  background: #0051ac;
+  color: #00428c;
+  text-shadow: 0 0.07143em 0 #0059bc
 }
 
-body.light li.foreground {
-  background-color: #505050;
-  color: #303030;
-  text-shadow-color: #606060
+body.light li.violet-01 {
+  background: #740091;
+  color: #5a0071;
+  text-shadow: 0 0.07143em 0 #8100a1
 }
 
-body.light li.highlight {
-  background-color: #202020;
-  color: black;
-  text-shadow-color: #303030
+body.light li.pink-01 {
+  background: #de218c;
+  color: #c21d7b;
+  text-shadow: 0 0.07143em 0 #e02f93
 }
 
-body.light li.red {
-  background-color: #ac0000;
-  color: #6c0000;
-  text-shadow-color: #cc0000
+body.light li.red-02 {
+  background: #ee3e3e;
+  color: #d91313;
+  text-shadow: 0 0.07143em 0 #f15b5b
 }
 
-body.light li.orange {
-  background-color: #bd5000;
-  color: #7d3500;
-  text-shadow-color: #dd5d00
+body.light li.orange-02 {
+  background: #fd9040;
+  color: #fb6c03;
+  text-shadow: 0 0.07143em 0 #fda260
 }
 
-body.light li.yellow {
-  background-color: #bf9400;
-  color: #7f6300;
-  text-shadow-color: #dfad00
+body.light li.yellow-02 {
+  background: #ffd440;
+  color: #ffc600;
+  text-shadow: 0 0.07143em 0 #ffdb60
 }
 
-body.light li.green {
-  background-color: #008b00;
-  color: #004b00;
-  text-shadow-color: #00ab00
+body.light li.green-02 {
+  background: #39d239;
+  color: #26a626;
+  text-shadow: 0 0.07143em 0 #53d853
 }
 
-body.light li.cyan {
-  background-color: #007773;
-  color: #003735;
-  text-shadow-color: #009792
+body.light li.cyan-02 {
+  background: #38bfbb;
+  color: #2a8e8b;
+  text-shadow: 0 0.07143em 0 #4ccbc7
 }
 
-body.light li.blue {
-  background-color: #0051ac;
-  color: #00336c;
-  text-shadow-color: #0060cc
+body.light li.blue-02 {
+  background: #3e91ee;
+  color: #1370d9;
+  text-shadow: 0 0.07143em 0 #5ba2f1
 }
 
-body.light li.violet {
-  background-color: #740091;
-  color: #410051;
-  text-shadow-color: #8d00b1
+body.light li.violet-02 {
+  background: #b73ad7;
+  color: #9223ae;
+  text-shadow: 0 0.07143em 0 #c154dc
 }
 
-body.light li.pink {
-  background-color: #ce318a;
-  color: #9b2567;
-  text-shadow-color: #d44b99
-}
-
-body.light li.alt.red {
-  background-color: #f06161;
-  color: #ea2727;
-  text-shadow-color: #f37e7e
-}
-
-body.light li.alt.orange {
-  background-color: #fda361;
-  color: #fc7e22;
-  text-shadow-color: #fdb580
-}
-
-body.light li.alt.yellow {
-  background-color: #ffdc61;
-  color: #ffce21;
-  text-shadow-color: #ffe381
-}
-
-body.light li.alt.green {
-  background-color: #61d461;
-  color: #34c134;
-  text-shadow-color: #7adb7a
-}
-
-body.light li.alt.cyan {
-  background-color: #61c4c0;
-  color: #3ea7a3;
-  text-shadow-color: #78cdc9
-}
-
-body.light li.alt.blue {
-  background-color: #61a4f0;
-  color: #2782ea;
-  text-shadow-color: #7eb5f3
-}
-
-body.light li.alt.violet {
-  background-color: #c161d9;
-  color: #ab31ca;
-  text-shadow-color: #cb7bdf
-}
-
-body.light li.alt.pink {
-  background-color: #fd98d1;
-  color: #fc59b5;
-  text-shadow-color: #feb7df
+body.light li.pink-02 {
+  background: #fd82c8;
+  color: #fc43ac;
+  text-shadow: 0 0.07143em 0 #fea1d6
 }
 
 ul.andale,

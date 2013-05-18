@@ -1,7 +1,17 @@
-// Variables
-$base: 16px;
-$display: "futura-pt", sans-serif;
+// Global Variables
+$body-size: 16px;
+$display: "futura-pt", "Futura", sans-serif;
 $monospace: "source-code-pro", monospace;
+
+// Neutral Colours
+$base-01: #181818;
+$base-02: #202020;
+$base-03: #303030;
+$base-04: #606060;
+$base-05: #b0b0b0;
+$base-06: #e0e0e0;
+$base-07: #f0f0f0;
+$base-08: #f8f8f8;
 
 // Global
 * { box-sizing: border-box; text-rendering: optimizeLegibility; }
@@ -9,7 +19,7 @@ a { color: inherit; text-decoration: none; }
 
 // Layout
 body {
-  font: $base $monospace;
+  font: $body-size $monospace;
   text-align: center;
 }
 
@@ -96,7 +106,7 @@ li {
     height: 5em;
     border-radius: .125em;
     box-shadow: inset 0 -.125em 0 transparentize(#000, .75);
-    font: $base $display;
+    font: $body-size $display;
     letter-spacing: .0625em;
     line-height: 1.125em;
     text-shadow: 0 1px 0 transparentize(#fff, .9375);
@@ -111,6 +121,55 @@ li {
         transform: rotate(-2deg);
       }
     }
+  }
+
+  // Neutral
+  &.base-01 {
+    background: $base-01;
+    color: lighten($base-01, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-01, 6.25%);
+  }
+
+  &.base-02 {
+    background: $base-02;
+    color: lighten($base-02, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-02, 6.25%);
+  }
+
+  &.base-03 {
+    background: $base-03;
+    color: lighten($base-03, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-03, 6.25%);
+  }
+
+  &.base-04 {
+    background: $base-04;
+    color: lighten($base-04, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-04, 6.25%);
+  }
+
+  &.base-05 {
+    background: $base-05;
+    color: darken($base-05, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-05, 6.25%);
+  }
+
+  &.base-06 {
+    background: $base-06;
+    color: darken($base-06, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-06, 6.25%);
+  }
+
+  &.base-07 {
+    background: $base-07;
+    color: darken($base-07, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-07, 6.25%);
+  }
+
+  &.base-08 {
+    background: $base-08;
+    color: darken($base-08, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-08, 6.25%);
   }
 
   b {
