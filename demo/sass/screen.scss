@@ -8,10 +8,6 @@ $base: 16px;
 $display: "futura-pt", sans-serif;
 $monospace: "source-code-pro", monospace;
 
-// Imports
-@import "dark";
-@import "light";
-
 // Global
 * { box-sizing: border-box; text-rendering: optimizeLegibility; transition: all .25s ease-in-out; }
 a { color: inherit; text-decoration: none; }
@@ -128,6 +124,10 @@ li {
     font-style: normal;
   }
 }
+
+// Imports
+@import "dark";
+@import "light";
 
 // Helpers
 .group {
