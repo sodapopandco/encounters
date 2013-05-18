@@ -458,6 +458,8 @@ ul.code {
   margin: .5em auto 1.25em;
   padding: .75em;
   width: 53.25em;
+  max-height: 21em;
+  overflow: scroll;
   border-radius: .125em;
   counter-reset: li;
   line-height: 1.3125em;
@@ -477,6 +479,10 @@ ul.code.monaco pre {
 ul.code.monaco,
 ul.code.menlo pre {
   font-family: Menlo, monospace
+}
+
+ul.code li {
+  position: relative
 }
 
 ul.code li:before {
