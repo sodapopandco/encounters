@@ -58,6 +58,12 @@ span.caret {
   text-indent: -9999px;
 }
 
+// Code
+pre {
+  font: 14px $monospace;
+  text-align: left;
+}
+
 // Colours
 ul.colours {
   margin: 0;

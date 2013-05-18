@@ -50,6 +50,30 @@ body.dark {
     color: $body;
   }
 
+  .support.function {
+    color: $red;
+  }
+
+  .tag {
+    color: $yellow;
+  }
+
+  .attribute {
+    color: $orange;
+  }
+
+  .string {
+    color: $green;
+  }
+
+  .keyword {
+    color: $violet;
+  }
+
+  .source {
+    color: $foreground;
+  }
+
   // Colour
   li {
     > ul {

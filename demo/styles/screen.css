@@ -418,6 +418,30 @@ body.dark span.caret {
   color: #101010
 }
 
+body.dark .support.function {
+  color: #d65656
+}
+
+body.dark .tag {
+  color: #e7c758
+}
+
+body.dark .attribute {
+  color: #e59458
+}
+
+body.dark .string {
+  color: #51b951
+}
+
+body.dark .keyword {
+  color: #a952bf
+}
+
+body.dark .source {
+  color: #d0d0d0
+}
+
 body.dark li > ul {
   background-color: #f0f0f0;
   color: gray
@@ -587,6 +611,30 @@ body.light h1 + p:before {
 body.light span.caret {
   background-color: #52a3ff;
   color: #fcfcfc
+}
+
+body.light .support.function {
+  color: #ac0000
+}
+
+body.light .tag {
+  color: #bf9400
+}
+
+body.light .attribute {
+  color: #bd5000
+}
+
+body.light .string {
+  color: #008b00
+}
+
+body.light .keyword {
+  color: #740091
+}
+
+body.light .source {
+  color: #505050
 }
 
 body.light li > ul {
@@ -804,6 +852,11 @@ span.caret {
   margin-left: .5em;
   width: .125em;
   text-indent: -9999px
+}
+
+pre {
+  font: 14px "source-code-pro", monospace;
+  text-align: left
 }
 
 ul.colours {
