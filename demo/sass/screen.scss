@@ -13,7 +13,7 @@ $monospace: "source-code-pro", monospace;
 @import "light";
 
 // Global
-* { box-sizing: border-box; transition: all .2s ease-in-out; }
+* { box-sizing: border-box; text-rendering: optimizeLegibility; transition: all .2s ease-in-out; }
 a { color: inherit; text-decoration: none; }
 
 // Layout
