@@ -460,7 +460,7 @@ ul.colours {
   font-size: 0
 }
 
-ul.colours > li {
+li.colour {
   display: table;
   float: left;
   position: relative;
@@ -476,13 +476,13 @@ ul.colours > li {
   text-transform: uppercase
 }
 
-ul.colours > li:hover,
-ul.colours > li:focus {
+li.colour:hover,
+li.colour:focus {
   cursor: pointer
 }
 
-ul.colours > li:hover > ul,
-ul.colours > li:focus > ul {
+li.colour:hover > ul,
+li.colour:focus > ul {
   opacity: 1;
   bottom: 20%;
   -webkit-transform: rotate(-2deg);
@@ -491,151 +491,12 @@ ul.colours > li:focus > ul {
   transform: rotate(-2deg)
 }
 
-ul.colours > li.background {
-  background-color: #181818;
-  color: black;
-  text-shadow: 0 1px 0 #282828
+li.colour b {
+  display: table-cell;
+  vertical-align: middle
 }
 
-ul.colours > li.line {
-  background-color: #202020;
-  color: black;
-  text-shadow: 0 1px 0 #303030
-}
-
-ul.colours > li.selection {
-  background-color: #303030;
-  color: #101010;
-  text-shadow: 0 1px 0 #404040
-}
-
-ul.colours > li.invisibles {
-  background-color: #404040;
-  color: #202020;
-  text-shadow: 0 1px 0 #505050
-}
-
-ul.colours > li.comments {
-  background-color: gray;
-  color: #606060;
-  text-shadow: 0 1px 0 #909090
-}
-
-ul.colours > li.punctuation {
-  background-color: #a0a0a0;
-  color: gray;
-  text-shadow: 0 1px 0 #b0b0b0
-}
-
-ul.colours > li.foreground {
-  background-color: #d0d0d0;
-  color: #b0b0b0;
-  text-shadow: 0 1px 0 #e0e0e0
-}
-
-ul.colours > li.highlight {
-  background-color: #f0f0f0;
-  color: #d0d0d0;
-  text-shadow: 0 1px 0 white
-}
-
-ul.colours > li.red {
-  background-color: #d65656;
-  color: #be2e2e;
-  text-shadow: 0 1px 0 #dc7070
-}
-
-ul.colours > li.orange {
-  background-color: #e59458;
-  color: #db7122;
-  text-shadow: 0 1px 0 #e9a674
-}
-
-ul.colours > li.yellow {
-  background-color: #e7c758;
-  color: #dfb420;
-  text-shadow: 0 1px 0 #ebd074
-}
-
-ul.colours > li.green {
-  background-color: #51b951;
-  color: #3a903a;
-  text-shadow: 0 1px 0 #68c268
-}
-
-ul.colours > li.cyan {
-  background-color: #4fa8a5;
-  color: #3b7d7a;
-  text-shadow: 0 1px 0 #62b5b2
-}
-
-ul.colours > li.blue {
-  background-color: #5692d6;
-  color: #2e72be;
-  text-shadow: 0 1px 0 #70a3dc
-}
-
-ul.colours > li.violet {
-  background-color: #a952bf;
-  color: #853999;
-  text-shadow: 0 1px 0 #b569c8
-}
-
-ul.colours > li.pink {
-  background-color: #ed91c6;
-  color: #e45aaa;
-  text-shadow: 0 1px 0 #f1acd4
-}
-
-ul.colours > li.alt-red {
-  background-color: #812b2b;
-  color: #511b1b;
-  text-shadow: 0 1px 0 #993333
-}
-
-ul.colours > li.alt-orange {
-  background-color: #8d572f;
-  color: #5d391f;
-  text-shadow: 0 1px 0 #a56637
-}
-
-ul.colours > li.alt-yellow {
-  background-color: #8f7930;
-  color: #5f5120;
-  text-shadow: 0 1px 0 #a78d38
-}
-
-ul.colours > li.alt-green {
-  background-color: #236823;
-  color: #133813;
-  text-shadow: 0 1px 0 #2b802b
-}
-
-ul.colours > li.alt-cyan {
-  background-color: #1e5957;
-  color: #0e2928;
-  text-shadow: 0 1px 0 #26716e
-}
-
-ul.colours > li.alt-blue {
-  background-color: #2b5481;
-  color: #1b3551;
-  text-shadow: 0 1px 0 #336499
-}
-
-ul.colours > li.alt-violet {
-  background-color: #5e246c;
-  color: #34143c;
-  text-shadow: 0 1px 0 #732c84
-}
-
-ul.colours > li.alt-pink {
-  background-color: #9e6183;
-  color: #774962;
-  text-shadow: 0 1px 0 #aa7593
-}
-
-ul.colours > li > ul {
+li.colour > ul {
   opacity: 0;
   position: absolute;
   z-index: 1;
@@ -655,18 +516,157 @@ ul.colours > li > ul {
   transform: rotate(-8deg)
 }
 
-ul.colours > li > ul li {
+li.colour > ul li {
   list-style: none
 }
 
-ul.colours > li > ul em {
+li.colour > ul em {
   color: #181818;
   font-style: normal
 }
 
-ul.colours b {
-  display: table-cell;
-  vertical-align: middle
+li.background {
+  background-color: #181818;
+  color: black;
+  text-shadow: 0 1px 0 #282828
+}
+
+li.line {
+  background-color: #202020;
+  color: black;
+  text-shadow: 0 1px 0 #303030
+}
+
+li.selection {
+  background-color: #303030;
+  color: #101010;
+  text-shadow: 0 1px 0 #404040
+}
+
+li.invisibles {
+  background-color: #404040;
+  color: #202020;
+  text-shadow: 0 1px 0 #505050
+}
+
+li.comments {
+  background-color: gray;
+  color: #606060;
+  text-shadow: 0 1px 0 #909090
+}
+
+li.punctuation {
+  background-color: #a0a0a0;
+  color: gray;
+  text-shadow: 0 1px 0 #b0b0b0
+}
+
+li.foreground {
+  background-color: #d0d0d0;
+  color: #b0b0b0;
+  text-shadow: 0 1px 0 #e0e0e0
+}
+
+li.highlight {
+  background-color: #f0f0f0;
+  color: #d0d0d0;
+  text-shadow: 0 1px 0 white
+}
+
+li.red {
+  background-color: #d65656;
+  color: #be2e2e;
+  text-shadow: 0 1px 0 #dc7070
+}
+
+li.orange {
+  background-color: #e59458;
+  color: #db7122;
+  text-shadow: 0 1px 0 #e9a674
+}
+
+li.yellow {
+  background-color: #e7c758;
+  color: #dfb420;
+  text-shadow: 0 1px 0 #ebd074
+}
+
+li.green {
+  background-color: #51b951;
+  color: #3a903a;
+  text-shadow: 0 1px 0 #68c268
+}
+
+li.cyan {
+  background-color: #4fa8a5;
+  color: #3b7d7a;
+  text-shadow: 0 1px 0 #62b5b2
+}
+
+li.blue {
+  background-color: #5692d6;
+  color: #2e72be;
+  text-shadow: 0 1px 0 #70a3dc
+}
+
+li.violet {
+  background-color: #a952bf;
+  color: #853999;
+  text-shadow: 0 1px 0 #b569c8
+}
+
+li.pink {
+  background-color: #ed91c6;
+  color: #e45aaa;
+  text-shadow: 0 1px 0 #f1acd4
+}
+
+li.alt.red {
+  background-color: #812b2b;
+  color: #511b1b;
+  text-shadow: 0 1px 0 #993333
+}
+
+li.alt.orange {
+  background-color: #8d572f;
+  color: #5d391f;
+  text-shadow: 0 1px 0 #a56637
+}
+
+li.alt.yellow {
+  background-color: #8f7930;
+  color: #5f5120;
+  text-shadow: 0 1px 0 #a78d38
+}
+
+li.alt.green {
+  background-color: #236823;
+  color: #133813;
+  text-shadow: 0 1px 0 #2b802b
+}
+
+li.alt.cyan {
+  background-color: #1e5957;
+  color: #0e2928;
+  text-shadow: 0 1px 0 #26716e
+}
+
+li.alt.blue {
+  background-color: #2b5481;
+  color: #1b3551;
+  text-shadow: 0 1px 0 #336499
+}
+
+li.alt.violet {
+  background-color: #5e246c;
+  color: #34143c;
+  text-shadow: 0 1px 0 #732c84
+}
+
+li.alt.pink {
+  background-color: #9e6183;
+  color: #774962;
+  text-shadow: 0 1px 0 #aa7593
 }
 
 .group:before,
