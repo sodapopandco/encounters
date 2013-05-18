@@ -1,0 +1,218 @@
+// Light Theme
+body.light {
+  $body: #fcfcfc;
+
+  // Neutral
+  $background: #f8f8f8;
+  $line: #f0f0f0;
+  $selection: #e0e0e0;
+  $invisibles: #d0d0d0;
+  $comments: #909090;
+  $punctuation: #707070;
+  $foreground: #505050;
+  $highlight: #202020;
+
+  // Primary
+  $red: #ac0000;
+  $orange: #bd5000;
+  $yellow: #bf9400;
+  $green: #008b00;
+  $cyan: #007773;
+  $blue: #0051ac;
+  $violet: #740091;
+  $pink: #ce318a;
+
+  // Secondary
+  $alt-red: #f06161;
+  $alt-orange: #fda361;
+  $alt-yellow: #ffdc61;
+  $alt-green: #61d461;
+  $alt-cyan: #61c4c0;
+  $alt-blue: #61a4f0;
+  $alt-violet: #c161d9;
+  $alt-pink: #fd98d1;
+
+  background-color: $body;
+  color: $foreground;
+
+  h1 {
+    color: $highlight;
+
+    + p {
+      &:before {
+        color: $green;
+      }
+    }
+  }
+
+  span.caret {
+    background-color: saturate($alt-blue, 25%);
+    color: $body;
+  }
+
+  // Colour
+  li {
+    > ul {
+      background-color: $background;
+      color: $comments;
+    }
+
+    em {
+      color: $foreground;
+    }
+
+    &.colour {
+      box-shadow:
+        inset 0 -.125em 0 transparentize(#000, .875),
+        0 .125em 0 transparentize(#000, .9375)
+      ;
+    }
+
+    // Neutral
+    &.background {
+      background-color: $background;
+      color: darken($background, 12.5%);
+      text-shadow-color: lighten($background, 6.25%);
+    }
+
+    &.line {
+      background-color: $line;
+      color: darken($line, 12.5%);
+      text-shadow-color: lighten($line, 6.25%);
+    }
+
+    &.selection {
+      background-color: $selection;
+      color: darken($selection, 12.5%);
+      text-shadow-color: lighten($selection, 6.25%);
+    }
+
+    &.invisibles {
+      background-color: $invisibles;
+      color: darken($invisibles, 12.5%);
+      text-shadow-color: lighten($invisibles, 6.25%);
+    }
+
+    &.comments {
+      background-color: $comments;
+      color: darken($comments, 12.5%);
+      text-shadow-color: lighten($comments, 6.25%);
+    }
+
+    &.punctuation {
+      background-color: $punctuation;
+      color: darken($punctuation, 12.5%);
+      text-shadow-color: lighten($punctuation, 6.25%);
+    }
+
+    &.foreground {
+      background-color: $foreground;
+      color: darken($foreground, 12.5%);
+      text-shadow-color: lighten($foreground, 6.25%);
+    }
+
+    &.highlight {
+      background-color: $highlight;
+      color: darken($highlight, 12.5%);
+      text-shadow-color: lighten($highlight, 6.25%);
+    }
+
+    // Primary
+    &.red {
+      background-color: $red;
+      color: darken($red, 12.5%);
+      text-shadow-color: lighten($red, 6.25%);
+    }
+
+    &.orange {
+      background-color: $orange;
+      color: darken($orange, 12.5%);
+      text-shadow-color: lighten($orange, 6.25%);
+    }
+
+    &.yellow {
+      background-color: $yellow;
+      color: darken($yellow, 12.5%);
+      text-shadow-color: lighten($yellow, 6.25%);
+    }
+
+    &.green {
+      background-color: $green;
+      color: darken($green, 12.5%);
+      text-shadow-color: lighten($green, 6.25%);
+    }
+
+    &.cyan {
+      background-color: $cyan;
+      color: darken($cyan, 12.5%);
+      text-shadow-color: lighten($cyan, 6.25%);
+    }
+
+    &.blue {
+      background-color: $blue;
+      color: darken($blue, 12.5%);
+      text-shadow-color: lighten($blue, 6.25%);
+    }
+
+    &.violet {
+      background-color: $violet;
+      color: darken($violet, 12.5%);
+      text-shadow-color: lighten($violet, 6.25%);
+    }
+
+    &.pink {
+      background-color: $pink;
+      color: darken($pink, 12.5%);
+      text-shadow-color: lighten($pink, 6.25%);
+    }
+
+    // Secondary
+    &.alt.red {
+      background-color: $alt-red;
+      color: darken($alt-red, 12.5%);
+      text-shadow-color: lighten($alt-red, 6.25%);
+    }
+
+    &.alt.orange {
+      background-color: $alt-orange;
+      color: darken($alt-orange, 12.5%);
+      text-shadow-color: lighten($alt-orange, 6.25%);
+    }
+
+    &.alt.yellow {
+      background-color: $alt-yellow;
+      color: darken($alt-yellow, 12.5%);
+      text-shadow-color: lighten($alt-yellow, 6.25%);
+    }
+
+    &.alt.green {
+      background-color: $alt-green;
+      color: darken($alt-green, 12.5%);
+      text-shadow-color: lighten($alt-green, 6.25%);
+    }
+
+    &.alt.cyan {
+      background-color: $alt-cyan;
+      color: darken($alt-cyan, 12.5%);
+      text-shadow-color: lighten($alt-cyan, 6.25%);
+    }
+
+    &.alt.blue {
+      background-color: $alt-blue;
+      color: darken($alt-blue, 12.5%);
+      text-shadow-color: lighten($alt-blue, 6.25%);
+    }
+
+    &.alt.violet {
+      background-color: $alt-violet;
+      color: darken($alt-violet, 12.5%);
+      text-shadow-color: lighten($alt-violet, 6.25%);
+    }
+
+    &.alt.pink {
+      background-color: $alt-pink;
+      color: darken($alt-pink, 12.5%);
+      text-shadow-color: lighten($alt-pink, 6.25%);
+    }
+  }
+}
