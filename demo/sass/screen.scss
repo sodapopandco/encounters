@@ -13,14 +13,21 @@ $monospace: "source-code-pro", monospace;
 @import "light";
 
 // Global
-* { box-sizing: border-box; text-rendering: optimizeLegibility; transition: all .2s ease-in-out; }
+* { box-sizing: border-box; text-rendering: optimizeLegibility; transition: all .25s ease-in-out; }
 a { color: inherit; text-decoration: none; }
 
 // Layout
 body {
+  opacity: 1;
   padding: .375em;
   font: $base $monospace;
   text-align: center;
+  transition: opacity 2s;
+}
+
+.wf-loading body {
+  opacity: 0;
+  transition: none;
 }
 
 [role="main"] {
