@@ -415,8 +415,6 @@ a {
 
 body {
   padding: .375em;
-  background-color: #101010;
-  color: #d0d0d0;
   font: 16px "source-code-pro", monospace;
   text-align: center
 }
@@ -428,7 +426,6 @@ body {
 
 h1 {
   margin-bottom: 0;
-  color: #f0f0f0;
   font: bold 2.25em "futura-pt", sans-serif
 }
 
@@ -438,19 +435,16 @@ h1 + p {
 }
 
 h1 + p:before {
-  content: "> ";
-  color: #51b951
+  content: "> "
 }
 
-h1 + p span.caret {
+span.caret {
   display: inline-block;
   -webkit-animation: caretAnimation 1.5s infinite;
   -o-animation: caretAnimation 1.5s infinite;
   animation: caretAnimation 1.5s infinite;
   margin-left: .5em;
   width: .125em;
-  background-color: #ffd440;
-  color: #101010;
   text-indent: -9999px
 }
 
@@ -473,6 +467,7 @@ li.colour {
   font: bold 16px "futura-pt", sans-serif;
   letter-spacing: .0625em;
   line-height: 1.125em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
   text-transform: uppercase
 }
 
@@ -491,12 +486,12 @@ li.colour:focus > ul {
   transform: rotate(-2deg)
 }
 
-li.colour b {
+li b {
   display: table-cell;
   vertical-align: middle
 }
 
-li.colour > ul {
+li > ul {
   opacity: 0;
   position: absolute;
   z-index: 1;
@@ -504,10 +499,8 @@ li.colour > ul {
   left: -20%;
   padding: .75em 1em;
   width: 140%;
-  background-color: #f0f0f0;
   border-radius: .333333333em;
   box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
-  color: gray;
   font: 12px/1.16667em "source-code-pro", monospace;
   text-shadow: none;
   -webkit-transform: rotate(-8deg);
@@ -516,157 +509,183 @@ li.colour > ul {
   transform: rotate(-8deg)
 }
 
-li.colour > ul li {
+li > ul li {
   list-style: none
 }
 
-li.colour > ul em {
-  color: #181818;
+li em {
   font-style: normal
 }
 
-li.background {
+body.dark {
+  background-color: #101010;
+  color: #d0d0d0
+}
+
+body.dark h1 {
+  color: #f0f0f0
+}
+
+body.dark h1 + p:before {
+  color: #51b951
+}
+
+body.dark span.caret {
+  background-color: #ffd440;
+  color: #101010
+}
+
+body.dark li > ul {
+  background-color: #f0f0f0;
+  color: gray
+}
+
+body.dark li em {
+  color: #181818
+}
+
+body.dark li.background {
   background-color: #181818;
   color: black;
-  text-shadow: 0 1px 0 #282828
+  text-shadow-color: #282828
 }
 
-li.line {
+body.dark li.line {
   background-color: #202020;
   color: black;
-  text-shadow: 0 1px 0 #303030
+  text-shadow-color: #303030
 }
 
-li.selection {
+body.dark li.selection {
   background-color: #303030;
   color: #101010;
-  text-shadow: 0 1px 0 #404040
+  text-shadow-color: #404040
 }
 
-li.invisibles {
+body.dark li.invisibles {
   background-color: #404040;
   color: #202020;
-  text-shadow: 0 1px 0 #505050
+  text-shadow-color: #505050
 }
 
-li.comments {
+body.dark li.comments {
   background-color: gray;
   color: #606060;
-  text-shadow: 0 1px 0 #909090
+  text-shadow-color: #909090
 }
 
-li.punctuation {
+body.dark li.punctuation {
   background-color: #a0a0a0;
   color: gray;
-  text-shadow: 0 1px 0 #b0b0b0
+  text-shadow-color: #b0b0b0
 }
 
-li.foreground {
+body.dark li.foreground {
   background-color: #d0d0d0;
   color: #b0b0b0;
-  text-shadow: 0 1px 0 #e0e0e0
+  text-shadow-color: #e0e0e0
 }
 
-li.highlight {
+body.dark li.highlight {
   background-color: #f0f0f0;
   color: #d0d0d0;
-  text-shadow: 0 1px 0 white
+  text-shadow-color: white
 }
 
-li.red {
+body.dark li.red {
   background-color: #d65656;
   color: #be2e2e;
-  text-shadow: 0 1px 0 #dc7070
+  text-shadow-color: #dc7070
 }
 
-li.orange {
+body.dark li.orange {
   background-color: #e59458;
   color: #db7122;
-  text-shadow: 0 1px 0 #e9a674
+  text-shadow-color: #e9a674
 }
 
-li.yellow {
+body.dark li.yellow {
   background-color: #e7c758;
   color: #dfb420;
-  text-shadow: 0 1px 0 #ebd074
+  text-shadow-color: #ebd074
 }
 
-li.green {
+body.dark li.green {
   background-color: #51b951;
   color: #3a903a;
-  text-shadow: 0 1px 0 #68c268
+  text-shadow-color: #68c268
 }
 
-li.cyan {
+body.dark li.cyan {
   background-color: #4fa8a5;
   color: #3b7d7a;
-  text-shadow: 0 1px 0 #62b5b2
+  text-shadow-color: #62b5b2
 }
 
-li.blue {
+body.dark li.blue {
   background-color: #5692d6;
   color: #2e72be;
-  text-shadow: 0 1px 0 #70a3dc
+  text-shadow-color: #70a3dc
 }
 
-li.violet {
+body.dark li.violet {
   background-color: #a952bf;
   color: #853999;
-  text-shadow: 0 1px 0 #b569c8
+  text-shadow-color: #b569c8
 }
 
-li.pink {
+body.dark li.pink {
   background-color: #ed91c6;
   color: #e45aaa;
-  text-shadow: 0 1px 0 #f1acd4
+  text-shadow-color: #f1acd4
 }
 
-li.alt.red {
+body.dark li.alt.red {
   background-color: #812b2b;
   color: #511b1b;
-  text-shadow: 0 1px 0 #993333
+  text-shadow-color: #993333
 }
 
-li.alt.orange {
+body.dark li.alt.orange {
   background-color: #8d572f;
   color: #5d391f;
-  text-shadow: 0 1px 0 #a56637
+  text-shadow-color: #a56637
 }
 
-li.alt.yellow {
+body.dark li.alt.yellow {
   background-color: #8f7930;
   color: #5f5120;
-  text-shadow: 0 1px 0 #a78d38
+  text-shadow-color: #a78d38
 }
 
-li.alt.green {
+body.dark li.alt.green {
   background-color: #236823;
   color: #133813;
-  text-shadow: 0 1px 0 #2b802b
+  text-shadow-color: #2b802b
 }
 
-li.alt.cyan {
+body.dark li.alt.cyan {
   background-color: #1e5957;
   color: #0e2928;
-  text-shadow: 0 1px 0 #26716e
+  text-shadow-color: #26716e
 }
 
-li.alt.blue {
+body.dark li.alt.blue {
   background-color: #2b5481;
   color: #1b3551;
-  text-shadow: 0 1px 0 #336499
+  text-shadow-color: #336499
 }
 
-li.alt.violet {
+body.dark li.alt.violet {
   background-color: #5e246c;
   color: #34143c;
-  text-shadow: 0 1px 0 #732c84
+  text-shadow-color: #732c84
 }
 
-li.alt.pink {
+body.dark li.alt.pink {
   background-color: #9e6183;
   color: #774962;
-  text-shadow: 0 1px 0 #aa7593
+  text-shadow-color: #aa7593
 }
 
 .group:before,
