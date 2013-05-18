@@ -59,12 +59,25 @@ span.caret {
 ul.code {
   margin: .5em auto 1.25em;
   padding: .75em;
-  width: 44.25em;
+  width: 47.25em;
+  border-radius: .125em;
+  counter-reset: li;
   list-style: none;
+
+  li {
+    &:before {
+      content: counter(li);
+      position: absolute;
+      width: 1.5em;
+      counter-increment: li;
+      text-align: right;
+    }
+  }
 }
 
 pre {
   margin: 0;
+  padding-left: 3em;
   font: 14px $monospace;
   text-align: left;
 }

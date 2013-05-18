@@ -52,6 +52,10 @@ body.dark {
 
   ul.code {
     background-color: $background;
+
+    li:before {
+      color: $invisibles;
+    }
   }
 
   .support.function {

@@ -464,12 +464,23 @@ span.caret {
 ul.code {
   margin: .5em auto 1.25em;
   padding: .75em;
-  width: 44.25em;
+  width: 47.25em;
+  border-radius: .125em;
+  counter-reset: li;
   list-style: none
+}
+
+ul.code li:before {
+  content: counter(li);
+  position: absolute;
+  width: 1.5em;
+  counter-increment: li;
+  text-align: right
 }
 
 pre {
   margin: 0;
+  padding-left: 3em;
   font: 14px "source-code-pro", monospace;
   text-align: left
 }
@@ -563,6 +574,10 @@ body.dark span.caret {
 
 body.dark ul.code {
   background-color: #181818
+}
+
+body.dark ul.code li:before {
+  color: #404040
 }
 
 body.dark .support.function {
@@ -762,6 +777,10 @@ body.light span.caret {
 
 body.light ul.code {
   background-color: #f8f8f8
+}
+
+body.light ul.code li:before {
+  color: #d0d0d0
 }
 
 body.light .support.function {
