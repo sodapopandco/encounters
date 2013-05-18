@@ -398,8 +398,7 @@ table {
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
 }
 
 a {
@@ -408,20 +407,8 @@ a {
 }
 
 body {
-  opacity: 1;
-  padding: .375em;
   font: 16px "source-code-pro", monospace;
-  text-align: center;
-  -webkit-transition: opacity 2s;
-  -o-transition: opacity 2s;
-  transition: opacity 2s
-}
-
-.wf-loading body {
-  opacity: 0;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none
+  text-align: center
 }
 
 [role="main"] {
