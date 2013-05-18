@@ -1,7 +1,7 @@
-// Global Variables
-$body-size: 16px;
-$display: "futura-pt", "Futura", sans-serif;
-$monospace: "source-code-pro", monospace;
+// Type
+$body-text-size: 16px;
+$display-font: "futura-pt", "Futura", sans-serif;
+$monospace-font: "source-code-pro", monospace;
 
 // Neutral Colours
 $base-01: #181818;
@@ -19,7 +19,7 @@ a { color: inherit; text-decoration: none; }
 
 // Layout
 body {
-  font: $body-size $monospace;
+  font: $body-text-size $monospace-font;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ body {
 // Header
 h1 {
   margin-bottom: 0;
-  font: bold 2.25em $display;
+  font: bold 2.25em $display-font;
 
   &.section {
     margin-bottom: .25em;
@@ -62,7 +62,7 @@ span.caret {
 pre {
   margin: 0;
   padding-left: 32px;
-  font: 14px/1.5 $monospace;
+  font: 14px/1.5 $monospace-font;
   text-align: left;
 }
 
@@ -121,7 +121,7 @@ li {
     width: 5em;
     height: 5em;
     border-radius: .125em;
-    font: $body-size $display;
+    font: $body-text-size $display-font;
     letter-spacing: .0625em;
     line-height: 1.125em;
     text-shadow: 0 1px 0 transparentize(#fff, .9375);
@@ -202,7 +202,7 @@ li {
     width: 140%;
     border-radius: .333333333em;
     box-shadow: 0 .333333333em 0 transparentize(#000, .875);
-    font: 12px/1.166666667em $monospace;
+    font: 12px/1.166666667em $monospace-font;
     text-shadow: none;
     transform: rotate(-8deg);
     transition: all .25s;
