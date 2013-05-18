@@ -461,7 +461,15 @@ span.caret {
   text-indent: -9999px
 }
 
+ul.code {
+  margin: .5em auto 1.25em;
+  padding: .75em;
+  width: 44.25em;
+  list-style: none
+}
+
 pre {
+  margin: 0;
   font: 14px "source-code-pro", monospace;
   text-align: left
 }
@@ -553,7 +561,7 @@ body.dark span.caret {
   color: #101010
 }
 
-body.dark pre {
+body.dark ul.code {
   background-color: #181818
 }
 
@@ -752,7 +760,7 @@ body.light span.caret {
   color: #fcfcfc
 }
 
-body.light pre {
+body.light ul.code {
   background-color: #f8f8f8
 }
 
