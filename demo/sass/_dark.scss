@@ -66,11 +66,11 @@ body.dark {
     color: $red;
   }
 
-  .tag {
+  .function, .tag {
     color: $yellow;
   }
 
-  .attribute {
+  .storage, .attribute {
     color: $orange;
   }
 
@@ -82,7 +82,7 @@ body.dark {
     color: $cyan;
   }
 
-  .support.type {
+  .variable.parameter, .support.type {
     color: $blue;
   }
 

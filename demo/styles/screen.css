@@ -583,10 +583,12 @@ body.dark .support.function {
   color: #d65656
 }
 
+body.dark .function,
 body.dark .tag {
   color: #e7c758
 }
 
+body.dark .storage,
 body.dark .attribute {
   color: #e59458
 }
@@ -601,6 +603,7 @@ body.dark .support.constant {
   color: #4fa8a5
 }
 
+body.dark .variable.parameter,
 body.dark .support.type {
   color: #5692d6
 }
