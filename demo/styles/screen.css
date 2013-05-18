@@ -447,6 +447,13 @@ span.caret {
   text-indent: -9999px
 }
 
+pre {
+  margin: 0;
+  padding-left: 32px;
+  font: 14px/1.5 "source-code-pro", monospace;
+  text-align: left
+}
+
 ul.code {
   margin: .5em auto 1.25em;
   padding: .75em;
@@ -457,6 +464,21 @@ ul.code {
   list-style: none
 }
 
+ul.code.andale,
+ul.code.andale pre {
+  font-family: "Andale Mono", monospace
+}
+
+ul.code.monaco,
+ul.code.monaco pre {
+  font-family: Monaco, monospace
+}
+
+ul.code.monaco,
+ul.code.menlo pre {
+  font-family: Menlo, monospace
+}
+
 ul.code li:before {
   content: counter(li);
   position: absolute;
@@ -464,13 +486,6 @@ ul.code li:before {
   font-size: 14px;
   counter-increment: li;
   text-align: right
-}
-
-pre {
-  margin: 0;
-  padding-left: 32px;
-  font: 14px/1.5 "source-code-pro", monospace;
-  text-align: left
 }
 
 ul.colours {
@@ -947,21 +962,6 @@ body.light li.pink-02 {
   background: #fd82c8;
   color: #fc43ac;
   text-shadow: 0 0.07143em 0 #fea1d6
-}
-
-ul.andale,
-ul.andale pre {
-  font-family: "Andale Mono", monospace
-}
-
-ul.monaco,
-ul.monaco pre {
-  font: Monaco, monospace
-}
-
-ul.monaco,
-ul.menlo pre {
-  font-family: Menlo, monospace
 }
 
 .group:before,
