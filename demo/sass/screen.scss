@@ -139,6 +139,7 @@ li {
     font: 12px/1.166666667em $monospace;
     text-shadow: none;
     transform: rotate(-8deg);
+    transition: all .25s;
 
     li {
       list-style: none;

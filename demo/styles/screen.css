@@ -544,7 +544,10 @@ li > ul {
   -webkit-transform: rotate(-8deg);
   -ms-transform: rotate(-8deg);
   -o-transform: rotate(-8deg);
-  transform: rotate(-8deg)
+  transform: rotate(-8deg);
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s
 }
 
 li > ul li {
