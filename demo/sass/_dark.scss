@@ -50,6 +50,10 @@ body.dark {
     color: $body;
   }
 
+  pre {
+    background-color: $background;
+  }
+
   .support.function {
     color: $red;
   }
