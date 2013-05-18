@@ -58,20 +58,32 @@ body.light {
     }
   }
 
-  .support.function {
+  .comment {
+    color: $comments;
+  }
+
+  .variable, .support.function {
     color: $red;
   }
 
-  .tag {
+  .function, .tag {
     color: $yellow;
   }
 
-  .attribute {
+  .storage, .attribute {
     color: $orange;
   }
 
-  .string {
+  .string, .number, .unit {
     color: $green;
+  }
+
+  .support.constant {
+    color: $cyan;
+  }
+
+  .variable.parameter, .support.type {
+    color: $blue;
   }
 
   .keyword {

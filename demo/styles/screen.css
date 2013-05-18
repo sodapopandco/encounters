@@ -435,8 +435,8 @@ h1 {
 }
 
 h1.section {
-  margin-bottom: .222222222em;
-  font-size: 1.125em;
+  margin-bottom: .25em;
+  font-size: 1em;
   letter-spacing: .125em;
   text-transform: uppercase
 }
@@ -802,20 +802,38 @@ body.light ul.code li:before {
   color: #d0d0d0
 }
 
+body.light .comment {
+  color: #909090
+}
+
+body.light .variable,
 body.light .support.function {
   color: #ac0000
 }
 
+body.light .function,
 body.light .tag {
   color: #bf9400
 }
 
+body.light .storage,
 body.light .attribute {
   color: #bd5000
 }
 
-body.light .string {
+body.light .string,
+body.light .number,
+body.light .unit {
   color: #008b00
+}
+
+body.light .support.constant {
+  color: #007773
+}
+
+body.light .variable.parameter,
+body.light .support.type {
+  color: #0051ac
 }
 
 body.light .keyword {
