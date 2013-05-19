@@ -21,10 +21,10 @@ body.light {
 
   img#toggle {
     &:hover, &:focus {
-      opacity: .25;
+      opacity: .49;
     }
 
-    opacity: .125;
+    opacity: .18;
     transform: rotate(180deg);
   }
 

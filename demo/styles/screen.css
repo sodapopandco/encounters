@@ -454,7 +454,7 @@ span.caret {
 }
 
 img#toggle {
-  opacity: .5;
+  opacity: .4;
   cursor: pointer;
   -webkit-transition: all .25s;
   -o-transition: all .25s;
@@ -835,7 +835,7 @@ body.light span.caret {
 }
 
 body.light img#toggle {
-  opacity: .125;
+  opacity: .18;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -844,7 +844,7 @@ body.light img#toggle {
 
 body.light img#toggle:hover,
 body.light img#toggle:focus {
-  opacity: .25
+  opacity: .49
 }
 
 body.light ul.examples {
