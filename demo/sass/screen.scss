@@ -215,7 +215,7 @@ li {
     text-shadow: 0 .071428571em 0 lighten($base-08, 6.25%);
   }
 
-  // Primary
+  // Dark
   &.red-01 {
     background: $red-01;
     color: darken($red-01, 12.5%);
@@ -264,7 +264,7 @@ li {
     text-shadow: 0 .071428571em 0 lighten($pink-01, 3.125%);
   }
 
-  // Secondary
+  // Light
   &.red-02 {
     background: $red-02;
     color: darken($red-02, 18.75%);
