@@ -2,8 +2,15 @@
 @import "variables";
 
 // Global
-* { box-sizing: border-box; text-rendering: optimizeLegibility; }
-a { color: inherit; text-decoration: none; }
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 // Layout
 body {
