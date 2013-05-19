@@ -459,16 +459,9 @@ span.caret {
   text-indent: -9999px
 }
 
-pre {
-  margin: 0;
-  padding-left: 32px;
-  font: 14px/1.5 "source-code-pro", monospace;
-  text-align: left
-}
-
 ul.code {
   margin: .5em auto 1.25em;
-  padding: .75em;
+  padding: 0;
   width: 53.25em;
   max-height: 21em;
   overflow: scroll;
@@ -500,10 +493,18 @@ ul.code li {
 ul.code li:before {
   content: counter(li);
   position: absolute;
-  width: 1.5em;
+  padding-right: 8px;
+  width: 32px;
   font-size: 14px;
   counter-increment: li;
   text-align: right
+}
+
+pre {
+  margin: 0;
+  padding-left: 48px;
+  font: 14px/1.5 "source-code-pro", monospace;
+  text-align: left
 }
 
 ul.colours {
