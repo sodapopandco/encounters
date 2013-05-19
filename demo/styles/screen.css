@@ -466,6 +466,22 @@ img#toggle:focus {
   opacity: 1
 }
 
+.pulse {
+  -webkit-animation: pulse 1.5s infinite;
+  -o-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: paused;
+  -o-animation: paused;
+  animation: paused
+}
+
 ul.examples {
   margin: .5em auto 1.25em;
   padding: 0;
@@ -917,6 +933,16 @@ body.light .source {
   }
 }
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: .4
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
 @-webkit-keyframes caretBlink {
   0%, 24%, 76%, 100% {
     opacity: 0
@@ -933,6 +959,26 @@ body.light .source {
   }
 
   25%, 75% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes pulse {
+  0%, 100% {
+    opacity: .4
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+@-o-keyframes pulse {
+  0%, 100% {
+    opacity: .4
+  }
+
+  50% {
     opacity: 1
   }
 }
