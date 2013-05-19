@@ -72,12 +72,7 @@ img#toggle {
 }
 
 .pulse {
-  animation: pulse 1.5s infinite;
-  animation-delay: 5s;
-
-  &:hover, &:focus {
-    animation: paused;
-  }
+  animation: pulse 6s infinite;
 }
 
 // Code
