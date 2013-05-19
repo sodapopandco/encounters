@@ -506,9 +506,8 @@ li.colour {
   float: left;
   position: relative;
   margin: .375em;
-  padding: .5em;
-  width: 5em;
-  height: 5em;
+  width: 96px;
+  height: 96px;
   border-radius: .125em;
   font: 16px "futura-pt", "Futura", sans-serif;
   letter-spacing: .0625em;
@@ -525,7 +524,7 @@ li.colour:focus {
 li.colour:hover > ul,
 li.colour:focus > ul {
   opacity: 1;
-  bottom: 20%;
+  top: 50%;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
@@ -580,7 +579,8 @@ li.base-08 {
   text-shadow: 0 0.07143em 0 white
 }
 
-li b {
+li b,
+li > ul {
   display: table-cell;
   vertical-align: middle
 }
@@ -589,10 +589,13 @@ li > ul {
   opacity: 0;
   position: absolute;
   z-index: 1;
-  bottom: 0;
-  left: -30%;
-  padding: .75em 1em;
-  width: 160%;
+  top: 75%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -72px;
+  padding: 8px .5em;
+  width: 144px;
+  height: 60px;
   background: #f8f8f8;
   border-radius: .333333333em;
   box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);

@@ -118,9 +118,9 @@ li {
     float: left;
     position: relative;
     margin: .375em;
-    padding: .5em;
-    width: 5em;
-    height: 5em;
+    // padding: .5em;
+    width: 96px;
+    height: 96px;
     border-radius: .125em;
     font: $body-text-size $display-font;
     letter-spacing: .0625em;
@@ -133,7 +133,7 @@ li {
 
       > ul {
         opacity: 1;
-        bottom: 20%;
+        top: 50%;
         transform: rotate(-2deg);
       }
     }
@@ -188,7 +188,7 @@ li {
     text-shadow: 0 .071428571em 0 lighten($base-08, 6.25%);
   }
 
-  b {
+  b, > ul {
     display: table-cell;
     vertical-align: middle;
   }
@@ -197,10 +197,13 @@ li {
     opacity: 0;
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    left: -30%;
-    padding: .75em 1em;
-    width: 160%;
+    top: 75%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -72px;
+    padding: 8px .5em;
+    width: 144px;
+    height: 60px;
     background: $base-08;
     border-radius: .333333333em;
     box-shadow: 0 .333333333em 0 transparentize(#000, .875);
