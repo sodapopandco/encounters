@@ -162,6 +162,7 @@ li {
       > ul {
         opacity: 1;
         top: 50%;
+        text-transform: lowercase;
         transform: rotate(-2deg);
       }
     }
@@ -314,7 +315,7 @@ li {
     text-shadow: 0 .071428571em 0 lighten($pink-02, 6.25%);
   }
 
-  b, > ul {
+  b {
     display: table-cell;
     vertical-align: middle;
   }
@@ -326,9 +327,9 @@ li {
     top: 75%;
     left: 50%;
     margin-top: -30px;
-    margin-left: -72px;
+    margin-left: -78px;
     padding: 8px .5em;
-    width: 144px;
+    width: 156px;
     height: 60px;
     background: #fff;
     border-radius: .166666667em;
