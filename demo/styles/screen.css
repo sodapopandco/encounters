@@ -407,6 +407,7 @@ a {
 }
 
 body {
+  padding: 3em 1.5em;
   font: 16px "source-code-pro", monospace;
   text-align: center
 }
@@ -417,7 +418,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 0;
+  margin: 0;
   font: bold 2.25em "futura-pt", "Futura", sans-serif
 }
 
