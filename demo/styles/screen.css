@@ -453,6 +453,19 @@ span.caret {
   text-indent: -9999px
 }
 
+img#toggle {
+  opacity: .5;
+  cursor: pointer;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s
+}
+
+img#toggle:hover,
+img#toggle:focus {
+  opacity: 1
+}
+
 ul.examples {
   margin: .5em auto 1.25em;
   padding: 0;
@@ -819,6 +832,19 @@ body.light p.tagline:before {
 
 body.light span.caret {
   background: #3191fb
+}
+
+body.light img#toggle {
+  opacity: .125;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+body.light img#toggle:hover,
+body.light img#toggle:focus {
+  opacity: .25
 }
 
 body.light ul.examples {

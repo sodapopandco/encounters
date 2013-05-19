@@ -19,6 +19,15 @@ body.light {
     background: saturate($blue-02, 25%);
   }
 
+  img#toggle {
+    &:hover, &:focus {
+      opacity: .25;
+    }
+
+    opacity: .125;
+    transform: rotate(180deg);
+  }
+
   ul.examples {
     background: $base-08;
 

@@ -52,6 +52,16 @@ span.caret {
   text-indent: -9999px;
 }
 
+img#toggle {
+  &:hover, &:focus {
+    opacity: 1;
+  }
+
+  opacity: .5;
+  cursor: pointer;
+  transition: all .25s;
+}
+
 // Code
 ul.examples {
   margin: .5em auto 1.25em;
