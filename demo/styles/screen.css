@@ -407,9 +407,20 @@ a {
 }
 
 body {
+  opacity: 1;
   padding: 3em 1.5em;
   font: 16px "source-code-pro", monospace;
-  text-align: center
+  text-align: center;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s
+}
+
+.wf-loading body {
+  opacity: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none
 }
 
 [role="main"] {
