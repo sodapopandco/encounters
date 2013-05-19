@@ -23,7 +23,7 @@ body.light {
     background: $base-08;
 
     li {
-      &.before {
+      &:before {
         color: $base-06;
       }
     }

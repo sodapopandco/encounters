@@ -23,7 +23,7 @@ body.dark {
     background: $base-01;
 
     li {
-      &.before {
+      &:before {
         color: $base-03;
       }
     }

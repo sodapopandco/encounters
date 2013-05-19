@@ -754,7 +754,7 @@ body.dark ul.examples {
   background: #181818
 }
 
-body.dark ul.examples li.before {
+body.dark ul.examples li:before {
   color: #303030
 }
 
@@ -825,7 +825,7 @@ body.light ul.examples {
   background: #f8f8f8
 }
 
-body.light ul.examples li.before {
+body.light ul.examples li:before {
   color: #e0e0e0
 }
 
