@@ -5,13 +5,13 @@ body.light {
 
   h1 {
     color: $base-01;
+  }
 
-    + p {
-      color: $base-04;
+  p.tagline {
+    color: $base-04;
 
-      &:before {
-        color: $green-01;
-      }
+    &:before {
+      color: $green-01;
     }
   }
 
@@ -19,11 +19,13 @@ body.light {
     background: saturate($blue-02, 25%);
   }
 
-  ul.code {
+  ul.examples {
     background: $base-08;
 
-    li:before {
-      color: $base-06;
+    li {
+      &.before {
+        color: $base-06;
+      }
     }
   }
 

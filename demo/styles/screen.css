@@ -453,7 +453,7 @@ span.caret {
   text-indent: -9999px
 }
 
-ul.code {
+ul.examples {
   margin: .5em auto 1.25em;
   padding: 0;
   width: 53.25em;
@@ -465,26 +465,26 @@ ul.code {
   list-style: none
 }
 
-ul.code.andale,
-ul.code.andale pre {
+ul.examples.andale,
+ul.examples.andale pre {
   font-family: "Andale Mono", monospace
 }
 
-ul.code.monaco,
-ul.code.monaco pre {
+ul.examples.monaco,
+ul.examples.monaco pre {
   font-family: Monaco, monospace
 }
 
-ul.code.monaco,
-ul.code.menlo pre {
+ul.examples.monaco,
+ul.examples.menlo pre {
   font-family: Menlo, monospace
 }
 
-ul.code li {
+ul.examples li {
   position: relative
 }
 
-ul.code li:before {
+ul.examples li:before {
   content: counter(li);
   position: absolute;
   padding-right: 8px;
@@ -738,11 +738,11 @@ body.dark h1 {
   color: #f8f8f8
 }
 
-body.dark h1 + p {
+body.dark p.tagline {
   color: #b0b0b0
 }
 
-body.dark h1 + p:before {
+body.dark p.tagline:before {
   color: #49c249
 }
 
@@ -750,11 +750,11 @@ body.dark span.caret {
   background: #ffd440
 }
 
-body.dark ul.code {
+body.dark ul.examples {
   background: #181818
 }
 
-body.dark ul.code li:before {
+body.dark ul.examples li.before {
   color: #303030
 }
 
@@ -809,11 +809,11 @@ body.light h1 {
   color: #181818
 }
 
-body.light h1 + p {
+body.light p.tagline {
   color: #606060
 }
 
-body.light h1 + p:before {
+body.light p.tagline:before {
   color: #008b00
 }
 
@@ -821,11 +821,11 @@ body.light span.caret {
   background: #3191fb
 }
 
-body.light ul.code {
+body.light ul.examples {
   background: #f8f8f8
 }
 
-body.light ul.code li:before {
+body.light ul.examples li.before {
   color: #e0e0e0
 }
 
