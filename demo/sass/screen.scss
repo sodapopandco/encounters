@@ -170,123 +170,147 @@ li {
   &.base-01 {
     background: $base-01;
     color: lighten($base-01, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-01, 6.25%);
   }
 
   &.base-02 {
     background: $base-02;
     color: lighten($base-02, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-02, 6.25%);
   }
 
   &.base-03 {
     background: $base-03;
     color: lighten($base-03, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-03, 6.25%);
   }
 
   &.base-04 {
     background: $base-04;
     color: lighten($base-04, 12.5%);
+    text-shadow: 0 -.071428571em 0 darken($base-04, 6.25%);
   }
 
   &.base-05 {
     background: $base-05;
     color: darken($base-05, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-05, 6.25%);
   }
 
   &.base-06 {
     background: $base-06;
     color: darken($base-06, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-06, 6.25%);
   }
 
   &.base-07 {
     background: $base-07;
     color: darken($base-07, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-07, 6.25%);
   }
 
   &.base-08 {
     background: $base-08;
     color: darken($base-08, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($base-08, 6.25%);
   }
 
   // Dark
   &.red-01 {
     background: $red-01;
     color: darken($red-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($red-01, 3.125%);
   }
 
   &.orange-01 {
     background: $orange-01;
     color: darken($orange-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($orange-01, 3.125%);
   }
 
   &.yellow-01 {
     background: $yellow-01;
     color: darken($yellow-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($yellow-01, 3.125%);
   }
 
   &.green-01 {
     background: $green-01;
     color: darken($green-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($green-01, 3.125%);
   }
 
   &.cyan-01 {
     background: $cyan-01;
     color: darken($cyan-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($cyan-01, 3.125%);
   }
 
   &.blue-01 {
     background: $blue-01;
     color: darken($blue-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($blue-01, 3.125%);
   }
 
   &.violet-01 {
     background: $violet-01;
     color: darken($violet-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($violet-01, 3.125%);
   }
 
   &.pink-01 {
     background: $pink-01;
     color: darken($pink-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($pink-01, 3.125%);
   }
 
   // Light
   &.red-02 {
     background: $red-02;
     color: darken($red-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($red-02, 6.25%);
   }
 
   &.orange-02 {
     background: $orange-02;
     color: darken($orange-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($orange-02, 6.25%);
   }
 
   &.yellow-02 {
     background: $yellow-02;
     color: darken($yellow-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($yellow-02, 6.25%);
   }
 
   &.green-02 {
     background: $green-02;
     color: darken($green-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($green-02, 6.25%);
   }
 
   &.cyan-02 {
     background: $cyan-02;
     color: darken($cyan-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($cyan-02, 6.25%);
   }
 
   &.blue-02 {
     background: $blue-02;
     color: darken($blue-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($blue-02, 6.25%);
   }
 
   &.violet-02 {
     background: $violet-02;
     color: darken($violet-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($violet-02, 6.25%);
   }
 
   &.pink-02 {
     background: $pink-02;
     color: darken($pink-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($pink-02, 6.25%);
   }
 
   b {
