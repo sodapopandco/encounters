@@ -445,9 +445,9 @@ h1 + p:before {
 
 span.caret {
   display: inline-block;
-  -webkit-animation: caretAnimation 1.5s infinite;
-  -o-animation: caretAnimation 1.5s infinite;
-  animation: caretAnimation 1.5s infinite;
+  -webkit-animation: caretBlink 1.5s infinite;
+  -o-animation: caretBlink 1.5s infinite;
+  animation: caretBlink 1.5s infinite;
   margin-left: .5em;
   width: .125em;
   text-indent: -9999px
@@ -881,7 +881,7 @@ body.light .source {
   clear: both
 }
 
-@keyframes caretAnimation {
+@keyframes caretBlink {
   0%, 24%, 76%, 100% {
     opacity: 0
   }
@@ -891,7 +891,7 @@ body.light .source {
   }
 }
 
-@-webkit-keyframes caretAnimation {
+@-webkit-keyframes caretBlink {
   0%, 24%, 76%, 100% {
     opacity: 0
   }
@@ -901,7 +901,7 @@ body.light .source {
   }
 }
 
-@-o-keyframes caretAnimation {
+@-o-keyframes caretBlink {
   0%, 24%, 76%, 100% {
     opacity: 0
   }
