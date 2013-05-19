@@ -434,12 +434,12 @@ h1.section {
   text-transform: uppercase
 }
 
-h1 + p {
+p.tagline {
   margin-top: 0;
   text-transform: lowercase
 }
 
-h1 + p:before {
+p.tagline:before {
   content: "> "
 }
 
@@ -527,11 +527,10 @@ li.colour:focus {
   cursor: pointer
 }
 
-li.colour:hover > ul,
-li.colour:focus > ul {
+li.colour:hover ul.info,
+li.colour:focus ul.info {
   opacity: 1;
   top: 50%;
-  text-transform: lowercase;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
@@ -687,7 +686,13 @@ li b {
   vertical-align: middle
 }
 
-li > ul {
+li em {
+  display: block;
+  font-style: normal;
+  font-size: 1.5em
+}
+
+ul.info {
   opacity: 0;
   position: absolute;
   z-index: 1;
@@ -713,20 +718,15 @@ li > ul {
   transition: all .25s
 }
 
-li > ul li {
+ul.info li {
   list-style: none
 }
 
-li > ul em {
+ul.info em {
   display: inline;
   color: #303030;
-  font-size: 1em
-}
-
-li em {
-  display: block;
-  font-style: normal;
-  font-size: 1.5em
+  font-size: 1em;
+  text-transform: lowercase
 }
 
 body.dark {
