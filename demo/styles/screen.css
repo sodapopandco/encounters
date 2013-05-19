@@ -451,9 +451,9 @@ p.tagline:before {
 
 span.caret {
   display: inline-block;
-  -webkit-animation: caretBlink 1.5s infinite;
-  -o-animation: caretBlink 1.5s infinite;
-  animation: caretBlink 1.5s infinite;
+  -webkit-animation: blink 1.5s steps(2, start) infinite;
+  -o-animation: blink 1.5s steps(2, start) infinite;
+  animation: blink 1.5s steps(2, start) infinite;
   margin-left: .5em;
   width: .125em;
   text-indent: -9999px
@@ -929,13 +929,9 @@ body.light .source {
   clear: both
 }
 
-@keyframes caretBlink {
-  0%, 24%, 76%, 100% {
-    opacity: 0
-  }
-
-  25%, 75% {
-    opacity: 1
+@keyframes blink {
+  100% {
+    visibility: hidden
   }
 }
 
@@ -949,23 +945,15 @@ body.light .source {
   }
 }
 
-@-webkit-keyframes caretBlink {
-  0%, 24%, 76%, 100% {
-    opacity: 0
-  }
-
-  25%, 75% {
-    opacity: 1
+@-webkit-keyframes blink {
+  100% {
+    visibility: hidden
   }
 }
 
-@-o-keyframes caretBlink {
-  0%, 24%, 76%, 100% {
-    opacity: 0
-  }
-
-  25%, 75% {
-    opacity: 1
+@-o-keyframes blink {
+  100% {
+    visibility: hidden
   }
 }
 

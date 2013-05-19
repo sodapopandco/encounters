@@ -55,7 +55,7 @@ p.tagline {
 
 span.caret {
   display: inline-block;
-  animation: caretBlink 1.5s infinite;
+  animation: blink 1.5s steps(2, start) infinite;
   margin-left: .5em;
   width: .125em;
   text-indent: -9999px;
@@ -359,9 +359,10 @@ ul.info {
 @import "helpers";
 
 // Animations
-@keyframes caretBlink {
-  0%, 24%, 76%, 100% { opacity: 0; }
-  25%, 75% { opacity: 1; }
+@keyframes blink {
+  100% {
+    visibility: hidden;
+  }
 }
 
 @keyframes pulse {
