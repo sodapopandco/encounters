@@ -198,11 +198,13 @@ li {
     position: absolute;
     z-index: 1;
     bottom: 0;
-    left: -20%;
+    left: -30%;
     padding: .75em 1em;
-    width: 140%;
+    width: 160%;
+    background: $base-08;
     border-radius: .333333333em;
     box-shadow: 0 .333333333em 0 transparentize(#000, .875);
+    color: $base-05;
     font: 12px/1.166666667em $monospace-font;
     text-shadow: none;
     transform: rotate(-8deg);
@@ -211,10 +213,18 @@ li {
     li {
       list-style: none;
     }
+
+    em {
+      display: inline;
+      color: $base-03;
+      font-size: 1em;
+    }
   }
 
   em {
+    display: block;
     font-style: normal;
+    font-size: 1.5em;
   }
 }
 

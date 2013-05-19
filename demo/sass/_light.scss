@@ -85,15 +85,6 @@ body.light {
 
   // Colour
   li {
-    > ul {
-      background: $base-08;
-      color: $base-05;
-    }
-
-    em {
-      color: $base-04;
-    }
-
     // Primary
     &.red-01 {
       background: $red-01;

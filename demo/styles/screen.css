@@ -590,11 +590,13 @@ li > ul {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  left: -20%;
+  left: -30%;
   padding: .75em 1em;
-  width: 140%;
+  width: 160%;
+  background: #f8f8f8;
   border-radius: .333333333em;
   box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
+  color: #b0b0b0;
   font: 12px/1.16667em "source-code-pro", monospace;
   text-shadow: none;
   -webkit-transform: rotate(-8deg);
@@ -610,8 +612,16 @@ li > ul li {
   list-style: none
 }
 
+li > ul em {
+  display: inline;
+  color: #303030;
+  font-size: 1em
+}
+
 li em {
-  font-style: normal
+  display: block;
+  font-style: normal;
+  font-size: 1.5em
 }
 
 body.dark {
@@ -685,108 +695,99 @@ body.dark .source {
   color: #e0e0e0
 }
 
-body.dark li > ul {
-  background: #f8f8f8;
-  color: #606060
-}
-
-body.dark li em {
-  color: #181818
-}
-
 body.dark li.red-01 {
   background: #e14b4b;
-  color: #cb2222;
+  color: #af1d1d;
   text-shadow: 0 0.07143em 0 #e66666
 }
 
 body.dark li.orange-01 {
   background: #f1924c;
-  color: #eb6e12;
+  color: #cd6010;
   text-shadow: 0 0.07143em 0 #f3a46a
 }
 
 body.dark li.yellow-01 {
   background: #f3cd4c;
-  color: #efbc10;
+  color: #d1a50e;
   text-shadow: 0 0.07143em 0 #f5d56a
 }
 
 body.dark li.green-01 {
   background: #49c249;
-  color: #339833;
+  color: #2b802b;
   text-shadow: 0 0.07143em 0 #61ca61
 }
 
 body.dark li.cyan-01 {
   background: #48afac;
-  color: #358280;
+  color: #2c6b69;
   text-shadow: 0 0.07143em 0 #5bbcb9
 }
 
 body.dark li.blue-01 {
   background: #4b92e1;
-  color: #2272cb;
+  color: #1d62af;
   text-shadow: 0 0.07143em 0 #66a3e6
 }
 
 body.dark li.violet-01 {
   background: #ae49c8;
-  color: #8a31a1;
+  color: #752988;
   text-shadow: 0 0.07143em 0 #b961cf
 }
 
 body.dark li.pink-01 {
   background: #f58ac7;
-  color: #f04fab;
+  color: #ed329d;
   text-shadow: 0 0.07143em 0 #f8a7d5
 }
 
 body.dark li.red-02 {
   background: #963232;
-  color: #7e2a2a;
+  color: #662222;
   text-shadow: 0 0.07143em 0 #a23636
 }
 
 body.dark li.orange-02 {
   background: #a46537;
-  color: #8c562f;
+  color: #744827;
   text-shadow: 0 0.07143em 0 #b06c3b
 }
 
 body.dark li.yellow-02 {
   background: #a68d38;
-  color: #8e7930;
+  color: #766528;
   text-shadow: 0 0.07143em 0 #b2973c
 }
 
 body.dark li.green-02 {
   background: #297929;
-  color: #216121;
+  color: #194919;
   text-shadow: 0 0.07143em 0 #2d852d
 }
 
 body.dark li.cyan-02 {
   background: #236765;
-  color: #1b4f4e;
+  color: #133736;
   text-shadow: 0 0.07143em 0 #277371
 }
 
 body.dark li.blue-02 {
   background: #326196;
-  color: #2a527e;
+  color: #224266;
   text-shadow: 0 0.07143em 0 #3669a2
 }
 
 body.dark li.violet-02 {
   background: #6d2a7e;
-  color: #582266;
+  color: #441a4e;
   text-shadow: 0 0.07143em 0 #772e8a
 }
 
 body.dark li.pink-02 {
   background: #b77199;
-  color: #ac5c8a;
+  color: #9a4e7a;
   text-shadow: 0 0.07143em 0 #bc7ca1
 }
 
@@ -859,15 +860,6 @@ body.light .keyword {
 
 body.light .source {
   color: #303030
-}
-
-body.light li > ul {
-  background: #f8f8f8;
-  color: #b0b0b0
-}
-
-body.light li em {
-  color: #606060
 }
 
 body.light li.red-01 {
