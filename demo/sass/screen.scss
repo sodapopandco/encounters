@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
 // Layout
 body {
   opacity: 1;
@@ -76,7 +81,7 @@ img#toggle {
 }
 
 // Code
-ul.examples {
+ul.code {
   margin: .5em auto 1.25em;
   padding: 0;
   width: 53.25em;

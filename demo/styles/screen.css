@@ -406,6 +406,11 @@ a {
   text-decoration: none
 }
 
+nav ul {
+  padding: 0;
+  list-style: none
+}
+
 body {
   opacity: 1;
   padding: 3em 1.5em;
@@ -473,22 +478,12 @@ img#toggle:focus {
 }
 
 .pulse {
-  -webkit-animation: pulse 1.5s infinite;
-  -o-animation: pulse 1.5s infinite;
-  animation: pulse 1.5s infinite;
-  -webkit-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s
+  -webkit-animation: pulse 6s infinite;
+  -o-animation: pulse 6s infinite;
+  animation: pulse 6s infinite
 }
 
-.pulse:hover,
-.pulse:focus {
-  -webkit-animation: paused;
-  -o-animation: paused;
-  animation: paused
-}
-
-ul.examples {
+ul.code {
   margin: .5em auto 1.25em;
   padding: 0;
   width: 53.25em;
@@ -500,26 +495,26 @@ ul.examples {
   list-style: none
 }
 
-ul.examples.andale,
-ul.examples.andale pre {
+ul.code.andale,
+ul.code.andale pre {
   font-family: "Andale Mono", monospace
 }
 
-ul.examples.monaco,
-ul.examples.monaco pre {
+ul.code.monaco,
+ul.code.monaco pre {
   font-family: Monaco, monospace
 }
 
-ul.examples.monaco,
-ul.examples.menlo pre {
+ul.code.monaco,
+ul.code.menlo pre {
   font-family: Menlo, monospace
 }
 
-ul.examples li {
+ul.code li {
   position: relative
 }
 
-ul.examples li:before {
+ul.code li:before {
   content: counter(li);
   position: absolute;
   padding-right: 8px;
@@ -785,11 +780,11 @@ body.dark span.caret {
   background: #ffd440
 }
 
-body.dark ul.examples {
+body.dark ul.code {
   background: #181818
 }
 
-body.dark ul.examples li:before {
+body.dark ul.code li:before {
   color: #303030
 }
 
@@ -869,11 +864,11 @@ body.light img#toggle:focus {
   opacity: .49
 }
 
-body.light ul.examples {
+body.light ul.code {
   background: #f8f8f8
 }
 
-body.light ul.examples li:before {
+body.light ul.code li:before {
   color: #e0e0e0
 }
 
@@ -936,11 +931,11 @@ body.light .source {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%, 50%, 73%, 100% {
     opacity: .4
   }
 
-  50% {
+  60.5%, 85.5% {
     opacity: 1
   }
 }
@@ -958,21 +953,21 @@ body.light .source {
 }
 
 @-webkit-keyframes pulse {
-  0%, 100% {
+  0%, 50%, 73%, 100% {
     opacity: .4
   }
 
-  50% {
+  60.5%, 85.5% {
     opacity: 1
   }
 }
 
 @-o-keyframes pulse {
-  0%, 100% {
+  0%, 50%, 73%, 100% {
     opacity: .4
   }
 
-  50% {
+  60.5%, 85.5% {
     opacity: 1
   }
 }
