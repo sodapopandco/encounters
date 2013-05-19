@@ -1,5 +1,4 @@
-// Toggle the dark and light themes
-$(".dark, .light").bind('click',function() {
-  $(this).toggleClass('dark light');
-  return false;
-})
+// Toggle between the dark and light themes
+$('#toggle').click(function() {
+    $('body').toggleClass('dark').toggleClass('light')
+});
