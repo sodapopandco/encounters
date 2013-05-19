@@ -410,11 +410,17 @@ body {
   opacity: 1;
   padding: 3em 1.5em;
   font: 16px "source-code-pro", monospace;
-  text-align: center
+  text-align: center;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s
 }
 
 .wf-loading body {
-  opacity: 0
+  opacity: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none
 }
 
 [role="main"] {

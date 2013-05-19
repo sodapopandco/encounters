@@ -11,10 +11,12 @@ body {
   padding: 3em 1.5em;
   font: $body-text-size $monospace-font;
   text-align: center;
+  transition: all .5s;
 }
 
 .wf-loading body {
   opacity: 0;
+  transition: none;
 }
 
 [role="main"] {
