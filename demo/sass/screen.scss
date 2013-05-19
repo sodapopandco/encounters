@@ -13,6 +13,26 @@ $base-06: #e0e0e0;
 $base-07: #f0f0f0;
 $base-08: #f8f8f8;
 
+// Dark Colours
+$red-01: #ac0000;
+$orange-01: #bd5000;
+$yellow-01: #bf9400;
+$green-01: #008b00;
+$cyan-01: #007773;
+$blue-01: #0051ac;
+$violet-01: #740091;
+$pink-01: #c63989;
+
+// Light Colours
+$red-02: #e14b4b;
+$orange-02: #f1924c;
+$yellow-02: #f3cd4c;
+$green-02: #49c249;
+$cyan-02: #48afac;
+$blue-02: #4b92e1;
+$violet-02: #ae49c8;
+$pink-02: #f58ac7;
+
 // Global
 * { box-sizing: border-box; text-rendering: optimizeLegibility; }
 a { color: inherit; text-decoration: none; }
@@ -193,6 +213,104 @@ li {
     background: $base-08;
     color: darken($base-08, 12.5%);
     text-shadow: 0 .071428571em 0 lighten($base-08, 6.25%);
+  }
+
+  // Primary
+  &.red-01 {
+    background: $red-01;
+    color: darken($red-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($red-01, 3.125%);
+  }
+
+  &.orange-01 {
+    background: $orange-01;
+    color: darken($orange-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($orange-01, 3.125%);
+  }
+
+  &.yellow-01 {
+    background: $yellow-01;
+    color: darken($yellow-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($yellow-01, 3.125%);
+  }
+
+  &.green-01 {
+    background: $green-01;
+    color: darken($green-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($green-01, 3.125%);
+  }
+
+  &.cyan-01 {
+    background: $cyan-01;
+    color: darken($cyan-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($cyan-01, 3.125%);
+  }
+
+  &.blue-01 {
+    background: $blue-01;
+    color: darken($blue-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($blue-01, 3.125%);
+  }
+
+  &.violet-01 {
+    background: $violet-01;
+    color: darken($violet-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($violet-01, 3.125%);
+  }
+
+  &.pink-01 {
+    background: $pink-01;
+    color: darken($pink-01, 12.5%);
+    text-shadow: 0 .071428571em 0 lighten($pink-01, 3.125%);
+  }
+
+  // Secondary
+  &.red-02 {
+    background: $red-02;
+    color: darken($red-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($red-02, 6.25%);
+  }
+
+  &.orange-02 {
+    background: $orange-02;
+    color: darken($orange-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($orange-02, 6.25%);
+  }
+
+  &.yellow-02 {
+    background: $yellow-02;
+    color: darken($yellow-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($yellow-02, 6.25%);
+  }
+
+  &.green-02 {
+    background: $green-02;
+    color: darken($green-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($green-02, 6.25%);
+  }
+
+  &.cyan-02 {
+    background: $cyan-02;
+    color: darken($cyan-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($cyan-02, 6.25%);
+  }
+
+  &.blue-02 {
+    background: $blue-02;
+    color: darken($blue-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($blue-02, 6.25%);
+  }
+
+  &.violet-02 {
+    background: $violet-02;
+    color: darken($violet-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($violet-02, 6.25%);
+  }
+
+  &.pink-02 {
+    background: $pink-02;
+    color: darken($pink-02, 18.75%);
+    text-shadow: 0 .071428571em 0 lighten($pink-02, 6.25%);
   }
 
   b, > ul {
