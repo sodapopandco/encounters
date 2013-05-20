@@ -792,7 +792,7 @@ body.dark {
 }
 
 body.dark h1 {
-  color: #f8f8f8
+  color: #e0e0e0
 }
 
 body.dark p.tagline:before {
@@ -859,7 +859,7 @@ body.light {
 }
 
 body.light h1 {
-  color: #181818
+  color: #303030
 }
 
 body.light p.tagline:before {
