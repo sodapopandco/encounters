@@ -5,6 +5,6 @@ $("#toggle").click(function() {
 });
 
 // Pulse the contrast icon until someone hovers over it
-$(".pulse").hover(function() {
+$("#toggle").hover(function() {
   $(this).removeClass("pulse");
 });

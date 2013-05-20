@@ -67,17 +67,17 @@ span.caret {
 }
 
 img#toggle {
+  opacity: .4;
+  cursor: pointer;
+  transition: all .25s;
+
   &:hover, &:focus {
     opacity: 1;
   }
 
-  opacity: .4;
-  cursor: pointer;
-  transition: all .25s;
-}
-
-.pulse {
-  animation: pulse 6s infinite;
+  &.pulse {
+    animation: pulse 6s infinite;
+  }
 }
 
 nav.main {

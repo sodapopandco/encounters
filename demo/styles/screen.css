@@ -477,7 +477,7 @@ img#toggle:focus {
   opacity: 1
 }
 
-.pulse {
+img#toggle.pulse {
   -webkit-animation: pulse 6s infinite;
   -o-animation: pulse 6s infinite;
   animation: pulse 6s infinite
