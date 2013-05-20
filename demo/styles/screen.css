@@ -439,6 +439,7 @@ h1 {
 }
 
 h1.section {
+  margin-top: 2em;
   margin-bottom: .25em;
   font-size: 1em;
   letter-spacing: .125em;
@@ -447,6 +448,7 @@ h1.section {
 
 p.tagline {
   margin-top: 0;
+  font-size: 14px;
   text-transform: lowercase
 }
 
@@ -460,7 +462,7 @@ span.caret {
   -o-animation: blink 1.5s steps(2, start) infinite;
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: .5em;
-  width: .125em;
+  width: 2px;
   text-indent: -9999px
 }
 
@@ -499,6 +501,13 @@ nav.main li {
 
 nav.main a {
   padding: 0 12px
+}
+
+section#intro p {
+  margin-right: auto;
+  margin-left: auto;
+  width: 41.25em;
+  text-align: left
 }
 
 ul.code {
@@ -779,15 +788,11 @@ ul.info em {
 
 body.dark {
   background: #101010;
-  color: #e0e0e0
+  color: #b0b0b0
 }
 
 body.dark h1 {
   color: #f8f8f8
-}
-
-body.dark p.tagline {
-  color: #b0b0b0
 }
 
 body.dark p.tagline:before {
@@ -850,15 +855,11 @@ body.dark .source {
 
 body.light {
   background: #fcfcfc;
-  color: #303030
+  color: #606060
 }
 
 body.light h1 {
   color: #181818
-}
-
-body.light p.tagline {
-  color: #606060
 }
 
 body.light p.tagline:before {

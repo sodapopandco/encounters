@@ -1,15 +1,13 @@
 // Dark Theme
 body.dark {
   background: #101010;
-  color: $base-06;
+  color: $base-05;
 
   h1 {
     color: $base-08;
   }
 
   p.tagline {
-    color: $base-05;
-
     &:before {
       color: $green-02;
     }

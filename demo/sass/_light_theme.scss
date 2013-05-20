@@ -1,15 +1,13 @@
 // Light Theme
 body.light {
   background: #fcfcfc;
-  color: $base-03;
+  color: $base-04;
 
   h1 {
     color: $base-01;
   }
 
   p.tagline {
-    color: $base-04;
-
     &:before {
       color: $green-01;
     }

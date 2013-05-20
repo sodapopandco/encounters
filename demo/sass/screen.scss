@@ -42,6 +42,7 @@ h1 {
   font: bold 2.25em $display-font;
 
   &.section {
+    margin-top: 2em;
     margin-bottom: .25em;
     font-size: 1em;
     letter-spacing: .125em;
@@ -51,6 +52,7 @@ h1 {
 
 p.tagline {
   margin-top: 0;
+  font-size: 14px;
   text-transform: lowercase;
 
   &:before {
@@ -62,7 +64,7 @@ span.caret {
   display: inline-block;
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: .5em;
-  width: .125em;
+  width: 2px;
   text-indent: -9999px;
 }
 
@@ -95,6 +97,15 @@ nav.main {
 
   a {
     padding: 0 12px;
+  }
+}
+
+section#intro {
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 41.25em;
+    text-align: left;
   }
 }
 
