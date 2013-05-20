@@ -578,7 +578,7 @@ li.colour {
   font: 16px "futura-pt", "Futura", sans-serif;
   letter-spacing: .0625em;
   line-height: 1.125em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.0625);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
   text-transform: uppercase
 }
 
@@ -597,148 +597,131 @@ li.colour:focus ul.info {
   transform: rotate(-2deg)
 }
 
+li.base-01,
+li.base-02,
+li.base-03,
+li.base-04 {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125)
+}
+
 li.base-01 {
   background: #181818;
-  color: #383838;
-  text-shadow: 0 -0.07143em 0 #080808
+  color: #383838
 }
 
 li.base-02 {
   background: #202020;
-  color: #404040;
-  text-shadow: 0 -0.07143em 0 #101010
+  color: #404040
 }
 
 li.base-03 {
   background: #303030;
-  color: #505050;
-  text-shadow: 0 -0.07143em 0 #202020
+  color: #505050
 }
 
 li.base-04 {
   background: #606060;
-  color: gray;
-  text-shadow: 0 -0.07143em 0 #505050
+  color: gray
 }
 
 li.base-05 {
   background: #b0b0b0;
-  color: #909090;
-  text-shadow: 0 0.07143em 0 silver
+  color: #909090
 }
 
 li.base-06 {
   background: #e0e0e0;
-  color: silver;
-  text-shadow: 0 0.07143em 0 #f0f0f0
+  color: silver
 }
 
 li.base-07 {
   background: #f0f0f0;
-  color: #d0d0d0;
-  text-shadow: 0 0.07143em 0 white
+  color: #d0d0d0
 }
 
 li.base-08 {
   background: #f8f8f8;
-  color: #d8d8d8;
-  text-shadow: 0 0.07143em 0 white
+  color: #d8d8d8
 }
 
 li.red-01 {
   background: #ac0000;
-  color: #6c0000;
-  text-shadow: 0 0.07143em 0 #bc0000
+  color: #6c0000
 }
 
 li.orange-01 {
   background: #bd5000;
-  color: #7d3500;
-  text-shadow: 0 0.07143em 0 #cd5700
+  color: #7d3500
 }
 
 li.yellow-01 {
   background: #bf9400;
-  color: #7f6300;
-  text-shadow: 0 0.07143em 0 #cfa000
+  color: #7f6300
 }
 
 li.green-01 {
   background: #008b00;
-  color: #004b00;
-  text-shadow: 0 0.07143em 0 #009b00
+  color: #004b00
 }
 
 li.cyan-01 {
   background: #007773;
-  color: #003735;
-  text-shadow: 0 0.07143em 0 #008782
+  color: #003735
 }
 
 li.blue-01 {
   background: #0051ac;
-  color: #00336c;
-  text-shadow: 0 0.07143em 0 #0059bc
+  color: #00336c
 }
 
 li.violet-01 {
   background: #740091;
-  color: #410051;
-  text-shadow: 0 0.07143em 0 #8100a1
+  color: #410051
 }
 
 li.pink-01 {
   background: #c63989;
-  color: #952b67;
-  text-shadow: 0 0.07143em 0 #ca4590
+  color: #952b67
 }
 
 li.red-02 {
   background: #e14b4b;
-  color: #af1d1d;
-  text-shadow: 0 0.07143em 0 #e66666
+  color: #af1d1d
 }
 
 li.orange-02 {
   background: #f1924c;
-  color: #cd6010;
-  text-shadow: 0 0.07143em 0 #f3a46a
+  color: #cd6010
 }
 
 li.yellow-02 {
   background: #f3cd4c;
-  color: #d1a50e;
-  text-shadow: 0 0.07143em 0 #f5d56a
+  color: #d1a50e
 }
 
 li.green-02 {
   background: #49c249;
-  color: #2b802b;
-  text-shadow: 0 0.07143em 0 #61ca61
+  color: #2b802b
 }
 
 li.cyan-02 {
   background: #48afac;
-  color: #2c6b69;
-  text-shadow: 0 0.07143em 0 #5bbcb9
+  color: #2c6b69
 }
 
 li.blue-02 {
   background: #4b92e1;
-  color: #1d62af;
-  text-shadow: 0 0.07143em 0 #66a3e6
+  color: #1d62af
 }
 
 li.violet-02 {
   background: #ae49c8;
-  color: #752988;
-  text-shadow: 0 0.07143em 0 #b961cf
+  color: #752988
 }
 
 li.pink-02 {
   background: #f58ac7;
-  color: #ed329d;
-  text-shadow: 0 0.07143em 0 #f8a7d5
+  color: #ed329d
 }
 
 li b {
