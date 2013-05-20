@@ -10,6 +10,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  transition: all .25s;
 }
 
 nav ul {
@@ -378,6 +379,11 @@ ul.info {
     font-size: 1em;
     text-transform: lowercase;
   }
+}
+
+footer[role="contentinfo"] {
+  margin-top: 4em;
+  font-size: 12px;
 }
 
 // Themes

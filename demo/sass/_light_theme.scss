@@ -71,4 +71,14 @@ body.light {
   .source {
     color: $base-03;
   }
+
+  footer[role="contentinfo"] {
+    color: $base-05;
+
+    a {
+      &:hover, &:focus {
+        color: $base-04;
+      }
+    }
+  }
 }
