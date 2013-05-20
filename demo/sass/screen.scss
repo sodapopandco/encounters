@@ -80,6 +80,24 @@ img#toggle {
   animation: pulse 6s infinite;
 }
 
+nav.main {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    font: bold 16px $display-font;
+    letter-spacing: .125em;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding: 0 12px;
+  }
+}
+
 // Code
 ul.code {
   margin: .5em auto 1.25em;

@@ -483,6 +483,24 @@ img#toggle:focus {
   animation: pulse 6s infinite
 }
 
+nav.main {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 0
+}
+
+nav.main li {
+  display: inline-block;
+  font: bold 16px "futura-pt", "Futura", sans-serif;
+  letter-spacing: .125em;
+  text-transform: uppercase
+}
+
+nav.main a {
+  padding: 0 12px
+}
+
 ul.code {
   margin: .5em auto 1.25em;
   padding: 0;

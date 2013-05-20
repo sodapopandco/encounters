@@ -8,9 +8,3 @@ $("#toggle").click(function() {
 $(".pulse").hover(function() {
   $(this).removeClass("pulse");
 });
-
-$("nav.sections a.colours").click(function() {
-     $('html, body').animate({
-         scrollTop: $("#colours").offset().top
-     }, 500);
- });
