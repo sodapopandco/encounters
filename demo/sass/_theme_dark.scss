@@ -2,6 +2,8 @@
 body.dark {
   background: #101010;
   color: $base-05;
+  ::-moz-selection { background: $base-03; }
+  ::selection { background: $base-03; }
 
   h1 {
     color: $base-06;
