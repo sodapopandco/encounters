@@ -2,21 +2,9 @@
 @import "variables";
 
 // Global
-* {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: all .25s;
-}
-
-nav ul {
-  padding: 0;
-  list-style: none;
-}
+* { box-sizing: border-box; text-rendering: optimizeLegibility; }
+a { color: inherit; text-decoration: none; transition: all .25s; }
+nav ul { padding: 0; list-style: none; }
 
 // Layout
 body {
