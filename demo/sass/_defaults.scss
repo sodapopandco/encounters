@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+::-moz-selection {
+  text-shadow: none;
+}
+
+::selection {
+  text-shadow: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+nav {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}
