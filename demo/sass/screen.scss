@@ -29,9 +29,9 @@ h1 {
 
   &.section {
     margin-top: em(32);
-    margin-bottom: .25em;
+    margin-bottom: em(4);
     font-size: em(16);
-    letter-spacing: .125em;
+    letter-spacing: em(2);
     text-transform: uppercase;
   }
 }
