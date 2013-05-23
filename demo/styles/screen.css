@@ -1,136 +1,176 @@
 /* line 1, ../sass/_defaults.scss */
+
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility
 }
 
 /* line 6, ../sass/_defaults.scss */
+
 ::-moz-selection {
-  text-shadow: none;
+  text-shadow: none
 }
 
 /* line 10, ../sass/_defaults.scss */
+
 ::selection {
-  text-shadow: none;
+  text-shadow: none
 }
 
 /* line 14, ../sass/_defaults.scss */
+
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none
 }
 
 /* line 19, ../sass/_defaults.scss */
+
 img {
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 /* line 24, ../sass/_defaults.scss */
+
 nav ul {
   padding: 0;
-  list-style: none;
+  list-style: none
 }
 
 /* line 7, ../sass/screen.scss */
+
 body {
   opacity: 1;
   padding: 3em 1.5em;
   font: 16px/1.5 "source-code-pro", monospace;
   text-align: center;
-  transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s
 }
 
 /* line 15, ../sass/screen.scss */
+
 .wf-loading body {
   opacity: 0;
-  transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none
 }
 
 /* line 20, ../sass/screen.scss */
+
 [role="main"] {
   margin: 0 auto;
-  width: 54em;
+  width: 54em
 }
 
 /* line 26, ../sass/screen.scss */
+
 h1 {
   margin: 0;
-  font: bold 2.25em "futura-pt", "Futura", sans-serif;
+  font: bold 2.25em "futura-pt", "Futura", sans-serif
 }
+
 /* line 30, ../sass/screen.scss */
+
 h1.section {
   margin-top: 2em;
   margin-bottom: 0.25em;
   font-size: 1em;
   letter-spacing: 0.125em;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 /* line 39, ../sass/screen.scss */
+
 p.tagline {
   margin-top: 0;
   font-size: 0.875em;
-  text-transform: lowercase;
+  text-transform: lowercase
 }
+
 /* line 44, ../sass/screen.scss */
+
 p.tagline:before {
-  content: "> ";
+  content: "> "
 }
 
 /* line 49, ../sass/screen.scss */
+
 span.caret {
   display: inline-block;
+  -webkit-animation: blink 1.5s steps(2, start) infinite;
+  -o-animation: blink 1.5s steps(2, start) infinite;
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: 0.57143em;
   width: 2px;
-  text-indent: -9999px;
+  text-indent: -9999px
 }
 
 /* line 57, ../sass/screen.scss */
+
 img#toggle {
   opacity: .4;
   cursor: pointer;
   width: 2em;
   height: auto;
-  transition: all .25s;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s
 }
+
 /* line 64, ../sass/screen.scss */
-img#toggle:hover, img#toggle:focus {
-  opacity: 1;
+
+img#toggle:hover,
+img#toggle:focus {
+  opacity: 1
 }
+
 /* line 68, ../sass/screen.scss */
+
 img#toggle.pulse {
-  animation: pulse 6s infinite;
+  -webkit-animation: pulse 6s infinite;
+  -o-animation: pulse 6s infinite;
+  animation: pulse 6s infinite
 }
 
 /* line 73, ../sass/screen.scss */
+
 nav.main {
   position: fixed;
   z-index: 1;
   width: 100%;
-  font-size: 0;
+  font-size: 0
 }
+
 /* line 79, ../sass/screen.scss */
+
 nav.main li {
   display: inline-block;
   font: bold 1em "futura-pt", "Futura", sans-serif;
   letter-spacing: 0.125em;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
+
 /* line 86, ../sass/screen.scss */
+
 nav.main a {
-  padding: 0 0.75em;
+  padding: 0 0.75em
 }
 
 /* line 92, ../sass/screen.scss */
+
 section#intro p {
   margin-right: auto;
   margin-left: auto;
   width: 41.25em;
-  text-align: left;
+  text-align: left
 }
 
 /* line 101, ../sass/screen.scss */
+
 ul.code {
   margin: 0 auto;
   padding: 0;
@@ -140,25 +180,35 @@ ul.code {
   border-radius: 2px;
   counter-reset: li;
   font: 0.875em/1.5 "source-code-pro", monospace;
-  list-style: none;
+  list-style: none
 }
+
 /* line 112, ../sass/screen.scss */
+
 ul.code.andale {
-  font-family: "Andale Mono", monospace;
+  font-family: "Andale Mono", monospace
 }
+
 /* line 116, ../sass/screen.scss */
+
 ul.code.monaco {
-  font-family: Monaco, monospace;
+  font-family: Monaco, monospace
 }
+
 /* line 120, ../sass/screen.scss */
+
 ul.code.monaco {
-  font-family: Menlo, monospace;
+  font-family: Menlo, monospace
 }
+
 /* line 124, ../sass/screen.scss */
+
 ul.code li {
-  position: relative;
+  position: relative
 }
+
 /* line 127, ../sass/screen.scss */
+
 ul.code li:before {
   content: counter(li);
   position: absolute;
@@ -166,23 +216,27 @@ ul.code li:before {
   padding-right: 0.57143em;
   width: 2.28571em;
   counter-increment: li;
-  text-align: right;
+  text-align: right
 }
+
 /* line 138, ../sass/screen.scss */
+
 ul.code pre {
   margin: 0;
   padding-left: 3.42857em;
   font-family: inherit;
-  text-align: left;
+  text-align: left
 }
 
 /* line 147, ../sass/screen.scss */
+
 ul.colours {
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 /* line 154, ../sass/screen.scss */
+
 li.colour {
   display: table;
   float: left;
@@ -195,155 +249,222 @@ li.colour {
   letter-spacing: 0.0625em;
   line-height: 1.125em;
   text-shadow: 0 0.0625em 0 rgba(255, 255, 255, 0.125);
-  text-transform: uppercase;
+  text-transform: uppercase
 }
+
 /* line 168, ../sass/screen.scss */
-li.colour:hover, li.colour:focus {
-  cursor: pointer;
+
+li.colour:hover,
+li.colour:focus {
+  cursor: pointer
 }
+
 /* line 171, ../sass/screen.scss */
-li.colour:hover ul.info, li.colour:focus ul.info {
+
+li.colour:hover ul.info,
+li.colour:focus ul.info {
   opacity: 1;
   top: 50%;
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg)
 }
+
 /* line 180, ../sass/screen.scss */
-li.base-01, li.base-02, li.base-03, li.base-04 {
-  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125);
+
+li.base-01,
+li.base-02,
+li.base-03,
+li.base-04 {
+  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125)
 }
+
 /* line 183, ../sass/screen.scss */
+
 li.base-01 {
   background: #181818;
-  color: #383838;
+  color: #383838
 }
+
 /* line 188, ../sass/screen.scss */
+
 li.base-02 {
   background: #202020;
-  color: #404040;
+  color: #404040
 }
+
 /* line 193, ../sass/screen.scss */
+
 li.base-03 {
   background: #303030;
-  color: #505050;
+  color: #505050
 }
+
 /* line 198, ../sass/screen.scss */
+
 li.base-04 {
   background: #606060;
-  color: gray;
+  color: gray
 }
+
 /* line 203, ../sass/screen.scss */
+
 li.base-05 {
   background: #b0b0b0;
-  color: #909090;
+  color: #909090
 }
+
 /* line 208, ../sass/screen.scss */
+
 li.base-06 {
   background: #e0e0e0;
-  color: silver;
+  color: silver
 }
+
 /* line 213, ../sass/screen.scss */
+
 li.base-07 {
   background: #f0f0f0;
-  color: #d0d0d0;
+  color: #d0d0d0
 }
+
 /* line 218, ../sass/screen.scss */
+
 li.base-08 {
   background: #f8f8f8;
-  color: #d8d8d8;
+  color: #d8d8d8
 }
+
 /* line 224, ../sass/screen.scss */
+
 li.red-01 {
   background: #ac0000;
-  color: #6c0000;
+  color: #6c0000
 }
+
 /* line 229, ../sass/screen.scss */
+
 li.orange-01 {
   background: #bd5000;
-  color: #7d3500;
+  color: #7d3500
 }
+
 /* line 234, ../sass/screen.scss */
+
 li.yellow-01 {
   background: #bf9400;
-  color: #7f6300;
+  color: #7f6300
 }
+
 /* line 239, ../sass/screen.scss */
+
 li.green-01 {
   background: #008b00;
-  color: #004b00;
+  color: #004b00
 }
+
 /* line 244, ../sass/screen.scss */
+
 li.cyan-01 {
   background: #007773;
-  color: #003735;
+  color: #003735
 }
+
 /* line 249, ../sass/screen.scss */
+
 li.blue-01 {
   background: #0051ac;
-  color: #00336c;
+  color: #00336c
 }
+
 /* line 254, ../sass/screen.scss */
+
 li.violet-01 {
   background: #740091;
-  color: #410051;
+  color: #410051
 }
+
 /* line 259, ../sass/screen.scss */
+
 li.pink-01 {
   background: #c63989;
-  color: #952b67;
+  color: #952b67
 }
+
 /* line 265, ../sass/screen.scss */
+
 li.red-02 {
   background: #e14b4b;
-  color: #af1d1d;
+  color: #af1d1d
 }
+
 /* line 270, ../sass/screen.scss */
+
 li.orange-02 {
   background: #f1924c;
-  color: #cd6010;
+  color: #cd6010
 }
+
 /* line 275, ../sass/screen.scss */
+
 li.yellow-02 {
   background: #f3cd4c;
-  color: #d1a50e;
+  color: #d1a50e
 }
+
 /* line 280, ../sass/screen.scss */
+
 li.green-02 {
   background: #49c249;
-  color: #2b802b;
+  color: #2b802b
 }
+
 /* line 285, ../sass/screen.scss */
+
 li.cyan-02 {
   background: #48afac;
-  color: #2c6b69;
+  color: #2c6b69
 }
+
 /* line 290, ../sass/screen.scss */
+
 li.blue-02 {
   background: #4b92e1;
-  color: #1d62af;
+  color: #1d62af
 }
+
 /* line 295, ../sass/screen.scss */
+
 li.violet-02 {
   background: #ae49c8;
-  color: #752988;
+  color: #752988
 }
+
 /* line 300, ../sass/screen.scss */
+
 li.pink-02 {
   background: #f58ac7;
-  color: #ed329d;
+  color: #ed329d
 }
+
 /* line 305, ../sass/screen.scss */
+
 li b {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: middle
 }
+
 /* line 310, ../sass/screen.scss */
+
 li em {
   display: block;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.5em
 }
 
 /* line 317, ../sass/screen.scss */
+
 ul.info {
   opacity: 0;
   position: absolute;
@@ -361,235 +482,374 @@ ul.info {
   color: #b0b0b0;
   font: 0.75em/1.25 "source-code-pro", monospace;
   text-shadow: none;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
   transform: rotate(-8deg);
-  transition: all .25s;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s
 }
+
 /* line 337, ../sass/screen.scss */
+
 ul.info li {
-  list-style: none;
+  list-style: none
 }
+
 /* line 341, ../sass/screen.scss */
+
 ul.info em {
   display: inline;
   color: #303030;
   font-size: 1em;
-  text-transform: lowercase;
+  text-transform: lowercase
 }
 
 /* line 349, ../sass/screen.scss */
+
 footer[role="contentinfo"] {
   margin-top: 4em;
-  font-size: 0.75em;
+  font-size: 0.75em
 }
 
 /* line 2, ../sass/_theme_dark.scss */
+
 body.dark {
   background: #101010;
-  color: #b0b0b0;
+  color: #b0b0b0
 }
+
 /* line 5, ../sass/_theme_dark.scss */
+
 body.dark ::-moz-selection {
-  background: #303030;
+  background: #303030
 }
+
 /* line 6, ../sass/_theme_dark.scss */
+
 body.dark ::selection {
-  background: #303030;
+  background: #303030
 }
+
 /* line 8, ../sass/_theme_dark.scss */
+
 body.dark h1 {
-  color: #e0e0e0;
+  color: #e0e0e0
 }
+
 /* line 13, ../sass/_theme_dark.scss */
+
 body.dark p.tagline:before {
-  color: #49c249;
+  color: #49c249
 }
+
 /* line 18, ../sass/_theme_dark.scss */
+
 body.dark span.caret {
-  background: #ffd440;
+  background: #ffd440
 }
+
 /* line 22, ../sass/_theme_dark.scss */
+
 body.dark ul.code {
-  background: #181818;
+  background: #181818
 }
+
 /* line 26, ../sass/_theme_dark.scss */
+
 body.dark ul.code li:before {
-  color: #303030;
+  color: #303030
 }
+
 /* line 32, ../sass/_theme_dark.scss */
+
 body.dark .comment {
-  color: #606060;
+  color: #606060
 }
+
 /* line 36, ../sass/_theme_dark.scss */
-body.dark .variable, body.dark .support {
-  color: #e14b4b;
+
+body.dark .variable,
+body.dark .support {
+  color: #e14b4b
 }
+
 /* line 40, ../sass/_theme_dark.scss */
-body.dark .function, body.dark .tag {
-  color: #f3cd4c;
+
+body.dark .function,
+body.dark .tag {
+  color: #f3cd4c
 }
+
 /* line 44, ../sass/_theme_dark.scss */
-body.dark .storage, body.dark .attribute {
-  color: #f1924c;
+
+body.dark .storage,
+body.dark .attribute {
+  color: #f1924c
 }
+
 /* line 48, ../sass/_theme_dark.scss */
-body.dark .string, body.dark .number, body.dark .unit {
-  color: #49c249;
+
+body.dark .string,
+body.dark .number,
+body.dark .unit {
+  color: #49c249
 }
+
 /* line 52, ../sass/_theme_dark.scss */
+
 body.dark .support.constant {
-  color: #48afac;
+  color: #48afac
 }
+
 /* line 56, ../sass/_theme_dark.scss */
-body.dark .variable.parameter, body.dark .support.type {
-  color: #4b92e1;
+
+body.dark .variable.parameter,
+body.dark .support.type {
+  color: #4b92e1
 }
+
 /* line 60, ../sass/_theme_dark.scss */
+
 body.dark .keyword {
-  color: #ae49c8;
+  color: #ae49c8
 }
+
 /* line 64, ../sass/_theme_dark.scss */
+
 body.dark .source {
-  color: #e0e0e0;
+  color: #e0e0e0
 }
+
 /* line 68, ../sass/_theme_dark.scss */
+
 body.dark footer[role="contentinfo"] {
-  color: #606060;
+  color: #606060
 }
+
 /* line 72, ../sass/_theme_dark.scss */
-body.dark footer[role="contentinfo"] a:hover, body.dark footer[role="contentinfo"] a:focus {
-  color: #b0b0b0;
+
+body.dark footer[role="contentinfo"] a:hover,
+body.dark footer[role="contentinfo"] a:focus {
+  color: #b0b0b0
 }
 
 /* line 2, ../sass/_theme_light.scss */
+
 body.light {
   background: #fcfcfc;
-  color: #606060;
+  color: #606060
 }
+
 /* line 5, ../sass/_theme_light.scss */
+
 body.light ::-moz-selection {
-  background: #e0e0e0;
+  background: #e0e0e0
 }
+
 /* line 6, ../sass/_theme_light.scss */
+
 body.light ::selection {
-  background: #e0e0e0;
+  background: #e0e0e0
 }
+
 /* line 8, ../sass/_theme_light.scss */
+
 body.light h1 {
-  color: #303030;
+  color: #303030
 }
+
 /* line 13, ../sass/_theme_light.scss */
+
 body.light p.tagline:before {
-  color: #008b00;
+  color: #008b00
 }
+
 /* line 18, ../sass/_theme_light.scss */
+
 body.light span.caret {
-  background: #3191fb;
+  background: #3191fb
 }
+
 /* line 22, ../sass/_theme_light.scss */
+
 body.light img#toggle {
   opacity: .18;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
+
 /* line 23, ../sass/_theme_light.scss */
-body.light img#toggle:hover, body.light img#toggle:focus {
-  opacity: .49;
+
+body.light img#toggle:hover,
+body.light img#toggle:focus {
+  opacity: .49
 }
+
 /* line 31, ../sass/_theme_light.scss */
+
 body.light ul.code {
-  background: #f8f8f8;
+  background: #f8f8f8
 }
+
 /* line 35, ../sass/_theme_light.scss */
+
 body.light ul.code li:before {
-  color: #e0e0e0;
+  color: #e0e0e0
 }
+
 /* line 41, ../sass/_theme_light.scss */
+
 body.light .comment {
-  color: #b0b0b0;
+  color: #b0b0b0
 }
+
 /* line 45, ../sass/_theme_light.scss */
-body.light .variable, body.light .support {
-  color: #ac0000;
+
+body.light .variable,
+body.light .support {
+  color: #ac0000
 }
+
 /* line 49, ../sass/_theme_light.scss */
-body.light .function, body.light .tag {
-  color: #bf9400;
+
+body.light .function,
+body.light .tag {
+  color: #bf9400
 }
+
 /* line 53, ../sass/_theme_light.scss */
-body.light .storage, body.light .attribute {
-  color: #bd5000;
+
+body.light .storage,
+body.light .attribute {
+  color: #bd5000
 }
+
 /* line 57, ../sass/_theme_light.scss */
-body.light .string, body.light .number, body.light .unit {
-  color: #008b00;
+
+body.light .string,
+body.light .number,
+body.light .unit {
+  color: #008b00
 }
+
 /* line 61, ../sass/_theme_light.scss */
+
 body.light .support.constant {
-  color: #007773;
+  color: #007773
 }
+
 /* line 65, ../sass/_theme_light.scss */
-body.light .variable.parameter, body.light .support.type {
-  color: #0051ac;
+
+body.light .variable.parameter,
+body.light .support.type {
+  color: #0051ac
 }
+
 /* line 69, ../sass/_theme_light.scss */
+
 body.light .keyword {
-  color: #740091;
+  color: #740091
 }
+
 /* line 73, ../sass/_theme_light.scss */
+
 body.light .source {
-  color: #303030;
+  color: #303030
 }
+
 /* line 77, ../sass/_theme_light.scss */
+
 body.light footer[role="contentinfo"] {
-  color: #b0b0b0;
+  color: #b0b0b0
 }
+
 /* line 81, ../sass/_theme_light.scss */
-body.light footer[role="contentinfo"] a:hover, body.light footer[role="contentinfo"] a:focus {
-  color: #606060;
+
+body.light footer[role="contentinfo"] a:hover,
+body.light footer[role="contentinfo"] a:focus {
+  color: #606060
 }
 
 /* line 3, ../sass/_helpers.scss */
-.group:before, .group:after {
-  content: " ";
-  display: table;
-}
-/* line 8, ../sass/_helpers.scss */
+
+.group:before,
 .group:after {
-  clear: both;
+  content: " ";
+  display: table
+}
+
+/* line 8, ../sass/_helpers.scss */
+
+.group:after {
+  clear: both
 }
 
 @media screen and (min-width: 0) {
-  /* line 364, ../sass/screen.scss */
   body {
-    font-size: 87.5%;
+    font-size: 87.5%
   }
 }
+
 @media screen and (min-width: 40em) {
-  /* line 371, ../sass/screen.scss */
   body {
-    font-size: 100%;
+    font-size: 100%
   }
 }
+
 @media screen and (min-width: 80em) {
-  /* line 378, ../sass/screen.scss */
   body {
-    font-size: 112.5%;
+    font-size: 112.5%
   }
 }
+
 @keyframes blink {
-  /* line 385, ../sass/screen.scss */
   100% {
-    visibility: hidden;
+    visibility: hidden
   }
 }
 
 @keyframes pulse {
-  /* line 391, ../sass/screen.scss */
   0%, 50%, 73%, 100% {
-    opacity: .4;
+    opacity: .4
   }
 
-  /* line 392, ../sass/screen.scss */
   60.5%, 85.5% {
-    opacity: 1;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    visibility: hidden
+  }
+}
+
+@-o-keyframes blink {
+  100% {
+    visibility: hidden
+  }
+}
+
+@-webkit-keyframes pulse {
+  0%, 50%, 73%, 100% {
+    opacity: .4
+  }
+
+  60.5%, 85.5% {
+    opacity: 1
+  }
+}
+
+@-o-keyframes pulse {
+  0%, 50%, 73%, 100% {
+    opacity: .4
+  }
+
+  60.5%, 85.5% {
+    opacity: 1
   }
 }
