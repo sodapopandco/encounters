@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "devDependencies": {
     "grunt": "0.4.x",
+    "grunt-autoprefixer": "0.1.x",
     "grunt-contrib-csslint": "0.1.x",
     "grunt-contrib-cssmin": "0.6.x",
     "grunt-contrib-compass": "0.2.x",
     "grunt-contrib-concat": "0.3.x",
     "grunt-contrib-watch": "0.4.x",
-    "grunt-autoprefixer": "0.1.x",
     "matchdep": "0.1.x"
   }
 }
