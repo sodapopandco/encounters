@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     csslint: {
       strict: {
         options: {
-          import: 2
+          csslintrc: '.csslintrc'
         },
         src: ['styles/main.css']
       }
