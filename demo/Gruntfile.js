@@ -15,15 +15,24 @@ module.exports = function(grunt) {
     autoprefixer: {
       prefix: {
         files: {
-          'styles/screen.css': ['styles/screen.css']
+          'styles/main.css': ['styles/main.css']
         }
+      }
+    },
+
+    csslint: {
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['styles/main.css']
       }
     },
 
     concat: {
       join: {
         files: {
-          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
+          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/main.css']
         }
       }
     },
@@ -38,11 +47,11 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['sass/**/*.scss'],
-      tasks: ['compass', 'concat', 'autoprefixer']
+      tasks: ['compass', 'autoprefixer', 'csslint','concat']
     }
   });
 
-  grunt.registerTask('build', ['compass', 'concat', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('build', ['compass', 'autoprefixer', 'concat', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
 }
