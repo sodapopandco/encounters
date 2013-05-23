@@ -6,8 +6,8 @@
 // Layout
 body {
   opacity: 1;
-  padding: 3em 1.5em;
-  font: $body-text-size $monospace-font;
+  padding: em(48) em(24);
+  font: #{$body-font-size}px/1.5 $monospace-font;
   text-align: center;
   transition: all .5s;
 }
@@ -19,18 +19,18 @@ body {
 
 [role="main"] {
   margin: 0 auto;
-  width: 54em;
+  width: em(864);
 }
 
 // Header
 h1 {
   margin: 0;
-  font: bold 2.25em $display-font;
+  font: bold em(36) $display-font;
 
   &.section {
-    margin-top: 2em;
+    margin-top: em(32);
     margin-bottom: .25em;
-    font-size: 1em;
+    font-size: em(16);
     letter-spacing: .125em;
     text-transform: uppercase;
   }
@@ -38,7 +38,7 @@ h1 {
 
 p.tagline {
   margin-top: 0;
-  font-size: 14px;
+  font-size: em(14);
   text-transform: lowercase;
 
   &:before {
@@ -49,7 +49,7 @@ p.tagline {
 span.caret {
   display: inline-block;
   animation: blink 1.5s steps(2, start) infinite;
-  margin-left: .5em;
+  margin-left: to-em(8, 14);
   width: 2px;
   text-indent: -9999px;
 }
@@ -57,6 +57,8 @@ span.caret {
 img#toggle {
   opacity: .4;
   cursor: pointer;
+  width: em(32);
+  height: auto;
   transition: all .25s;
 
   &:hover, &:focus {
@@ -76,13 +78,13 @@ nav.main {
 
   li {
     display: inline-block;
-    font: bold 16px $display-font;
-    letter-spacing: .125em;
+    font: bold em(16) $display-font;
+    letter-spacing: em(2);
     text-transform: uppercase;
   }
 
   a {
-    padding: 0 12px;
+    padding: 0 em(12);
   }
 }
 
@@ -90,32 +92,32 @@ section#intro {
   p {
     margin-right: auto;
     margin-left: auto;
-    width: 41.25em;
+    width: em(660);
     text-align: left;
   }
 }
 
 // Code
 ul.code {
-  margin: .5em auto 1.25em;
+  margin: 0 auto;
   padding: 0;
-  width: 53.25em;
-  max-height: 21em;
+  width: to-em(852, 14);
+  max-height: to-em(336, 14);
   overflow: scroll;
-  border-radius: .125em;
+  border-radius: 2px;
   counter-reset: li;
-  line-height: 1.3125em;
+  font: em(14)/1.5 $monospace-font;
   list-style: none;
 
-  &.andale, &.andale pre {
+  &.andale {
     font-family: "Andale Mono", monospace;
   }
 
-  &.monaco, &.monaco pre {
+  &.monaco {
     font-family: Monaco, monospace;
   }
 
-  &.monaco, &.menlo pre {
+  &.monaco {
     font-family: Menlo, monospace;
   }
 
@@ -126,27 +128,25 @@ ul.code {
       content: counter(li);
       position: absolute;
       left: 0;
-      padding-right: 8px;
-      width: 32px;
-      font-size: 14px;
+      padding-right: to-em(8, 14);
+      width: to-em(32, 14);
       counter-increment: li;
       text-align: right;
     }
   }
-}
 
-pre {
-  margin: 0;
-  padding-left: 48px;
-  font: 14px/1.5 $monospace-font;
-  text-align: left;
+  pre {
+    margin: 0;
+    padding-left: to-em(48, 14);
+    font-family: inherit;
+    text-align: left;
+  }
 }
 
 // Colours
 ul.colours {
   margin: 0;
   padding: 0;
-  font-size: 0; // So that inline-blocks don't have extra margins
 }
 
 li {
@@ -155,14 +155,14 @@ li {
     display: table;
     float: left;
     position: relative;
-    margin: .375em;
-    width: 96px;
-    height: 96px;
-    border-radius: .125em;
-    font: $body-text-size $display-font;
-    letter-spacing: .0625em;
-    line-height: 1.125em;
-    text-shadow: 0 1px 0 transparentize(#fff, .875);
+    margin: em(6);
+    width: em(96);
+    height: em(96);
+    border-radius: 2px;
+    font: 1em $display-font;
+    letter-spacing: em(1);
+    line-height: em(18);
+    text-shadow: 0 em(1) 0 transparentize(#fff, .875);
     text-transform: uppercase;
 
     &:hover, &:focus {
@@ -178,7 +178,7 @@ li {
 
   // Neutral
   &.base-01, &.base-02, &.base-03, &.base-04 {
-    text-shadow: 0 -1px 0 transparentize(#000, .875);
+    text-shadow: 0 em(-1) 0 transparentize(#000, .875);
   }
   &.base-01 {
     background: $base-01;
@@ -310,7 +310,7 @@ li {
   em {
     display: block;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: em(24);
   }
 }
 
@@ -320,16 +320,16 @@ ul.info {
   z-index: 1;
   top: 75%;
   left: 50%;
-  margin-top: -30px;
-  margin-left: -78px;
-  padding: 8px .5em;
-  width: 156px;
-  height: 60px;
+  margin-top: to-em(-30, 12);
+  margin-left: to-em(-78, 12);
+  padding: to-em(8, 12) to-em(6, 12);
+  width: to-em(156, 12);
+  height: to-em(60, 12);
   background: #fff;
-  border-radius: .166666667em;
-  box-shadow: 0 .333333333em 0 transparentize(#000, .875);
+  border-radius: 1px;
+  box-shadow: 0 to-em(2, 12) 0 transparentize(#000, .875);
   color: $base-05;
-  font: 12px/1.166666667em $monospace-font;
+  font: em(12)/1.25 $monospace-font;
   text-shadow: none;
   transform: rotate(-8deg);
   transition: all .25s;
@@ -341,14 +341,14 @@ ul.info {
   em {
     display: inline;
     color: $base-03;
-    font-size: 1em;
+    font-size: to-em(12, 12);
     text-transform: lowercase;
   }
 }
 
 footer[role="contentinfo"] {
-  margin-top: 4em;
-  font-size: 12px;
+  margin-top: to-em(48, 12);
+  font-size: em(12);
 }
 
 // Themes
@@ -357,6 +357,28 @@ footer[role="contentinfo"] {
 
 // Helpers
 @import "helpers";
+
+// Media Queries
+// 0+
+@media screen and (min-width: 0) {
+  body {
+    font-size: percentage(14/16);
+  }
+}
+
+// 640px+
+@media screen and (min-width: 40em) {
+  body {
+    font-size: percentage(16/16);
+  }
+}
+
+// 1280px+
+@media screen and (min-width: 80em) {
+  body {
+    font-size: percentage(18/16);
+  }
+}
 
 // Animations
 @keyframes blink {

@@ -1,3 +1,7 @@
-@function to-em($target-px, $context) {
-  @return ($target-px / $context) * 1em;
+@function em($pixels, $context: $body-font-size) {
+  @return #{$pixels / $context}em;
+}
+
+@function to-em($pixels, $context) {
+  @return #{$pixels / $context}em;
 }

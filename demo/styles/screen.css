@@ -426,7 +426,7 @@ nav ul {
 body {
   opacity: 1;
   padding: 3em 1.5em;
-  font: 16px "source-code-pro", monospace;
+  font: 16px/1.5 "source-code-pro", monospace;
   text-align: center;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -460,7 +460,7 @@ h1.section {
 
 p.tagline {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 0.875em;
   text-transform: lowercase
 }
 
@@ -473,7 +473,7 @@ span.caret {
   -webkit-animation: blink 1.5s steps(2, start) infinite;
   -o-animation: blink 1.5s steps(2, start) infinite;
   animation: blink 1.5s steps(2, start) infinite;
-  margin-left: .5em;
+  margin-left: 0.57143em;
   width: 2px;
   text-indent: -9999px
 }
@@ -481,6 +481,8 @@ span.caret {
 img#toggle {
   opacity: .4;
   cursor: pointer;
+  width: 2em;
+  height: auto;
   -webkit-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s
@@ -506,13 +508,13 @@ nav.main {
 
 nav.main li {
   display: inline-block;
-  font: bold 16px "futura-pt", "Futura", sans-serif;
-  letter-spacing: .125em;
+  font: bold 1em "futura-pt", "Futura", sans-serif;
+  letter-spacing: 0.125em;
   text-transform: uppercase
 }
 
 nav.main a {
-  padding: 0 12px
+  padding: 0 0.75em
 }
 
 section#intro p {
@@ -523,29 +525,26 @@ section#intro p {
 }
 
 ul.code {
-  margin: .5em auto 1.25em;
+  margin: 0 auto;
   padding: 0;
-  width: 53.25em;
-  max-height: 21em;
+  width: 60.85714em;
+  max-height: 24em;
   overflow: scroll;
-  border-radius: .125em;
+  border-radius: 2px;
   counter-reset: li;
-  line-height: 1.3125em;
+  font: 0.875em/1.5 "source-code-pro", monospace;
   list-style: none
 }
 
-ul.code.andale,
-ul.code.andale pre {
+ul.code.andale {
   font-family: "Andale Mono", monospace
 }
 
-ul.code.monaco,
-ul.code.monaco pre {
+ul.code.monaco {
   font-family: Monaco, monospace
 }
 
-ul.code.monaco,
-ul.code.menlo pre {
+ul.code.monaco {
   font-family: Menlo, monospace
 }
 
@@ -557,38 +556,36 @@ ul.code li:before {
   content: counter(li);
   position: absolute;
   left: 0;
-  padding-right: 8px;
-  width: 32px;
-  font-size: 14px;
+  padding-right: 0.57143em;
+  width: 2.28571em;
   counter-increment: li;
   text-align: right
 }
 
-pre {
+ul.code pre {
   margin: 0;
-  padding-left: 48px;
-  font: 14px/1.5 "source-code-pro", monospace;
+  padding-left: 3.42857em;
+  font-family: inherit;
   text-align: left
 }
 
 ul.colours {
   margin: 0;
-  padding: 0;
-  font-size: 0
+  padding: 0
 }
 
 li.colour {
   display: table;
   float: left;
   position: relative;
-  margin: .375em;
-  width: 96px;
-  height: 96px;
-  border-radius: .125em;
-  font: 16px "futura-pt", "Futura", sans-serif;
-  letter-spacing: .0625em;
+  margin: 0.375em;
+  width: 6em;
+  height: 6em;
+  border-radius: 2px;
+  font: 1em "futura-pt", "Futura", sans-serif;
+  letter-spacing: 0.0625em;
   line-height: 1.125em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.125);
+  text-shadow: 0 0.0625em 0 rgba(255, 255, 255, 0.125);
   text-transform: uppercase
 }
 
@@ -611,7 +608,7 @@ li.base-01,
 li.base-02,
 li.base-03,
 li.base-04 {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.125)
+  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125)
 }
 
 li.base-01 {
@@ -751,16 +748,16 @@ ul.info {
   z-index: 1;
   top: 75%;
   left: 50%;
-  margin-top: -30px;
-  margin-left: -78px;
-  padding: 8px .5em;
-  width: 156px;
-  height: 60px;
+  margin-top: -2.5em;
+  margin-left: -6.5em;
+  padding: 0.66667em 0.5em;
+  width: 13em;
+  height: 5em;
   background: #fff;
-  border-radius: .166666667em;
-  box-shadow: 0 0.33333em 0 rgba(0, 0, 0, 0.125);
+  border-radius: 1px;
+  box-shadow: 0 0.16667em 0 rgba(0, 0, 0, 0.125);
   color: #b0b0b0;
-  font: 12px/1.16667em "source-code-pro", monospace;
+  font: 0.75em/1.25 "source-code-pro", monospace;
   text-shadow: none;
   -webkit-transform: rotate(-8deg);
   -ms-transform: rotate(-8deg);
@@ -784,7 +781,7 @@ ul.info em {
 
 footer[role="contentinfo"] {
   margin-top: 4em;
-  font-size: 12px
+  font-size: 0.75em
 }
 
 body.dark {
@@ -976,6 +973,24 @@ body.light footer[role="contentinfo"] a:focus {
 
 .group:after {
   clear: both
+}
+
+@media screen and (min-width: 0) {
+  body {
+    font-size: 87.5%
+  }
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 100%
+  }
+}
+
+@media screen and (min-width: 80em) {
+  body {
+    font-size: 112.5%
+  }
 }
 
 @keyframes blink {
