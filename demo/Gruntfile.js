@@ -21,6 +21,14 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      join: {
+        files: {
+          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
+        }
+      }
+    },
+
     cssmin: {
       compress: {
         files: {
@@ -31,11 +39,11 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['sass/**/*.scss'],
-      tasks: ['compass', 'autoprefixer']
+      tasks: ['compass', 'concat', 'autoprefixer']
     }
   });
 
-  grunt.registerTask('build', ['compass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('build', ['compass', 'concat', 'autoprefixer', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
 }
