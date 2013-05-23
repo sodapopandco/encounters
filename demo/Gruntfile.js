@@ -7,8 +7,7 @@ module.exports = function(grunt) {
     compass: {
       compile: {
         options: {
-          config: 'config.rb',
-          force: true
+          config: 'config.rb'
         }
       }
     },
