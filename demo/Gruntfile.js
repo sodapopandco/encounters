@@ -4,13 +4,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
+    compass: {
       compile: {
-        files: {
-          'styles/screen.css': [
-            'components/normalize-css/normalize.css',
-            'sass/screen.scss'
-          ]
+        options: {
+          config: 'config.rb',
+          force: true
         }
       }
     },
@@ -32,12 +30,15 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['sass/*.scss'],
-      tasks: ['sass', 'autoprefixer']
+      sass: {
+        files: ['sass/**/*.scss'],
+        tasks: ['compass']
+      },
+      tasks: ['autoprefixer']
     }
   });
 
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('build', ['compass', 'autoprefixer', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
 }
