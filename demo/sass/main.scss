@@ -26,27 +26,27 @@ body {
 h1 {
   margin: 0;
   font: bold em(36) $display-font;
-
-  &.section {
-    margin-top: em(32);
-    margin-bottom: em(4);
-    font-size: em(16);
-    letter-spacing: em(2);
-    text-transform: uppercase;
-  }
 }
 
-p.tagline {
+.section {
+  margin-top: em(32);
+  margin-bottom: em(4);
+  font-size: em(16);
+  letter-spacing: em(2);
+  text-transform: uppercase;
+}
+
+.tagline {
   margin-top: 0;
   font-size: em(14);
   text-transform: lowercase;
 
-  &:before {
+  :before {
     content: "> ";
   }
 }
 
-span.caret {
+.caret {
   display: inline-block;
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: to-em(8, 14);
@@ -54,23 +54,23 @@ span.caret {
   text-indent: -9999px;
 }
 
-img#toggle {
+#toggle {
   opacity: .4;
   cursor: pointer;
   width: em(32);
   height: auto;
   transition: all .25s;
 
-  &:hover, &:focus {
+  :hover, :focus {
     opacity: 1;
-  }
-
-  &.pulse {
-    animation: pulse 6s infinite;
   }
 }
 
-nav.main {
+.pulse {
+  animation: pulse 6s infinite;
+}
+
+.main {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -88,7 +88,7 @@ nav.main {
   }
 }
 
-section#intro {
+#intro {
   p {
     margin-right: auto;
     margin-left: auto;
@@ -98,7 +98,7 @@ section#intro {
 }
 
 // Code
-ul.code {
+.code {
   margin: 0 auto;
   padding: 0;
   width: to-em(852, 14);
@@ -109,22 +109,10 @@ ul.code {
   font: em(14)/1.5 $monospace-font;
   list-style: none;
 
-  &.andale {
-    font-family: "Andale Mono", monospace;
-  }
-
-  &.monaco {
-    font-family: Monaco, monospace;
-  }
-
-  &.monaco {
-    font-family: Menlo, monospace;
-  }
-
   li {
     position: relative;
 
-    &:before {
+    :before {
       content: counter(li);
       position: absolute;
       left: 0;
@@ -143,163 +131,47 @@ ul.code {
   }
 }
 
+.andale {
+  font-family: "Andale Mono", monospace;
+}
+
+.monaco {
+  font-family: Monaco, monospace;
+}
+
+.monaco {
+  font-family: Menlo, monospace;
+}
+
 // Colours
-ul.colours {
+.colours {
   margin: 0;
   padding: 0;
 }
 
-li {
-  // Colour
-  &.colour {
-    display: table;
-    float: left;
-    position: relative;
-    margin: em(6);
-    width: em(96);
-    height: em(96);
-    border-radius: 2px;
-    font: 1em $display-font;
-    letter-spacing: em(1);
-    line-height: em(18);
-    text-shadow: 0 em(1) 0 transparentize(#fff, .875);
-    text-transform: uppercase;
+// Colour
+.colour {
+  display: table;
+  float: left;
+  position: relative;
+  margin: em(6);
+  width: em(96);
+  height: em(96);
+  border-radius: 2px;
+  font: 1em $display-font;
+  letter-spacing: em(1);
+  line-height: em(18);
+  text-shadow: 0 em(1) 0 transparentize(#fff, .875);
+  text-transform: uppercase;
 
-    &:hover, &:focus {
-      cursor: pointer;
+  :hover, :focus {
+    cursor: pointer;
 
-      ul.info {
-        opacity: 1;
-        top: 50%;
-        transform: rotate(-2deg);
-      }
+    ul.info {
+      opacity: 1;
+      top: 50%;
+      transform: rotate(-2deg);
     }
-  }
-
-  // Neutral
-  &.base-01, &.base-02, &.base-03, &.base-04 {
-    text-shadow: 0 em(-1) 0 transparentize(#000, .875);
-  }
-  &.base-01 {
-    background: $base-01;
-    color: lighten($base-01, 12.5%);
-  }
-
-  &.base-02 {
-    background: $base-02;
-    color: lighten($base-02, 12.5%);
-  }
-
-  &.base-03 {
-    background: $base-03;
-    color: lighten($base-03, 12.5%);
-  }
-
-  &.base-04 {
-    background: $base-04;
-    color: lighten($base-04, 12.5%);
-  }
-
-  &.base-05 {
-    background: $base-05;
-    color: darken($base-05, 12.5%);
-  }
-
-  &.base-06 {
-    background: $base-06;
-    color: darken($base-06, 12.5%);
-  }
-
-  &.base-07 {
-    background: $base-07;
-    color: darken($base-07, 12.5%);
-  }
-
-  &.base-08 {
-    background: $base-08;
-    color: darken($base-08, 12.5%);
-  }
-
-  // Dark
-  &.red-01 {
-    background: $red-01;
-    color: darken($red-01, 12.5%);
-  }
-
-  &.orange-01 {
-    background: $orange-01;
-    color: darken($orange-01, 12.5%);
-  }
-
-  &.yellow-01 {
-    background: $yellow-01;
-    color: darken($yellow-01, 12.5%);
-  }
-
-  &.green-01 {
-    background: $green-01;
-    color: darken($green-01, 12.5%);
-  }
-
-  &.cyan-01 {
-    background: $cyan-01;
-    color: darken($cyan-01, 12.5%);
-  }
-
-  &.blue-01 {
-    background: $blue-01;
-    color: darken($blue-01, 12.5%);
-  }
-
-  &.violet-01 {
-    background: $violet-01;
-    color: darken($violet-01, 12.5%);
-  }
-
-  &.pink-01 {
-    background: $pink-01;
-    color: darken($pink-01, 12.5%);
-  }
-
-  // Light
-  &.red-02 {
-    background: $red-02;
-    color: darken($red-02, 18.75%);
-  }
-
-  &.orange-02 {
-    background: $orange-02;
-    color: darken($orange-02, 18.75%);
-  }
-
-  &.yellow-02 {
-    background: $yellow-02;
-    color: darken($yellow-02, 18.75%);
-  }
-
-  &.green-02 {
-    background: $green-02;
-    color: darken($green-02, 18.75%);
-  }
-
-  &.cyan-02 {
-    background: $cyan-02;
-    color: darken($cyan-02, 18.75%);
-  }
-
-  &.blue-02 {
-    background: $blue-02;
-    color: darken($blue-02, 18.75%);
-  }
-
-  &.violet-02 {
-    background: $violet-02;
-    color: darken($violet-02, 18.75%);
-  }
-
-  &.pink-02 {
-    background: $pink-02;
-    color: darken($pink-02, 18.75%);
   }
 
   b {
@@ -314,7 +186,133 @@ li {
   }
 }
 
-ul.info {
+// Neutral
+.base-01, .base-02, .base-03, .base-04 {
+  text-shadow: 0 em(-1) 0 transparentize(#000, .875);
+}
+.base-01 {
+  background: $base-01;
+  color: lighten($base-01, 12.5%);
+}
+
+.base-02 {
+  background: $base-02;
+  color: lighten($base-02, 12.5%);
+}
+
+.base-03 {
+  background: $base-03;
+  color: lighten($base-03, 12.5%);
+}
+
+.base-04 {
+  background: $base-04;
+  color: lighten($base-04, 12.5%);
+}
+
+.base-05 {
+  background: $base-05;
+  color: darken($base-05, 12.5%);
+}
+
+.base-06 {
+  background: $base-06;
+  color: darken($base-06, 12.5%);
+}
+
+.base-07 {
+  background: $base-07;
+  color: darken($base-07, 12.5%);
+}
+
+.base-08 {
+  background: $base-08;
+  color: darken($base-08, 12.5%);
+}
+
+// Dark
+.red-01 {
+  background: $red-01;
+  color: darken($red-01, 12.5%);
+}
+
+.orange-01 {
+  background: $orange-01;
+  color: darken($orange-01, 12.5%);
+}
+
+.yellow-01 {
+  background: $yellow-01;
+  color: darken($yellow-01, 12.5%);
+}
+
+.green-01 {
+  background: $green-01;
+  color: darken($green-01, 12.5%);
+}
+
+.cyan-01 {
+  background: $cyan-01;
+  color: darken($cyan-01, 12.5%);
+}
+
+.blue-01 {
+  background: $blue-01;
+  color: darken($blue-01, 12.5%);
+}
+
+.violet-01 {
+  background: $violet-01;
+  color: darken($violet-01, 12.5%);
+}
+
+.pink-01 {
+  background: $pink-01;
+  color: darken($pink-01, 12.5%);
+}
+
+// Light
+.red-02 {
+  background: $red-02;
+  color: darken($red-02, 18.75%);
+}
+
+.orange-02 {
+  background: $orange-02;
+  color: darken($orange-02, 18.75%);
+}
+
+.yellow-02 {
+  background: $yellow-02;
+  color: darken($yellow-02, 18.75%);
+}
+
+.green-02 {
+  background: $green-02;
+  color: darken($green-02, 18.75%);
+}
+
+.cyan-02 {
+  background: $cyan-02;
+  color: darken($cyan-02, 18.75%);
+}
+
+.blue-02 {
+  background: $blue-02;
+  color: darken($blue-02, 18.75%);
+}
+
+.violet-02 {
+  background: $violet-02;
+  color: darken($violet-02, 18.75%);
+}
+
+.pink-02 {
+  background: $pink-02;
+  color: darken($pink-02, 18.75%);
+}
+
+.info {
   opacity: 0;
   position: absolute;
   z-index: 1;

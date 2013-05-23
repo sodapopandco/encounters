@@ -1,5 +1,5 @@
 // Light Theme
-body.light {
+.light {
   background: #fcfcfc;
   color: $base-04;
   ::-moz-selection { background: $base-06; }
@@ -9,17 +9,17 @@ body.light {
     color: $base-03;
   }
 
-  p.tagline {
+  .tagline {
     &:before {
       color: $green-01;
     }
   }
 
-  span.caret {
+  .caret {
     background: saturate($blue-02, 25%);
   }
 
-  img#toggle {
+  #toggle {
     &:hover, &:focus {
       opacity: .49;
     }
@@ -28,7 +28,7 @@ body.light {
     transform: rotate(180deg);
   }
 
-  ul.code {
+  .code {
     background: $base-08;
 
     li {

@@ -53,7 +53,7 @@ h1 {
   font: bold 2.25em "futura-pt", "Futura", sans-serif
 }
 
-h1.section {
+.section {
   margin-top: 2em;
   margin-bottom: 0.25em;
   font-size: 1em;
@@ -61,17 +61,17 @@ h1.section {
   text-transform: uppercase
 }
 
-p.tagline {
+.tagline {
   margin-top: 0;
   font-size: 0.875em;
   text-transform: lowercase
 }
 
-p.tagline:before {
+.tagline :before {
   content: "> "
 }
 
-span.caret {
+.caret {
   display: inline-block;
   -webkit-animation: blink 1.5s steps(2, start) infinite;
   -o-animation: blink 1.5s steps(2, start) infinite;
@@ -81,7 +81,7 @@ span.caret {
   text-indent: -9999px
 }
 
-img#toggle {
+#toggle {
   opacity: .4;
   cursor: pointer;
   width: 2em;
@@ -91,43 +91,43 @@ img#toggle {
   transition: all .25s
 }
 
-img#toggle:hover,
-img#toggle:focus {
+#toggle :hover,
+#toggle :focus {
   opacity: 1
 }
 
-img#toggle.pulse {
+.pulse {
   -webkit-animation: pulse 6s infinite;
   -o-animation: pulse 6s infinite;
   animation: pulse 6s infinite
 }
 
-nav.main {
+.main {
   position: fixed;
   z-index: 1;
   width: 100%;
   font-size: 0
 }
 
-nav.main li {
+.main li {
   display: inline-block;
   font: bold 1em "futura-pt", "Futura", sans-serif;
   letter-spacing: 0.125em;
   text-transform: uppercase
 }
 
-nav.main a {
+.main a {
   padding: 0 0.75em
 }
 
-section#intro p {
+#intro p {
   margin-right: auto;
   margin-left: auto;
   width: 41.25em;
   text-align: left
 }
 
-ul.code {
+.code {
   margin: 0 auto;
   padding: 0;
   width: 60.85714em;
@@ -139,23 +139,11 @@ ul.code {
   list-style: none
 }
 
-ul.code.andale {
-  font-family: "Andale Mono", monospace
-}
-
-ul.code.monaco {
-  font-family: Monaco, monospace
-}
-
-ul.code.monaco {
-  font-family: Menlo, monospace
-}
-
-ul.code li {
+.code li {
   position: relative
 }
 
-ul.code li:before {
+.code li :before {
   content: counter(li);
   position: absolute;
   left: 0;
@@ -165,19 +153,31 @@ ul.code li:before {
   text-align: right
 }
 
-ul.code pre {
+.code pre {
   margin: 0;
   padding-left: 3.42857em;
   font-family: inherit;
   text-align: left
 }
 
-ul.colours {
+.andale {
+  font-family: "Andale Mono", monospace
+}
+
+.monaco {
+  font-family: Monaco, monospace
+}
+
+.monaco {
+  font-family: Menlo, monospace
+}
+
+.colours {
   margin: 0;
   padding: 0
 }
 
-li.colour {
+.colour {
   display: table;
   float: left;
   position: relative;
@@ -192,13 +192,13 @@ li.colour {
   text-transform: uppercase
 }
 
-li.colour:hover,
-li.colour:focus {
+.colour :hover,
+.colour :focus {
   cursor: pointer
 }
 
-li.colour:hover ul.info,
-li.colour:focus ul.info {
+.colour :hover ul.info,
+.colour :focus ul.info {
   opacity: 1;
   top: 50%;
   -webkit-transform: rotate(-2deg);
@@ -207,145 +207,145 @@ li.colour:focus ul.info {
   transform: rotate(-2deg)
 }
 
-li.base-01,
-li.base-02,
-li.base-03,
-li.base-04 {
-  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125)
-}
-
-li.base-01 {
-  background: #181818;
-  color: #383838
-}
-
-li.base-02 {
-  background: #202020;
-  color: #404040
-}
-
-li.base-03 {
-  background: #303030;
-  color: #505050
-}
-
-li.base-04 {
-  background: #606060;
-  color: gray
-}
-
-li.base-05 {
-  background: #b0b0b0;
-  color: #909090
-}
-
-li.base-06 {
-  background: #e0e0e0;
-  color: silver
-}
-
-li.base-07 {
-  background: #f0f0f0;
-  color: #d0d0d0
-}
-
-li.base-08 {
-  background: #f8f8f8;
-  color: #d8d8d8
-}
-
-li.red-01 {
-  background: #ac0000;
-  color: #6c0000
-}
-
-li.orange-01 {
-  background: #bd5000;
-  color: #7d3500
-}
-
-li.yellow-01 {
-  background: #bf9400;
-  color: #7f6300
-}
-
-li.green-01 {
-  background: #008b00;
-  color: #004b00
-}
-
-li.cyan-01 {
-  background: #007773;
-  color: #003735
-}
-
-li.blue-01 {
-  background: #0051ac;
-  color: #00336c
-}
-
-li.violet-01 {
-  background: #740091;
-  color: #410051
-}
-
-li.pink-01 {
-  background: #c63989;
-  color: #952b67
-}
-
-li.red-02 {
-  background: #e14b4b;
-  color: #af1d1d
-}
-
-li.orange-02 {
-  background: #f1924c;
-  color: #cd6010
-}
-
-li.yellow-02 {
-  background: #f3cd4c;
-  color: #d1a50e
-}
-
-li.green-02 {
-  background: #49c249;
-  color: #2b802b
-}
-
-li.cyan-02 {
-  background: #48afac;
-  color: #2c6b69
-}
-
-li.blue-02 {
-  background: #4b92e1;
-  color: #1d62af
-}
-
-li.violet-02 {
-  background: #ae49c8;
-  color: #752988
-}
-
-li.pink-02 {
-  background: #f58ac7;
-  color: #ed329d
-}
-
-li b {
+.colour b {
   display: table-cell;
   vertical-align: middle
 }
 
-li em {
+.colour em {
   display: block;
   font-style: normal;
   font-size: 1.5em
 }
 
-ul.info {
+.base-01,
+.base-02,
+.base-03,
+.base-04 {
+  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125)
+}
+
+.base-01 {
+  background: #181818;
+  color: #383838
+}
+
+.base-02 {
+  background: #202020;
+  color: #404040
+}
+
+.base-03 {
+  background: #303030;
+  color: #505050
+}
+
+.base-04 {
+  background: #606060;
+  color: gray
+}
+
+.base-05 {
+  background: #b0b0b0;
+  color: #909090
+}
+
+.base-06 {
+  background: #e0e0e0;
+  color: silver
+}
+
+.base-07 {
+  background: #f0f0f0;
+  color: #d0d0d0
+}
+
+.base-08 {
+  background: #f8f8f8;
+  color: #d8d8d8
+}
+
+.red-01 {
+  background: #ac0000;
+  color: #6c0000
+}
+
+.orange-01 {
+  background: #bd5000;
+  color: #7d3500
+}
+
+.yellow-01 {
+  background: #bf9400;
+  color: #7f6300
+}
+
+.green-01 {
+  background: #008b00;
+  color: #004b00
+}
+
+.cyan-01 {
+  background: #007773;
+  color: #003735
+}
+
+.blue-01 {
+  background: #0051ac;
+  color: #00336c
+}
+
+.violet-01 {
+  background: #740091;
+  color: #410051
+}
+
+.pink-01 {
+  background: #c63989;
+  color: #952b67
+}
+
+.red-02 {
+  background: #e14b4b;
+  color: #af1d1d
+}
+
+.orange-02 {
+  background: #f1924c;
+  color: #cd6010
+}
+
+.yellow-02 {
+  background: #f3cd4c;
+  color: #d1a50e
+}
+
+.green-02 {
+  background: #49c249;
+  color: #2b802b
+}
+
+.cyan-02 {
+  background: #48afac;
+  color: #2c6b69
+}
+
+.blue-02 {
+  background: #4b92e1;
+  color: #1d62af
+}
+
+.violet-02 {
+  background: #ae49c8;
+  color: #752988
+}
+
+.pink-02 {
+  background: #f58ac7;
+  color: #ed329d
+}
+
+.info {
   opacity: 0;
   position: absolute;
   z-index: 1;
@@ -371,11 +371,11 @@ ul.info {
   transition: all .25s
 }
 
-ul.info li {
+.info li {
   list-style: none
 }
 
-ul.info em {
+.info em {
   display: inline;
   color: #303030;
   font-size: 1em;
@@ -387,116 +387,116 @@ footer[role="contentinfo"] {
   font-size: 0.75em
 }
 
-body.dark {
+.dark {
   background: #101010;
   color: #b0b0b0
 }
 
-body.dark ::-moz-selection {
+.dark ::-moz-selection {
   background: #303030
 }
 
-body.dark ::selection {
+.dark ::selection {
   background: #303030
 }
 
-body.dark h1 {
+.dark h1 {
   color: #e0e0e0
 }
 
-body.dark p.tagline:before {
+.dark .tagline:before {
   color: #49c249
 }
 
-body.dark span.caret {
+.dark .caret {
   background: #ffd440
 }
 
-body.dark ul.code {
+.dark .code {
   background: #181818
 }
 
-body.dark ul.code li:before {
+.dark .code li:before {
   color: #303030
 }
 
-body.dark .comment {
+.dark .comment {
   color: #606060
 }
 
-body.dark .variable,
-body.dark .support {
+.dark .variable,
+.dark .support {
   color: #e14b4b
 }
 
-body.dark .function,
-body.dark .tag {
+.dark .function,
+.dark .tag {
   color: #f3cd4c
 }
 
-body.dark .storage,
-body.dark .attribute {
+.dark .storage,
+.dark .attribute {
   color: #f1924c
 }
 
-body.dark .string,
-body.dark .number,
-body.dark .unit {
+.dark .string,
+.dark .number,
+.dark .unit {
   color: #49c249
 }
 
-body.dark .support.constant {
+.dark .support.constant {
   color: #48afac
 }
 
-body.dark .variable.parameter,
-body.dark .support.type {
+.dark .variable.parameter,
+.dark .support.type {
   color: #4b92e1
 }
 
-body.dark .keyword {
+.dark .keyword {
   color: #ae49c8
 }
 
-body.dark .source {
+.dark .source {
   color: #e0e0e0
 }
 
-body.dark footer[role="contentinfo"] {
+.dark footer[role="contentinfo"] {
   color: #606060
 }
 
-body.dark footer[role="contentinfo"] a:hover,
-body.dark footer[role="contentinfo"] a:focus {
+.dark footer[role="contentinfo"] a:hover,
+.dark footer[role="contentinfo"] a:focus {
   color: #b0b0b0
 }
 
-body.light {
+.light {
   background: #fcfcfc;
   color: #606060
 }
 
-body.light ::-moz-selection {
+.light ::-moz-selection {
   background: #e0e0e0
 }
 
-body.light ::selection {
+.light ::selection {
   background: #e0e0e0
 }
 
-body.light h1 {
+.light h1 {
   color: #303030
 }
 
-body.light p.tagline:before {
+.light .tagline:before {
   color: #008b00
 }
 
-body.light span.caret {
+.light .caret {
   background: #3191fb
 }
 
-body.light img#toggle {
+.light #toggle {
   opacity: .18;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -504,67 +504,67 @@ body.light img#toggle {
   transform: rotate(180deg)
 }
 
-body.light img#toggle:hover,
-body.light img#toggle:focus {
+.light #toggle:hover,
+.light #toggle:focus {
   opacity: .49
 }
 
-body.light ul.code {
+.light .code {
   background: #f8f8f8
 }
 
-body.light ul.code li:before {
+.light .code li:before {
   color: #e0e0e0
 }
 
-body.light .comment {
+.light .comment {
   color: #b0b0b0
 }
 
-body.light .variable,
-body.light .support {
+.light .variable,
+.light .support {
   color: #ac0000
 }
 
-body.light .function,
-body.light .tag {
+.light .function,
+.light .tag {
   color: #bf9400
 }
 
-body.light .storage,
-body.light .attribute {
+.light .storage,
+.light .attribute {
   color: #bd5000
 }
 
-body.light .string,
-body.light .number,
-body.light .unit {
+.light .string,
+.light .number,
+.light .unit {
   color: #008b00
 }
 
-body.light .support.constant {
+.light .support.constant {
   color: #007773
 }
 
-body.light .variable.parameter,
-body.light .support.type {
+.light .variable.parameter,
+.light .support.type {
   color: #0051ac
 }
 
-body.light .keyword {
+.light .keyword {
   color: #740091
 }
 
-body.light .source {
+.light .source {
   color: #303030
 }
 
-body.light footer[role="contentinfo"] {
+.light footer[role="contentinfo"] {
   color: #b0b0b0
 }
 
-body.light footer[role="contentinfo"] a:hover,
-body.light footer[role="contentinfo"] a:focus {
+.light footer[role="contentinfo"] a:hover,
+.light footer[role="contentinfo"] a:focus {
   color: #606060
 }
 

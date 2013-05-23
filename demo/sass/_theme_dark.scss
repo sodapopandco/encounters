@@ -1,5 +1,5 @@
 // Dark Theme
-body.dark {
+.dark {
   background: #101010;
   color: $base-05;
   ::-moz-selection { background: $base-03; }
@@ -9,17 +9,17 @@ body.dark {
     color: $base-06;
   }
 
-  p.tagline {
+  .tagline {
     &:before {
       color: $green-02;
     }
   }
 
-  span.caret {
+  .caret {
     background: saturate($yellow-02, 25%);
   }
 
-  ul.code {
+  .code {
     background: $base-01;
 
     li {
