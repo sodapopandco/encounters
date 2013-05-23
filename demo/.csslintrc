@@ -1,7 +1,9 @@
 {
   "adjoining-classes": false,
   "box-model": false,
+  "box-sizing": false,
   "compatible-vendor-prefixes": false,
   "display-property-grouping": false,
-  "outline-none": false
+  "outline-none": false,
+  "universal-selector": false
 }
