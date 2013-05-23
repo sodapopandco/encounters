@@ -5,7 +5,7 @@
   ::-moz-selection { background: $base-06; }
   ::selection { background: $base-06; }
 
-  h1 {
+  .title, .section {
     color: $base-03;
   }
 
@@ -19,7 +19,7 @@
     background: saturate($blue-02, 25%);
   }
 
-  #toggle {
+  .icon {
     &:hover, &:focus {
       opacity: .49;
     }
@@ -30,6 +30,7 @@
 
   .code {
     background: $base-08;
+    color: $base-03;
 
     li {
       &:before {

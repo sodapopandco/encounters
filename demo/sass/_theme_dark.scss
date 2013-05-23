@@ -5,7 +5,7 @@
   ::-moz-selection { background: $base-03; }
   ::selection { background: $base-03; }
 
-  h1 {
+  .title, .section {
     color: $base-06;
   }
 
@@ -21,6 +21,7 @@
 
   .code {
     background: $base-01;
+    color: $base-06;
 
     li {
       &:before {

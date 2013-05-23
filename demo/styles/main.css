@@ -43,27 +43,40 @@ body {
   transition: none
 }
 
-[role="main"] {
+div[role="main"] {
   margin: 0 auto;
   width: 54em
 }
 
-h1 {
-  margin: 0;
-  font: bold 2.25em "futura-pt", "Futura", sans-serif
+div[role="main"]:before,
+div[role="main"]:after {
+  content: " ";
+  display: table
 }
 
-.section {
-  margin-top: 2em;
-  margin-bottom: 0.25em;
-  font-size: 1em;
-  letter-spacing: 0.125em;
-  text-transform: uppercase
+div[role="main"]:after {
+  clear: both
+}
+
+.large {
+  font-size: 2.25em
+}
+
+.medium {
+  font-size: 0.875em
+}
+
+.small {
+  font-size: 0.75em
+}
+
+h1 {
+  margin: 0;
+  font: bold 1em "futura-pt", "Futura", sans-serif
 }
 
 .tagline {
   margin-top: 0;
-  font-size: 0.875em;
   text-transform: lowercase
 }
 
@@ -78,10 +91,11 @@ h1 {
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: 0.57143em;
   width: 2px;
+  direction: ltr;
   text-indent: -9999px
 }
 
-#toggle {
+.icon {
   opacity: .4;
   cursor: pointer;
   width: 2em;
@@ -91,8 +105,8 @@ h1 {
   transition: all .25s
 }
 
-#toggle :hover,
-#toggle :focus {
+.icon :hover,
+.icon :focus {
   opacity: 1
 }
 
@@ -120,7 +134,14 @@ h1 {
   padding: 0 0.75em
 }
 
-#intro p {
+.section {
+  margin-top: 2em;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase
+}
+
+section:first-child p {
   margin-right: auto;
   margin-left: auto;
   width: 41.25em;
@@ -143,7 +164,7 @@ h1 {
   position: relative
 }
 
-.code li :before {
+.code li:before {
   content: counter(li);
   position: absolute;
   left: 0;
@@ -378,13 +399,11 @@ h1 {
 .info em {
   display: inline;
   color: #303030;
-  font-size: 1em;
   text-transform: lowercase
 }
 
 footer[role="contentinfo"] {
-  margin-top: 4em;
-  font-size: 0.75em
+  margin-top: 4em
 }
 
 .dark {
@@ -400,7 +419,8 @@ footer[role="contentinfo"] {
   background: #303030
 }
 
-.dark h1 {
+.dark .title,
+.dark .section {
   color: #e0e0e0
 }
 
@@ -413,7 +433,8 @@ footer[role="contentinfo"] {
 }
 
 .dark .code {
-  background: #181818
+  background: #181818;
+  color: #e0e0e0
 }
 
 .dark .code li:before {
@@ -484,7 +505,8 @@ footer[role="contentinfo"] {
   background: #e0e0e0
 }
 
-.light h1 {
+.light .title,
+.light .section {
   color: #303030
 }
 
@@ -496,7 +518,7 @@ footer[role="contentinfo"] {
   background: #3191fb
 }
 
-.light #toggle {
+.light .icon {
   opacity: .18;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -504,13 +526,14 @@ footer[role="contentinfo"] {
   transform: rotate(180deg)
 }
 
-.light #toggle:hover,
-.light #toggle:focus {
+.light .icon:hover,
+.light .icon:focus {
   opacity: .49
 }
 
 .light .code {
-  background: #f8f8f8
+  background: #f8f8f8;
+  color: #303030
 }
 
 .light .code li:before {
@@ -566,16 +589,6 @@ footer[role="contentinfo"] {
 .light footer[role="contentinfo"] a:hover,
 .light footer[role="contentinfo"] a:focus {
   color: #606060
-}
-
-.group:before,
-.group:after {
-  content: " ";
-  display: table
-}
-
-.group:after {
-  clear: both
 }
 
 @media screen and (min-width: 0) {

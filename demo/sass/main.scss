@@ -2,6 +2,7 @@
 @import "variables";
 @import "functions";
 @import "defaults";
+@import "helpers";
 
 // Layout
 body {
@@ -17,28 +18,34 @@ body {
   transition: none;
 }
 
-[role="main"] {
+div[role="main"] {
+  @include clear-fix;
+
   margin: 0 auto;
   width: em(864);
+}
+
+// Sizes
+.large {
+  font-size: em(36);
+}
+
+.medium {
+  font-size: em(14);
+}
+
+.small {
+  font-size: em(12);
 }
 
 // Header
 h1 {
   margin: 0;
-  font: bold em(36) $display-font;
-}
-
-.section {
-  margin-top: em(32);
-  margin-bottom: em(4);
-  font-size: em(16);
-  letter-spacing: em(2);
-  text-transform: uppercase;
+  font: bold em(16) $display-font;
 }
 
 .tagline {
   margin-top: 0;
-  font-size: em(14);
   text-transform: lowercase;
 
   :before {
@@ -51,10 +58,11 @@ h1 {
   animation: blink 1.5s steps(2, start) infinite;
   margin-left: to-em(8, 14);
   width: 2px;
+  direction: ltr;
   text-indent: -9999px;
 }
 
-#toggle {
+.icon {
   opacity: .4;
   cursor: pointer;
   width: em(32);
@@ -88,7 +96,14 @@ h1 {
   }
 }
 
-#intro {
+.section {
+  margin-top: em(32);
+  margin-bottom: em(4);
+  letter-spacing: em(2);
+  text-transform: uppercase;
+}
+
+section:first-child {
   p {
     margin-right: auto;
     margin-left: auto;
@@ -112,7 +127,7 @@ h1 {
   li {
     position: relative;
 
-    :before {
+    &:before {
       content: counter(li);
       position: absolute;
       left: 0;
@@ -339,22 +354,17 @@ h1 {
   em {
     display: inline;
     color: $base-03;
-    font-size: to-em(12, 12);
     text-transform: lowercase;
   }
 }
 
 footer[role="contentinfo"] {
   margin-top: to-em(48, 12);
-  font-size: em(12);
 }
 
 // Themes
 @import "theme_dark";
 @import "theme_light";
-
-// Helpers
-@import "helpers";
 
 // Media Queries
 // 0+
