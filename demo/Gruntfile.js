@@ -21,9 +21,18 @@ module.exports = function(grunt) {
     },
 
     csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
       strict: {
         options: {
-          csslintrc: '.csslintrc'
+          import: 2
+        },
+        src: ['styles/main.css']
+      },
+      lax: {
+        options: {
+          import: false
         },
         src: ['styles/main.css']
       }
@@ -47,11 +56,11 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['sass/**/*.scss'],
-      tasks: ['compass', 'autoprefixer', 'csslint','concat']
+      tasks: ['compass', 'autoprefixer', 'csslint:lax', 'concat']
     }
   });
 
-  grunt.registerTask('build', ['compass', 'autoprefixer', 'concat', 'cssmin']);
+  grunt.registerTask('build', ['compass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
 }
