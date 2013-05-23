@@ -30,11 +30,8 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      sass: {
-        files: ['sass/**/*.scss'],
-        tasks: ['compass']
-      },
-      tasks: ['autoprefixer']
+      files: ['sass/**/*.scss'],
+      tasks: ['compass', 'autoprefixer']
     }
   });
 
