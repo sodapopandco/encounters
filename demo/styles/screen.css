@@ -477,7 +477,7 @@ h1 {
   text-transform: lowercase
 }
 
-.tagline :before {
+.tagline:before {
   content: "> "
 }
 
@@ -502,8 +502,8 @@ h1 {
   transition: all .25s
 }
 
-.icon :hover,
-.icon :focus {
+.icon:hover,
+.icon:focus {
   opacity: 1
 }
 
@@ -610,13 +610,13 @@ section:first-child p {
   text-transform: uppercase
 }
 
-.colour :hover,
-.colour :focus {
+.colour:hover,
+.colour:focus {
   cursor: pointer
 }
 
-.colour :hover ul.info,
-.colour :focus ul.info {
+.colour:hover .info,
+.colour:focus .info {
   opacity: 1;
   top: 50%;
   -webkit-transform: rotate(-2deg);
@@ -630,10 +630,13 @@ section:first-child p {
   vertical-align: middle
 }
 
-.colour em {
+.colour b em {
   display: block;
-  font-style: normal;
   font-size: 1.5em
+}
+
+.colour em {
+  font-style: normal
 }
 
 .base-01,
