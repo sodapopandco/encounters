@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['sass/**/*.scss'],
+      files: ['sass/**/*.scss', 'demo/config.rb'],
       tasks: ['compass', 'autoprefixer', 'csslint:lax', 'concat']
     }
   });
