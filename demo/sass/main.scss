@@ -9,7 +9,7 @@ body {
   padding: em(48) em(24);
   font: #{$body-font-size}px/1.5 $monospace-font;
   text-align: center;
-  transition: all .5s;
+  transition: all .25s;
 }
 
 .wf-loading body {

@@ -31,9 +31,9 @@ body {
   padding: 3em 1.5em;
   font: 16px/1.5 "source-code-pro", monospace;
   text-align: center;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s
 }
 
 .wf-loading body {
