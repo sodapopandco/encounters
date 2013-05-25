@@ -594,12 +594,6 @@ footer[role="contentinfo"] {
   color: #606060
 }
 
-@media screen and (min-width: 40em) {
-  body {
-    font-size: 112.5%
-  }
-}
-
 @keyframes blink {
   100% {
     visibility: hidden
