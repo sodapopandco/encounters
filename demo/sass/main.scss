@@ -174,7 +174,7 @@ section:first-child {
   border-radius: 2px;
   font: 1em $display-font;
   letter-spacing: em(1);
-  line-height: em(18);
+  line-height: 1;
   text-shadow: 0 em(1) 0 transparentize(#fff, .875);
   text-transform: uppercase;
 
@@ -194,7 +194,7 @@ section:first-child {
 
     em {
       display: block;
-      font-size: em(24);
+      font-size: em(28);
     }
   }
 
