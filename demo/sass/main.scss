@@ -370,26 +370,19 @@ footer[role="contentinfo"] {
 @import "theme_light";
 
 // Media Queries
-// 0+
-@media screen and (min-width: 0) {
-  body {
-    font-size: percentage(14/16);
-  }
-}
-
-// 640px+
+// Base
 @media screen and (min-width: 40em) {
-  body {
-    font-size: percentage(16/16);
-  }
-}
-
-// 1280px+
-@media screen and (min-width: 80em) {
   body {
     font-size: percentage(18/16);
   }
 }
+
+// 1280px+
+// @media screen and (min-width: 80em) {
+//   body {
+//     font-size: percentage(18/16);
+//   }
+// }
 
 // Animations
 @keyframes blink {

@@ -594,19 +594,7 @@ footer[role="contentinfo"] {
   color: #606060
 }
 
-@media screen and (min-width: 0) {
-  body {
-    font-size: 87.5%
-  }
-}
-
 @media screen and (min-width: 40em) {
-  body {
-    font-size: 100%
-  }
-}
-
-@media screen and (min-width: 80em) {
   body {
     font-size: 112.5%
   }
