@@ -248,11 +248,11 @@ section:first-child p {
   z-index: 1;
   top: 75%;
   left: 50%;
-  margin-top: -2.5em;
+  margin-top: -2.58333em;
   margin-left: -6.5em;
   padding: 0.66667em 0.5em;
   width: 13em;
-  height: 5em;
+  height: 5.16667em;
   background: #fff;
   border-radius: 1px;
   box-shadow: 0 0.16667em 0 rgba(0, 0, 0, 0.125);
@@ -272,10 +272,14 @@ section:first-child p {
   list-style: none
 }
 
+.info li:first-child {
+  font-size: 1.16667em;
+  font-weight: bold
+}
+
 .info em {
   display: inline;
-  color: #303030;
-  text-transform: lowercase
+  color: #303030
 }
 
 .base-01,

@@ -210,11 +210,11 @@ section:first-child {
   z-index: 1;
   top: 75%;
   left: 50%;
-  margin-top: to-em(-30, 12);
+  margin-top: to-em(-31, 12);
   margin-left: to-em(-78, 12);
   padding: to-em(8, 12) to-em(6, 12);
   width: to-em(156, 12);
-  height: to-em(60, 12);
+  height: to-em(62, 12);
   background: #fff;
   border-radius: 1px;
   box-shadow: 0 to-em(2, 12) 0 transparentize(#000, .875);
@@ -226,12 +226,16 @@ section:first-child {
 
   li {
     list-style: none;
+
+    &:first-child {
+      font-size: to-em(14, 12);
+      font-weight: bold;
+    }
   }
 
   em {
     display: inline;
     color: $base-03;
-    text-transform: lowercase;
   }
 }
 
