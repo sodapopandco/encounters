@@ -6,8 +6,11 @@
 // Layout
 body {
   opacity: 1;
-  padding: em(48) em(24);
-  font: #{$body-font-size}px/1.5 $monospace-font;
+  margin: 0 auto;
+  padding: percentage(32/320) 0;
+  width: percentage(288/320);
+  max-width: em(864);
+  font: #{$body-font-size}px/1.375 $monospace-font;
   text-align: center;
   transition: all .25s;
 }
@@ -15,13 +18,6 @@ body {
 .wf-loading body {
   opacity: 0;
   transition: none;
-}
-
-div[role="main"] {
-  @include clear-fix;
-
-  margin: 0 auto;
-  width: em(864);
 }
 
 // Sizes
@@ -102,11 +98,11 @@ h1 {
   text-transform: uppercase;
 }
 
-section:first-child {
+.about {
   p {
     margin-right: auto;
     margin-left: auto;
-    width: em(660);
+    max-width: 40em;
     text-align: left;
   }
 }
@@ -115,9 +111,10 @@ section:first-child {
 .code {
   margin: 0 auto;
   padding: 0;
-  width: to-em(852, 14);
+  width: 100%;
+  // max-width: em(864);
   max-height: to-em(336, 14);
-  overflow: scroll;
+  overflow: hidden;
   border-radius: 2px;
   counter-reset: li;
   font: em(14)/1.5 $monospace-font;
@@ -159,18 +156,24 @@ section:first-child {
 
 // Colours
 .colours {
-  margin: 0;
+  @include clear-fix;
+
+  position: relative;
+  left: em(-8);
+  margin: 0 auto;
   padding: 0;
+  width: em(872);
 }
 
 // Colour
 .colour {
-  display: table;
+  display: block;
   float: left;
   position: relative;
-  margin: em(6);
-  width: em(96);
-  height: em(96);
+  margin-top: em(8);
+  margin-left: em(8);
+  width: em(101);
+  height: em(101);
   border-radius: 2px;
   font: 1em $display-font;
   letter-spacing: em(1);
@@ -189,7 +192,8 @@ section:first-child {
   }
 
   b {
-    display: table-cell;
+    display: inline-block;
+    // line-height: 69px;
     vertical-align: middle;
 
     em {
@@ -375,18 +379,43 @@ footer[role="contentinfo"] {
 
 // Media Queries
 // Base
-// @media screen and (min-width: 40em) {
-//   body {
-//     font-size: percentage(18/16);
-//   }
-// }
+@media screen and (min-width: 0em) {
+  .colours {
+    left: em(-12);
+    width: em(296);
+  }
 
-// 1280px+
-// @media screen and (min-width: 80em) {
-//   body {
-//     font-size: percentage(18/16);
-//   }
-// }
+  // Colour
+  .colour {
+    margin-top: em(12);
+    margin-left: em(12);
+    width: em(29);
+    height: em(29);
+  }
+}
+
+// 640px+
+@media screen and (min-width: 40em) {
+  .colours {
+    width: em(584);
+  }
+  .colour {
+    width: em(65);
+    height: em(65);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .colours {
+    width: em(648);
+  }
+
+  // Colour
+  .colour {
+    width: em(69);
+    height: em(69);
+  }
+}
 
 // Animations
 @keyframes blink {

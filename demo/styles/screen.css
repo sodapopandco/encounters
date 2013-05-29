@@ -425,8 +425,11 @@ nav ul {
 
 body {
   opacity: 1;
-  padding: 3em 1.5em;
-  font: 16px/1.5 "source-code-pro", monospace;
+  margin: 0 auto;
+  padding: 10% 0;
+  width: 90%;
+  max-width: 54em;
+  font: 16px/1.375 "source-code-pro", monospace;
   text-align: center;
   -webkit-transition: all .25s;
   -o-transition: all .25s;
@@ -438,21 +441,6 @@ body {
   -webkit-transition: none;
   -o-transition: none;
   transition: none
-}
-
-div[role="main"] {
-  margin: 0 auto;
-  width: 54em
-}
-
-div[role="main"]:before,
-div[role="main"]:after {
-  content: " ";
-  display: table
-}
-
-div[role="main"]:after {
-  clear: both
 }
 
 .large {
@@ -538,19 +526,19 @@ h1 {
   text-transform: uppercase
 }
 
-section:first-child p {
+.about p {
   margin-right: auto;
   margin-left: auto;
-  width: 41.25em;
+  max-width: 40em;
   text-align: left
 }
 
 .code {
   margin: 0 auto;
   padding: 0;
-  width: 60.85714em;
+  width: 100%;
   max-height: 24em;
-  overflow: scroll;
+  overflow: hidden;
   border-radius: 2px;
   counter-reset: li;
   font: 0.875em/1.5 "source-code-pro", monospace;
@@ -591,17 +579,31 @@ section:first-child p {
 }
 
 .colours {
-  margin: 0;
-  padding: 0
+  position: relative;
+  left: -0.5em;
+  margin: 0 auto;
+  padding: 0;
+  width: 54.5em
+}
+
+.colours:before,
+.colours:after {
+  content: " ";
+  display: table
+}
+
+.colours:after {
+  clear: both
 }
 
 .colour {
-  display: table;
+  display: block;
   float: left;
   position: relative;
-  margin: 0.375em;
-  width: 6em;
-  height: 6em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  width: 6.3125em;
+  height: 6.3125em;
   border-radius: 2px;
   font: 1em "futura-pt", "Futura", sans-serif;
   letter-spacing: 0.0625em;
@@ -626,7 +628,7 @@ section:first-child p {
 }
 
 .colour b {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle
 }
 
@@ -993,6 +995,42 @@ footer[role="contentinfo"] {
 .light footer[role="contentinfo"] a:hover,
 .light footer[role="contentinfo"] a:focus {
   color: #606060
+}
+
+@media screen and (min-width: 0em) {
+  .colours {
+    left: -0.75em;
+    width: 18.5em
+  }
+
+  .colour {
+    margin-top: 0.75em;
+    margin-left: 0.75em;
+    width: 1.8125em;
+    height: 1.8125em
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .colours {
+    width: 36.5em
+  }
+
+  .colour {
+    width: 4.0625em;
+    height: 4.0625em
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .colours {
+    width: 40.5em
+  }
+
+  .colour {
+    width: 4.3125em;
+    height: 4.3125em
+  }
 }
 
 @keyframes blink {
