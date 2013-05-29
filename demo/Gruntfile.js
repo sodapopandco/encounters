@@ -51,6 +51,9 @@ module.exports = function(grunt) {
 
     cssmin: {
       compress: {
+        options: {
+          keepSpecialComments: 0
+        },
         files: {
           'styles/screen.min.css': ['styles/screen.css']
         }
