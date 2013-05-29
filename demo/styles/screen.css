@@ -474,7 +474,7 @@ h1 {
   -webkit-animation: blink 1.5s steps(2, start) infinite;
   -o-animation: blink 1.5s steps(2, start) infinite;
   animation: blink 1.5s steps(2, start) infinite;
-  margin-left: 0.57143em;
+  margin-left: 0.571em;
   width: 2px;
   direction: ltr;
   text-indent: -9999px
@@ -553,15 +553,15 @@ h1 {
   content: counter(li);
   position: absolute;
   left: 0;
-  padding-right: 0.57143em;
-  width: 2.28571em;
+  padding-right: 0.571em;
+  width: 2.286em;
   counter-increment: li;
   text-align: right
 }
 
 .code pre {
   margin: 0;
-  padding-left: 3.42857em;
+  padding-left: 3.429em;
   font-family: inherit;
   text-align: left
 }
@@ -602,13 +602,13 @@ h1 {
   position: relative;
   margin-top: 0.5em;
   margin-left: 0.5em;
-  width: 6.3125em;
-  height: 6.3125em;
+  width: 6.313em;
+  height: 6.313em;
   border-radius: 2px;
   font: 1em "futura-pt", "Futura", sans-serif;
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.063em;
   line-height: 1;
-  text-shadow: 0 0.0625em 0 rgba(255, 255, 255, 0.125);
+  text-shadow: 0 0.063em 0 rgba(255, 255, 255, 0.125);
   text-transform: uppercase
 }
 
@@ -647,14 +647,14 @@ h1 {
   z-index: 1;
   top: 75%;
   left: 50%;
-  margin-top: -2.58333em;
+  margin-top: -2.583em;
   margin-left: -6.5em;
-  padding: 0.66667em 0.5em;
+  padding: 0.667em 0.5em;
   width: 13em;
-  height: 5.16667em;
+  height: 5.167em;
   background: #fff;
   border-radius: 1px;
-  box-shadow: 0 0.16667em 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.167em 0 rgba(0, 0, 0, 0.125);
   color: #b0b0b0;
   font: 0.75em/1.25 "source-code-pro", monospace;
   text-shadow: none;
@@ -672,7 +672,7 @@ h1 {
 }
 
 .info li:first-child {
-  font-size: 1.16667em;
+  font-size: 1.167em;
   font-weight: bold
 }
 
@@ -685,7 +685,7 @@ h1 {
 .base-02,
 .base-03,
 .base-04 {
-  text-shadow: 0 -0.0625em 0 rgba(0, 0, 0, 0.125)
+  text-shadow: 0 -0.063em 0 rgba(0, 0, 0, 0.125)
 }
 
 .base-01 {
@@ -1006,8 +1006,8 @@ footer[role="contentinfo"] {
   .colour {
     margin-top: 0.75em;
     margin-left: 0.75em;
-    width: 1.8125em;
-    height: 1.8125em
+    width: 1.813em;
+    height: 1.813em
   }
 }
 
@@ -1017,8 +1017,8 @@ footer[role="contentinfo"] {
   }
 
   .colour {
-    width: 4.0625em;
-    height: 4.0625em
+    width: 4.063em;
+    height: 4.063em
   }
 }
 
@@ -1028,8 +1028,8 @@ footer[role="contentinfo"] {
   }
 
   .colour {
-    width: 4.3125em;
-    height: 4.3125em
+    width: 4.313em;
+    height: 4.313em
   }
 }
 

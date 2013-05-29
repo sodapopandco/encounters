@@ -4,10 +4,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    compass: {
+    sass: {
       compile: {
         options: {
-          config: 'config.rb'
+          precision: 3
+        },
+        files: {
+          'styles/screen.css': ['sass/screen.scss']
         }
       }
     },
@@ -15,7 +18,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       prefix: {
         files: {
-          'styles/main.css': ['styles/main.css']
+          'styles/screen.css': ['styles/screen.css']
         }
       }
     },
@@ -28,20 +31,20 @@ module.exports = function(grunt) {
         options: {
           import: 2
         },
-        src: ['styles/main.css']
+        src: ['styles/screen.css']
       },
       lax: {
         options: {
           import: false
         },
-        src: ['styles/main.css']
+        src: ['styles/screen.css']
       }
     },
 
     concat: {
       join: {
         files: {
-          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/main.css']
+          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
         }
       }
     },
@@ -55,12 +58,12 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['sass/**/*.scss', 'demo/config.rb'],
-      tasks: ['compass', 'autoprefixer', 'csslint:lax', 'concat']
+      files: ['**/*.html', 'sass/**/*.scss'],
+      tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat']
     }
   });
 
-  grunt.registerTask('build', ['compass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
 }
