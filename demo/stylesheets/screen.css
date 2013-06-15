@@ -845,10 +845,6 @@ footer[role="contentinfo"] {
   background: #ffd440
 }
 
-.dark .main {
-  color: #606060
-}
-
 .dark .code {
   background: #181818;
   color: #e0e0e0
@@ -920,6 +916,10 @@ footer[role="contentinfo"] {
 
 .light ::selection {
   background: #e0e0e0
+}
+
+.light a:hover {
+  color: #181818
 }
 
 .light .title,

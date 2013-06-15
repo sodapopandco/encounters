@@ -2,8 +2,18 @@
 .light {
   background: #fcfcfc;
   color: $base-04;
-  ::-moz-selection { background: $base-06; }
-  ::selection { background: $base-06; }
+
+  ::-moz-selection {
+    background: $base-06;
+  }
+
+  ::selection {
+    background: $base-06;
+  }
+
+  a:hover {
+    color: $base-01;
+  }
 
   .title, .section {
     color: $base-03;
