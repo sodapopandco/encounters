@@ -502,10 +502,8 @@ h1 {
 }
 
 .main {
-  position: fixed;
   z-index: 1;
-  width: 100%;
-  font-size: 0
+  width: 100%
 }
 
 .main li {
@@ -578,7 +576,7 @@ h1 {
   font-family: Menlo, monospace
 }
 
-.colours {
+.colour-list {
   position: relative;
   left: -0.5em;
   margin: 0 auto;
@@ -586,13 +584,13 @@ h1 {
   width: 54.5em
 }
 
-.colours:before,
-.colours:after {
+.colour-list:before,
+.colour-list:after {
   content: " ";
   display: table
 }
 
-.colours:after {
+.colour-list:after {
   clear: both
 }
 

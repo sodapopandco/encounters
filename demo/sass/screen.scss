@@ -74,10 +74,10 @@ h1 {
 }
 
 .main {
-  position: fixed;
+  // position: fixed;
   z-index: 1;
   width: 100%;
-  font-size: 0;
+  // font-size: 0;
 
   li {
     display: inline-block;
@@ -154,7 +154,7 @@ h1 {
 }
 
 // Colours
-.colours {
+.colour-list {
   @include clear-fix;
 
   position: relative;
