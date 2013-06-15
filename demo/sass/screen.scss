@@ -110,10 +110,9 @@ h1 {
 // Code
 .code {
   margin: 0 auto;
-  padding: 0;
+  padding: to-em(21, 14) 0;
   width: 100%;
-  // max-width: em(864);
-  max-height: to-em(336, 14);
+  max-height: to-em(378, 14);
   overflow: hidden;
   border-radius: 2px;
   counter-reset: li;
