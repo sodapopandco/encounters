@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       prefix: {
         files: {
-          'styles/screen.css': ['styles/screen.css']
+          'stylesheets/screen.css': ['stylesheets/screen.css']
         }
       }
     },
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     concat: {
       join: {
         files: {
-          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
+          'stylesheets/screen.css': ['components/normalize-css/normalize.css', 'stylesheets/screen.css']
         }
       }
     },
@@ -28,13 +28,13 @@ module.exports = function(grunt) {
         options: {
           import: 2
         },
-        src: ['styles/screen.css']
+        src: ['stylesheets/screen.css']
       },
       lax: {
         options: {
           import: false
         },
-        src: ['styles/screen.css']
+        src: ['stylesheets/screen.css']
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'styles/screen.min.css': ['styles/screen.css']
+          'stylesheets/screen.min.css': ['stylesheets/screen.css']
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
           precision: 3
         },
         files: {
-          'styles/screen.css': ['sass/screen.scss']
+          'stylesheets/screen.css': ['sass/screen.scss']
         }
       }
     },
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       css: {
-        files: ['sass/**/*.scss'],
+        files: ['**/*.scss'],
         tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat']
       },
       html: {
