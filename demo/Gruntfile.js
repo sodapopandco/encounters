@@ -61,8 +61,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['**/*.html', 'sass/**/*.scss'],
-      tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat']
+      css: {
+        files: ['sass/**/*.scss'],
+        tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat']
+      }
+      html: {
+        files: ['**/*.html']
+      }
     }
   });
 
