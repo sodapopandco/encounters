@@ -4,21 +4,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
-      compile: {
-        options: {
-          precision: 3
-        },
-        files: {
-          'styles/screen.css': ['sass/screen.scss']
-        }
-      }
-    },
-
     autoprefixer: {
       prefix: {
         files: {
           'styles/screen.css': ['styles/screen.css']
+        }
+      }
+    },
+
+    concat: {
+      join: {
+        files: {
+          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
         }
       }
     },
@@ -41,14 +38,6 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-      join: {
-        files: {
-          'styles/screen.css': ['components/normalize-css/normalize.css', 'styles/screen.css']
-        }
-      }
-    },
-
     cssmin: {
       compress: {
         options: {
@@ -56,6 +45,17 @@ module.exports = function(grunt) {
         },
         files: {
           'styles/screen.min.css': ['styles/screen.css']
+        }
+      }
+    },
+
+    sass: {
+      compile: {
+        options: {
+          precision: 3
+        },
+        files: {
+          'styles/screen.css': ['sass/screen.scss']
         }
       }
     },
