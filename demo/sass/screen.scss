@@ -76,12 +76,16 @@ h1 {
 .main {
   // position: fixed;
   z-index: 1;
+  margin: em(24) 0;
   width: 100%;
-  // font-size: 0;
+
+  ul {
+    font-size: 0;
+  }
 
   li {
     display: inline-block;
-    font: bold em(16) $display-font;
+    font: bold $body-font-size+px $display-font;
     letter-spacing: em(2);
     text-transform: uppercase;
   }
@@ -379,7 +383,7 @@ footer[role="contentinfo"] {
 // Media Queries
 // Base
 @media screen and (min-width: 0em) {
-  .colours {
+  .colour-list {
     left: em(-12);
     width: em(296);
   }
@@ -395,7 +399,7 @@ footer[role="contentinfo"] {
 
 // 640px+
 @media screen and (min-width: 40em) {
-  .colours {
+  .colour-list {
     width: em(584);
   }
   .colour {
@@ -405,7 +409,7 @@ footer[role="contentinfo"] {
 }
 
 @media screen and (min-width: 60em) {
-  .colours {
+  .colour-list {
     width: em(648);
   }
 

@@ -2,8 +2,18 @@
 .dark {
   background: #101010;
   color: $base-05;
-  ::-moz-selection { background: $base-03; }
-  ::selection { background: $base-03; }
+
+  ::-moz-selection {
+    background: $base-03;
+  }
+
+  ::selection {
+    background: $base-03;
+  }
+
+  a:hover {
+    color: $base-08;
+  }
 
   .title, .section {
     color: $base-06;
@@ -17,6 +27,10 @@
 
   .caret {
     background: saturate($yellow-02, 25%);
+  }
+
+  .main {
+    color: $base-04;
   }
 
   .code {

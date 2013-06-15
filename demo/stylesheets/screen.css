@@ -503,12 +503,17 @@ h1 {
 
 .main {
   z-index: 1;
+  margin: 1.5em 0;
   width: 100%
+}
+
+.main ul {
+  font-size: 0
 }
 
 .main li {
   display: inline-block;
-  font: bold 1em "futura-pt", "Futura", sans-serif;
+  font: bold 16px "futura-pt", "Futura", sans-serif;
   letter-spacing: 0.125em;
   text-transform: uppercase
 }
@@ -823,6 +828,10 @@ footer[role="contentinfo"] {
   background: #303030
 }
 
+.dark a:hover {
+  color: #f8f8f8
+}
+
 .dark .title,
 .dark .section {
   color: #e0e0e0
@@ -834,6 +843,10 @@ footer[role="contentinfo"] {
 
 .dark .caret {
   background: #ffd440
+}
+
+.dark .main {
+  color: #606060
 }
 
 .dark .code {
@@ -996,7 +1009,7 @@ footer[role="contentinfo"] {
 }
 
 @media screen and (min-width: 0em) {
-  .colours {
+  .colour-list {
     left: -0.75em;
     width: 18.5em
   }
@@ -1010,7 +1023,7 @@ footer[role="contentinfo"] {
 }
 
 @media screen and (min-width: 40em) {
-  .colours {
+  .colour-list {
     width: 36.5em
   }
 
@@ -1021,7 +1034,7 @@ footer[role="contentinfo"] {
 }
 
 @media screen and (min-width: 60em) {
-  .colours {
+  .colour-list {
     width: 40.5em
   }
 
