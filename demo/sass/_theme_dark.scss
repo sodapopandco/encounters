@@ -34,12 +34,6 @@ $highlight: saturate($yellow-02, 25%);
   .code {
     background: $base-01;
     color: $base-06;
-
-    li {
-      &:before {
-        color: $base-03;
-      }
-    }
   }
 
   .comment {

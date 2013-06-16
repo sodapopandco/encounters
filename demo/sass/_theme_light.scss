@@ -43,12 +43,6 @@ $highlight: saturate($blue-02, 25%);
   .code {
     background: $base-08;
     color: $base-03;
-
-    li {
-      &:before {
-        color: $base-06;
-      }
-    }
   }
 
   .comment {
