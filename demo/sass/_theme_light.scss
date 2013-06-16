@@ -1,5 +1,5 @@
 // Light Theme
-$blue-03: saturate($blue-02, 25%);
+$highlight: saturate($blue-02, 25%);
 
 .light {
   background: #fcfcfc;
@@ -28,7 +28,7 @@ $blue-03: saturate($blue-02, 25%);
   }
 
   .caret {
-    background: $blue-03;
+    background: $highlight;
   }
 
   .icon {
@@ -88,10 +88,10 @@ $blue-03: saturate($blue-02, 25%);
   }
 
   .button {
-    color: $blue-03;
+    color: $highlight;
 
     &:hover {
-      color: $blue-01;
+      color: lighten($highlight, 12.5%);
     }
 
     + small {

@@ -901,7 +901,7 @@ footer[role="contentinfo"] {
 }
 
 .dark .button:hover {
-  color: #bf9400
+  color: #ffc500
 }
 
 .dark .button + small {
@@ -1016,7 +1016,7 @@ footer[role="contentinfo"] {
 }
 
 .light .button:hover {
-  color: #0051ac
+  color: #6fb2fc
 }
 
 .light .button + small {
