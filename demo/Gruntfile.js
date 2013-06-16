@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat']
+        tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat', 'cssmin']
       },
       html: {
         files: ['**/*.html']
