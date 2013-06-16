@@ -896,6 +896,19 @@ footer[role="contentinfo"] {
   color: #e0e0e0
 }
 
+.dark .button {
+  background: #ffd440;
+  color: #dfad00
+}
+
+.dark .button:hover {
+  color: #c09400
+}
+
+.dark .button + small {
+  color: #606060
+}
+
 .dark footer[role="contentinfo"] {
   color: #606060
 }
@@ -1006,6 +1019,19 @@ footer[role="contentinfo"] {
 .light footer[role="contentinfo"] a:hover,
 .light footer[role="contentinfo"] a:focus {
   color: #606060
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  font: bold 1.5em/1 "futura-pt", "Futura", sans-serif
+}
+
+.button + small {
+  display: block;
+  margin-top: 0.429em;
+  font-size: 0.875em
 }
 
 @media screen and (min-width: 0em) {

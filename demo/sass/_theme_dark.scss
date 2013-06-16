@@ -1,4 +1,6 @@
 // Dark Theme
+$yellow-03: saturate($yellow-02, 25%);
+
 .dark {
   background: #101010;
   color: $base-05;
@@ -26,7 +28,7 @@
   }
 
   .caret {
-    background: saturate($yellow-02, 25%);
+    background: $yellow-03;
   }
 
   .code {
@@ -74,6 +76,19 @@
 
   .source {
     color: $base-06;
+  }
+
+  .button {
+    background: $yellow-03;
+    color: darken($yellow-03, 18.75%);
+
+    &:hover {
+      color: darken($yellow-03, 25%);
+    }
+
+    + small {
+      color: $base-04;
+    }
   }
 
   footer[role="contentinfo"] {

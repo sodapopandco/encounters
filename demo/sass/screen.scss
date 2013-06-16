@@ -380,6 +380,19 @@ footer[role="contentinfo"] {
 @import "theme_dark";
 @import "theme_light";
 
+.button {
+  display: inline-block;
+  padding: to-em(12, 24) to-em(24, 24);
+  border-radius: to-em(6, 24);
+  font: bold em(24)/1 $display-font;
+
+  + small {
+    display: block;
+    margin-top: to-em(6, 14);
+    font-size: em(14);
+  }
+}
+
 // Media Queries
 // Base
 @media screen and (min-width: 0em) {
