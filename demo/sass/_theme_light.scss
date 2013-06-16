@@ -1,4 +1,6 @@
 // Light Theme
+$blue-03: saturate($blue-02, 25%);
+
 .light {
   background: #fcfcfc;
   color: $base-04;
@@ -26,7 +28,7 @@
   }
 
   .caret {
-    background: saturate($blue-02, 25%);
+    background: $blue-03;
   }
 
   .icon {
@@ -83,6 +85,18 @@
 
   .source {
     color: $base-03;
+  }
+
+  .button {
+    color: $blue-03;
+
+    &:hover {
+      color: $blue-01;
+    }
+
+    + small {
+      color: $base-05;
+    }
   }
 
   footer[role="contentinfo"] {

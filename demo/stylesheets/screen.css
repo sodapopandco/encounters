@@ -897,12 +897,11 @@ footer[role="contentinfo"] {
 }
 
 .dark .button {
-  background: #ffd440;
-  color: #dfad00
+  color: #ffd440
 }
 
 .dark .button:hover {
-  color: #c09400
+  color: #bf9400
 }
 
 .dark .button + small {
@@ -1012,6 +1011,18 @@ footer[role="contentinfo"] {
   color: #303030
 }
 
+.light .button {
+  color: #3191fb
+}
+
+.light .button:hover {
+  color: #0051ac
+}
+
+.light .button + small {
+  color: #b0b0b0
+}
+
 .light footer[role="contentinfo"] {
   color: #b0b0b0
 }
@@ -1023,8 +1034,6 @@ footer[role="contentinfo"] {
 
 .button {
   display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 0.25em;
   font: bold 1.5em/1 "futura-pt", "Futura", sans-serif
 }
 

@@ -79,11 +79,10 @@ $yellow-03: saturate($yellow-02, 25%);
   }
 
   .button {
-    background: $yellow-03;
-    color: darken($yellow-03, 18.75%);
+    color: $yellow-03;
 
     &:hover {
-      color: darken($yellow-03, 25%);
+      color: $yellow-01;
     }
 
     + small {

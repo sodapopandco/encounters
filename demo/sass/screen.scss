@@ -382,8 +382,6 @@ footer[role="contentinfo"] {
 
 .button {
   display: inline-block;
-  padding: to-em(12, 24) to-em(24, 24);
-  border-radius: to-em(6, 24);
   font: bold em(24)/1 $display-font;
 
   + small {
