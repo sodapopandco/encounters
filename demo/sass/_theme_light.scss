@@ -2,7 +2,7 @@
 $highlight: saturate($blue-02, 25%);
 
 .light {
-  background: #fcfcfc;
+  background: #fcfcfc url(/images/stars_light.png) repeat;
   color: $base-04;
 
   ::-moz-selection {

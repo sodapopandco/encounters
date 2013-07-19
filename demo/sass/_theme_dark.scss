@@ -2,7 +2,7 @@
 $highlight: saturate($yellow-02, 25%);
 
 .dark {
-  background: #101010;
+  background: #101010 url(/images/stars_dark.png) repeat;
   color: $base-05;
 
   ::-moz-selection {
