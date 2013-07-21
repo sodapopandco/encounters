@@ -3,6 +3,7 @@ $highlight: saturate($yellow-02, 25%);
 $background-color: #101010;
 
 .dark {
+  background-color: $background-color;
   color: $base-05;
 
   ::-moz-selection {
