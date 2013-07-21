@@ -1,5 +1,6 @@
 // Light Theme
 $highlight: saturate($blue-02, 25%);
+$background-color: #fcfcfc;
 
 .light {
   color: $base-04;
@@ -17,7 +18,7 @@ $highlight: saturate($blue-02, 25%);
   }
 
   .stars-container {
-    background: #fcfcfc;
+    background: $background-color;
   }
 
   .stars {
@@ -90,6 +91,7 @@ $highlight: saturate($blue-02, 25%);
 
   .button {
     background: $highlight;
+    border: 1px solid $background-color;
     color: $base-08;
 
     &:hover {

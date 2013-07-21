@@ -391,9 +391,9 @@ footer[role="contentinfo"] {
 // Buttons
 .button {
   display: inline-block;
-  padding: em(6) em(12);
-  border-radius: 3px;
-  font: bold em(24)/1 $display-font;
+  padding: em(3) em(9);
+  border-radius: 4px;
+  font: bold em(24) $display-font;
   transition: all .25s;
 
   + small {
