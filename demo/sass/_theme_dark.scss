@@ -2,7 +2,7 @@
 $highlight: saturate($yellow-02, 25%);
 
 .dark {
-  background: #101010 url(/images/stars_dark.png) repeat;
+  background: #101010;
   color: $base-05;
 
   ::-moz-selection {
@@ -15,6 +15,18 @@ $highlight: saturate($yellow-02, 25%);
 
   a:hover {
     color: $base-08;
+  }
+
+  .stars-1 {
+    background: url(/images/stars_dark_1.png) top center repeat;
+  }
+
+  .stars-2 {
+    background: url(/images/stars_dark_2.png) top center repeat;
+  }
+
+  .stars-3 {
+    background: url(/images/stars_dark_3.png) top center repeat;
   }
 
   .title, .section {

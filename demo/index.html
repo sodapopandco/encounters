@@ -13,271 +13,279 @@
 </head>
 
 <body class="dark">
-  <header role="banner">
-    <img id="toggle" class="pulse icon" src="icons/contrast_dark.svg" alt="Toggle Colour Schemes">
+  <div class="stars-container">
+    <div class="stars-1 stars"></div>
+    <div class="stars-2 stars"></div>
+    <div class="stars-3 stars"></div>
+  </div>
 
-    <h1 class="large title">Encounters</h1>
+  <div class="container">
+    <header role="banner">
+      <img id="toggle" class="pulse icon" src="icons/contrast_dark.svg" alt="Toggle Colour Schemes">
 
-    <p class="medium tagline">Better reading, better writing, better<span class="caret">…</span></p>
-  </header>
+      <h1 class="large title">Encounters</h1>
 
-<!--   <nav class="main" role="navigation">
-    <ul>
-      <li><a class="intro" href="#intro">Intro</a></li>
-      <li><a class="examples" href="#examples">Examples</a></li>
-      <li><a class="colours" href="#colours">Colours</a></li>
-      <li><a class="download" href="#download">Download</a></li>
-    </ul>
-  </nav> -->
+      <p class="medium tagline">Better reading, better writing, better<span class="caret">…</span></p>
+    </header>
 
-  <section id="intro" class="about">
-    <p>A simple little colour palette for writing. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid. <a href="#">Use it well.</a></p>
-
-    <a class="download button" href="#">Download Encounters</a>
-    <small>Comes in both <a href="#">Sublime Text</a> &amp; <a href="#">TextMate</a> flavours.</small>
-  </section>
-
-  <section id="examples">
-    <h1 class="section">Examples</h1>
-
-    <div class="code">
-<pre>
-<span class="tag">&lt;!DOCTYPE html&gt;</span>
-  <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
-  <span class="tag">&lt;head&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
-    <span class="tag">&lt;title&gt;<span class="source">Encounters Demo</span>&lt;/title&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"description"</span> <span class="attribute">content</span>=<span class="string">"A simple little colour palette for writing."</span>&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span>
-    <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"icon"</span> <span class="attribute">type</span>=<span class="string">"image/x-icon"</span> <span class="attribute">href</span>=<span class="string">"favicon.ico"</span>&gt;</span>
-    <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">type</span>=<span class="string">"text/css"</span> <span class="attribute">href</span>=<span class="string">"styles/screen.min.css"</span>&gt;</span>
-    <span class="comment">&lt;!-- Typekit --&gt;</span>
-    <span class="tag">&lt;script <span class="attribute">src</span>=<span class="string">"//use.typekit.net/whk3yjv.js"</span>&gt;&lt;/script&gt;</span>
-    <span class="tag">&lt;script&gt;<span class="source"><span class="keyword">try</span>{Typekit.<span class="support">load</span>();}<span class="keyword">catch</span>(e){}</span>&lt;/script&gt;</span>
-  <span class="tag">&lt;/head&gt;</span>
-
-  <span class="tag">&lt;body <span class="attribute">class</span>=<span class="string">"<span class="swap">dark</span>"</span>&gt;</span>
-    <span class="tag">&lt;header <span class="attribute">role</span>=<span class="string">"banner"</span>&gt;</span>
-</pre>
-    </div>
-
-    <!-- <nav>
+  <!--   <nav class="main" role="navigation">
       <ul>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#scss">SCSS</a></li>
-        <li><a href="#javascript">JavaScript</a></li>
+        <li><a class="intro" href="#intro">Intro</a></li>
+        <li><a class="examples" href="#examples">Examples</a></li>
+        <li><a class="colours" href="#colours">Colours</a></li>
+        <li><a class="download" href="#download">Download</a></li>
       </ul>
     </nav> -->
-  </section>
 
-  <section id="colours">
-    <h1 class="section">Colours</h1>
+    <section id="intro" class="about">
+      <p>A simple little colour palette for writing. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid. <a href="#">Use it well.</a></p>
 
-    <ul class="neutral colour-list">
-      <li class="base-01 colour">
-        <b>Base <em>01</em></b>
-        <ul class="info">
-          <li>#<em>181818</em></li>
-          <li>rgb(<em>24</em>,<em>24</em>,<em>24</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>9%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-02 colour">
-        <b>Base <em>02</em></b>
-        <ul class="info">
-          <li>#<em>202020</em></li>
-          <li>rgb(<em>32</em>,<em>32</em>,<em>32</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>13%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-03 colour">
-        <b>Base <em>03</em></b>
-        <ul class="info">
-          <li>#<em>303030</em></li>
-          <li>rgb(<em>48</em>,<em>48</em>,<em>48</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>19%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-04 colour">
-        <b>Base <em>04</em></b>
-        <ul class="info">
-          <li>#<em>606060</em></li>
-          <li>rgb(<em>96</em>,<em>96</em>,<em>96</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>38%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-05 colour">
-        <b>Base <em>05</em></b>
-        <ul class="info">
-          <li>#<em>b0b0b0</em></li>
-          <li>rgb(<em>176</em>,<em>176</em>,<em>176</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>69%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-06 colour">
-        <b>Base <em>06</em></b>
-        <ul class="info">
-          <li>#<em>e0e0e0</em></li>
-          <li>rgb(<em>224</em>,<em>224</em>,<em>224</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>88%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-07 colour">
-        <b>Base <em>07</em></b>
-        <ul class="info">
-          <li>#<em>f0f0f0</em></li>
-          <li>rgb(<em>240</em>,<em>240</em>,<em>240</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>94%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="base-08 colour">
-        <b>Base <em>08</em></b>
-        <ul class="info">
-          <li>#<em>f8f8f8</em></li>
-          <li>rgb(<em>248</em>,<em>248</em>,<em>248</em>)</li>
-          <li>hsl(<em>0</em>,<em>0%</em>,<em>97%</em>)</li>
-        </ul class="info">
-      </li>
-    </ul>
+      <a class="download button" href="#">Download Encounters</a>
+      <small>Comes in both <a href="#">Sublime Text</a> &amp; <a href="#">TextMate</a> flavours.</small>
+    </section>
 
-    <ul class="primary colour-list">
-      <li class="red-01 colour">
-        <b>Red <em>01</em></b>
-        <ul class="info">
-          <li>#<em>ac0000</em></li>
-          <li>rgb(<em>172</em>,<em>0</em>,<em>0</em>)</li>
-          <li>hsl(<em>0</em>,<em>100%</em>,<em>67%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="orange-01 colour">
-        <b>Orange <em>01</em></b>
-        <ul class="info">
-          <li>#<em>bd5000</em></li>
-          <li>rgb(<em>189</em>,<em>80</em>,<em>0</em>)</li>
-          <li>hsl(<em>25</em>,<em>100%</em>,<em>74%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="yellow-01 colour">
-        <b>Yellow <em>01</em></b>
-        <ul class="info">
-          <li>#<em>bf9400</em></li>
-          <li>rgb(<em>191</em>,<em>148</em>,<em>0</em>)</li>
-          <li>hsl(<em>46</em>,<em>100%</em>,<em>75%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="green-01 colour">
-        <b>Green <em>01</em></b>
-        <ul class="info">
-          <li>#<em>008b00</em></li>
-          <li>rgb(<em>0</em>,<em>139</em>,<em>0</em>)</li>
-          <li>hsl(<em>120</em>,<em>100%</em>,<em>55%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="cyan-01 colour">
-        <b>Cyan <em>01</em></b>
-        <ul class="info">
-          <li>#<em>007773</em></li>
-          <li>rgb(<em>0</em>,<em>119</em>,<em>115</em>)</li>
-          <li>hsl(<em>178</em>,<em>100%</em>,<em>47%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="blue-01 colour">
-        <b>Blue <em>01</em></b>
-        <ul class="info">
-          <li>#<em>0051ac</em></li>
-          <li>rgb(<em>0</em>,<em>81</em>,<em>172</em>)</li>
-          <li>hsl(<em>212</em>,<em>100%</em>,<em>67%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="violet-01 colour">
-        <b>Violet <em>01</em></b>
-        <ul class="info">
-          <li>#<em>740091</em></li>
-          <li>rgb(<em>116</em>,<em>0</em>,<em>145</em>)</li>
-          <li>hsl(<em>288</em>,<em>100%</em>,<em>57%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="pink-01 colour">
-        <b>Pink <em>01</em></b>
-        <ul class="info">
-          <li>#<em>c63989</em></li>
-          <li>rgb(<em>198</em>,<em>57</em>,<em>137</em>)</li>
-          <li>hsl(<em>326</em>,<em>71%</em>,<em>78%</em>)</li>
-        </ul class="info">
-      </li>
-    </ul>
+    <section id="examples">
+      <h1 class="section">Examples</h1>
 
-    <ul class="secondary colour-list">
-      <li class="red-02 colour">
-        <b>Red <em>02</em></b>
-        <ul class="info">
-          <li>#<em>e14b4b</em></li>
-          <li>rgb(<em>225</em>,<em>75</em>,<em>75</em>)</li>
-          <li>hsl(<em>0</em>,<em>67%</em>,<em>88%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="orange-02 colour">
-        <b>Orange <em>02</em></b>
-        <ul class="info">
-          <li>#<em>f1924c</em></li>
-          <li>rgb(<em>241</em>,<em>146</em>,<em>76</em>)</li>
-          <li>hsl(<em>25</em>,<em>68%</em>,<em>95%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="yellow-02 colour">
-        <b>Yellow <em>02</em></b>
-        <ul class="info">
-          <li>#<em>f3cd4c</em></li>
-          <li>rgb(<em>243</em>,<em>205</em>,<em>76</em>)</li>
-          <li>hsl(<em>46</em>,<em>69%</em>,<em>95%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="green-02 colour">
-        <b>Green <em>02</em></b>
-        <ul class="info">
-          <li>#<em>49c249</em></li>
-          <li>rgb(<em>73</em>,<em>194</em>,<em>73</em>)</li>
-          <li>hsl(<em>120</em>,<em>62%</em>,<em>76%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="cyan-02 colour">
-        <b>Cyan <em>02</em></b>
-        <ul class="info">
-          <li>#<em>48afac</em></li>
-          <li>rgb(<em>72</em>,<em>175</em>,<em>172</em>)</li>
-          <li>hsl(<em>178</em>,<em>59%</em>,<em>69%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="blue-02 colour">
-        <b>Blue <em>02</em></b>
-        <ul class="info">
-          <li>#<em>4b92e1</em></li>
-          <li>rgb(<em>75</em>,<em>146</em>,<em>225</em>)</li>
-          <li>hsl(<em>212</em>,<em>67%</em>,<em>88%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="violet-02 colour">
-        <b>Violet <em>02</em></b>
-        <ul class="info">
-          <li>#<em>ae49c8</em></li>
-          <li>rgb(<em>174</em>,<em>73</em>,<em>200</em>)</li>
-          <li>hsl(<em>288</em>,<em>64%</em>,<em>78%</em>)</li>
-        </ul class="info">
-      </li>
-      <li class="pink-02 colour">
-        <b>Pink <em>02</em></b>
-        <ul class="info">
-          <li>#<em>f58ac7</em></li>
-          <li>rgb(<em>245</em>,<em>138</em>,<em>199</em>)</li>
-          <li>hsl(<em>326</em>,<em>44%</em>,<em>96%</em>)</li>
-        </ul class="info">
-      </li>
-    </ul>
-  </section>
+      <div class="code">
+  <pre>
+  <span class="tag">&lt;!DOCTYPE html&gt;</span>
+    <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+      <span class="tag">&lt;meta <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
+      <span class="tag">&lt;title&gt;<span class="source">Encounters Demo</span>&lt;/title&gt;</span>
+      <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"description"</span> <span class="attribute">content</span>=<span class="string">"A simple little colour palette for writing."</span>&gt;</span>
+      <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span>
+      <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"icon"</span> <span class="attribute">type</span>=<span class="string">"image/x-icon"</span> <span class="attribute">href</span>=<span class="string">"favicon.ico"</span>&gt;</span>
+      <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">type</span>=<span class="string">"text/css"</span> <span class="attribute">href</span>=<span class="string">"styles/screen.min.css"</span>&gt;</span>
+      <span class="comment">&lt;!-- Typekit --&gt;</span>
+      <span class="tag">&lt;script <span class="attribute">src</span>=<span class="string">"//use.typekit.net/whk3yjv.js"</span>&gt;&lt;/script&gt;</span>
+      <span class="tag">&lt;script&gt;<span class="source"><span class="keyword">try</span>{Typekit.<span class="support">load</span>();}<span class="keyword">catch</span>(e){}</span>&lt;/script&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
 
-  <footer role="contentinfo" class="small">
-    <p>Made with <a href="http://sodapop.is/">Sodapop &amp; Co.</a></p>
-  </footer>
+    <span class="tag">&lt;body <span class="attribute">class</span>=<span class="string">"<span class="swap">dark</span>"</span>&gt;</span>
+      <span class="tag">&lt;header <span class="attribute">role</span>=<span class="string">"banner"</span>&gt;</span>
+  </pre>
+      </div>
+
+      <!-- <nav>
+        <ul>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#scss">SCSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </nav> -->
+    </section>
+
+    <section id="colours">
+      <h1 class="section">Colours</h1>
+
+      <ul class="neutral colour-list">
+        <li class="base-01 colour">
+          <b>Base <em>01</em></b>
+          <ul class="info">
+            <li>#<em>181818</em></li>
+            <li>rgb(<em>24</em>,<em>24</em>,<em>24</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>9%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-02 colour">
+          <b>Base <em>02</em></b>
+          <ul class="info">
+            <li>#<em>202020</em></li>
+            <li>rgb(<em>32</em>,<em>32</em>,<em>32</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>13%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-03 colour">
+          <b>Base <em>03</em></b>
+          <ul class="info">
+            <li>#<em>303030</em></li>
+            <li>rgb(<em>48</em>,<em>48</em>,<em>48</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>19%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-04 colour">
+          <b>Base <em>04</em></b>
+          <ul class="info">
+            <li>#<em>606060</em></li>
+            <li>rgb(<em>96</em>,<em>96</em>,<em>96</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>38%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-05 colour">
+          <b>Base <em>05</em></b>
+          <ul class="info">
+            <li>#<em>b0b0b0</em></li>
+            <li>rgb(<em>176</em>,<em>176</em>,<em>176</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>69%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-06 colour">
+          <b>Base <em>06</em></b>
+          <ul class="info">
+            <li>#<em>e0e0e0</em></li>
+            <li>rgb(<em>224</em>,<em>224</em>,<em>224</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>88%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-07 colour">
+          <b>Base <em>07</em></b>
+          <ul class="info">
+            <li>#<em>f0f0f0</em></li>
+            <li>rgb(<em>240</em>,<em>240</em>,<em>240</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>94%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="base-08 colour">
+          <b>Base <em>08</em></b>
+          <ul class="info">
+            <li>#<em>f8f8f8</em></li>
+            <li>rgb(<em>248</em>,<em>248</em>,<em>248</em>)</li>
+            <li>hsl(<em>0</em>,<em>0%</em>,<em>97%</em>)</li>
+          </ul class="info">
+        </li>
+      </ul>
+
+      <ul class="primary colour-list">
+        <li class="red-01 colour">
+          <b>Red <em>01</em></b>
+          <ul class="info">
+            <li>#<em>ac0000</em></li>
+            <li>rgb(<em>172</em>,<em>0</em>,<em>0</em>)</li>
+            <li>hsl(<em>0</em>,<em>100%</em>,<em>67%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="orange-01 colour">
+          <b>Orange <em>01</em></b>
+          <ul class="info">
+            <li>#<em>bd5000</em></li>
+            <li>rgb(<em>189</em>,<em>80</em>,<em>0</em>)</li>
+            <li>hsl(<em>25</em>,<em>100%</em>,<em>74%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="yellow-01 colour">
+          <b>Yellow <em>01</em></b>
+          <ul class="info">
+            <li>#<em>bf9400</em></li>
+            <li>rgb(<em>191</em>,<em>148</em>,<em>0</em>)</li>
+            <li>hsl(<em>46</em>,<em>100%</em>,<em>75%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="green-01 colour">
+          <b>Green <em>01</em></b>
+          <ul class="info">
+            <li>#<em>008b00</em></li>
+            <li>rgb(<em>0</em>,<em>139</em>,<em>0</em>)</li>
+            <li>hsl(<em>120</em>,<em>100%</em>,<em>55%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="cyan-01 colour">
+          <b>Cyan <em>01</em></b>
+          <ul class="info">
+            <li>#<em>007773</em></li>
+            <li>rgb(<em>0</em>,<em>119</em>,<em>115</em>)</li>
+            <li>hsl(<em>178</em>,<em>100%</em>,<em>47%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="blue-01 colour">
+          <b>Blue <em>01</em></b>
+          <ul class="info">
+            <li>#<em>0051ac</em></li>
+            <li>rgb(<em>0</em>,<em>81</em>,<em>172</em>)</li>
+            <li>hsl(<em>212</em>,<em>100%</em>,<em>67%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="violet-01 colour">
+          <b>Violet <em>01</em></b>
+          <ul class="info">
+            <li>#<em>740091</em></li>
+            <li>rgb(<em>116</em>,<em>0</em>,<em>145</em>)</li>
+            <li>hsl(<em>288</em>,<em>100%</em>,<em>57%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="pink-01 colour">
+          <b>Pink <em>01</em></b>
+          <ul class="info">
+            <li>#<em>c63989</em></li>
+            <li>rgb(<em>198</em>,<em>57</em>,<em>137</em>)</li>
+            <li>hsl(<em>326</em>,<em>71%</em>,<em>78%</em>)</li>
+          </ul class="info">
+        </li>
+      </ul>
+
+      <ul class="secondary colour-list">
+        <li class="red-02 colour">
+          <b>Red <em>02</em></b>
+          <ul class="info">
+            <li>#<em>e14b4b</em></li>
+            <li>rgb(<em>225</em>,<em>75</em>,<em>75</em>)</li>
+            <li>hsl(<em>0</em>,<em>67%</em>,<em>88%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="orange-02 colour">
+          <b>Orange <em>02</em></b>
+          <ul class="info">
+            <li>#<em>f1924c</em></li>
+            <li>rgb(<em>241</em>,<em>146</em>,<em>76</em>)</li>
+            <li>hsl(<em>25</em>,<em>68%</em>,<em>95%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="yellow-02 colour">
+          <b>Yellow <em>02</em></b>
+          <ul class="info">
+            <li>#<em>f3cd4c</em></li>
+            <li>rgb(<em>243</em>,<em>205</em>,<em>76</em>)</li>
+            <li>hsl(<em>46</em>,<em>69%</em>,<em>95%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="green-02 colour">
+          <b>Green <em>02</em></b>
+          <ul class="info">
+            <li>#<em>49c249</em></li>
+            <li>rgb(<em>73</em>,<em>194</em>,<em>73</em>)</li>
+            <li>hsl(<em>120</em>,<em>62%</em>,<em>76%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="cyan-02 colour">
+          <b>Cyan <em>02</em></b>
+          <ul class="info">
+            <li>#<em>48afac</em></li>
+            <li>rgb(<em>72</em>,<em>175</em>,<em>172</em>)</li>
+            <li>hsl(<em>178</em>,<em>59%</em>,<em>69%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="blue-02 colour">
+          <b>Blue <em>02</em></b>
+          <ul class="info">
+            <li>#<em>4b92e1</em></li>
+            <li>rgb(<em>75</em>,<em>146</em>,<em>225</em>)</li>
+            <li>hsl(<em>212</em>,<em>67%</em>,<em>88%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="violet-02 colour">
+          <b>Violet <em>02</em></b>
+          <ul class="info">
+            <li>#<em>ae49c8</em></li>
+            <li>rgb(<em>174</em>,<em>73</em>,<em>200</em>)</li>
+            <li>hsl(<em>288</em>,<em>64%</em>,<em>78%</em>)</li>
+          </ul class="info">
+        </li>
+        <li class="pink-02 colour">
+          <b>Pink <em>02</em></b>
+          <ul class="info">
+            <li>#<em>f58ac7</em></li>
+            <li>rgb(<em>245</em>,<em>138</em>,<em>199</em>)</li>
+            <li>hsl(<em>326</em>,<em>44%</em>,<em>96%</em>)</li>
+          </ul class="info">
+        </li>
+      </ul>
+    </section>
+
+    <footer role="contentinfo" class="small">
+      <p>Made with <a href="http://sodapop.is/">Sodapop &amp; Co.</a></p>
+    </footer>
+  </div>
 
   <script src="components/jquery/jquery.min.js"></script>
   <script src="javascript/script.js"></script>

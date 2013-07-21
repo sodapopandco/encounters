@@ -2,7 +2,7 @@
 $highlight: saturate($blue-02, 25%);
 
 .light {
-  background: #fcfcfc url(/images/stars_light.png) repeat;
+  background: #fcfcfc;
   color: $base-04;
 
   ::-moz-selection {
@@ -15,6 +15,10 @@ $highlight: saturate($blue-02, 25%);
 
   a:hover {
     color: $base-01;
+  }
+
+  .stars-container {
+    display: none;
   }
 
   .title, .section {
