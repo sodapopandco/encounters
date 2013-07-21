@@ -179,20 +179,14 @@ h1 {
 // Colour
 .colour {
   display: inline-block;
-  // float: left;
   position: relative;
-  // margin-bottom: em(8);
-  // margin-left: em(8);
-  // width: em(74);
-  // height: em(74);
   width: 74px;
   height: 74px;
   border-radius: 2px;
   font: 16px $display-font;
   letter-spacing: em(1);
-  line-height: 1;
+  line-height: 74px;
   text-align: center;
-  // text-shadow: 0 em(1) 0 transparentize(#fff, .875);
   text-transform: uppercase;
 
   &:hover, &:focus {
@@ -200,13 +194,16 @@ h1 {
 
     .info {
       opacity: 1;
+      visibility: visible;
       top: 50%;
       transform: rotate(-2deg);
     }
   }
 
   b {
+    display: inline-block;
     font-size: 14px;
+    line-height: 1;
     vertical-align: middle;
 
     em {
@@ -223,6 +220,7 @@ h1 {
 // Info Panels
 .info {
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   z-index: 1;
   top: 75%;
