@@ -89,10 +89,12 @@ $highlight: saturate($blue-02, 25%);
   }
 
   .button {
-    color: $highlight;
+    background: $highlight;
+    color: $base-08;
 
     &:hover {
-      color: lighten($highlight, 12.5%);
+      background: darken($highlight, 12.5%);
+      color: $base-08;
     }
 
     + small {

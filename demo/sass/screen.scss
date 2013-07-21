@@ -388,9 +388,13 @@ footer[role="contentinfo"] {
 @import "theme_dark";
 @import "theme_light";
 
+// Buttons
 .button {
   display: inline-block;
+  padding: em(6) em(12);
+  border-radius: 3px;
   font: bold em(24)/1 $display-font;
+  transition: all .25s;
 
   + small {
     display: block;
