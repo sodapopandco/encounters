@@ -1,5 +1,5 @@
 // Light Theme
-$highlight: saturate($blue-02, 25%);
+$highlight-color: saturate($blue-02, 25%);
 $background-color: #fcfcfc;
 
 .light {
@@ -37,7 +37,7 @@ $background-color: #fcfcfc;
   }
 
   .caret {
-    background: $highlight;
+    background: $highlight-color;
   }
 
   .icon {
@@ -91,12 +91,12 @@ $background-color: #fcfcfc;
   }
 
   .button {
-    background: $highlight;
+    background: $highlight-color;
     border: 1px solid $background-color;
     color: $base-08;
 
     &:hover {
-      background: darken($highlight, 12.5%);
+      background: darken($highlight-color, 12.5%);
       color: $base-08;
     }
 

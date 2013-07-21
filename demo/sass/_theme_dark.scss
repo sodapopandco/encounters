@@ -1,5 +1,5 @@
 // Dark Theme
-$highlight: saturate($yellow-02, 25%);
+$highlight-color: saturate($yellow-02, 25%);
 $background-color: #101010;
 
 .dark {
@@ -53,7 +53,7 @@ $background-color: #101010;
   }
 
   .caret {
-    background: $highlight;
+    background: $highlight-color;
   }
 
   .code {
@@ -98,12 +98,12 @@ $background-color: #101010;
   }
 
   .button {
-    background: $highlight;
+    background: $highlight-color;
     border: 1px solid $background-color;
     color: $base-01;
 
     &:hover {
-      background: lighten($highlight, 12.5%);
+      background: lighten($highlight-color, 12.5%);
       color: $base-01;
     }
 
