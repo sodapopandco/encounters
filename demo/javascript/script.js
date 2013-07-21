@@ -15,14 +15,15 @@ $(document).ready(function () {
     return false;
   });
 
+  // Pulse the contrast icon until someone hovers over it
+  $("#toggle").hover(function() {
+    $(this).removeClass("pulse");
+  });
+
+  // Parrallax the stars while scrolling
   $(window).scroll(function() {
     $(".stars-1").css("transform","translate3d(0px," + -($(window).scrollTop()/5) + "px, 0px)");
     $(".stars-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
     $(".stars-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
-  });
-
-  // Pulse the contrast icon until someone hovers over it
-  $("#toggle").hover(function() {
-    $(this).removeClass("pulse");
   });
 })
