@@ -159,29 +159,40 @@ h1 {
 
 // Colours
 .colour-list {
-  @include clear-fix;
+  // @include clear-fix;
 
   position: relative;
-  left: em(-8);
+  // left: em(-8);
   margin: 0 auto;
   padding: 0;
-  width: em(872);
+  // width: em(872);
+  font-size: 0;
+  text-align: justify;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 // Colour
 .colour {
-  display: block;
-  float: left;
+  display: inline-block;
+  // float: left;
   position: relative;
-  margin-top: em(8);
-  margin-left: em(8);
-  width: em(101);
-  height: em(101);
+  // margin-bottom: em(8);
+  // margin-left: em(8);
+  // width: em(74);
+  // height: em(74);
+  width: 74px;
+  height: 74px;
   border-radius: 2px;
-  font: 1em $display-font;
+  font: 16px $display-font;
   letter-spacing: em(1);
   line-height: 1;
-  text-shadow: 0 em(1) 0 transparentize(#fff, .875);
+  text-align: center;
+  // text-shadow: 0 em(1) 0 transparentize(#fff, .875);
   text-transform: uppercase;
 
   &:hover, &:focus {
@@ -195,13 +206,12 @@ h1 {
   }
 
   b {
-    display: inline-block;
-    // line-height: 69px;
+    font-size: 14px;
     vertical-align: middle;
 
     em {
       display: block;
-      font-size: em(28);
+      font-size: to-em(28, 14);
     }
   }
 
@@ -395,39 +405,42 @@ footer[role="contentinfo"] {
 // Base
 @media screen and (min-width: 0em) {
   .colour-list {
-    left: em(-12);
-    width: em(296);
+    // left: em(-12);
+    width: 296px;
   }
 
   // Colour
   .colour {
-    margin-top: em(12);
-    margin-left: em(12);
-    width: em(29);
-    height: em(29);
+    // margin-bottom: em(12);
+    // margin-left: em(12);
+    // width: em(29);
+    // height: em(29);
   }
 }
 
 // 640px+
 @media screen and (min-width: 40em) {
   .colour-list {
-    width: em(584);
+    // width: 584px;
   }
   .colour {
-    width: em(65);
-    height: em(65);
+    // width: em(65);
+    // height: em(65);
   }
 }
 
 @media screen and (min-width: 60em) {
   .colour-list {
-    width: em(648);
+    width: 648px;
+
+    + .colour-list {
+      margin-top: 8px;
+    }
   }
 
   // Colour
   .colour {
-    width: em(69);
-    height: em(69);
+
   }
 }
 
