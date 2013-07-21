@@ -129,11 +129,15 @@ h1 {
 
 // Code
 .code {
+  position: relative;
   margin: 0 auto;
   padding: em(16);
   width: 100%;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: em(30);
   text-align: left;
   word-wrap: break-word;
   transition: all .25s;
