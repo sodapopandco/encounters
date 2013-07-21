@@ -2,7 +2,6 @@
 $highlight: saturate($yellow-02, 25%);
 
 .dark {
-  background: #101010;
   color: $base-05;
 
   ::-moz-selection {
@@ -15,6 +14,18 @@ $highlight: saturate($yellow-02, 25%);
 
   a:hover {
     color: $base-08;
+  }
+
+  .stars-container {
+    background: #101010;
+  }
+
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
   }
 
   .stars-1 {

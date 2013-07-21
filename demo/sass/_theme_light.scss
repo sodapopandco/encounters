@@ -2,7 +2,6 @@
 $highlight: saturate($blue-02, 25%);
 
 .light {
-  background: #fcfcfc;
   color: $base-04;
 
   ::-moz-selection {
@@ -18,6 +17,10 @@ $highlight: saturate($blue-02, 25%);
   }
 
   .stars-container {
+    background: #fcfcfc;
+  }
+
+  .stars {
     display: none;
   }
 
