@@ -52,6 +52,7 @@ body {
 }
 
 .container {
+  overflow: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -169,15 +170,15 @@ h1 {
 
 // Colours
 .colour-list {
-  // @include clear-fix;
-
   position: relative;
-  // left: em(-8);
   margin: 0 auto;
   padding: 0;
-  // width: em(872);
   font-size: 0;
   text-align: justify;
+
+  &.neutral {
+    margin-top: -8px;
+  }
 
   &:after {
     content: "";
@@ -190,12 +191,10 @@ h1 {
 .colour {
   display: inline-block;
   position: relative;
-  width: 74px;
-  height: 74px;
+  margin-top: em(8);
   border-radius: 2px;
   font: 16px $display-font;
   letter-spacing: em(1);
-  line-height: 74px;
   text-align: center;
   text-transform: uppercase;
   transition: all .25s;
@@ -409,18 +408,16 @@ footer[role="contentinfo"] {
     font-size: em(10);
   }
 
-
+  // Colours
   .colour-list {
-    // left: em(-12);
-    width: 296px;
+    width: 288px;
   }
 
   // Colour
   .colour {
-    // margin-bottom: em(12);
-    // margin-left: em(12);
-    // width: em(29);
-    // height: em(29);
+    width: em(66);
+    height: em(66);
+    line-height: em(66);
   }
 }
 
@@ -447,45 +444,25 @@ footer[role="contentinfo"] {
     font-size: em(12);
   }
 
+
+  // Colours
   .colour-list {
-
+    width: 320px;
   }
+
+  // Colour
   .colour {
-    // width: em(65);
-    // height: em(65);
-  }
-}
-
-// 640px+
-@media screen and (min-width: 40em) {
-  .colour-list {
-
-  }
-  .colour {
-    // width: em(65);
-    // height: em(65);
+    width: em(74);
+    height: em(74);
+    line-height: em(74);
   }
 }
 
 // 720px+
 @media screen and (min-width: 45em) {
+  // Colours
   .colour-list {
     width: 648px;
-
-    + .colour-list {
-      margin-top: 8px;
-    }
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .colour-list {
-    // width: 648px;
-  }
-
-  // Colour
-  .colour {
-
   }
 }
 
