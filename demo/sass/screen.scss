@@ -96,28 +96,6 @@ h1 {
   animation: pulse 6s infinite;
 }
 
-.main {
-  // position: fixed;
-  z-index: 1;
-  margin: em(24) 0;
-  width: 100%;
-
-  ul {
-    font-size: 0;
-  }
-
-  li {
-    display: inline-block;
-    font: bold $body-font-size+px $display-font;
-    letter-spacing: em(2);
-    text-transform: uppercase;
-  }
-
-  a {
-    padding: 0 em(12);
-  }
-}
-
 .section {
   margin-top: percentage(16/320);
   margin-bottom: percentage(4/320);
