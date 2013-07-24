@@ -20,19 +20,6 @@ body {
   transition: none;
 }
 
-// Sizes
-.large {
-  font-size: em(36);
-}
-
-.medium {
-  font-size: em(14);
-}
-
-.small {
-  font-size: em(12);
-}
-
 // Background
 .stars-container {
   position: fixed;
@@ -131,8 +118,8 @@ h1 {
 }
 
 .section {
-  margin-top: em(32);
-  margin-bottom: em(4);
+  margin-top: percentage(16/320);
+  margin-bottom: percentage(4/320);
   letter-spacing: em(2);
   text-transform: uppercase;
 }
@@ -164,7 +151,7 @@ h1 {
   pre {
     margin: 0;
     min-width: to-em(720, 14);
-    font: em(14)/1.5 $monospace-font;
+    font: 1em/1.5 $monospace-font;
   }
 }
 
@@ -226,7 +213,6 @@ h1 {
 
   b {
     display: inline-block;
-    font-size: 14px;
     line-height: 1;
     vertical-align: middle;
 
@@ -378,7 +364,7 @@ h1 {
 }
 
 footer[role="contentinfo"] {
-  margin-top: to-em(48, 12);
+  margin-top: percentage(24/320);
 }
 
 // Themes
@@ -396,13 +382,34 @@ footer[role="contentinfo"] {
   + small {
     display: block;
     margin-top: to-em(6, 14);
-    font-size: em(14);
   }
 }
 
 // Media Queries
 // Base
 @media screen and (min-width: 0em) {
+  // Font Sizes
+  .huge {
+    font-size: em(28);
+  }
+
+  .large {
+    font-size: em(22);
+  }
+
+  .medium {
+    font-size: em(14);
+  }
+
+  .small {
+    font-size: em(12);
+  }
+
+  .tiny {
+    font-size: em(10);
+  }
+
+
   .colour-list {
     // left: em(-12);
     width: 296px;
@@ -418,9 +425,30 @@ footer[role="contentinfo"] {
 }
 
 // 640px+
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 30em) {
+  // Font Sizes
+  .huge {
+    font-size: em(36);
+  }
+
+  .large {
+    font-size: em(24);
+  }
+
+  .medium {
+    font-size: em(16);
+  }
+
+  .small {
+    font-size: em(14);
+  }
+
+  .tiny {
+    font-size: em(12);
+  }
+
   .colour-list {
-    // width: 584px;
+
   }
   .colour {
     // width: em(65);
@@ -428,13 +456,31 @@ footer[role="contentinfo"] {
   }
 }
 
-@media screen and (min-width: 60em) {
+// 640px+
+@media screen and (min-width: 40em) {
+  .colour-list {
+
+  }
+  .colour {
+    // width: em(65);
+    // height: em(65);
+  }
+}
+
+// 720px+
+@media screen and (min-width: 45em) {
   .colour-list {
     width: 648px;
 
     + .colour-list {
       margin-top: 8px;
     }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .colour-list {
+    // width: 648px;
   }
 
   // Colour

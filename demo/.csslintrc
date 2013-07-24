@@ -3,5 +3,6 @@
   "box-model": false,
   "box-sizing": false,
   "compatible-vendor-prefixes": false,
+  "font-sizes": false,
   "universal-selector": false
 }
