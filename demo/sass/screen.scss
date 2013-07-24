@@ -127,7 +127,7 @@ body {
   pre {
     margin: 0;
     padding: em(16);
-    min-width: to-em(720, 14);
+    min-width: to-em(800, 14);
     font: 1em/1.5 $monospace-font;
   }
 }
@@ -166,7 +166,6 @@ body {
   opacity: 0;
   position: absolute;
   top: 0;
-  z-index: 0;
   transition: all .25s;
 
   &:first-child {
@@ -175,7 +174,6 @@ body {
 
   &.active {
     opacity: 1;
-    z-index: 1;
   }
 }
 
