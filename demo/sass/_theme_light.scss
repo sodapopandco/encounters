@@ -42,6 +42,9 @@ $background-color: #fcfcfc;
     }
 
     opacity: .18;
+  }
+
+  .pulse {
     transform: rotate(180deg);
   }
 
@@ -218,13 +221,11 @@ $background-color: #fcfcfc;
     color: lighten($pink-02, 12.5%);
   }
 
-  footer[role="contentinfo"] {
-    color: $base-05;
-
-    a {
-      &:hover, &:focus {
-        color: $base-04;
-      }
+  .logo {
+    &:hover, &:focus {
+      opacity: .49;
     }
+
+    opacity: .18;
   }
 }

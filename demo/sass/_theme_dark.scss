@@ -208,14 +208,4 @@ $background-color: #101010;
   .pink-02 {
     color: darken($pink-02, 18.75%);
   }
-
-  footer[role="contentinfo"] {
-    color: $base-04;
-
-    a {
-      &:hover, &:focus {
-        color: $base-05;
-      }
-    }
-  }
 }
