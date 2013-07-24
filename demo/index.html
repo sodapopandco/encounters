@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="stylesheets/screen.min.css">
+  <!-- Typekit -->
   <script src="//use.typekit.net/whk3yjv.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
@@ -22,7 +23,7 @@
     <header role="banner">
       <img id="toggle" class="pulse icon" src="icons/contrast_dark.svg" alt="Toggle Colour Schemes">
 
-      <h1 class="huge title">Encounters</h1>
+      <h1 class="huge title heading">Encounters</h1>
 
       <p class="small tagline">Better reading, better writing, better<span class="caret">…</span></p>
     </header>
@@ -35,17 +36,18 @@
     </section>
 
     <section id="examples">
-      <h1 class="section">Examples</h1>
+      <h1 class="section-heading heading">Examples</h1>
 
-      <div class="small code">
-<pre>
+      <article class="small code">
+        <h1 class="medium code-heading">index.html</h1>
+<pre class="html-example">
 <span class="tag">&lt;!DOCTYPE html&gt;</span>
   <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
   <span class="tag">&lt;head&gt;</span>
     <span class="tag">&lt;meta <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
     <span class="tag">&lt;title&gt;<span class="source">Encounters Demo</span>&lt;/title&gt;</span>
     <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"description"</span> <span class="attribute">content</span>=<span class="string">"A simple little colour palette for writing."</span>&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span>
+    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
     <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"icon"</span> <span class="attribute">type</span>=<span class="string">"image/x-icon"</span> <span class="attribute">href</span>=<span class="string">"favicon.ico"</span>&gt;</span>
     <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">type</span>=<span class="string">"text/css"</span> <span class="attribute">href</span>=<span class="string">"styles/screen.min.css"</span>&gt;</span>
     <span class="comment">&lt;!-- Typekit --&gt;</span>
@@ -55,8 +57,55 @@
 
   <span class="tag">&lt;body <span class="attribute">class</span>=<span class="string">"<span class="swap">dark</span>"</span>&gt;</span>
     <span class="tag">&lt;div <span class="attribute">class</span>=<span class="string">"container"</span>&gt;</span>
+    <span class="comment">...</span>
 </pre>
-      </div>
+      </article>
+
+      <article class="small code">
+        <h1 class="medium code-heading">script.js</h1>
+<pre class="html-example">
+<span>$(document).ready(function () {</span>
+  <span class="comment">// Toggle between the dark and light themes</span>
+  <span class="operator">$</span>(<span class="string">"#toggle"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
+    <span class="operator">$</span>(<span class="string">"body"</span>).toggleClass(<span class="string">"dark"</span>).toggleClass(<span class="string">"light"</span>);
+
+    <span class="comment">// Swap the HTML example body class</span>
+    <span class="storage">var</span> swap <span class="operator">= $</span>(<span class="string">".swap"</span>).html()
+    <span class="keyword">if</span> (swap <span class="operator">==</span> <span class="string">"light"</span>) {
+      <span class="operator">$</span>(<span class="string">".swap"</span>).html(<span class="string">"dark"</span>);
+    }
+    <span class="keyword">else if</span> (swap <span class="operator">==</span> <span class="string">"dark"</span>) {
+      $(<span class="string">".swap"</span>).html(<span class="string">"light"</span>);
+    }
+
+    <span class="keyword">return</span> <span class="constant">false</span>;
+  });
+  <span class="comment">...</span>
+</pre>
+      </article>
+
+      <article class="small code">
+        <h1 class="medium code-heading">screen.scss</h1>
+<pre class="html-example">
+<span class="keyword">@import "<span class="variable parameter">variables</span>"</span>;
+<span class="keyword">@import "<span class="variable parameter">functions</span>"</span>;
+<span class="keyword">@import "<span class="variable parameter">defaults</span>"</span>;
+<span class="keyword">@import "<span class="variable parameter">helpers</span>"</span>;
+
+<span class="comment">// Layout</span>
+<span class="tag">body</span> {
+  <span class="support type">opacity</span>: <span class="number">1</span>;
+  <span class="support type">margin</span>: <span class="number">0</span> <span class="support constant">auto</span>;
+  <span class="support type">padding</span>: <span class="support">percentage</span>(<span class="number">16</span><span class="support constant">/</span><span class="number">320</span>) <span class="number">0</span>;
+  <span class="support type">width</span>: <span class="support">percentage</span>(<span class="number">288</span><span class="support constant">/</span><span class="number">320</span>);
+  <span class="support type">max-width</span>: <span class="support">em</span>(<span class="number">864</span>);
+  <span class="support type">font</span>: <span class="variable interpolation">#{$body-font-size}px/</span><span class="number">1.375</span> <span class="variable">$monospace-font</span>;
+  <span class="support type">text-align</span>: <span class="support constant">center</span>;
+  <span class="support type">transition</span>: <span class="support constant">all</span> <span class="number">.25</span><span class="unit">s</span>;
+}
+<span class="comment">...</span>
+</pre>
+      </article>
 
       <!-- <nav>
         <ul>
@@ -68,7 +117,7 @@
     </section>
 
     <section id="colours">
-      <h1 class="section">Colours</h1>
+      <h1 class="section-heading heading">Colours</h1>
 
       <ul class="neutral colour-list">
         <li class="base-01 colour">

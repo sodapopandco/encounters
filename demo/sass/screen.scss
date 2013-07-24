@@ -57,7 +57,7 @@ body {
 }
 
 // Header
-h1 {
+.heading {
   margin: 0;
   font: bold em(16) $display-font;
 }
@@ -96,7 +96,7 @@ h1 {
   animation: pulse 6s infinite;
 }
 
-.section {
+.section-heading {
   margin-top: percentage(16/320);
   margin-bottom: percentage(4/320);
   letter-spacing: em(2);
@@ -114,19 +114,19 @@ h1 {
 .code {
   position: relative;
   margin: 0 auto;
-  padding: em(16);
   width: 100%;
   overflow: hidden;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
-  border-top-width: em(30);
+  border-top-width: 0;
   text-align: left;
   word-wrap: break-word;
   transition: all .25s;
 
   pre {
     margin: 0;
+    padding: em(16);
     min-width: to-em(720, 14);
     font: 1em/1.5 $monospace-font;
   }
@@ -142,6 +142,13 @@ h1 {
 
 .menlo-code {
   font-family: "Menlo", monospace;
+}
+
+.code-heading {
+  margin: 0;
+  padding: em(8);
+  font-weight: normal;
+  transition: all .25s;
 }
 
 // Colours

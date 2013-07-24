@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("#toggle").click(function() {
     $("body").toggleClass("dark").toggleClass("light");
 
-    // Swap the example body class
+    // Swap the HTML example body class
     var swap = $(".swap").html()
     if (swap == "light") {
       $(".swap").html("dark");

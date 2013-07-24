@@ -42,8 +42,17 @@ $background-color: #101010;
     color: $base-06;
   }
 
+  .code-heading {
+    background-color: $base-02;
+    color: $base-04;
+  }
+
   .comment {
     color: $base-04;
+  }
+
+  .operator {
+    color: $base-05;
   }
 
   .variable, .support {
@@ -66,12 +75,16 @@ $background-color: #101010;
     color: $cyan-02;
   }
 
-  .variable.parameter, .support.type {
+  .variable.parameter, .support.type, .constant {
     color: $blue-02;
   }
 
   .keyword {
     color: $violet-02;
+  }
+
+  .variable.interpolation {
+    color: $green-01;
   }
 
   .source {
