@@ -342,23 +342,12 @@ footer[role="contentinfo"] {
   margin-top: percentage(24/320);
 }
 
+// Imports
+@import "buttons";
+
 // Themes
 @import "theme_dark";
 @import "theme_light";
-
-// Buttons
-.button {
-  display: inline-block;
-  padding: em(3) em(9);
-  border-radius: 4px;
-  font: bold em(24) $display-font;
-  transition: all .25s;
-
-  + small {
-    display: block;
-    margin-top: to-em(6, 14);
-  }
-}
 
 // Media Queries
 // Base

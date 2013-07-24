@@ -1,0 +1,13 @@
+// Buttons
+.button {
+  display: inline-block;
+  padding: em(3) em(9);
+  border-radius: 4px;
+  font: bold em(24) $display-font;
+  transition: all .25s;
+
+  + small {
+    display: block;
+    margin-top: to-em(6, 14);
+  }
+}
