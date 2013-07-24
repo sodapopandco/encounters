@@ -127,7 +127,7 @@ body {
   pre {
     margin: 0;
     padding: em(16);
-    min-width: to-em(720, 14);
+    // min-width: to-em(720, 14);
     font: 1em/1.5 $monospace-font;
   }
 }
