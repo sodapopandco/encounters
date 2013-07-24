@@ -42,7 +42,7 @@ $background-color: #101010;
     color: $base-06;
   }
 
-  .code-heading {
+  .code-examples {
     background-color: $base-02;
     color: $base-04;
   }
@@ -75,7 +75,7 @@ $background-color: #101010;
     color: $cyan-02;
   }
 
-  .variable.parameter, .support.type, .constant {
+  .constant, .variable.parameter, .support.type, .markup.heading {
     color: $blue-02;
   }
 

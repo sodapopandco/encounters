@@ -51,7 +51,7 @@ $background-color: #fcfcfc;
     color: $base-03;
   }
 
-  .code-heading {
+  .code-examples {
     background-color: $base-07;
     color: $base-05;
   }
@@ -84,7 +84,7 @@ $background-color: #fcfcfc;
     color: $cyan-01;
   }
 
-  .variable.parameter, .support.type, .constant {
+  .constant, .variable.parameter, .support.type, .markup.heading {
     color: $blue-01;
   }
 

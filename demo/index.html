@@ -38,8 +38,16 @@
     <section id="examples">
       <h1 class="section-heading heading">Examples</h1>
 
-      <article class="small code">
-        <h1 class="medium code-heading">index.html</h1>
+      <div class="small code">
+        <nav class="code-examples">
+          <ul>
+            <li class="code-example"><a href="#html">HTML</a></li>
+            <li class="code-example"><a href="#scss">Sass</a></li>
+            <li class="code-example"><a href="#js">JavaScript</a></li>
+            <li class="code-example"><a href="#js">Markdown</a></li>
+          </ul>
+        </nav>
+
 <pre class="html-example">
 <span class="tag">&lt;!DOCTYPE html&gt;</span>
   <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
@@ -59,11 +67,8 @@
     <span class="tag">&lt;div <span class="attribute">class</span>=<span class="string">"container"</span>&gt;</span>
     <span class="comment">...</span>
 </pre>
-      </article>
 
-      <article class="small code">
-        <h1 class="medium code-heading">script.js</h1>
-<pre class="html-example">
+<pre class="js-example">
 <span>$(document).ready(function () {</span>
   <span class="comment">// Toggle between the dark and light themes</span>
   <span class="operator">$</span>(<span class="string">"#toggle"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
@@ -82,11 +87,8 @@
   });
   <span class="comment">...</span>
 </pre>
-      </article>
 
-      <article class="small code">
-        <h1 class="medium code-heading">screen.scss</h1>
-<pre class="html-example">
+<pre class="scss-example">
 <span class="keyword">@import "<span class="variable parameter">variables</span>"</span>;
 <span class="keyword">@import "<span class="variable parameter">functions</span>"</span>;
 <span class="keyword">@import "<span class="variable parameter">defaults</span>"</span>;
@@ -105,15 +107,14 @@
 }
 <span class="comment">...</span>
 </pre>
-      </article>
 
-      <!-- <nav>
-        <ul>
-          <li><a href="#html">HTML</a></li>
-          <li><a href="#scss">SCSS</a></li>
-          <li><a href="#javascript">JavaScript</a></li>
-        </ul>
-      </nav> -->
+<pre class="md-example">
+Encounters
+<span class="markup heading">==========</span>
+
+A smooth little colour scheme for a better world.
+    <span class="comment">...</span>
+</pre>
     </section>
 
     <section id="colours">

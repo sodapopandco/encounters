@@ -144,11 +144,24 @@ body {
   font-family: "Menlo", monospace;
 }
 
-.code-heading {
+.code-examples {
   margin: 0;
   padding: em(8);
   font-weight: normal;
+  text-align: center;
   transition: all .25s;
+
+  ul {
+    margin: 0;
+  }
+
+  .code-example {
+    display: inline-block;
+
+    + .code-example{
+      margin: 0 em(6);
+    }
+  }
 }
 
 // Colours
