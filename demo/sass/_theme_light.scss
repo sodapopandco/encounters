@@ -106,6 +106,105 @@ $background-color: #fcfcfc;
     }
   }
 
+  // Neutral
+  .base-01 {
+    color: lighten($base-01, 12.5%);
+  }
+
+  .base-02 {
+    color: lighten($base-02, 12.5%);
+  }
+
+  .base-03 {
+    color: lighten($base-03, 12.5%);
+  }
+
+  .base-04 {
+    color: lighten($base-04, 12.5%);
+  }
+
+  .base-05 {
+    color: lighten($base-05, 12.5%);
+  }
+
+  .base-06 {
+    color: lighten($base-06, 12.5%);
+  }
+
+  .base-07 {
+    color: lighten($base-07, 12.5%);
+  }
+
+  .base-08 {
+    color: lighten($base-08, 12.5%);
+  }
+
+  // Dark
+  .red-01 {
+    color: lighten($red-01, 12.5%);
+  }
+
+  .orange-01 {
+    color: lighten($orange-01, 12.5%);
+  }
+
+  .yellow-01 {
+    color: lighten($yellow-01, 12.5%);
+  }
+
+  .green-01 {
+    color: lighten($green-01, 12.5%);
+  }
+
+  .cyan-01 {
+    color: lighten($cyan-01, 12.5%);
+  }
+
+  .blue-01 {
+    color: lighten($blue-01, 12.5%);
+  }
+
+  .violet-01 {
+    color: lighten($violet-01, 12.5%);
+  }
+
+  .pink-01 {
+    color: lighten($pink-01, 12.5%);
+  }
+
+  // Light
+  .red-02 {
+    color: lighten($red-02, 18.75%);
+  }
+
+  .orange-02 {
+    color: lighten($orange-02, 18.75%);
+  }
+
+  .yellow-02 {
+    color: lighten($yellow-02, 18.75%);
+  }
+
+  .green-02 {
+    color: lighten($green-02, 18.75%);
+  }
+
+  .cyan-02 {
+    color: lighten($cyan-02, 18.75%);
+  }
+
+  .blue-02 {
+    color: lighten($blue-02, 18.75%);
+  }
+
+  .violet-02 {
+    color: lighten($violet-02, 18.75%);
+  }
+
+  .pink-02 {
+    color: lighten($pink-02, 12.5%);
+  }
+
   footer[role="contentinfo"] {
     color: $base-05;
 
