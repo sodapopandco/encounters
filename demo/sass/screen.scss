@@ -163,10 +163,19 @@ body {
 }
 
 .example {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: all .25s;
+
+  &:first-child {
+    position: relative;
+  }
 
   &.active {
-    display: block;
+    opacity: 1;
+    z-index: 1;
   }
 }
 
