@@ -259,9 +259,6 @@ h1 {
 }
 
 // Neutral
-.base-01, .base-02, .base-03, .base-04 {
-  text-shadow: 0 em(-1) 0 transparentize(#000, .875);
-}
 .base-01 {
   background: $base-01;
   color: lighten($base-01, 12.5%);
