@@ -26,4 +26,40 @@ $(document).ready(function () {
     $(".stars-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
     $(".stars-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
   });
+
+  $(".html-example").click(function() {
+    $(".code-example a").removeClass("active");
+    $(this).addClass("active");
+    $(".example").removeClass("active");
+    $("#html").addClass("active");
+
+    return false;
+  });
+
+  $(".sass-example").click(function() {
+    $(".code-example a").removeClass("active");
+    $(this).addClass("active");
+    $(".example").removeClass("active");
+    $("#sass").addClass("active");
+
+    return false;
+  });
+
+  $(".javascript-example").click(function() {
+    $(".code-example a").removeClass("active");
+    $(this).addClass("active");
+    $(".example").removeClass("active");
+    $("#javascript").addClass("active");
+
+    return false;
+  });
+
+  $(".markdown-example").click(function() {
+    $(".code-example a").removeClass("active");
+    $(this).addClass("active");
+    $(".example").removeClass("active");
+    $("#markdown").addClass("active");
+
+    return false;
+  });
 })
