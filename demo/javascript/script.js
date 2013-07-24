@@ -27,6 +27,7 @@ $(document).ready(function () {
     $(".stars-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
   });
 
+  // Switch between the different examples
   $(".html-example").click(function() {
     $(".code-example a").removeClass("active");
     $(this).addClass("active");
