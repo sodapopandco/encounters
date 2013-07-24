@@ -157,10 +157,7 @@ body {
 
   .code-example {
     display: inline-block;
-
-    + .code-example{
-      margin: 0 em(6);
-    }
+    padding: 0 em(6);
   }
 }
 
