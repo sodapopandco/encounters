@@ -61,15 +61,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      options: {
-        livereload: true
-      },
       css: {
         files: ['**/*.scss'],
         tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat', 'cssmin']
-      },
-      html: {
-        files: ['**/*.html']
       }
     }
   });
