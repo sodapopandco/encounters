@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Toggle between the dark and light themes
   $(".toggle").click(function() {
-    $("body").toggleClass("dark").toggleClass("light");
+    $("body").toggleClass("light").toggleClass("dark");
 
     // Swap the HTML example body class
     var swap = $(".swap").html()
@@ -14,6 +14,20 @@ $(document).ready(function () {
 
     return false;
   });
+
+  // Change the theme based on the time of day
+  var now = new Date();
+  var hour = now.getHours();
+  if (hour < 7) {
+    $("body").removeClass("light").addClass("dark");
+    $(".swap").html("dark");
+  } else if (hour < 17) {
+    $("body").removeClass("dark").addClass("light");
+    $(".swap").html("light");
+  } else {
+    $("body").removeClass("light").addClass("dark");
+    $(".swap").html("dark");
+  };
 
   // Pulse the contrast icon until someone hovers over it
   $(".toggle").hover(function() {
