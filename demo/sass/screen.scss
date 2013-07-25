@@ -173,12 +173,17 @@ body {
 }
 
 // Colours
+#colours {
+  margin: 0 auto;
+}
+
 .colour-list {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: -8px;
   padding: 0;
+  width: 100%;
   font-size: 0;
-  text-align: justify;
 
   &.neutral {
     margin-top: -8px;
@@ -196,6 +201,7 @@ body {
   display: inline-block;
   position: relative;
   margin-top: em(8);
+  margin-left: em(8);
   border-radius: 2px;
   font: 16px $display-font;
   letter-spacing: em(1);
@@ -427,8 +433,12 @@ a.logo {
   }
 
   // Colours
-  .colour-list {
+  #colours {
     width: 288px;
+  }
+
+  .colour-list {
+    width: 296px;
   }
 
   // Colour
@@ -464,8 +474,12 @@ a.logo {
 
 
   // Colours
-  .colour-list {
+  #colours {
     width: 320px;
+  }
+
+  .colour-list {
+    width: 328px;
   }
 
   // Colour
@@ -479,7 +493,11 @@ a.logo {
 // 720px+
 @media screen and (min-width: 45em) {
   // Colours
-  .colour-list {
+  #colours {
     width: 648px;
+  }
+
+  .colour-list {
+    width: 656px;
   }
 }

@@ -4,6 +4,7 @@
   "box-sizing": false,
   "compatible-vendor-prefixes": false,
   "font-sizes": false,
+  "ids": false,
   "outline-none": false,
   "universal-selector": false
 }
