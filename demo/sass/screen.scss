@@ -498,3 +498,10 @@ a.logo {
     width: 656px;
   }
 }
+
+// High DPI Screens
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+  .stars {
+    background-size: 640px 640px;
+  }
+}
