@@ -63,7 +63,7 @@ body {
   cursor: pointer;
   width: em(32);
   height: auto;
-  transition: cubic-bezier(.5,0,.75,1.5) .25s;
+  transition: cubic-bezier(.5,0,.5,1.25) .25s;
 
   &:hover, &:focus {
     opacity: 1;
