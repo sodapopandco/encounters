@@ -16,6 +16,8 @@ a {
   text-decoration: none;
   transform: translate3d(0,0,0);
   transition: all .25s;
+  // Remove the grey overlay on touch events
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   &:hover, &:focus {
     outline: 0;
