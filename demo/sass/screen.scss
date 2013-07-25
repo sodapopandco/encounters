@@ -368,7 +368,7 @@ footer[role="contentinfo"] {
 a.logo {
   display: inline-block;
   opacity: .2;
-  letter-spacing: em(3);
+  letter-spacing: em(2);
   transition: all .25s;
 
   &:hover, &:focus {
@@ -377,7 +377,7 @@ a.logo {
 
   span {
     display: inline-block;
-    width: 104px;
+    width: 96px;
 
     &:first-child {
       text-align: right;
