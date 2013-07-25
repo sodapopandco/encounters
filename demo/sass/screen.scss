@@ -374,6 +374,19 @@ a.logo {
   &:hover, &:focus {
     opacity: .8;
   }
+
+  span {
+    display: inline-block;
+    width: 96px;
+
+    &:first-child {
+      text-align: right;
+    }
+
+    &:last-child {
+      text-align: left;
+    }
+  }
 }
 
 // Imports
