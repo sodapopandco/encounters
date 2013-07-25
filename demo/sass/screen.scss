@@ -7,7 +7,7 @@
 body {
   opacity: 1;
   margin: 0 auto;
-  padding: percentage(16/320) 0;
+  padding: percentage(24/320) 0;
   width: percentage(288/320);
   max-width: em(864);
   font: #{$body-font-size}px/1.375 $monospace-font;
@@ -97,7 +97,7 @@ body {
 }
 
 .section-heading {
-  margin-top: percentage(12/320);
+  margin-top: percentage(16/320);
   margin-bottom: percentage(4/320);
   letter-spacing: em(2);
   text-transform: uppercase;
@@ -361,7 +361,7 @@ body {
 }
 
 footer[role="contentinfo"] {
-  margin-top: percentage(16/320);
+  margin-top: percentage(24/320);
   text-transform: uppercase;
 }
 
