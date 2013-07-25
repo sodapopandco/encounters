@@ -1,0 +1,10 @@
+@keyframes blink {
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes pulse {
+  0%, 50%, 73%, 100% { opacity: .4; }
+  60.5%, 85.5% { opacity: 1; }
+}
