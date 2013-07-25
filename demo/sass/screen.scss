@@ -170,7 +170,7 @@ body {
 }
 
 // Colours
-#colours {
+.colours-section {
   margin: 0 auto;
 }
 
@@ -430,7 +430,7 @@ a.logo {
   }
 
   // Colours
-  #colours {
+  .colours-section {
     width: 288px;
   }
 
@@ -471,7 +471,7 @@ a.logo {
 
 
   // Colours
-  #colours {
+  .colours-section {
     width: 320px;
   }
 
@@ -490,7 +490,7 @@ a.logo {
 // 720px+
 @media screen and (min-width: 45em) {
   // Colours
-  #colours {
+  .colours-section {
     width: 648px;
   }
 
