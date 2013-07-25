@@ -19,7 +19,7 @@
     <div class="stars-3 stars"></div>
   </div>
 
-  <div class="container">
+  <div class="content-container">
     <header role="banner">
       <img class="toggle pulse icon" src="icons/contrast_dark.svg" alt="Toggle Colour Schemes" width="32" height="32">
 
@@ -29,7 +29,7 @@
     </header>
 
     <section id="intro">
-      <p class="medium about">A simple little colour palette for writing day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!</p>
+      <p class="medium about-text">A simple little colour palette for writing day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!</p>
 
       <a class="large download button" href="#">Download Encounters</a>
       <small class="small">Comes in both <a href="#">Sublime Text</a> &amp; <a href="#">TextMate</a> flavours.</small>
@@ -38,17 +38,17 @@
     <section id="examples">
       <h1 class="section-heading heading">Examples</h1>
 
-      <nav class="small code-examples">
+      <nav class="small code-example-list">
         <ul>
-          <li class="code-example"><a class="active html-example" href="#html">HTML</a></li>
-          <li class="code-example"><a class="sass-example" href="#sass">Sass</a></li>
-          <li class="code-example"><a class="javascript-example" href="#javascript">JavaScript</a></li>
-          <li class="code-example"><a class="markdown-example" href="#markdown">Markdown</a></li>
+          <li><a class="active html code-link" href="#html">HTML</a></li>
+          <li><a class="sass code-link" href="#sass">Sass</a></li>
+          <li><a class="javascript code-link" href="#javascript">JavaScript</a></li>
+          <li><a class="markdown code-link" href="#markdown">Markdown</a></li>
         </ul>
       </nav>
 
-      <div class="small code">
-<pre id="html" class="active example">
+      <div class="small code-examples">
+<pre class="active html code-example">
 <span class="tag">&lt;!DOCTYPE html&gt;</span>
   <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
   <span class="tag">&lt;head&gt;</span>
@@ -68,27 +68,27 @@
     <span class="comment">...</span>
 </pre>
 
-<pre id="sass" class="example">
-<span class="keyword">@import "<span class="variable parameter">variables</span>"</span>;
-<span class="keyword">@import "<span class="variable parameter">functions</span>"</span>;
-<span class="keyword">@import "<span class="variable parameter">defaults</span>"</span>;
-<span class="keyword">@import "<span class="variable parameter">helpers</span>"</span>;
+<pre class="sass code-example">
+<span class="keyword">@import "<span class="variable-parameter">variables</span>"</span>;
+<span class="keyword">@import "<span class="variable-parameter">functions</span>"</span>;
+<span class="keyword">@import "<span class="variable-parameter">defaults</span>"</span>;
+<span class="keyword">@import "<span class="variable-parameter">helpers</span>"</span>;
 
 <span class="comment">// Layout</span>
 <span class="tag">body</span> {
-  <span class="support type">opacity</span>: <span class="number">1</span>;
-  <span class="support type">margin</span>: <span class="number">0</span> <span class="support constant">auto</span>;
-  <span class="support type">padding</span>: <span class="support">percentage</span>(<span class="number">16</span><span class="support constant">/</span><span class="number">320</span>) <span class="number">0</span>;
-  <span class="support type">width</span>: <span class="support">percentage</span>(<span class="number">288</span><span class="support constant">/</span><span class="number">320</span>);
-  <span class="support type">max-width</span>: <span class="support">em</span>(<span class="number">864</span>);
-  <span class="support type">font</span>: <span class="variable interpolation">#{$body-font-size}px/</span><span class="number">1.375</span> <span class="variable">$monospace-font</span>;
-  <span class="support type">text-align</span>: <span class="support constant">center</span>;
-  <span class="support type">transition</span>: <span class="support constant">all</span> <span class="number">.25</span><span class="unit">s</span>;
+  <span class="support-type">opacity</span>: <span class="number">1</span>;
+  <span class="support-type">margin</span>: <span class="number">0</span> <span class="support-constant">auto</span>;
+  <span class="support-type">padding</span>: <span class="support">percentage</span>(<span class="number">16</span><span class="support-constant">/</span><span class="number">320</span>) <span class="number">0</span>;
+  <span class="support-type">width</span>: <span class="support">percentage</span>(<span class="number">288</span><span class="support-constant">/</span><span class="number">320</span>);
+  <span class="support-type">max-width</span>: <span class="support">em</span>(<span class="number">864</span>);
+  <span class="support-type">font</span>: <span class="variable-interpolation">#{$body-font-size}px/</span><span class="number">1.375</span> <span class="variable">$monospace-font</span>;
+  <span class="support-type">text-align</span>: <span class="support-constant">center</span>;
+  <span class="support-type">transition</span>: <span class="support-constant">all</span> <span class="number">.25</span><span class="unit">s</span>;
 }
 <span class="comment">...</span>
 </pre>
 
-<pre id="javascript" class="example">
+<pre class="javascript code-example">
 <span class="operator">$</span>(document).<span class="storage">ready</span>(function () {
   <span class="comment">// Toggle between the dark and light themes</span>
   <span class="operator">$</span>(<span class="string">"#toggle"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
@@ -108,7 +108,7 @@
   <span class="comment">...</span>
 </pre>
 
-<pre id="markdown" class="example">
+<pre class="markdown code-example">
 <span class="markup-heading"># Encounters</span>
 
 A simple little colour palette for writing day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!

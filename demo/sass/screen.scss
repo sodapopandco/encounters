@@ -15,15 +15,20 @@ body {
   transition: all .25s;
 }
 
-.wf-loading .container,
-.wf-loading .stars {
+.content-container {
+  opacity: 1;
+  overflow: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .25s;
+}
+
+.wf-loading .content-container {
   opacity: 0;
   transition: none;
 }
 
 // Background
 .stars-container {
-  opacity: 1;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -51,13 +56,6 @@ body {
 
 .stars-3 {
   background: url(/images/stars_dark_3.png) top center repeat;
-}
-
-.container {
-  opacity: 1;
-  overflow: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  transition: all .25s;
 }
 
 // Header
@@ -101,6 +99,7 @@ body {
   text-indent: -9999px;
 }
 
+// Text
 .section-heading {
   margin-top: percentage(16/320);
   margin-bottom: percentage(4/320);
@@ -108,37 +107,15 @@ body {
   text-transform: uppercase;
 }
 
-.about {
+.about-text {
   margin-right: auto;
   margin-left: auto;
   max-width: 40em;
   text-align: left;
 }
 
-// Code
-.code {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  border-top-width: 0;
-  text-align: left;
-  word-wrap: break-word;
-  transition: all .25s;
-
-  pre {
-    margin: 0;
-    padding: em(16);
-    min-width: to-em(862, 14);
-    font: 1em/1.5 $monospace-font;
-  }
-}
-
-.code-examples {
+// Code Examples
+.code-example-list {
   position: relative;
   margin: 0;
   padding: em(8);
@@ -152,16 +129,35 @@ body {
     margin: 0;
   }
 
-  .code-example {
+  li {
     display: inline-block;
     padding: 0 em(6);
   }
 }
 
-.example {
+.code-examples {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: 0;
+  text-align: left;
+  word-wrap: break-word;
+  transition: all .25s;
+}
+
+.code-example {
   opacity: 0;
   position: absolute;
   top: 0;
+  margin: 0;
+  padding: em(16);
+  min-width: to-em(862, 14);
+  font: 1em/1.5 $monospace-font;
 
   &:first-child {
     position: relative;
@@ -229,7 +225,7 @@ body {
   }
 }
 
-// Info Panels
+// Colour Info
 .info {
   opacity: 0;
   visibility: hidden;
@@ -263,7 +259,7 @@ body {
   }
 }
 
-// Neutral
+// Neutral Colours
 .base-01 {
   background: $base-01;
 }
@@ -296,7 +292,7 @@ body {
   background: $base-08;
 }
 
-// Dark
+// Dark Colours
 .red-01 {
   background: $red-01;
 }
@@ -329,7 +325,7 @@ body {
   background: $pink-01;
 }
 
-// Light
+// Light Colours
 .red-02 {
   background: $red-02;
 }
@@ -362,6 +358,7 @@ body {
   background: $pink-02;
 }
 
+// Footer
 footer[role="contentinfo"] {
   margin-top: percentage(24/320);
   text-transform: uppercase;

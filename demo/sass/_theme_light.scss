@@ -6,6 +6,7 @@ $background-color: #fcfcfc;
   background: $background-color;
   color: $base-04;
 
+  // Defaults
   ::-moz-selection {
     background: $base-06;
   }
@@ -18,10 +19,12 @@ $background-color: #fcfcfc;
     color: $base-01;
   }
 
+  // Background
   .stars-container {
     background: $background-color;
   }
 
+  // Header
   .toggle {
     opacity: .18;
     transform: translate3d(0,0,0) rotate(180deg);
@@ -45,21 +48,27 @@ $background-color: #fcfcfc;
     background: $highlight-color;
   }
 
-  .code {
+  // Code Examples
+  .code-examples {
     background: $base-08;
     border-color: $base-07;
     color: $base-03;
   }
 
-  .code-examples {
+  .code-example-list {
     background-color: $base-07;
     color: $base-05;
   }
 
-  a.active {
-    color: $base-04;
+  .code-link {
+    color: $base-05;
+
+    &.active {
+      color: $base-04;
+    }
   }
 
+  // Syntax Colours
   .comment {
     color: $base-05;
   }
@@ -84,11 +93,11 @@ $background-color: #fcfcfc;
     color: $green-01;
   }
 
-  .support.constant {
+  .support-constant {
     color: $cyan-01;
   }
 
-  .constant, .variable.parameter, .support.type, .markup-heading {
+  .constant, .variable-parameter, .support-type, .markup-heading {
     color: $blue-01;
   }
 
@@ -96,7 +105,7 @@ $background-color: #fcfcfc;
     color: $violet-01;
   }
 
-  .variable.interpolation {
+  .variable-interpolation {
     color: $green-02;
   }
 
@@ -104,6 +113,7 @@ $background-color: #fcfcfc;
     color: $base-03;
   }
 
+  // Buttons
   .button {
     background: $highlight-color;
     border: 1px solid $background-color;
@@ -119,7 +129,7 @@ $background-color: #fcfcfc;
     }
   }
 
-  // Neutral
+  // Neutral Colours
   .base-01 {
     color: lighten($base-01, 12.5%);
   }
@@ -152,7 +162,7 @@ $background-color: #fcfcfc;
     color: lighten($base-08, 12.5%);
   }
 
-  // Dark
+  // Dark Colours
   .red-01 {
     color: lighten($red-01, 12.5%);
   }
@@ -185,7 +195,7 @@ $background-color: #fcfcfc;
     color: lighten($pink-01, 12.5%);
   }
 
-  // Light
+  // Light Colours
   .red-02 {
     color: lighten($red-02, 18.75%);
   }

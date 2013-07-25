@@ -28,38 +28,34 @@ $(document).ready(function () {
   });
 
   // Switch between the different examples
-  $(".html-example").click(function() {
-    $(".code-example a").removeClass("active");
-    $(this).addClass("active");
-    $(".example").removeClass("active");
-    $("#html").addClass("active");
+  $(".html").click(function() {
+    $(".code-link").removeClass("active");
+    $(".code-example").removeClass("active");
+    $(".html").addClass("active");
 
     return false;
   });
 
-  $(".sass-example").click(function() {
-    $(".code-example a").removeClass("active");
-    $(this).addClass("active");
-    $(".example").removeClass("active");
-    $("#sass").addClass("active");
+  $(".sass").click(function() {
+    $(".code-link").removeClass("active");
+    $(".code-example").removeClass("active");
+    $(".sass").addClass("active");
 
     return false;
   });
 
-  $(".javascript-example").click(function() {
-    $(".code-example a").removeClass("active");
-    $(this).addClass("active");
-    $(".example").removeClass("active");
-    $("#javascript").addClass("active");
+  $(".javascript").click(function() {
+    $(".code-link").removeClass("active");
+    $(".code-example").removeClass("active");
+    $(".javascript").addClass("active");
 
     return false;
   });
 
-  $(".markdown-example").click(function() {
-    $(".code-example a").removeClass("active");
-    $(this).addClass("active");
-    $(".example").removeClass("active");
-    $("#markdown").addClass("active");
+  $(".markdown").click(function() {
+    $(".code-link").removeClass("active");
+    $(".code-example").removeClass("active");
+    $(".markdown").addClass("active");
 
     return false;
   });
