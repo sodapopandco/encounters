@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Toggle between the dark and light themes
-  $("#toggle").click(function() {
+  $(".toggle").click(function() {
     $("body").toggleClass("dark").toggleClass("light");
 
     // Swap the HTML example body class
@@ -16,7 +16,7 @@ $(document).ready(function () {
   });
 
   // Pulse the contrast icon until someone hovers over it
-  $("#toggle").hover(function() {
+  $(".toggle").hover(function() {
     $(this).removeClass("pulse");
   });
 
