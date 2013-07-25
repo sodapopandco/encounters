@@ -116,7 +116,7 @@ $background-color: #101010;
     background: $highlight-color;
     color: $base-01;
 
-    &:hover {
+    &:hover, &:focus {
       background: lighten($highlight-color, 12.5%);
       color: $base-01;
     }

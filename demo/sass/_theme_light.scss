@@ -118,7 +118,7 @@ $background-color: #fcfcfc;
     background: $highlight-color;
     color: $base-08;
 
-    &:hover {
+    &:hover, &:focus {
       background: darken($highlight-color, 12.5%);
       color: $base-08;
     }
