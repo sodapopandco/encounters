@@ -239,7 +239,7 @@ body {
   font: em(12)/1.25 $monospace-font;
   text-shadow: none;
   transform: translate3d(-25%,-19px,0) rotate(-8deg) scale(.875);
-  transition: cubic-bezier(.5,0,.75,1.5) .125s;
+  transition: cubic-bezier(.5,0,.75,1.5) .25s;
 
   li {
     list-style: none;
