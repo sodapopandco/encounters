@@ -15,16 +15,14 @@ body {
   transition: all .25s;
 }
 
-.content-container {
-  opacity: 1;
-  overflow: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  transition: all .25s;
-}
-
-.wf-loading .content-container {
+.wf-loading body {
   opacity: 0;
   transition: none;
+}
+
+.content-container {
+  overflow: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 // Background
@@ -83,7 +81,6 @@ body {
 .tagline {
   margin-top: 0;
   text-transform: lowercase;
-  transition: all .25s;
 
   &:before {
     content: "> ";
