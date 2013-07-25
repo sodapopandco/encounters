@@ -23,6 +23,7 @@ body {
 .content-container {
   overflow: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+  transform: translate3d(0,0,0);
 }
 
 // Background
@@ -76,6 +77,10 @@ body {
 .heading {
   margin: 0;
   font: bold em(16) $display-font;
+}
+
+.title {
+  transition: all .25s;
 }
 
 .tagline {
@@ -155,6 +160,8 @@ body {
   padding: em(16);
   min-width: to-em(862, 14);
   font: 1em/1.5 $monospace-font;
+  transform: translate3d(0,0,0);
+  transition: all .25s;
 
   &:first-child {
     position: relative;
