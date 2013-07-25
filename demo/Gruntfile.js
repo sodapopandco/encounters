@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ['Gruntfile.js', 'javascripts/encounters.js']
+      check: ['Gruntfile.js', 'javascripts/encounters.js']
     },
 
     sass: {
