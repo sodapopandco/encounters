@@ -90,7 +90,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin', 'jshint', 'uglify']);
 
   grunt.registerTask('default', ['watch']);
 };
