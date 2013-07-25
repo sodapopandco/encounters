@@ -85,6 +85,7 @@ body {
 .tagline {
   margin-top: 0;
   text-transform: lowercase;
+  transition: all .25s;
 
   &:before {
     content: "> ";
@@ -143,7 +144,7 @@ body {
   padding: em(8);
   font-weight: normal;
   text-align: center;
-  transition: all .125s;
+  transition: all .25s;
 
   ul {
     margin: 0;
