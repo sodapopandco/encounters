@@ -209,7 +209,8 @@ body {
     .info {
       opacity: 1;
       visibility: visible;
-      transform: translate3d(-25%,-38px,0) rotate(-2deg) scale(1);
+      top: 50%;
+      transform: translate3d(0,0,0) rotate(-2deg) scale(1);
     }
   }
 
@@ -234,6 +235,8 @@ body {
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  top: 75%;
+  left: -50%;
   z-index: 1;
   margin-top: to-em(-31, 12);
   padding: to-em(8, 12) to-em(6, 12);
@@ -245,7 +248,7 @@ body {
   color: $base-05;
   font: em(12)/1.25 $monospace-font;
   text-shadow: none;
-  transform: translate3d(-25%,-19px,0) rotate(-8deg) scale(.875);
+  transform: translate3d(0,0,0) rotate(-8deg) scale(.875);
   transition: cubic-bezier(.5,0,.75,1.5) .25s;
 
   li {
