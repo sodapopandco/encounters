@@ -39,6 +39,9 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      options: {
+        report: 'gzip'
+      },
       compress: {
         options: {
           keepSpecialComments: 0
@@ -47,6 +50,10 @@ module.exports = function(grunt) {
           'stylesheets/screen.min.css': ['temp/stylesheets/screen.css']
         }
       }
+    },
+
+    jshint: {
+      all: ['Gruntfile.js', 'javascripts/encounters.js']
     },
 
     sass: {
@@ -60,10 +67,25 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      options: {
+        report: 'gzip'
+      },
+      compress: {
+        files: {
+          'javascripts/encounters.min.js' : 'javascripts/encounters.js'
+        }
+      }
+    },
+
     watch: {
       css: {
-        files: ['**/*.scss'],
+        files: ['sass/*.scss'],
         tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat', 'cssmin']
+      },
+      js: {
+        files: ['javascripts/encounters.js'],
+        tasks: ['jshint', 'uglify']
       }
     }
   });
@@ -71,4 +93,4 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint:strict', 'concat', 'cssmin']);
 
   grunt.registerTask('default', ['watch']);
-}
+};

@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("body").toggleClass("light").toggleClass("dark");
 
     // Swap the HTML example body class
-    var swap = $(".swap").html()
+    var swap = $(".swap").html();
     if (swap == "light") {
       $(".swap").html("dark");
     }
@@ -27,7 +27,7 @@ $(document).ready(function () {
   } else {
     $("body").removeClass("light").addClass("dark");
     $(".swap").html("dark");
-  };
+  }
 
   // Pulse the contrast icon until someone hovers over it
   $(".toggle").hover(function() {
@@ -73,4 +73,4 @@ $(document).ready(function () {
 
     return false;
   });
-})
+});
