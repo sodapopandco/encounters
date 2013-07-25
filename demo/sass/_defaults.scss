@@ -16,6 +16,10 @@ a {
   text-decoration: none;
   transform: translate3d(0,0,0);
   transition: all .25s;
+
+  &:hover, &:focus {
+    outline: 0;
+  }
 }
 
 img {
