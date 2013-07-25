@@ -15,13 +15,15 @@ body {
   transition: all .25s;
 }
 
-.wf-loading body {
+.wf-loading .container,
+.wf-loading .stars {
   opacity: 0;
   transition: none;
 }
 
 // Background
 .stars-container {
+  opacity: 1;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -52,11 +54,29 @@ body {
 }
 
 .container {
+  opacity: 1;
   overflow: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .25s;
 }
 
 // Header
+.toggle {
+  opacity: .4;
+  cursor: pointer;
+  width: em(32);
+  height: auto;
+  transition: cubic-bezier(.5,0,.75,1.5) .25s;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 6s infinite;
+}
+
 .heading {
   margin: 0;
   font: bold em(16) $display-font;
@@ -78,22 +98,6 @@ body {
   width: 2px;
   direction: ltr;
   text-indent: -9999px;
-}
-
-.toggle {
-  opacity: .4;
-  cursor: pointer;
-  width: em(32);
-  height: auto;
-  transition: all .25s;
-
-  &:hover, &:focus {
-    opacity: 1;
-  }
-}
-
-.pulse {
-  animation: pulse 6s infinite;
 }
 
 .section-heading {
@@ -139,7 +143,7 @@ body {
   padding: em(8);
   font-weight: normal;
   text-align: center;
-  transition: all .25s;
+  transition: all .125s;
 
   ul {
     margin: 0;
@@ -202,8 +206,7 @@ body {
     .info {
       opacity: 1;
       visibility: visible;
-      top: 50%;
-      transform: rotate(-2deg);
+      transform: translate3d(-25%,-38px,0) rotate(-2deg) scale(1);
     }
   }
 
@@ -229,10 +232,7 @@ body {
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  top: 75%;
-  left: 50%;
   margin-top: to-em(-31, 12);
-  margin-left: to-em(-78, 12);
   padding: to-em(8, 12) to-em(6, 12);
   width: to-em(156, 12);
   height: to-em(62, 12);
@@ -242,8 +242,8 @@ body {
   color: $base-05;
   font: em(12)/1.25 $monospace-font;
   text-shadow: none;
-  transform: rotate(-8deg);
-  transition: all .25s;
+  transform: translate3d(-25%,-19px,0) rotate(-8deg) scale(.875);
+  transition: cubic-bezier(.5,0,.75,1.5) .125s;
 
   li {
     list-style: none;

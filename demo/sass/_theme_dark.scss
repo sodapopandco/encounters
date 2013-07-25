@@ -22,6 +22,14 @@ $background-color: #101010;
     background: $background-color;
   }
 
+  .toggle {
+    transform: translate3d(0,0,0) rotate(0deg);
+  }
+
+  .pulse {
+    animation: pulse 6s infinite;
+  }
+
   .title, .section {
     color: $base-06;
   }
