@@ -36,16 +36,13 @@ $background-color: #fcfcfc;
     background: $highlight-color;
   }
 
-  .icon {
+  .toggle {
+    opacity: .18;
+    transform: rotate(180deg);
+
     &:hover, &:focus {
       opacity: .49;
     }
-
-    opacity: .18;
-  }
-
-  .pulse {
-    transform: rotate(180deg);
   }
 
   .code {
