@@ -142,6 +142,8 @@ body {
   position: relative;
   margin: 0;
   padding: em(8);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
   font-weight: normal;
   text-align: center;
   transition: all .25s;
