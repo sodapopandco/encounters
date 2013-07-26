@@ -6,12 +6,6 @@
 // Layout
 body {
   opacity: 1;
-  margin: 0 auto;
-  padding: percentage(24/320) 0;
-  width: percentage(288/320);
-  max-width: em(864);
-  font: #{$body-font-size}px/1.375 $monospace-font;
-  text-align: center;
   transition: all .25s;
 }
 
@@ -21,8 +15,12 @@ body {
 }
 
 .content-container {
-  overflow: hidden;
+  margin: percentage(24/320) auto;
+  width: percentage(288/320);
+  max-width: em(864);
+  font: #{$body-font-size}px/1.375 $monospace-font;
   -webkit-font-smoothing: subpixel-antialiased;
+  text-align: center;
   transform: translate3d(0,0,0);
 }
 
@@ -239,7 +237,7 @@ body {
   visibility: hidden;
   position: absolute;
   top: 75%;
-  left: -50%;
+  left: -75%;
   z-index: 1;
   margin-top: to-em(-31, 12);
   padding: to-em(8, 12) to-em(6, 12);
@@ -484,6 +482,10 @@ a.logo {
     width: em(74);
     height: em(74);
     line-height: em(74);
+  }
+
+  .info {
+    left: -50%;
   }
 }
 
