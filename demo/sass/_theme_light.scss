@@ -45,12 +45,12 @@ $background-color: #fcfcfc;
   }
 
   // Code Examples
-  .code-example-list {
+  .code-example-nav {
     background-color: $base-07;
     color: $base-05;
   }
 
-  .code-link {
+  .code-example-link {
     color: $base-05;
 
     &:hover, &:focus {

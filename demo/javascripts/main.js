@@ -43,7 +43,7 @@ $(document).ready(function () {
 
   // Switch between the different examples
   $(".html").click(function() {
-    $(".code-link").removeClass("active");
+    $(".code-example-link").removeClass("active");
     $(".code-example").removeClass("active");
     $(".html").addClass("active");
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
   });
 
   $(".sass").click(function() {
-    $(".code-link").removeClass("active");
+    $(".code-example-link").removeClass("active");
     $(".code-example").removeClass("active");
     $(".sass").addClass("active");
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
   });
 
   $(".javascript").click(function() {
-    $(".code-link").removeClass("active");
+    $(".code-example-link").removeClass("active");
     $(".code-example").removeClass("active");
     $(".javascript").addClass("active");
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
   });
 
   $(".markdown").click(function() {
-    $(".code-link").removeClass("active");
+    $(".code-example-link").removeClass("active");
     $(".code-example").removeClass("active");
     $(".markdown").addClass("active");
 
