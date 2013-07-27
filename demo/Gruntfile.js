@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       prefix: {
         files: {
-          'stylesheets/screen.css': ['stylesheets/screen.css']
+          'temp/stylesheets/screen.css': ['temp/stylesheets/screen.css']
         }
       }
     },
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     concat: {
       join: {
         files: {
-          'stylesheets/screen.css': ['components/normalize-css/normalize.css', 'stylesheets/screen.css']
+          'temp/stylesheets/screen.css': ['components/normalize-css/normalize.css', 'temp/stylesheets/screen.css']
         }
       }
     },
@@ -28,13 +28,13 @@ module.exports = function(grunt) {
         options: {
           import: 2
         },
-        src: ['stylesheets/screen.css']
+        src: ['temp/stylesheets/screen.css']
       },
       lax: {
         options: {
           import: false
         },
-        src: ['stylesheets/screen.css']
+        src: ['temp/stylesheets/screen.css']
       }
     },
 
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'stylesheets/screen.min.css': ['stylesheets/screen.css']
+          'stylesheets/screen.min.css': ['temp/stylesheets/screen.css']
         }
       }
     },
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
           precision: 3
         },
         files: {
-          'stylesheets/screen.css': ['sass/screen.scss']
+          'temp/stylesheets/screen.css': ['sass/screen.scss']
         }
       }
     },
