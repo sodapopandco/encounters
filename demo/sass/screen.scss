@@ -263,7 +263,6 @@ body {
   width: to-em(66, $font-size);
   height: to-em(66, $font-size);
   font: #{$font-size}px/to-em(66, $font-size) $display-font;
-  letter-spacing: to-em(1, $font-size);
   text-align: center;
   text-transform: uppercase;
   transition: all .25s;
@@ -357,9 +356,10 @@ body {
   @media screen and (min-width: 30em) {
     $font-size: 12;
 
+    left: -36px;
     margin-top: to-em(-30, $font-size);
     padding: to-em(8, $font-size) to-em(6, $font-size);
-    width: to-em(156, $font-size);
+    width: to-em(144, $font-size);
     height: to-em(60, $font-size);
     font-size: #{$font-size}px;
 
