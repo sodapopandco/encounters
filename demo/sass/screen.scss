@@ -28,41 +28,6 @@ body {
   max-width: em(864);
 }
 
-// Background
-.stars-container {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all .25s;
-}
-
-.stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-
-  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
-    background-size: 640px 640px;
-  }
-}
-
-.stars-1 {
-  background: url(/images/stars_dark_1.png) top center repeat;
-}
-
-.stars-2 {
-  background: url(/images/stars_dark_2.png) top center repeat;
-}
-
-.stars-3 {
-  background: url(/images/stars_dark_3.png) top center repeat;
-}
-
 // Headings
 .heading {
   $font-size: 16;
@@ -520,6 +485,7 @@ a.logo {
 }
 
 // Imports
+@import "background";
 @import "animations";
 
 // Themes
