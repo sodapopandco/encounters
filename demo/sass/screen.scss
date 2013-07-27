@@ -141,7 +141,7 @@ body {
 .code-examples-section {
   width: 100%;
 
-  @media screen and (min-width: 30em) {
+  @media screen and (min-width: 40em) {
     width: percentage(288/320);
   }
 }
@@ -165,7 +165,7 @@ body {
     padding: 0 to-em(6, $font-size);
   }
 
-  @media screen and (min-width: 30em) {
+  @media screen and (min-width: 40em) {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
   }
@@ -180,7 +180,7 @@ body {
   word-wrap: break-word;
   transition: all .25s;
 
-  @media screen and (min-width: 30em) {
+  @media screen and (min-width: 40em) {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
   }
