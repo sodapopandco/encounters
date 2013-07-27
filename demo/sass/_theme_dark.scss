@@ -48,12 +48,6 @@ $background-color: #101010;
   }
 
   // Code Examples
-  .code-examples {
-    background: $base-01;
-    border-color: $base-02;
-    color: $base-06;
-  }
-
   .code-example-list {
     background-color: $base-02;
   }
@@ -64,6 +58,15 @@ $background-color: #101010;
     &.active {
       color: $base-05;
     }
+  }
+
+  .code-examples {
+    background: $base-01;
+    border-color: $base-02;
+  }
+
+  .code-example {
+    color: $base-06;
   }
 
   // Syntax Colours
