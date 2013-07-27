@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      check: ['Gruntfile.js', 'javascripts/encounters.js']
+      check: ['Gruntfile.js', 'javascripts/main.js']
     },
 
     sass: {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
       },
       compress: {
         files: {
-          'javascripts/encounters.min.js' : 'javascripts/encounters.js'
+          'javascripts/main.min.js' : 'javascripts/main.js'
         }
       }
     },
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
         tasks: ['sass', 'autoprefixer', 'csslint:lax', 'concat', 'cssmin']
       },
       js: {
-        files: ['javascripts/encounters.js'],
+        files: ['javascripts/main.js'],
         tasks: ['jshint', 'uglify']
       }
     }
