@@ -446,10 +446,10 @@ footer[role="contentinfo"] {
 
 a.logo {
   display: inline-block;
-  opacity: .2;
+  opacity: .4;
 
   &:hover, &:focus {
-    opacity: .8;
+    opacity: 1;
   }
 
   &:active {
