@@ -41,6 +41,10 @@ body {
   left: 0;
   width: 100%;
   height: 200%;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+    background-size: 640px 640px;
+  }
 }
 
 .stars-1 {
@@ -59,8 +63,6 @@ body {
 .toggle {
   opacity: .4;
   cursor: pointer;
-  width: em(32);
-  height: auto;
   transition: cubic-bezier(.5,0,.5,1.25) .25s;
 
   &:hover, &:focus {
@@ -73,30 +75,38 @@ body {
 }
 
 .heading {
+  $font-size: 16;
+
   margin: 0;
-  font: bold em(16) $display-font;
+  font: em($font-size) $display-font;
 }
 
 .title {
+  $font-size: 36;
+
+  font-size: em(36);
   transition: all .25s;
 }
 
 .tagline {
+  $font-size: 14;
+
   margin-top: 0;
+  font-size: em($font-size);
   text-transform: lowercase;
 
   &:before {
     content: "> ";
   }
-}
 
-.caret {
-  display: inline-block;
-  animation: blink 1.5s steps(2, start) infinite;
-  margin-left: to-em(8, 14);
-  width: 2px;
-  direction: ltr;
-  text-indent: -9999px;
+  .caret {
+    display: inline-block;
+    animation: blink 1.5s steps(2, start) infinite;
+    margin-left: to-em(8, $font-size);
+    width: 2px;
+    direction: ltr;
+    text-indent: -9999px;
+  }
 }
 
 // Text
@@ -116,12 +126,14 @@ body {
 
 // Code Examples
 .code-example-list {
+  $font-size: 14;
+
   position: relative;
   margin: 0;
-  padding: to-em(12, 14);
+  padding: to-em(12, $font-size);
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  font: normal em(14)/1 $display-font;
+  font: em($font-size)/1 $display-font;
   text-align: center;
   transition: all .25s;
 
@@ -131,7 +143,7 @@ body {
 
   li {
     display: inline-block;
-    padding: 0 to-em(8, 14);
+    padding: 0 to-em(6, $font-size);
   }
 }
 
@@ -148,13 +160,15 @@ body {
 }
 
 .code-example {
+  $font-size: 14;
+
   opacity: 0;
   position: absolute;
   top: 0;
   margin: 0;
-  padding: em(16);
-  min-width: to-em(862, 14);
-  font: 1em/1.5 $monospace-font;
+  padding: to-em(16, $font-size);
+  min-width: to-em(862, $font-size);
+  font: em($font-size)/1.5 $monospace-font;
   transform: translate3d(0,0,0);
   transition: all .25s;
 
@@ -170,6 +184,15 @@ body {
 // Colours
 .colours-section {
   margin: 0 auto;
+  width: em(288);
+
+  @media screen and (min-width: 30em) {
+    width: em(320);
+  }
+
+  @media screen and (min-width: 45em) {
+    width: em(648);
+  }
 }
 
 .colour-list {
@@ -177,7 +200,7 @@ body {
   margin: 0;
   margin-left: -8px;
   padding: 0;
-  width: 100%;
+  width: 296px;
   font-size: 0;
 
   &.neutral {
@@ -189,17 +212,29 @@ body {
     display: inline-block;
     width: 100%;
   }
+
+  @media screen and (min-width: 30em) {
+    width: 328px;
+  }
+
+  @media screen and (min-width: 45em) {
+    width: 656px;
+  }
 }
 
 // Colour
 .colour {
+  $font-size: 12;
+
   display: inline-block;
   position: relative;
-  margin-top: em(8);
-  margin-left: em(8);
+  margin-top: 8px;
+  margin-left: 8px;
   border-radius: 2px;
-  font: 16px $display-font;
-  letter-spacing: em(1);
+  width: to-em(66, $font-size);
+  height: to-em(66, $font-size);
+  font: #{$font-size}px/to-em(66, $font-size) $display-font;
+  letter-spacing: to-em(1, $font-size);
   text-align: center;
   text-transform: uppercase;
   transition: all .25s;
@@ -222,32 +257,43 @@ body {
 
     em {
       display: block;
-      font-size: to-em(28, 14);
+      font-size: to-em(30, $font-size);
     }
   }
 
   em {
     font-style: normal;
   }
+
+  @media screen and (min-width: 30em) {
+    $font-size: 14;
+
+    width: to-em(74, $font-size);
+    height: to-em(74, $font-size);
+    font-size: #{$font-size}px;
+    line-height: to-em(74, $font-size);
+  }
 }
 
 // Colour Info
 .info {
+  $font-size: 12;
+
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 75%;
-  left: -75%;
+  left: -39px;
   z-index: 1;
-  margin-top: to-em(-31, 12);
-  padding: to-em(8, 12) to-em(6, 12);
-  width: to-em(156, 12);
-  height: to-em(62, 12);
+  margin-top: to-em(-31, $font-size);
+  padding: to-em(8, $font-size) to-em(6, $font-size);
+  width: to-em(156, $font-size);
+  height: to-em(62, $font-size);
   background: #fff;
   border-radius: 1px;
-  box-shadow: 0 to-em(2, 12) 0 transparentize(#000, .875);
+  box-shadow: 0 to-em(2, $font-size) 0 transparentize(#000, .875);
   color: $base-05;
-  font: em(12)/1.25 $monospace-font;
+  font: #{$font-size}px/1.25 $monospace-font;
   text-shadow: none;
   transform: translate3d(0,0,0) rotate(-8deg) scale(.875);
   transition: cubic-bezier(.5,0,.75,1.5) .25s;
@@ -256,7 +302,7 @@ body {
     list-style: none;
 
     &:first-child {
-      font-size: to-em(14, 12);
+      font-size: to-em(14, $font-size);
       font-weight: bold;
     }
   }
@@ -369,13 +415,11 @@ body {
 // Footer
 footer[role="contentinfo"] {
   margin-top: percentage(24/320);
-  text-transform: uppercase;
 }
 
 a.logo {
   display: inline-block;
   opacity: .2;
-  letter-spacing: em(2);
 
   &:hover, &:focus {
     opacity: .8;
@@ -388,8 +432,13 @@ a.logo {
   }
 
   span {
+    $font-size: 10;
+
     display: inline-block;
-    width: 96px;
+    width: to-em(96, $font-size);
+    font-size: em($font-size);
+    letter-spacing: to-em(1, $font-size);
+    text-transform: uppercase;
 
     &:first-child {
       text-align: right;
@@ -413,108 +462,3 @@ a.logo {
 // Themes
 @import "theme_dark";
 @import "theme_light";
-
-// Media Queries
-// Base
-@media screen and (min-width: 0em) {
-  // Font Sizes
-  .huge {
-    font-size: em(28);
-  }
-
-  .large {
-    font-size: em(22);
-  }
-
-  .medium {
-    font-size: em(14);
-  }
-
-  .small {
-    font-size: em(12);
-  }
-
-  .tiny {
-    font-size: em(10);
-  }
-
-  // Colours
-  .colours-section {
-    width: 288px;
-  }
-
-  .colour-list {
-    width: 296px;
-  }
-
-  // Colour
-  .colour {
-    width: em(66);
-    height: em(66);
-    line-height: em(66);
-  }
-}
-
-// 640px+
-@media screen and (min-width: 30em) {
-  // Font Sizes
-  .huge {
-    font-size: em(36);
-  }
-
-  .large {
-    font-size: em(24);
-  }
-
-  .medium {
-    font-size: em(16);
-  }
-
-  .small {
-    font-size: em(14);
-  }
-
-  .tiny {
-    font-size: em(10);
-  }
-
-
-  // Colours
-  .colours-section {
-    width: 320px;
-  }
-
-  .colour-list {
-    width: 328px;
-  }
-
-  // Colour
-  .colour {
-    width: em(74);
-    height: em(74);
-    line-height: em(74);
-  }
-
-  .info {
-    left: -50%;
-  }
-}
-
-// 720px+
-@media screen and (min-width: 45em) {
-  // Colours
-  .colours-section {
-    width: 648px;
-  }
-
-  .colour-list {
-    width: 656px;
-  }
-}
-
-// High DPI Screens
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
-  .stars {
-    background-size: 640px 640px;
-  }
-}
