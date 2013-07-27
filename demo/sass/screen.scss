@@ -133,7 +133,8 @@ body {
   position: relative;
   margin: 0;
   padding: to-em(12, $font-size);
-  font: em($font-size)/1 $display-font;
+  font-size: em($font-size);
+  line-height: 1;
   text-align: center;
   transition: all .25s;
 
