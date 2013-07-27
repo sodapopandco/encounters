@@ -14,13 +14,18 @@ body {
 }
 
 .content-container {
-  margin: percentage(24/320) auto;
-  width: percentage(288/320);
-  max-width: em(864);
+  margin: percentage(24/320) 0;
   font: #{$body-font-size}px/1.375 $monospace-font;
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: center;
   transform: translate3d(0,0,0);
+}
+
+.main-section {
+  margin-right: auto;
+  margin-left: auto;
+  width: percentage(288/320);
+  max-width: em(864);
 }
 
 // Background
@@ -124,14 +129,20 @@ body {
 }
 
 // Code Examples
+.code-examples-section {
+  width: 100%;
+
+  @media screen and (min-width: 30em) {
+    width: percentage(288/320);
+  }
+}
+
 .code-example-list {
   $font-size: 14;
 
   position: relative;
   margin: 0;
   padding: to-em(12, $font-size);
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
   font: em($font-size)/1 $display-font;
   text-align: center;
   transition: all .25s;
@@ -144,6 +155,11 @@ body {
     display: inline-block;
     padding: 0 to-em(6, $font-size);
   }
+
+  @media screen and (min-width: 30em) {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
 }
 
 .code-examples {
@@ -151,11 +167,14 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
   text-align: left;
   word-wrap: break-word;
   transition: all .25s;
+
+  @media screen and (min-width: 30em) {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
 }
 
 .code-example {
@@ -182,34 +201,19 @@ body {
 
 // Colours
 .colours-section {
-  margin: 0 auto;
-  width: em(288);
-
-  @media screen and (min-width: 30em) {
-    width: em(320);
-  }
-
-  @media screen and (min-width: 45em) {
-    width: em(648);
-  }
+  overflow: hidden;
+  width: 100%;
 }
 
 .colour-list {
   position: relative;
-  margin: 0;
-  margin-left: -8px;
+  margin: 0 auto;
   padding: 0;
-  width: 296px;
+  width: 320px;
   font-size: 0;
 
   &.neutral {
     margin-top: -8px;
-  }
-
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
   }
 
   @media screen and (min-width: 30em) {
@@ -228,7 +232,8 @@ body {
   display: inline-block;
   position: relative;
   margin-top: 8px;
-  margin-left: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   border-radius: 2px;
   width: to-em(66, $font-size);
   height: to-em(66, $font-size);
