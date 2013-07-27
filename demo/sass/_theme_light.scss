@@ -20,6 +20,10 @@ $background-color: #fcfcfc;
     background: $background-color;
   }
 
+  .stars {
+    display: none;
+  }
+
   // Header
   .toggle {
     opacity: .18;
