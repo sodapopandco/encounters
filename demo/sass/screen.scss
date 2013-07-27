@@ -118,10 +118,10 @@ body {
 .code-example-list {
   position: relative;
   margin: 0;
-  padding: em(8);
+  padding: to-em(12, 14);
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  font-weight: normal;
+  font: normal em(14)/1 $display-font;
   text-align: center;
   transition: all .25s;
 
@@ -131,7 +131,7 @@ body {
 
   li {
     display: inline-block;
-    padding: 0 em(6);
+    padding: 0 to-em(8, 14);
   }
 }
 
