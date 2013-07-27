@@ -299,18 +299,18 @@ body {
 
 // Colour Info
 .info {
-  $font-size: 12;
+  $font-size: 10;
 
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 75%;
-  left: -39px;
+  left: -32px;
   z-index: 1;
-  margin-top: to-em(-31, $font-size);
+  margin-top: to-em(-27, $font-size);
   padding: to-em(8, $font-size) to-em(6, $font-size);
-  width: to-em(156, $font-size);
-  height: to-em(62, $font-size);
+  width: to-em(128, $font-size);
+  height: to-em(54, $font-size);
   background: #fff;
   border-radius: 1px;
   box-shadow:
@@ -328,7 +328,7 @@ body {
     list-style: none;
 
     &:first-child {
-      font-size: to-em(14, $font-size);
+      font-size: to-em(12, $font-size);
       font-weight: bold;
     }
   }
@@ -336,6 +336,22 @@ body {
   em {
     display: inline;
     color: $base-03;
+  }
+
+  @media screen and (min-width: 30em) {
+    $font-size: 12;
+
+    margin-top: to-em(-30, $font-size);
+    padding: to-em(8, $font-size) to-em(6, $font-size);
+    width: to-em(156, $font-size);
+    height: to-em(60, $font-size);
+    font-size: #{$font-size}px;
+
+    li {
+      &:first-child {
+        font-size: to-em(14, $font-size);
+      }
+    }
   }
 }
 
