@@ -34,11 +34,11 @@ $(document).ready(function () {
     $(this).removeClass("pulse");
   });
 
-  // Parrallax the stars while scrolling
+  // Parrallax the background while scrolling
   $(window).scroll(function() {
-    $(".stars-1").css("transform","translate3d(0px," + -($(window).scrollTop()/5) + "px, 0px)");
-    $(".stars-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
-    $(".stars-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
+    $(".background-1").css("transform","translate3d(0px," + -($(window).scrollTop()/5) + "px, 0px)");
+    $(".background-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
+    $(".background-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
   });
 
   // Switch between the different examples
