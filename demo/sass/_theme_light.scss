@@ -48,6 +48,21 @@ $background-color: #fcfcfc;
     background: $highlight-color;
   }
 
+  // About
+  .button {
+    background: $highlight-color;
+    color: $base-08;
+
+    &:hover, &:focus {
+      background: darken($highlight-color, 12.5%);
+      color: $base-08;
+    }
+
+    + small {
+      color: $base-05;
+    }
+  }
+
   // Code Examples
   .code-example-nav {
     background-color: $base-07;
@@ -118,21 +133,6 @@ $background-color: #fcfcfc;
 
   .source {
     color: $base-03;
-  }
-
-  // Buttons
-  .button {
-    background: $highlight-color;
-    color: $base-08;
-
-    &:hover, &:focus {
-      background: darken($highlight-color, 12.5%);
-      color: $base-08;
-    }
-
-    + small {
-      color: $base-05;
-    }
   }
 
   // Neutral Colours
