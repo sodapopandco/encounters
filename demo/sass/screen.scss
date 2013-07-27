@@ -122,10 +122,19 @@ body {
 }
 
 .about-text {
+  $font-size: 14;
+
   margin-right: auto;
   margin-left: auto;
   max-width: 40em;
+  font-size: em($font-size);
   text-align: left;
+
+  @media screen and (min-width: 30em) {
+    $font-size: 16;
+
+    font-size: em($font-size);
+  }
 }
 
 // Code Examples
