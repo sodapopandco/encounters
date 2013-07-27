@@ -63,6 +63,21 @@ body {
   background: url(/images/stars_dark_3.png) top center repeat;
 }
 
+// Headings
+.heading {
+  $font-size: 16;
+
+  margin: 0;
+  font: em($font-size) $display-font;
+}
+
+.section-heading {
+  margin-top: percentage(16/320);
+  margin-bottom: percentage(4/320);
+  letter-spacing: em(2);
+  text-transform: uppercase;
+}
+
 // Header
 .toggle {
   opacity: .4;
@@ -76,13 +91,6 @@ body {
 
 .pulse {
   animation: pulse 6s infinite;
-}
-
-.heading {
-  $font-size: 16;
-
-  margin: 0;
-  font: em($font-size) $display-font;
 }
 
 .title {
@@ -113,14 +121,7 @@ body {
   }
 }
 
-// Text
-.section-heading {
-  margin-top: percentage(16/320);
-  margin-bottom: percentage(4/320);
-  letter-spacing: em(2);
-  text-transform: uppercase;
-}
-
+// About
 .about-text {
   $font-size: 14;
 
@@ -134,6 +135,21 @@ body {
     $font-size: 16;
 
     font-size: em($font-size);
+  }
+}
+
+.button {
+  $font-size: 24;
+
+  display: inline-block;
+  padding: to-em(2, $font-size) to-em(12, $font-size);
+  border-radius: 4px;
+  font: bold em($font-size)/1.5 $display-font;
+
+  + small {
+    display: block;
+    margin-top: to-em(6, 14);
+    transition: all .25s;
   }
 }
 
@@ -194,7 +210,7 @@ body {
   top: 0;
   margin: 0;
   padding: to-em(16, $font-size);
-  min-width: to-em(862, $font-size);
+  min-width: to-em(864, $font-size);
   font: em($font-size)/1.5 $monospace-font;
   transform: translate3d(0,0,0);
   transition: all .25s;
@@ -492,13 +508,18 @@ a.logo {
   }
 
   img {
+    width: 48px;
+    height: auto;
     transform: translate3d(0,0,0) rotate(0deg);
     transition: cubic-bezier(.5,0,.5,1.25) .25s;
+
+    @media screen and (min-width: 30em) {
+      width: 64px;
+    }
   }
 }
 
 // Imports
-@import "buttons";
 @import "animations";
 
 // Themes
