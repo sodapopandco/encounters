@@ -252,7 +252,7 @@ body {
   text-transform: uppercase;
   transition: all .25s;
 
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     cursor: pointer;
 
     .info {
@@ -261,6 +261,15 @@ body {
       top: 50%;
       transform: translate3d(0,0,0) rotate(-2deg) scale(1);
     }
+  }
+
+  .tap {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: to-em(66, $font-size);
+    height: to-em(66, $font-size);
   }
 
   b {
@@ -304,11 +313,15 @@ body {
   height: to-em(62, $font-size);
   background: #fff;
   border-radius: 1px;
-  box-shadow: 0 to-em(2, $font-size) 0 transparentize(#000, .875);
+  box-shadow:
+    0 2px 0 transparentize(#000, .875),
+    // Fix for the angular jaggies on iOS devices
+    0 0 1px transparentize(#fff, 0);
   color: $base-05;
   font: #{$font-size}px/1.25 $monospace-font;
   text-shadow: none;
   transform: translate3d(0,0,0) rotate(-8deg) scale(.875);
+  transform-style: preserve-3d;
   transition: cubic-bezier(.5,0,.75,1.5) .25s;
 
   li {

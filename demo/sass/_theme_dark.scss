@@ -15,10 +15,6 @@ $background-color: #101010;
     background: $base-03;
   }
 
-  a:hover, a:focus {
-    color: $base-08;
-  }
-
   // Background
   .stars-container {
     background: $background-color;
@@ -54,6 +50,10 @@ $background-color: #101010;
 
   .code-link {
     color: $base-04;
+
+    &:hover, &:focus {
+      color: $base-08;
+    }
 
     &.active {
       color: $base-05;

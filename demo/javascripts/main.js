@@ -73,4 +73,10 @@ $(document).ready(function () {
 
     return false;
   });
+
+  // Add a link so iOS devices can tap to see the colour info
+  $('<a class="tap" href="#"></a>').insertAfter('.info');
+  $(".tap").click(function() {
+    return false;
+  });
 });
