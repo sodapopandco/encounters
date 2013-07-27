@@ -112,8 +112,11 @@ body {
   font: bold em($font-size)/1.5 $display-font;
 
   + small {
+    $font-size: 12;
+
     display: block;
-    margin-top: to-em(6, 14);
+    margin-top: to-em(6, $font-size);
+    font-size: $font-size;
     transition: all .25s;
   }
 }
