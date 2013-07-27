@@ -381,6 +381,12 @@ a.logo {
     opacity: .8;
   }
 
+  &:active {
+    img {
+      transform: translate3d(0,0,0) rotate(360deg);
+    }
+  }
+
   span {
     display: inline-block;
     width: 96px;
@@ -392,6 +398,11 @@ a.logo {
     &:last-child {
       text-align: left;
     }
+  }
+
+  img {
+    transform: translate3d(0,0,0) rotate(0deg);
+    transition: cubic-bezier(.5,0,.5,1.25) .25s;
   }
 }
 
