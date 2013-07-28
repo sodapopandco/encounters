@@ -88,7 +88,6 @@ body {
   .caret {
     display: inline-block;
     animation: blink 1.5s steps(2, start) infinite;
-    margin-left: to-em(8, $font-size);
     width: 2px;
     direction: ltr;
     text-indent: -9999px;
