@@ -46,15 +46,17 @@ $background-color: #101010;
   // About
   .button {
     background: $highlight-color;
+    border-color: $highlight-color;
     color: $base-01;
 
     &:hover, &:focus {
-      background: lighten($highlight-color, 12.5%);
-      color: $base-01;
-
       + small {
         color: $base-05;
       }
+    }
+
+    &:active {
+      color: $base-08;
     }
 
     + small {

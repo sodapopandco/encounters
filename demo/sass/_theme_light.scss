@@ -54,12 +54,13 @@ $background-color: #fcfcfc;
     color: $base-08;
 
     &:hover, &:focus {
-      background: darken($highlight-color, 12.5%);
-      color: $base-08;
-
       + small {
         color: $base-04;
       }
+    }
+
+    &:active {
+      color: $base-01;
     }
 
     + small {

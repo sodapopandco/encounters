@@ -107,10 +107,11 @@ body {
   $font-size: 24;
 
   display: inline-block;
-  padding: 0 to-em(12, $font-size);
+  padding: to-em(2, $font-size) to-em(12, $font-size);
   border-radius: 4px;
   font: bold em($font-size)/1.5 $display-font;
   vertical-align: middle;
+  transition: all .125s;
 
   + small {
     $font-size: 12;
