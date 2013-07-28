@@ -114,8 +114,8 @@ body {
   }
 }
 
-// Code Examples
-.code-examples-section {
+// Previews
+.preview-section {
   width: 100%;
 
   @media screen and (min-width: 40em) {
@@ -123,7 +123,7 @@ body {
   }
 }
 
-.code-example-nav {
+.preview-nav {
   $font-size: 14;
 
   position: relative;
@@ -149,7 +149,7 @@ body {
   }
 }
 
-.code-examples {
+.preview-container {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -164,7 +164,7 @@ body {
   }
 }
 
-.code-example {
+.preview {
   $font-size: 14;
 
   opacity: 0;

@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(".toggle").click(function() {
     $("body").toggleClass("light").toggleClass("dark");
 
-    // Swap the HTML example body class
+    // Swap the HTML preview's body class
     var swap = $(".swap").html();
     if (swap == "light") {
       $(".swap").html("dark");
@@ -41,34 +41,34 @@ $(document).ready(function () {
     $(".background-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
   });
 
-  // Switch between the different examples
+  // Switch between the different previews
   $(".html").click(function() {
-    $(".code-example-link").removeClass("active");
-    $(".code-example").removeClass("active");
+    $(".preview-link").removeClass("active");
+    $(".preview").removeClass("active");
     $(".html").addClass("active");
 
     return false;
   });
 
   $(".sass").click(function() {
-    $(".code-example-link").removeClass("active");
-    $(".code-example").removeClass("active");
+    $(".preview-link").removeClass("active");
+    $(".preview").removeClass("active");
     $(".sass").addClass("active");
 
     return false;
   });
 
   $(".javascript").click(function() {
-    $(".code-example-link").removeClass("active");
-    $(".code-example").removeClass("active");
+    $(".preview-link").removeClass("active");
+    $(".preview").removeClass("active");
     $(".javascript").addClass("active");
 
     return false;
   });
 
   $(".markdown").click(function() {
-    $(".code-example-link").removeClass("active");
-    $(".code-example").removeClass("active");
+    $(".preview-link").removeClass("active");
+    $(".preview").removeClass("active");
     $(".markdown").addClass("active");
 
     return false;

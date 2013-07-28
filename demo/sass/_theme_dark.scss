@@ -73,12 +73,12 @@ $background-color: #101010;
     }
   }
 
-  // Code Examples
-  .code-example-nav {
+  // preview
+  .preview-nav {
     background-color: $base-02;
   }
 
-  .code-example-link {
+  .preview-link {
     color: $base-04;
 
     &:hover, &:focus {
@@ -90,12 +90,12 @@ $background-color: #101010;
     }
   }
 
-  .code-examples {
+  .preview-container {
     background: $base-01;
     border-color: $base-02;
   }
 
-  .code-example {
+  .preview {
     color: $base-06;
   }
 
