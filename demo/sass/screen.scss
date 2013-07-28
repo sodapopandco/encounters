@@ -97,11 +97,11 @@ body {
 
 // About
 .button {
-  $font-size: 24;
+  $font-size: 21;
 
   display: inline-block;
-  padding: to-em(2, $font-size) to-em(12, $font-size);
-  border-radius: 4px;
+  padding: to-em(6, $font-size) to-em(24, $font-size);
+  border-radius: 2px;
   font: bold em($font-size)/1.5 $display-font;
   vertical-align: middle;
   transition: all .125s;
@@ -146,8 +146,8 @@ body {
   }
 
   @media screen and (min-width: 40em) {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
   }
 }
 
@@ -161,8 +161,8 @@ body {
   transition: all .25s;
 
   @media screen and (min-width: 40em) {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
   }
 }
 
