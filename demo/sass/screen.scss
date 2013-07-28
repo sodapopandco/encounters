@@ -43,6 +43,22 @@ body {
   text-transform: uppercase;
 }
 
+// Text
+.text {
+  $font-size: 14;
+
+  margin: 1.5em auto;
+  max-width: 40.5em;
+  font-size: em($font-size);
+  text-align: left;
+
+  @media screen and (min-width: 30em) {
+    $font-size: 16;
+
+    font-size: em($font-size);
+  }
+}
+
 // Header
 .toggle {
   cursor: pointer;
@@ -78,22 +94,6 @@ body {
 }
 
 // About
-.about-text {
-  $font-size: 14;
-
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 40em;
-  font-size: em($font-size);
-  text-align: left;
-
-  @media screen and (min-width: 30em) {
-    $font-size: 16;
-
-    font-size: em($font-size);
-  }
-}
-
 .button {
   $font-size: 24;
 
@@ -189,7 +189,6 @@ body {
 // Colours
 .palette-section {
   overflow: hidden;
-  padding-bottom: percentage(16/320);
   width: 100%;
 }
 
@@ -211,6 +210,11 @@ body {
   @media screen and (min-width: 45em) {
     width: 656px;
   }
+}
+
+.palette-text {
+  margin-top: 0;
+  width: percentage(288/320);
 }
 
 // Colour
@@ -435,7 +439,7 @@ body {
 
 // Footer
 footer[role="contentinfo"] {
-  margin-top: percentage(8/320);
+  margin-top: percentage(24/320);
 }
 
 a.logo {
