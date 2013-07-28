@@ -22,11 +22,16 @@ $background-color: #101010;
 
   // Header
   .toggle {
+    opacity: .4;
     transform: translate3d(0,0,0) rotate(0deg);
+
+    &:hover, &:focus {
+      opacity: .49;
+    }
   }
 
   .pulse {
-    animation: pulse 6s infinite;
+    animation: pulse-dark 6s infinite;
   }
 
   .title, .section {

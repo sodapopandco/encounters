@@ -34,6 +34,10 @@ $background-color: #fcfcfc;
     }
   }
 
+  .pulse {
+    animation: pulse-light 6s infinite;
+  }
+
   .title, .section {
     color: $base-03;
   }

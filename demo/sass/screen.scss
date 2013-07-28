@@ -45,17 +45,8 @@ body {
 
 // Header
 .toggle {
-  opacity: .4;
   cursor: pointer;
   transition: cubic-bezier(.5,0,.5,1.25) .25s;
-
-  &:hover, &:focus {
-    opacity: 1;
-  }
-}
-
-.pulse {
-  animation: pulse 6s infinite;
 }
 
 .title {

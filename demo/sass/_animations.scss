@@ -4,7 +4,12 @@
   }
 }
 
-@keyframes pulse {
+@keyframes pulse-dark {
   0%, 50%, 73%, 100% { opacity: .4; }
+  60.5%, 85.5% { opacity: 1; }
+}
+
+@keyframes pulse-light {
+  0%, 50%, 73%, 100% { opacity: .18; }
   60.5%, 85.5% { opacity: 1; }
 }
