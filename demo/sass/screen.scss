@@ -197,6 +197,7 @@ body {
 // Colours
 .colours-section {
   overflow: hidden;
+  padding-bottom: percentage(16/320);
   width: 100%;
 }
 
@@ -307,7 +308,7 @@ body {
   text-shadow: none;
   transform: translate3d(0,0,0) rotate(-8deg) scale(.875);
   transform-style: preserve-3d;
-  transition: cubic-bezier(.5,0,.75,1.5) .25s;
+  transition: cubic-bezier(.5,0,.75,1.25) .25s;
 
   li {
     list-style: none;
@@ -442,7 +443,7 @@ body {
 
 // Footer
 footer[role="contentinfo"] {
-  margin-top: percentage(24/320);
+  margin-top: percentage(8/320);
 }
 
 a.logo {
