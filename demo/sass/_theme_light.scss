@@ -24,6 +24,17 @@ $background-color: #fcfcfc;
     opacity: 0;
   }
 
+  // Text
+  .text {
+    a {
+      color: $base-01;
+
+      &:hover, &:focus {
+        color: $highlight-color;
+      }
+    }
+  }
+
   // Header
   .toggle {
     opacity: .18;

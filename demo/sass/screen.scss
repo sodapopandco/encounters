@@ -15,7 +15,7 @@ body {
 
 .content-container {
   margin: percentage(24/320) 0;
-  font: #{$body-font-size}px/1.375 $monospace-font;
+  font: #{$body-font-size}px/1.5 $monospace-font;
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: center;
   transform: translate3d(0,0,0);
@@ -47,14 +47,16 @@ body {
 .text {
   $font-size: 14;
 
-  margin: 1.5em auto;
-  max-width: 40.5em;
+  margin: to-em(24, $font-size) auto;
+  max-width: to-em(648, $font-size);
   font-size: em($font-size);
   text-align: left;
 
   @media screen and (min-width: 30em) {
-    $font-size: 16;
+    $font-size: 15;
 
+    margin: to-em(24, $font-size) auto;
+    max-width: to-em(648, $font-size);
     font-size: em($font-size);
   }
 }
@@ -100,7 +102,7 @@ body {
   display: inline-block;
   padding: to-em(2, $font-size) to-em(12, $font-size);
   border-radius: 4px;
-  font: bold em($font-size)/1.5 $display-font;
+  font: bold em($font-size) $display-font;
   vertical-align: middle;
   transition: all .125s;
 
@@ -173,7 +175,7 @@ body {
   margin: 0;
   padding: to-em(16, $font-size);
   min-width: to-em(864, $font-size);
-  font: em($font-size)/1.5 $monospace-font;
+  font: em($font-size) $monospace-font;
   transform: translate3d(0,0,0);
   transition: all .25s;
 
@@ -184,6 +186,11 @@ body {
   &.active {
     opacity: 1;
   }
+}
+
+// Editors
+.editors-text {
+  margin-top: 0;
 }
 
 // Colours

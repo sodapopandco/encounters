@@ -20,6 +20,17 @@ $background-color: #101010;
     background: $background-color;
   }
 
+  // Text
+  .text {
+    a {
+      color: $base-08;
+
+      &:hover, &:focus {
+        color: $highlight-color;
+      }
+    }
+  }
+
   // Header
   .toggle {
     opacity: .4;
