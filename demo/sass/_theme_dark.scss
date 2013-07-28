@@ -123,11 +123,11 @@ $background-color: #101010;
     color: $red-02;
   }
 
-  .function, .tag {
+  .function, .tag, .markup-link {
     color: $yellow-02;
   }
 
-  .storage, .attribute {
+  .storage, .attribute, .markup-url {
     color: $orange-02;
   }
 

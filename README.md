@@ -8,8 +8,8 @@ Screenshots go here.
 
 ## Editors
 
-* [TextMate](http://macromates.com)
 * [Sublime Text](http://www.sublimetext.com)
+* [TextMate](http://macromates.com)
 
 ## Palette
 

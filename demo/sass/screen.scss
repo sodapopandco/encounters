@@ -153,9 +153,9 @@ body {
 
 .preview-container {
   position: relative;
+  overflow: scroll;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
   text-align: left;
   word-wrap: break-word;
   transition: all .25s;
@@ -174,7 +174,7 @@ body {
   top: 0;
   margin: 0;
   padding: to-em(16, $font-size);
-  min-width: to-em(864, $font-size);
+  min-width: to-em(616, $font-size);
   font: em($font-size) $monospace-font;
   transform: translate3d(0,0,0);
   transition: all .25s;

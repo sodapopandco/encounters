@@ -127,11 +127,11 @@ $background-color: #fcfcfc;
     color: $red-01;
   }
 
-  .function, .tag {
+  .function, .tag, .markup-link {
     color: $yellow-01;
   }
 
-  .storage, .attribute {
+  .storage, .attribute, .markup-url {
     color: $orange-01;
   }
 
