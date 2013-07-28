@@ -32,6 +32,10 @@ $background-color: #fcfcfc;
     &:hover, &:focus {
       opacity: .49;
     }
+
+    &:active {
+      opacity: .18;
+    }
   }
 
   .pulse {

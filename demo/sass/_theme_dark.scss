@@ -28,6 +28,10 @@ $background-color: #101010;
     &:hover, &:focus {
       opacity: 1;
     }
+
+    &:active {
+      opacity: .4;
+    }
   }
 
   .pulse {
