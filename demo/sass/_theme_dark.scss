@@ -51,6 +51,10 @@ $background-color: #101010;
     &:hover, &:focus {
       background: lighten($highlight-color, 12.5%);
       color: $base-01;
+
+      + small {
+        color: $base-05;
+      }
     }
 
     + small {
