@@ -14,7 +14,7 @@ gh-pages: build
 	mkdir -p gh-pages
 	cp -r docs/ gh-pages/
 	cp -r dist gh-pages/dist
-	cd gh-pages/
+	cd gh-pages
 	cp -r dist encounters
 	zip -r encounters.zip encounters
 	rm -f .csslintrc
