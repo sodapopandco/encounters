@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Encounters</title>
-  <meta name="description" content="A simple, hard working colour palette for writing — day or night.">
+  <meta name="description" content="A simple colour palette for writing — day or night.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="stylesheets/screen.min.css">
   <!-- Typekit -->
@@ -20,7 +20,7 @@
 
   <div class="content-container">
     <header role="banner" class="main-section">
-      <img class="toggle pulse icon" src="icons/contrast.svg" alt="Toggle Colour Schemes" width="32" height="32">
+      <img class="toggle-icon icon pulse" src="icons/contrast.svg" alt="Toggle Colour Schemes" width="32" height="32">
 
       <h1 class="title heading">Encounters</h1>
 
@@ -28,7 +28,7 @@
     </header>
 
     <section class="intro-section main-section">
-      <p class="about-text text">A simple, hard working colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!</p>
+      <p class="about-text text">A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!</p>
 
       <a class="download button" href="http://everycopy.github.io/encounters/encounters.zip">Download Encounters</a>
       <small>for TextMate &amp; Sublime Text</small>
@@ -52,54 +52,54 @@
   <span class="tag">&lt;html <span class="attribute">lang</span>=<span class="string">"en"</span>&gt;</span>
   <span class="tag">&lt;head&gt;</span>
     <span class="tag">&lt;meta <span class="attribute">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
-    <span class="tag">&lt;title&gt;<span class="source">Encounters Demo</span>&lt;/title&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"description"</span> <span class="attribute">content</span>=<span class="string">"A simple little colour palette for writing."</span>&gt;</span>
-    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
-    <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"icon"</span> <span class="attribute">type</span>=<span class="string">"image/x-icon"</span> <span class="attribute">href</span>=<span class="string">"favicon.ico"</span>&gt;</span>
-    <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">type</span>=<span class="string">"text/css"</span> <span class="attribute">href</span>=<span class="string">"styles/screen.min.css"</span>&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Encounters<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"description"</span> <span class="attribute">content</span>=<span class="string">"A simple colour palette for writing — day or night."</span>&gt;</span>
+    <span class="tag">&lt;meta <span class="attribute">name</span>=<span class="string">"viewport"</span> <span class="attribute">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span>
+    <span class="tag">&lt;link <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">href</span>=<span class="string">"styles/screen.min.css"</span>&gt;</span>
     <span class="comment">&lt;!-- Typekit --&gt;</span>
     <span class="tag">&lt;script <span class="attribute">src</span>=<span class="string">"//use.typekit.net/whk3yjv.js"</span>&gt;&lt;/script&gt;</span>
-    <span class="tag">&lt;script&gt;<span class="source"><span class="keyword">try</span>{Typekit.<span class="support">load</span>();}<span class="keyword">catch</span>(e){}</span>&lt;/script&gt;</span>
+    <span class="tag">&lt;script&gt;</span><span class="keyword">try</span>{Typekit.<span class="support">load</span>();}<span class="keyword">catch</span>(e){}<span class="tag">&lt;/script&gt;</span>
   <span class="tag">&lt;/head&gt;</span>
 
-  <span class="tag">&lt;body <span class="attribute">class</span>=<span class="string">"<span class="swap">light</span>"</span>&gt;</span>
-    <span class="tag">&lt;div <span class="attribute">class</span>=<span class="string">"container"</span>&gt;</span>
-    <span class="comment">...</span>
+  <span class="tag">&lt;body <span class="attribute">class</span>=<span class="string">"<span class="swap">light-theme</span>"</span>&gt;</span>
+    <span class="tag">&lt;div <span class="attribute">class</span>=<span class="string">"background-container"</span>&gt;</span>
+      <span class="tag">&lt;div <span class="attribute">class</span>=<span class="string">"background-1 background"</span>&gt;&lt;/div&gt;</span>
+      <span class="comment">...</span>
 </pre>
 
 <pre class="sass preview">
 <span class="keyword">@import "<span class="variable-parameter">variables</span>"</span>;
 <span class="keyword">@import "<span class="variable-parameter">functions</span>"</span>;
 <span class="keyword">@import "<span class="variable-parameter">defaults</span>"</span>;
-<span class="keyword">@import "<span class="variable-parameter">helpers</span>"</span>;
 
 <span class="comment">// Layout</span>
-<span class="tag">body</span> {
-  <span class="support-type">opacity</span>: <span class="number">1</span>;
-  <span class="support-type">margin</span>: <span class="number">0</span> <span class="support-constant">auto</span>;
-  <span class="support-type">padding</span>: <span class="support">percentage</span>(<span class="number">16</span><span class="support-constant">/</span><span class="number">320</span>) <span class="number">0</span>;
-  <span class="support-type">width</span>: <span class="support">percentage</span>(<span class="number">288</span><span class="support-constant">/</span><span class="number">320</span>);
-  <span class="support-type">max-width</span>: <span class="support">em</span>(<span class="number">864</span>);
-  <span class="support-type">font</span>: <span class="variable-interpolation">#{$body-font-size}px/</span><span class="number">1.375</span> <span class="variable">$monospace-font</span>;
+<span class="attribute">.content-container</span> {
+  <span class="support-type">margin</span>: <span class="support">percentage</span>(<span class="number">24</span><span class="support-constant">/</span><span class="number">320</span>) <span class="number">0</span>;
+  <span class="support-type">font</span>: <span class="variable-interpolation">#{$body-font-size}px/</span><span class="number">1.5</span> <span class="variable">$monospace-font</span>;
+  -webkit-font-smoothing: subpixel-antialiased;
   <span class="support-type">text-align</span>: <span class="support-constant">center</span>;
-  <span class="support-type">transition</span>: <span class="support-constant">all</span> <span class="number">.25</span><span class="unit">s</span>;
+  <span class="support-type">transform</span>: <span class="support">translate3d</span>(<span class="support-constant">0,0,0</span>);
 }
-<span class="comment">...</span>
+
+<span class="attribute">.main-section</span> {
+  <span class="support-type">margin-right</span>: <span class="support-constant">auto</span>;
+  <span class="support-type">margin-left</span>: <span class="support-constant">auto;</span>
+  <span class="comment">...</span>
 </pre>
 
 <pre class="javascript preview">
 <span class="operator">$</span>(document).<span class="storage">ready</span>(function () {
   <span class="comment">// Toggle between the dark and light themes</span>
-  <span class="operator">$</span>(<span class="string">"#toggle"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
-    <span class="operator">$</span>(<span class="string">"body"</span>).toggleClass(<span class="string">"dark"</span>).toggleClass(<span class="string">"light"</span>);
+  <span class="operator">$</span>(<span class="string">".toggle-icon"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
+    <span class="operator">$</span>(<span class="string">"body"</span>).toggleClass(<span class="string">"dark-theme"</span>).toggleClass(<span class="string">"light-theme"</span>);
 
     <span class="comment">// Swap the HTML example body class</span>
     <span class="storage">var</span> swap <span class="operator">= $</span>(<span class="string">".swap"</span>).html()
-    <span class="keyword">if</span> (swap <span class="operator">==</span> <span class="string">"light"</span>) {
-      <span class="operator">$</span>(<span class="string">".swap"</span>).html(<span class="string">"dark"</span>);
+    <span class="keyword">if</span> (swap <span class="operator">==</span> <span class="string">"light-theme"</span>) {
+      <span class="operator">$</span>(<span class="string">".swap"</span>).html(<span class="string">"dark-theme"</span>);
     }
-    <span class="keyword">else if</span> (swap <span class="operator">==</span> <span class="string">"dark"</span>) {
-      $(<span class="string">".swap"</span>).html(<span class="string">"light"</span>);
+    <span class="keyword">else if</span> (swap <span class="operator">==</span> <span class="string">"dark-theme"</span>) {
+      $(<span class="string">".swap"</span>).html(<span class="string">"light-theme"</span>);
     }
 
     <span class="keyword">return</span> <span class="constant">false</span>;
@@ -110,11 +110,11 @@
 <pre class="markdown preview">
 <span class="markup-heading"># Encounters</span>
 
-A simple, hard working colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid! Use it well.
+A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!
 
 <span class="markup-heading">## Preview</span>
 
-Screenshots go here.
+<span class="markup-link">[http://everycopy.github.io/encounters]</span>(http://everycopy.github.io/encounters)
 
 <span class="markup-heading">## Editors</span>
 
@@ -130,7 +130,7 @@ Screenshots go here.
     <section class="palette-section main-section">
       <h1 class="section-heading heading">Palette</h1>
 
-      <p class="palette-text text">A reversible colour palette means that in the middle of the day, or the dead of night, you can work in a familiar environment. It’s easy on your eyes and colourful enough keep things organised.</p>
+      <p class="palette-text text">A reversible colour palette means that day or night you can work in a familiar environment. It’s easy on your eyes and colourful enough keep things organised.</p>
 
       <ul class="neutral colour-palette">
         <li class="base-01 colour">
