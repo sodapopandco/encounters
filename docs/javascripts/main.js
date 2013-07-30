@@ -35,11 +35,16 @@ $(document).ready(function () {
   });
 
   // Parrallax the background while scrolling
-  $(window).scroll(function() {
-    $(".background-1").css("transform","translate3d(0px," + -($(window).scrollTop()/5) + "px, 0px)");
-    $(".background-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
-    $(".background-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
-  });
+  var deviceAgent = navigator.userAgent.toLowerCase();
+  if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+    // Do iOS specific stuff
+  } else {
+    $(window).scroll(function() {
+      $(".background-1").css("transform","translate3d(0," + -($(window).scrollTop()/5) + "px, 0)");
+      $(".background-2").css("transform","translate3d(0," + -($(window).scrollTop()/3) + "px, 0)");
+      $(".background-3").css("transform","translate3d(0," + -($(window).scrollTop()/2) + "px, 0)");
+    });
+  }
 
   // Switch between the different previews
   $(".html-preview-link").click(function() {
