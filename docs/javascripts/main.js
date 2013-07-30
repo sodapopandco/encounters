@@ -30,7 +30,7 @@ $(document).ready(function () {
   }
 
   // Pulse the contrast icon until someone hovers over it
-  $(".toggle").hover(function() {
+  $(".toggle-icon").hover(function() {
     $(this).removeClass("pulse");
   });
 
