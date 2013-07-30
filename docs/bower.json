@@ -1,8 +1,0 @@
-{
-  "name": "encounters",
-  "version": "1.0.0",
-  "dependencies": {
-    "normalize-css": "~2.1.2",
-    "jquery": "~2.0.0"
-  }
-}
