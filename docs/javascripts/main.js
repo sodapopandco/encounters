@@ -50,6 +50,7 @@ $(document).ready(function () {
   $(".html-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
+    $(this).addClass("active");
     $("#html").addClass("active");
 
     return false;
@@ -58,6 +59,7 @@ $(document).ready(function () {
   $(".sass-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
+    $(this).addClass("active");
     $("#sass").addClass("active");
 
     return false;
@@ -66,6 +68,7 @@ $(document).ready(function () {
   $(".javascript-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
+    $(this).addClass("active");
     $("#javascript").addClass("active");
 
     return false;
@@ -74,6 +77,7 @@ $(document).ready(function () {
   $(".markdown-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
+    $(this).addClass("active");
     $("#markdown").addClass("active");
 
     return false;
