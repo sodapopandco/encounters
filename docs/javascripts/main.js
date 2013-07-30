@@ -42,34 +42,34 @@ $(document).ready(function () {
   });
 
   // Switch between the different previews
-  $(".html").click(function() {
+  $(".html-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".html").addClass("active");
+    $("#html").addClass("active");
 
     return false;
   });
 
-  $(".sass").click(function() {
+  $(".sass-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".sass").addClass("active");
+    $("#sass").addClass("active");
 
     return false;
   });
 
-  $(".javascript").click(function() {
+  $(".javascript-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".javascript").addClass("active");
+    $("#javascript").addClass("active");
 
     return false;
   });
 
-  $(".markdown").click(function() {
+  $(".markdown-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".markdown").addClass("active");
+    $("#markdown").addClass("active");
 
     return false;
   });
