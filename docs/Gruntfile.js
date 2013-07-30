@@ -39,9 +39,6 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      options: {
-        report: 'gzip'
-      },
       compress: {
         options: {
           keepSpecialComments: 0
@@ -68,9 +65,6 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      options: {
-        report: 'gzip'
-      },
       compress: {
         files: {
           'javascripts/main.min.js' : 'javascripts/main.js'
