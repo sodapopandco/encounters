@@ -2,7 +2,7 @@
 $highlight-color: saturate($blue-02, 25%);
 $background-color: #fcfcfc;
 
-.light {
+.light-theme {
   background: $background-color;
   color: $base-04;
 
@@ -36,16 +36,12 @@ $background-color: #fcfcfc;
   }
 
   // Header
-  .toggle {
+  .toggle-icon {
     opacity: .18;
     transform: translate3d(0,0,0) rotate(180deg);
 
     &:hover, &:focus {
       opacity: .49;
-    }
-
-    &:active {
-      opacity: .18;
     }
   }
 

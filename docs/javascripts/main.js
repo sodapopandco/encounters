@@ -1,15 +1,15 @@
 $(document).ready(function () {
   // Toggle between the dark and light themes
-  $(".toggle").click(function() {
-    $("body").toggleClass("light").toggleClass("dark");
+  $(".toggle-icon").click(function() {
+    $("body").toggleClass("light-theme").toggleClass("dark-theme");
 
     // Swap the HTML preview's body class
     var swap = $(".swap").html();
-    if (swap == "light") {
-      $(".swap").html("dark");
+    if (swap == "light-theme") {
+      $(".swap").html("dark-theme");
     }
-    else if (swap == "dark") {
-      $(".swap").html("light");
+    else if (swap == "dark-theme") {
+      $(".swap").html("light-theme");
     }
 
     return false;
@@ -19,14 +19,14 @@ $(document).ready(function () {
   var now = new Date();
   var hour = now.getHours();
   if (hour < 7) {
-    $("body").removeClass("light").addClass("dark");
-    $(".swap").html("dark");
+    $("body").removeClass("light-theme").addClass("dark-theme");
+    $(".swap").html("dark-theme");
   } else if (hour < 17) {
-    $("body").removeClass("dark").addClass("light");
-    $(".swap").html("light");
+    $("body").removeClass("dark-theme").addClass("light-theme");
+    $(".swap").html("light-theme");
   } else {
-    $("body").removeClass("light").addClass("dark");
-    $(".swap").html("dark");
+    $("body").removeClass("light-theme").addClass("dark-theme");
+    $(".swap").html("dark-theme");
   }
 
   // Pulse the contrast icon until someone hovers over it
