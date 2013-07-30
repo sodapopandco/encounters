@@ -30,46 +30,55 @@ $(document).ready(function () {
   }
 
   // Pulse the contrast icon until someone hovers over it
-  $(".toggle").hover(function() {
+  $(".toggle-icon").hover(function() {
     $(this).removeClass("pulse");
   });
 
   // Parrallax the background while scrolling
-  $(window).scroll(function() {
-    $(".background-1").css("transform","translate3d(0px," + -($(window).scrollTop()/5) + "px, 0px)");
-    $(".background-2").css("transform","translate3d(0px," + -($(window).scrollTop()/3) + "px, 0px)");
-    $(".background-3").css("transform","translate3d(0px," + -($(window).scrollTop()/2) + "px, 0px)");
-  });
+  var deviceAgent = navigator.userAgent.toLowerCase();
+  if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+    // Do iOS specific stuff
+  } else {
+    $(window).scroll(function() {
+      $(".background-1").css("transform","translate3d(0," + -($(window).scrollTop()/5) + "px, 0)");
+      $(".background-2").css("transform","translate3d(0," + -($(window).scrollTop()/3) + "px, 0)");
+      $(".background-3").css("transform","translate3d(0," + -($(window).scrollTop()/2) + "px, 0)");
+    });
+  }
 
   // Switch between the different previews
-  $(".html").click(function() {
+  $(".html-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".html").addClass("active");
+    $(this).addClass("active");
+    $("#html").addClass("active");
 
     return false;
   });
 
-  $(".sass").click(function() {
+  $(".sass-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".sass").addClass("active");
+    $(this).addClass("active");
+    $("#sass").addClass("active");
 
     return false;
   });
 
-  $(".javascript").click(function() {
+  $(".javascript-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".javascript").addClass("active");
+    $(this).addClass("active");
+    $("#javascript").addClass("active");
 
     return false;
   });
 
-  $(".markdown").click(function() {
+  $(".markdown-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
-    $(".markdown").addClass("active");
+    $(this).addClass("active");
+    $("#markdown").addClass("active");
 
     return false;
   });
