@@ -65,9 +65,7 @@ $background-color: #101010;
     color: $base-01;
 
     &:hover, &:focus {
-      + small {
-        color: $base-05;
-      }
+      background: lighten($highlight-color, 12.5%);
     }
 
     &:active {
@@ -76,6 +74,12 @@ $background-color: #101010;
 
     + small {
       color: $base-04;
+
+      a {
+        &:hover, &:focus {
+          color: $highlight-color;
+        }
+      }
     }
   }
 

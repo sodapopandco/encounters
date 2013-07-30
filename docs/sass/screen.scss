@@ -94,7 +94,7 @@
   border-radius: 2px;
   font: bold em($font-size)/1.5 $display-font;
   vertical-align: middle;
-  transition: all .125s;
+  transition: all .25s;
 
   + small {
     $font-size: 12;
