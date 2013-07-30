@@ -2,17 +2,19 @@
 @import "functions";
 @import "defaults";
 
-// Layout
+// Body
 body {
   opacity: 1;
   transition: all .25s;
 }
 
-.wf-loading body {
-  opacity: 0;
-  transition: none;
+.wf-loading {
+  body {
+    opacity: 0;
+  }
 }
 
+// Layout
 .content-container {
   margin: percentage(24/320) 0;
   font: #{$body-font-size}px/1.5 $monospace-font;
