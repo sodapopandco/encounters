@@ -3,8 +3,7 @@
 #
 
 build:
-	cd docs
-	grunt build
+	cd docs; grunt build
 	cd ..
 
 #
