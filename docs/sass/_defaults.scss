@@ -1,8 +1,11 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
 }
 
+// Selection
 ::-moz-selection {
   text-shadow: none;
 }
@@ -11,6 +14,19 @@
   text-shadow: none;
 }
 
+// Body
+body {
+  opacity: 1;
+  transition: all .25s;
+}
+
+.wf-loading {
+  body {
+    opacity: 0;
+  }
+}
+
+// Elements
 a {
   color: inherit;
   text-decoration: none;
