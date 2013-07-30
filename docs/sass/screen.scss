@@ -159,22 +159,18 @@
 .preview {
   $font-size: 14;
 
-  opacity: 0;
-  position: absolute;
-  top: 0;
+  display: none;
+  visibility: hidden;
   margin: 0;
   padding: to-em(16, $font-size);
-  min-width: to-em(616, $font-size);
+  min-width: to-em(832, $font-size);
   font: em($font-size) $monospace-font;
   transform: translate3d(0,0,0);
   transition: all .25s;
 
-  &:first-child {
-    position: relative;
-  }
-
   &.active {
-    opacity: 1;
+    display: block;
+    visibility: visible;
   }
 }
 
