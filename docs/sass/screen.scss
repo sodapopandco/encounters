@@ -4,7 +4,6 @@
 
 // Layout
 .content-container {
-  margin: percentage(24/320) 0;
   font: #{$body-font-size}px/1.5 $monospace-font;
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: center;
@@ -52,6 +51,10 @@
 }
 
 // Header
+header[role="banner"] {
+  margin-top: percentage(24/320);
+}
+
 .toggle-icon {
   cursor: pointer;
   transition: cubic-bezier(.5,0,.5,1.25) .25s;
@@ -433,6 +436,8 @@
 // Footer
 footer[role="contentinfo"] {
   margin-top: percentage(24/320);
+  // Fix the background not repainting in older versions of WebKit
+  padding-bottom: percentage(24/320);
 }
 
 a.logo {
