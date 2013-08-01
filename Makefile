@@ -21,6 +21,7 @@ gh-pages: build
 	rm -f .csslintrc; \
 	rm -f bower.json; \
 	rm -f Gruntfile.js; \
+	rm -f javascripts/main.js; \
 	rm -f package.json; \
 	rm -rf .sass-cache; \
 	rm -rf encounters; \
