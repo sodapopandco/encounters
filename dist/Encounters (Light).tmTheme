@@ -105,9 +105,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Strings, Numbers, Units, Regular Expressions, Markup Code</string>
+			<string>Strings, Numbers, Units, Markup Code</string>
 			<key>scope</key>
-			<string>string, constant.numeric, keyword.other.unit, string.regexp, markup.raw</string>
+			<string>string, constant.numeric, keyword.other.unit, markup.raw</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
