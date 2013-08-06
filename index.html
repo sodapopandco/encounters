@@ -20,8 +20,10 @@
   </div>
 
   <div class="content-container">
-    <header role="banner" class="main-section">
-      <img class="toggle-icon icon pulse" src="icons/contrast.svg" alt="Toggle Colour Schemes" width="32" height="32">
+    <header role="banner">
+      <a class="toggle" href="#" title="Toggle Themes">
+        <img class="toggle-icon icon pulse" src="icons/contrast.svg" alt="Contrast Icon" width="32" height="32">
+      </a>
 
       <h1 class="title heading">Encounters</h1>
 
@@ -29,10 +31,10 @@
     </header>
 
     <section class="intro-section main-section">
-      <p class="about-text text">A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!</p>
+      <p class="about-text text">A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It’s all you, kid!</p>
 
       <a class="download button" href="http://everycopy.github.io/encounters/encounters.zip">Download Encounters</a>
-      <small>or <a href="https://github.com/everycopy/encounters">View it on GitHub</a></small>
+      <small class="button-text">or <a href="https://github.com/everycopy/encounters">View it on GitHub</a></small>
     </section>
 
     <section class="preview-section main-section">
@@ -41,9 +43,14 @@
       <nav class="preview-nav">
         <ul>
           <li><a class="active html-preview-link preview-link" href="#html">HTML</a></li>
-          <li><a class="sass-preview-link preview-link" href="#sass">Sass</a></li>
-          <li><a class="javascript-preview-link preview-link" href="#javascript">JavaScript</a></li>
+          <li><a class="scss-preview-link preview-link" href="#sass">SCSS</a></li>
+          <li><a class="jquery-preview-link preview-link" href="#javascript">jQuery</a></li>
           <li><a class="markdown-preview-link preview-link" href="#markdown">Markdown</a></li>
+          <li class="control">
+            <a class="toggle" href="#" title="Toggle Themes">
+              <img class="toggle-icon icon pulse" src="icons/contrast.svg" alt="Contrast Icon" width="16" height="16">
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -68,7 +75,7 @@
     <span class="comment">...</span>
 </pre>
 
-<pre id="sass" class="preview">
+<pre id="scss" class="preview">
 <span class="keyword">@import "<span class="variable-parameter">variables</span>"</span>;
 <span class="keyword">@import "<span class="variable-parameter">functions</span>"</span>;
 <span class="keyword">@import "<span class="variable-parameter">defaults</span>"</span>;
@@ -88,7 +95,7 @@
   <span class="comment">...</span>
 </pre>
 
-<pre id="javascript" class="preview">
+<pre id="jquery" class="preview">
 <span class="operator">$</span>(document).<span class="storage">ready</span>(function () {
   <span class="comment">// Toggle between the dark and light themes</span>
   <span class="operator">$</span>(<span class="string">".toggle-icon"</span>).<span class="support">click</span>(<span class="storage">function</span>() {
@@ -111,7 +118,7 @@
 <pre id="markdown" class="preview">
 <span class="markup-heading"># Encounters</span>
 
-A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It's all you, kid!
+A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It’s all you, kid!
 
 <span class="markup-heading">## Preview</span>
 
@@ -137,7 +144,7 @@ A simple colour palette for writing — day or night. Maybe it’s a program to 
     <section class="palette-section main-section">
       <h1 class="section-heading heading">Palette</h1>
 
-      <p class="palette-text text">A reversible colour palette means that day or night you can work in a familiar environment. It’s easy on your eyes and colourful enough keep things organised.</p>
+      <p class="palette-text text">A <a class="toggle" href="#">reversible</a> colour palette means that day or night you can work in a familiar environment. It’s easy on your eyes and colourful enough keep things organised.</p>
 
       <ul class="neutral colour-palette">
         <li class="base-01 colour">
