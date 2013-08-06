@@ -51,14 +51,15 @@
   }
 }
 
-// Header
-header[role="banner"] {
-  margin-top: percentage(24/320);
-}
-
+// Toggle Icon
 .toggle-icon {
   cursor: pointer;
   transition: cubic-bezier(.5,0,.5,1.25) .25s;
+}
+
+// Header
+header[role="banner"] {
+  margin-top: percentage(24/320);
 }
 
 .title {
@@ -141,13 +142,14 @@ small.button-text {
 }
 
 .preview-nav {
+  @include clear-fix;
   $font-size: 13;
 
   position: relative;
   margin: 0;
   padding: to-em(12, $font-size);
   font-size: em($font-size);
-  line-height: 1;
+  line-height: to-em(16, $font-size);
   text-align: center;
   transition: all .25s;
 
@@ -162,6 +164,8 @@ small.button-text {
 
   .control {
     float: right;
+    padding: 0;
+    vertical-align: top;
   }
 
   @media screen and (min-width: 40em) {

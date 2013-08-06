@@ -31,7 +31,7 @@ $background-color: #101010;
     }
   }
 
-  // Header
+  // Toggle Icon
   .toggle-icon {
     opacity: .4;
     transform: translate3d(0,0,0) rotate(0deg);
@@ -39,12 +39,17 @@ $background-color: #101010;
     &:hover, &:focus {
       opacity: 1;
     }
+
+    &:active {
+      opacity: .4;
+    }
   }
 
   .pulse {
     animation: pulse-dark 6s infinite;
   }
 
+  // Header
   .title, .section {
     color: $base-06;
   }
