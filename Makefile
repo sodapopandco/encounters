@@ -12,8 +12,8 @@ build:
 #
 
 gh-pages: build
-	cp -f dist/Encounters \(Dark\).tmTheme dist/Encounters\.tmbundle/Themes/
-	cp -f dist/Encounters \(Light\).tmTheme dist/Encounters\.tmbundle/Themes/
+	cp -f dist/Encounters\ \(Dark\).tmTheme dist/Encounters.tmbundle/Themes/
+	cp -f dist/Encounters\ \(Light\).tmTheme dist/Encounters.tmbundle/Themes/
 	mkdir -p gh-pages
 	cp -r docs/ gh-pages/
 	cp -r dist gh-pages/encounters
