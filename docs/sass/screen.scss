@@ -34,7 +34,7 @@
 
 // Text
 .text {
-  $font-size: 14;
+  $font-size: 13;
 
   margin: to-em(24, $font-size) auto;
   max-width: to-em(648, $font-size);
@@ -68,7 +68,7 @@ header[role="banner"] {
 }
 
 .tagline {
-  $font-size: 14;
+  $font-size: 12;
 
   margin-top: 0;
   font-size: em($font-size);
@@ -86,6 +86,12 @@ header[role="banner"] {
     direction: ltr;
     text-indent: -9999px;
   }
+
+  @media screen and (min-width: 30em) {
+    $font-size: 13;
+
+    font-size: em($font-size);
+  }
 }
 
 // About
@@ -98,22 +104,29 @@ header[role="banner"] {
   font: bold em($font-size)/1.5 $display-font;
   vertical-align: middle;
   transition: all .25s;
+}
 
-  + small {
-    $font-size: 12;
+small.button-text {
+  $font-size: 12;
 
-    display: block;
-    margin-top: to-em(6, $font-size);
-    font-size: $font-size;
-    transition: all .25s;
+  display: block;
+  margin-top: to-em(6, $font-size);
+  font-size: em($font-size);
+  transition: all .25s;
 
-    a {
-      transition: none;
+  a {
+    transition: none;
 
-      &:hover, &:focus {
-        transition: all .25s;
-      }
+    &:hover, &:focus {
+      transition: all .25s;
     }
+  }
+
+  @media screen and (min-width: 30em) {
+    $font-size: 13;
+
+    margin-top: to-em(6, $font-size);
+    font-size: em($font-size);
   }
 }
 
@@ -127,7 +140,7 @@ header[role="banner"] {
 }
 
 .preview-nav {
-  $font-size: 14;
+  $font-size: 13;
 
   position: relative;
   margin: 0;
@@ -168,7 +181,7 @@ header[role="banner"] {
 }
 
 .preview {
-  $font-size: 14;
+  $font-size: 13;
 
   display: none;
   visibility: hidden;
@@ -182,6 +195,17 @@ header[role="banner"] {
   &.active {
     display: block;
     visibility: visible;
+  }
+
+  @media screen and (min-width: 30em) {
+    $font-size: 14;
+
+    display: none;
+    visibility: hidden;
+    margin: 0;
+    padding: to-em(16, $font-size);
+    min-width: to-em(616, $font-size);
+    font-size: em($font-size);
   }
 }
 
