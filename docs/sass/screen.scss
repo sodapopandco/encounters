@@ -59,6 +59,9 @@
 // Header
 header[role="banner"] {
   margin-top: percentage(24/320);
+  margin-right: auto;
+  margin-left: auto;
+  width: percentage(288/320);
 }
 
 .title {
