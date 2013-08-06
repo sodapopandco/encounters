@@ -56,20 +56,20 @@ $(document).ready(function () {
     return false;
   });
 
-  $(".sass-preview-link").click(function() {
+  $(".scss-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
     $(this).addClass("active");
-    $("#sass").addClass("active");
+    $("#scss").addClass("active");
 
     return false;
   });
 
-  $(".javascript-preview-link").click(function() {
+  $(".jquery-preview-link").click(function() {
     $(".preview-link").removeClass("active");
     $(".preview").removeClass("active");
     $(this).addClass("active");
-    $("#javascript").addClass("active");
+    $("#jquery").addClass("active");
 
     return false;
   });
