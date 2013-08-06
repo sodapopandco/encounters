@@ -12,6 +12,7 @@
 
 .main-section {
   margin-right: auto;
+  margin-bottom: percentage(16/320);
   margin-left: auto;
   width: percentage(288/320);
   max-width: em(864);
@@ -26,7 +27,6 @@
 }
 
 .section-heading {
-  margin-top: percentage(16/320);
   margin-bottom: percentage(4/320);
   letter-spacing: em(2);
   text-transform: uppercase;
