@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Toggle between the dark and light themes
-  $(".toggle-icon").click(function() {
+  $(".toggle").click(function() {
     $("body").toggleClass("light-theme").toggleClass("dark-theme");
 
     // Swap the HTML preview's body class
