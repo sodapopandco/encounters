@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     concat: {
       join: {
         files: {
-          'temp/stylesheets/screen.css': ['components/normalize-css/normalize.css', 'temp/stylesheets/screen.css']
+          'temp/stylesheets/screen.css': ['bower_components/normalize-css/normalize.css', 'temp/stylesheets/screen.css']
         }
       }
     },
