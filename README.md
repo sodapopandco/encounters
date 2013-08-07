@@ -1,6 +1,6 @@
 # Encounters
 
-A simple colour palette for writing — day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It’s all you, kid!
+A simple colour palette for writing day or night. Maybe it’s a program to take over the world. Maybe it’s a website for a friend. Maybe it’s the Great American Novel. Or maybe it’s just straight up fart jokes. It’s all you, kid!
 
 ## Preview
 
@@ -13,7 +13,7 @@ A simple colour palette for writing — day or night. Maybe it’s a program to 
 
 ## Palette
 
-A reversible colour palette means that day or night you can work in a familiar environment. It’s easy on your eyes and colourful enough keep things organised.
+A reversible colour palette means that whatever time of day it is, you can work in a familiar environment that’s easy on your eyes and colourful enough keep things organised.
 
 ### Neutral Colours
 
