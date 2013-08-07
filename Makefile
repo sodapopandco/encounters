@@ -19,6 +19,8 @@ gh-pages: build
 	cp -f dist/textmate/Encounters\ \(Dark\).tmTheme dist/textmate/Encounters.tmbundle/Themes/
 	cp -f dist/textmate/Encounters\ \(Light\).tmTheme dist/textmate/Encounters.tmbundle/Themes/
 	mkdir -p gh-pages
+	cp -f LICENSE dist/
+	cp -f README.md dist/
 	cp -r docs/ gh-pages/
 	cp -r dist gh-pages/encounters
 	cd gh-pages; \
