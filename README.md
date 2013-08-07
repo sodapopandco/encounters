@@ -4,7 +4,7 @@ A simple colour palette for writing day or night. Maybe it’s a program to take
 
 ## Preview
 
-[http://everycopy.github.io/encounters](http://everycopy.github.io/encounters)
+[http://sodapopandco.github.io/encounters](http://sodapopandco.github.io/encounters)
 
 ## Editors
 
