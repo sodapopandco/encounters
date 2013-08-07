@@ -38,7 +38,7 @@ gh-pages: build
 	cd ..
 	git fetch origin
 	git checkout gh-pages
-	rm -rf ./components
+	rm -rf ./bower_components
 	rm -rf ./dist
 	rm -rf ./icons
 	rm -rf ./images
