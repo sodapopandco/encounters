@@ -34,7 +34,10 @@ $background-color: #101010;
   // Toggle Icon
   .toggle-icon {
     opacity: .4;
-    transform: translate3d(0,0,0) rotate(0deg);
+
+    svg {
+      transform: translate3d(0,0,0) rotate(0deg);
+    }
 
     &:hover, &:focus {
       opacity: 1;

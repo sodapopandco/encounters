@@ -54,6 +54,10 @@
 // Toggle Icon
 .toggle-icon {
   transition: cubic-bezier(.5,0,.5,1.25) .25s;
+
+  svg {
+    transition: cubic-bezier(.5,0,.5,1.25) .25s;
+  }
 }
 
 // Header
@@ -149,25 +153,25 @@ header[role="banner"] {
 
   position: relative;
   margin: 0;
-  padding: to-em(12, $font-size);
+  padding: to-em(12, $font-size) to-em(12, $font-size) to-em(8, $font-size);
   font-size: em($font-size);
   line-height: to-em(16, $font-size);
-  text-align: center;
   transition: all .25s;
 
   ul {
     margin: 0;
+    text-align: center;
   }
 
   li {
     display: inline-block;
+    vertical-align: middle;
     padding: 0 to-em(6, $font-size);
   }
 
   .control {
     float: right;
     padding: 0;
-    vertical-align: top;
   }
 
   @media screen and (min-width: 40em) {
@@ -492,7 +496,7 @@ a.logo {
   }
 
   &:active {
-    img {
+    svg {
       transform: translate3d(0,0,0) rotate(360deg);
     }
   }
@@ -515,9 +519,10 @@ a.logo {
     }
   }
 
-  img {
+  svg {
     width: 48px;
     height: auto;
+    vertical-align: middle;
     transform: translate3d(0,0,0) rotate(0deg);
     transition: cubic-bezier(.5,0,.5,1.25) .25s;
 
