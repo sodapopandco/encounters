@@ -1,0 +1,126 @@
+@import "syntax-variables";
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+.editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+.editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+.editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+.editor .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+.editor .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+.editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+.editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+  background-color: #202020;
+}
+
+.comment {
+  color: #606060;
+}
+
+.variable, .support.function, .entity.other.attribute-name.id {
+  color: #e14b4b;
+}
+
+.storage, .meta.attribute-selector, .entity.other.attribute-name, .entity.other.attribute-selector, .meta.link {
+  color: #f1924c;
+}
+
+.entity.name.function, .meta.function-call, .meta.require, .meta.tag, .declaration.tag, .entity.name.tag, .punctuation.definition.tag, .string.other.link, .meta.link .punctuation.definition.string {
+  color: #f3cd4c;
+}
+
+.string, .constant.numeric, .keyword.other.unit, .markup.raw {
+  color: #49c249;
+}
+
+.support.constant, .constant.other.color {
+  color: #48afac;
+}
+
+.constant, .variable.parameter, .support.type, .markup.heading, .markup.heading .entity {
+  color: #4b92e1;
+}
+
+.keyword, .meta.at-rule {
+  color: #ae49c8;
+}
+
+.string.regexp {
+  color: #f58ac7;
+}
+
+.keyword.operator {
+  color: #b0b0b0;
+}
+
+.entity.name.type {
+  color: #f0f0f0;
+}
+
+.invalid, .keyword.other.important {
+  color: #f0f0f0;
+  background-color: #ac0000;
+}
+
+.markup.deleted {
+  color: #ac0000;
+}
+
+.markup.inserted, .constant.character.escape, .punctuation.section.embedded, .string .source, .variable.interpolation {
+  color: #008b00;
+}
+
+.markup.changed {
+  color: #740091;
+}
+
+.string.regexp .constant.character.escape {
+  color: #c63989;
+}
+
+.markup.heading .entity.name, .markup.bold {
+  font-weight: bold;
+}
+
+.markup.italic {
+  font-style: italic;
+}
