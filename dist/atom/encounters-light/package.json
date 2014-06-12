@@ -1,9 +1,9 @@
 {
-  "name": "encounters-light",
+  "name": "encounters-light-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/encounters-light",
+  "description": "A simple colour palette for writing day or night.",
+  "repository": "https://github.com/sodapopandco/encounters",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
