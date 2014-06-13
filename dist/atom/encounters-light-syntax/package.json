@@ -1,7 +1,7 @@
 {
   "name": "encounters-light-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple colour palette for writing day or night.",
   "repository": "https://github.com/sodapopandco/encounters",
   "license": "MIT",
