@@ -18,17 +18,17 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>foreground</key>
-		<string>#606060</string>
+		<string>#303030</string>
 		<key>background</key>
-		<string>#202020</string>
+		<string>#181818</string>
 		<key>divider</key>
 		<string>#181818</string>
 		<key>selectionForeground</key>
-		<string>#b0b0b0</string>
+		<string>#606060</string>
 		<key>selectionBackground</key>
-		<string>#303030</string>
+		<string>#202020</string>
 		<key>selectionBorder</key>
-		<string>#303030</string>
+		<string>#202020</string>
 	</dict>
 	<key>settings</key>
 	<array>
