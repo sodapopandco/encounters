@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Encounters -->
+<!-- A simple colour palette for writing day or night -->
+<!-- http://sodapopandco.github.io/encounters/ -->
+<!-- Copyright (c) 2014 Sodapop & Co. -->
+<!-- Made with Sodapop & Co. http://sodapopandco.com -->
 <plist version="1.0">
 <dict>
 	<key>contactName</key>
