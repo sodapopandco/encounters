@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!-- Encounters (Dark) -->
 <!-- A simple colour palette for writing day or night -->
-<!-- http://everycopy.github.io/encounters -->
+<!-- http://sodapopandco.github.io/encounters/ -->
 <!-- Copyright (c) 2014 Sodapop & Co. -->
 <!-- Made with Sodapop & Co. http://sodapopandco.com -->
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>James Goode</string>
+	<string>Sodapop &amp; Co.</string>
 	<key>name</key>
 	<string>Encounters (Dark)</string>
 	<key>semanticClass</key>
