@@ -8,6 +8,7 @@ A simple colour palette for writing day or night. Maybe it’s a program to take
 
 ## Editors
 
+* [Atom](http://atom.io)
 * [Sublime Text](http://www.sublimetext.com)
 * [TextMate](http://macromates.com)
 
