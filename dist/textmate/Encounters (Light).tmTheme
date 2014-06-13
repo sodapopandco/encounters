@@ -18,17 +18,17 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>foreground</key>
-		<string>#b0b0b0</string>
+		<string>#e0e0e0</string>
 		<key>background</key>
-		<string>#f0f0f0</string>
+		<string>#f8f8f8</string>
 		<key>divider</key>
 		<string>#f8f8f8</string>
 		<key>selectionForeground</key>
-		<string>#606060</string>
+		<string>#b0b0b0</string>
 		<key>selectionBackground</key>
-		<string>#e0e0e0</string>
+		<string>#f0f0f0</string>
 		<key>selectionBorder</key>
-		<string>#e0e0e0</string>
+		<string>#f0f0f0</string>
 	</dict>
 	<key>settings</key>
 	<array>
