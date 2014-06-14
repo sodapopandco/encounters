@@ -1,14 +1,48 @@
-// Colors
+// Neutral Colours
 
-@text-color: #606060;
-@text-color-subtle: #303030;
-@text-color-highlight: #b0b0b0;
-@text-color-selected: @text-color-highlight;
+@base-01: #181818;
+@base-02: #202020;
+@base-03: #303030;
+@base-04: #606060;
+@base-05: #b0b0b0;
+@base-06: #e0e0e0;
+@base-07: #f0f0f0;
+@base-08: #f8f8f8;
 
-@text-color-info: #4b92e1;
-@text-color-success: #49c249;
-@text-color-warning: #ae49c8;
-@text-color-error: #e14b4b;
+// Dark Colours
+
+@red-01: #ac0000;
+@orange-01: #bd5000;
+@yellow-01: #bf9400;
+@green-01: #008b00;
+@cyan-01: #007773;
+@blue-01: #0051ac;
+@violet-01: #740091;
+@pink-01: #c63989;
+
+// Light Colours
+
+@red-02: #e14b4b;
+@orange-02: #f1924c;
+@yellow-02: #f3cd4c;
+@green-02: #49c249;
+@cyan-02: #48afac;
+@blue-02: #4b92e1;
+@violet-02: #ae49c8;
+@pink-02: #f58ac7;
+
+
+// Theme Colours
+
+@text-color: @base-04;
+@text-color-subtle: @base-03;
+@text-color-highlight: @base-05;
+@text-color-selected: @base-06;
+
+@text-color-info: @blue-02;
+@text-color-success: @green-02;
+@text-color-warning: @violet-02;
+@text-color-error: @red-02;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -16,46 +50,46 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
-@background-color-info: #0051ac;
-@background-color-success: #008b00;
-@background-color-warning: #740091;
-@background-color-error: #ac0000;
+@background-color-info: @blue-01;
+@background-color-success: @green-01;
+@background-color-warning: @violet-01;
+@background-color-error: @red-01;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-selected: @base-03;
 
-@app-background-color: #333;
+@app-background-color: @base-01;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
 @base-border-color: rgba(0, 0, 0, 0.5);
 
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color: rgba(0, 0, 0, 0.5);
+@pane-item-border-color: @base-border-color;
 
-@input-background-color: #181818;
+@input-background-color: @base-01;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #202020;
+@tool-panel-background-color: @base-02;
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @base-02;
 @inset-panel-border-color: @base-border-color;
 
-@panel-heading-background-color: #43484d;
+@panel-heading-background-color: @base-03;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
+@overlay-background-color: @base-02;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
+@button-background-color: @base-03;
 @button-background-color-hover: lighten(@button-background-color, 5%);
 @button-background-color-selected: #5c6064;
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #202020;
-@tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-bar-background-color: @base-02;
+// @tab-bar-border-color: darken(@tab-background-color-active, 10%);
+// @tab-background-color: @base-02;
+@tab-background-color-active: @base-03;
+// @tab-border-color: @base-border-color;
 
 @tree-view-background-color: @tool-panel-background-color;
 @tree-view-border-color: @tool-panel-border-color;
@@ -65,9 +99,9 @@
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
-@ui-site-color-3: #bd5000; // orange
+@ui-site-color-3: @orange-01; // orange
 @ui-site-color-4: @background-color-warning; // purple
-@ui-site-color-5: #bf9400; // yellow
+@ui-site-color-5: @yellow-01; // yellow
 
 
 // Sizes
@@ -82,9 +116,9 @@
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 36px;
 
 
-// Other
+// Fonts
 
 @font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
