@@ -7,6 +7,15 @@
 
   &:hover {
     color: @text-color-highlight;
+    background: darken(@hover-color, 5%);
+  }
+  &.selected,
+  &.selected:hover {
+    color: @text-color-highlight;
+    background: darken(@selected-color, 5%);
+    &:hover {
+      background: darken(@selected-color, 5%);
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 @import "ui-variables";
 @modified-icon-width: 8px;
-@tab-border: 1px solid #101010;
+@tab-border: 1px solid @base-border-color;
 
 .tab-bar {
   height: @tab-height;
@@ -24,7 +24,7 @@
     line-height: @tab-height;
     color: @text-color;
     padding-left: 15px;
-    box-shadow: inset -1px -1px 0 #101010;
+    box-shadow: inset -1px -1px 0 @base-border-color;
     transition: color .1s ease-in;
 
     &:first-child {
