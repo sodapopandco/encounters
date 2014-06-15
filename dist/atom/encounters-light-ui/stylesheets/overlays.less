@@ -1,0 +1,45 @@
+@import "ui-variables";
+
+.overlay {
+  color: @text-color;
+  background-color: @overlay-background-color;
+  box-shadow: 0 0 10px @base-border-color;
+  border-radius: @component-border-radius;
+
+  &.command-palette {
+    .editor.mini {
+      padding: @component-padding/2 @component-padding;
+    }
+  }
+
+  .select-list ol.list-group,
+  &.select-list ol.list-group {
+    margin-top: 0;
+
+    li {
+      font-size: 12px;
+      padding: @component-padding;
+      border-bottom: 1px solid @base-01;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.two-lines { padding: @component-padding/2 @component-padding; }
+
+      .status.icon {
+        float: right;
+        margin-left: @component-icon-padding;
+        &:before {
+          margin-right: 0;
+        }
+      }
+
+      &.selected {
+        .status.icon {
+          color: @text-color-selected;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+// Neutral Colours
+
+@base-01: #181818;
+@base-02: #202020;
+@base-03: #303030;
+@base-04: #606060;
+@base-05: #b0b0b0;
+@base-06: #e0e0e0;
+@base-07: #f0f0f0;
+@base-08: #f8f8f8;
+
+// Dark Colours
+
+@red-01: #ac0000;
+@orange-01: #bd5000;
+@yellow-01: #bf9400;
+@green-01: #008b00;
+@cyan-01: #007773;
+@blue-01: #0051ac;
+@violet-01: #740091;
+@pink-01: #c63989;
+
+// Light Colours
+
+@red-02: #e14b4b;
+@orange-02: #f1924c;
+@yellow-02: #f3cd4c;
+@green-02: #49c249;
+@cyan-02: #48afac;
+@blue-02: #4b92e1;
+@violet-02: #ae49c8;
+@pink-02: #f58ac7;
+
+
+// Theme Colours
+
+@text-color: @base-05;
+@text-color-subtle: @base-04;
+@text-color-highlight: @base-06;
+@text-color-selected: @base-07;
+
+@text-color-info: @yellow-02;
+@text-color-success: @green-02;
+@text-color-warning: @violet-02;
+@text-color-error: @red-02;
+
+@text-color-ignored: @text-color-subtle;
+@text-color-added: @text-color-success;
+@text-color-renamed: @text-color-info;
+@text-color-modified: @text-color-warning;
+@text-color-removed: @text-color-error;
+
+@background-color-info: @yellow-01;
+@background-color-success: @green-01;
+@background-color-warning: @violet-01;
+@background-color-error: @red-01;
+@background-color-highlight: rgba(255, 255, 255, 0.07);
+@background-color-selected: @base-03;
+
+@app-background-color: @base-01;
+
+@base-background-color: lighten(@tool-panel-background-color, 5%);
+@base-border-color: rgba(0, 0, 0, 0.375);
+
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: @base-border-color;
+
+@input-background-color: @base-01;
+@input-border-color: transparent;
+
+@tool-panel-background-color: @base-02;
+@tool-panel-border-color: @base-border-color;
+
+@inset-panel-background-color: @base-02;
+@inset-panel-border-color: @base-border-color;
+
+@panel-heading-background-color: @base-03;
+@panel-heading-border-color: fadein(@base-border-color, 10%);
+
+@overlay-background-color: @base-02;
+@overlay-border-color: @background-color-highlight;
+
+@button-background-color: @base-03;
+@button-background-color-hover: lighten(@button-background-color, 5%);
+@button-background-color-selected: lighten(@button-background-color, 5%);
+@button-border-color: @base-02;
+
+@tab-bar-background-color: @base-02;
+@tab-background-color-active: @base-03;
+
+@tree-view-background-color: @tool-panel-background-color;
+@tree-view-border-color: @tool-panel-border-color;
+
+@scrollbar-background-color: rgba(42, 42, 42, 0.5);
+@scrollbar-color: rgba(92, 92, 92, 0.5);
+
+@ui-site-color-1: @background-color-success; // green
+@ui-site-color-2: @blue-01; // blue
+@ui-site-color-3: @orange-01; // orange
+@ui-site-color-4: @background-color-warning; // purple
+@ui-site-color-5: @background-color-info; // yellow
+
+
+// Sizes
+
+@font-size: 11px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+@component-border-radius: 2px;
+
+@tab-height: 36px;
+
+
+// Fonts
+
+@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;

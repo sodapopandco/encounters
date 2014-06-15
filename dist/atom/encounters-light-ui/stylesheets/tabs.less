@@ -1,0 +1,79 @@
+@import "ui-variables";
+@modified-icon-width: 8px;
+@tab-border: 1px solid @base-border-color;
+
+.tab-bar {
+  height: @tab-height;
+  background: @tab-bar-background-color;
+  box-sizing: border-box;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0px;
+    width: 100%;
+    background-color: @tab-bar-background-color;
+    border-top: @tab-border;
+  }
+
+  .tab {
+    position: relative;
+    height: @tab-height;
+    line-height: @tab-height;
+    color: @text-color;
+    padding-left: 15px;
+    box-shadow: inset -1px -1px 0 @base-border-color;
+    transition: color .1s ease-in;
+
+    &:first-child {
+      padding-left: 15px;
+    }
+
+    .close-icon {
+      z-index: 3;
+      line-height: @tab-height;
+      color: @text-color;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+    &.modified:not(:hover) .close-icon {
+      top: @tab-height/2 - @modified-icon-width/2 + 1px;
+      right: 14px;
+      width: @modified-icon-width;
+      height: @modified-icon-width;
+    }
+
+    &.modified:hover .close-icon:hover {
+      color: @text-color-highlight;
+    }
+  }
+
+  .tab.active {
+    color: @text-color-highlight;
+    background: @tab-background-color-active;
+
+    .close-icon {
+      color: @text-color;
+    }
+  }
+
+  .tab:hover {
+    color: @text-color-highlight;
+  }
+
+  .tab.active:hover .close-icon {
+    color: @text-color;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .placeholder {
+    height: @tab-height;
+  }
+}
