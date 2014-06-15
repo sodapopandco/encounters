@@ -2,19 +2,19 @@
 @import "ui-mixins";
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
-  color: @base-05;
+  color: @text-color;
   background-color: @color;
 
   &:hover {
     color: @text-color-highlight;
-    background: darken(@hover-color, 5%);
+    background: @hover-color;
   }
   &.selected,
   &.selected:hover {
     color: @text-color-highlight;
-    background: darken(@selected-color, 5%);
+    background: @selected-color;
     &:hover {
-      background: darken(@selected-color, 5%);
+      background: lighten(@selected-color, 5%);
     }
   }
 }
