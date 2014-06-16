@@ -1,12 +1,12 @@
 @import "ui-variables";
 
 .tooltip {
-  @tip-background-color: @blue-01;
-  @tip-text-color: @base-06;
+  @tip-background-color: @blue-02;
+  @tip-text-color: @app-background-color;
   white-space: nowrap;
 
   .keystroke {
-    color: @yellow-01;
+    color: fadeout(@app-background-color,25%);
     padding-left: 2px;
   }
 

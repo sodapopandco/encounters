@@ -2,11 +2,11 @@
 
 .tooltip {
   @tip-background-color: @yellow-02;
-  @tip-text-color: @base-03;
+  @tip-text-color: @app-background-color;
   white-space: nowrap;
 
   .keystroke {
-    color: @yellow-01;
+    color: fadeout(@app-background-color,50%);
     padding-left: 2px;
   }
 
