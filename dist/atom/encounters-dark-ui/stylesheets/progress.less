@@ -45,13 +45,13 @@ progress::-webkit-progress-bar {
   height: @progress-height;
   border-radius: @component-border-radius;
 
-  background-color: @background-color-selected;
+  background-color: @base-03;
 
   background-image:
     -webkit-linear-gradient(
       -30deg,
-      transparent 33%, @text-color-subtle 33%,
-      @text-color-subtle 66%, transparent 66%
+      transparent 33%, @base-04 33%,
+      @base-04 66%, transparent 66%
     );
   border-radius: 2px;
   background-size: 25px @progress-height, 100% 100%, 100% 100%;
@@ -65,7 +65,7 @@ progress::-webkit-progress-value {
 }
 
 progress[value]::-webkit-progress-bar {
-  background: @background-color-selected;
+  background: @base-03;
   animation: none;
 }
 
