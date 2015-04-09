@@ -3,6 +3,10 @@
   "theme": "syntax",
   "version": "0.1.0",
   "description": "A simple colour palette for writing day or night.",
+  "keywords": [
+    "light",
+    "syntax"
+  ],
   "repository": "https://github.com/sodapopandco/encounters",
   "license": "MIT",
   "engines": {
