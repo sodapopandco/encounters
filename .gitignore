@@ -1,7 +1,5 @@
-temp
-
-node_modules
-npm-debug.log
-
 .sass-cache
 .scssc
+node_modules
+npm-debug.log
+temp
