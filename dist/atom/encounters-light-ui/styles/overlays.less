@@ -1,15 +1,13 @@
 @import "ui-variables";
 
-.overlay {
+atom-panel.modal {
   color: @text-color;
   background-color: @overlay-background-color;
   box-shadow: 0 0 10px @base-border-color;
   border-radius: @component-border-radius;
 
-  &.command-palette {
-    .editor.mini {
-      padding: @component-padding/2 @component-padding;
-    }
+  atom-text-editor[mini] {
+    padding: @component-padding/2 @component-padding;
   }
 
   .select-list ol.list-group,

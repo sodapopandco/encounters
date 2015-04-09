@@ -8,15 +8,17 @@
   }
 }
 
-.panes {
+atom-pane-container {
   background-color: @app-background-color;
+}
 
-  .pane-row > * {
+atom-pane-axis {
+  .horizontal > * {
     border-right: 1px solid @pane-item-border-color;
     &:last-child { border-right: none; }
   }
 
-  .pane-column > * {
+  .vertical > * {
     border-bottom: 1px solid @pane-item-border-color;
     &:last-child { border-bottom: none; }
   }
