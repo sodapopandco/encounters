@@ -1,6 +1,15 @@
 @import "ui-variables";
 @import "ui-mixins";
 
+atom-text-editor {
+  &,
+  &::shadow {
+    .bracket-matcher .region {
+      border-bottom: 1px solid saturate(@blue-02, 25%);
+    }
+  }
+}
+
 atom-text-editor[mini] {
   color: @text-color-highlight;
   background-color: @input-background-color;
@@ -17,7 +26,6 @@ atom-text-editor[mini] {
       background-color: @base-07;
     }
     .cursor {
-      border-color: saturate(@blue-02, 25%);
       border-width: 2px;
     }
   }
