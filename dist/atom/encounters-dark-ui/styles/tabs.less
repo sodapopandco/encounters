@@ -24,17 +24,24 @@
     height: @tab-height;
     line-height: @tab-height;
     color: @text-color;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-shadow: inset -1px -1px 0 @base-01;
     transition: color .1s ease-in;
 
     &:first-child {
-      padding-left: 15px;
+      padding-left: 10px;
+    }
+
+    & .title,
+    &.active .title {
+      padding-right: 15px;
     }
 
     .close-icon {
       z-index: 3;
       line-height: @tab-height;
+      text-align: right;
       color: @text-color-subtle;
 
       &:hover {
