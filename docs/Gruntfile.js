@@ -5,18 +5,14 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     autoprefixer: {
-      prefix: {
-        files: {
-          'temp/stylesheets/screen.css': ['temp/stylesheets/screen.css']
-        }
+      files: {
+        'temp/stylesheets/screen.css': ['temp/stylesheets/screen.css']
       }
     },
 
     concat: {
-      join: {
-        files: {
-          'temp/stylesheets/screen.css': ['bower_components/normalize-css/normalize.css', 'temp/stylesheets/screen.css']
-        }
+      files: {
+        'temp/stylesheets/screen.css': ['bower_components/normalize-css/normalize.css', 'temp/stylesheets/screen.css']
       }
     },
 
@@ -39,13 +35,11 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      compress: {
-        options: {
-          keepSpecialComments: 0
-        },
-        files: {
-          'stylesheets/screen.min.css': ['temp/stylesheets/screen.css']
-        }
+      options: {
+        keepSpecialComments: 0
+      },
+      files: {
+        'stylesheets/screen.min.css': ['temp/stylesheets/screen.css']
       }
     },
 
@@ -54,21 +48,18 @@ module.exports = function(grunt) {
     },
 
     sass: {
-      compile: {
-        options: {
-          precision: 3
-        },
-        files: {
-          'temp/stylesheets/screen.css': ['sass/screen.scss']
-        }
+      options: {
+        precision: 3,
+        sourceComments: false
+      },
+      files: {
+        'temp/stylesheets/screen.css': ['sass/screen.scss']
       }
     },
 
     uglify: {
-      compress: {
-        files: {
-          'javascripts/main.min.js' : 'javascripts/main.js'
-        }
+      files: {
+        'javascripts/main.min.js' : 'javascripts/main.js'
       }
     },
 
