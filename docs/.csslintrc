@@ -5,5 +5,6 @@
   "compatible-vendor-prefixes": false,
   "font-sizes": false,
   "outline-none": false,
-  "universal-selector": false
+  "universal-selector": false,
+  "unqualified-attributes": false
 }
