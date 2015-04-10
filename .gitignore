@@ -1,6 +1,5 @@
 .sass-cache
 .scssc
-bower_components
 node_modules
 npm-debug.log
 temp
