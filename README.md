@@ -4,7 +4,7 @@ A simple colour palette for writing day or night. Maybe it’s a program to take
 
 ## Preview
 
-[http://encounters.io](encounters.io)
+[http://encounters.io](http://encounters.io)
 
 ## Editors
 
