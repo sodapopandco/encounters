@@ -18,10 +18,6 @@ gh-pages: build
 	mkdir -p dist/textmate/Encounters.tmbundle/Themes/
 	cp -f dist/textmate/Encounters\ \(Dark\).tmTheme dist/textmate/Encounters.tmbundle/Themes/
 	cp -f dist/textmate/Encounters\ \(Light\).tmTheme dist/textmate/Encounters.tmbundle/Themes/
-	cp -f LICENSE dist/atom/encounters-dark-syntax/LICENSE.md
-	cp -f LICENSE dist/atom/encounters-dark-ui/LICENSE.md
-	cp -f LICENSE dist/atom/encounters-light-syntax/LICENSE.md
-	cp -f LICENSE dist/atom/encounters-light-ui/LICENSE.md
 	mkdir -p gh-pages
 	cp -f LICENSE dist/
 	cp -f README.md dist/
