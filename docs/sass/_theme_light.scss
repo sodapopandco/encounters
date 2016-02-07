@@ -35,6 +35,25 @@ $background-color: #fcfcfc;
     }
   }
 
+  // Editor Links
+  .atom-link {
+    &:hover, &:focus {
+      color: $green-01;
+    }
+  }
+
+  .sublime-link {
+    &:hover, &:focus {
+      color: $orange-01;
+    }
+  }
+
+  .textmate-link {
+    &:hover, &:focus {
+      color: $violet-01;
+    }
+  }
+
   // Toggle Icon
   .toggle-icon {
     opacity: .18;

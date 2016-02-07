@@ -2,11 +2,12 @@
   "name": "encounters-demo",
   "version": "0.0.0",
   "devDependencies": {
+    "autoprefixer": "6.2.0",
     "grunt": "0.4.x",
     "grunt-autoprefixer": "0.1.x",
+    "grunt-contrib-concat": "0.3.x",
     "grunt-contrib-csslint": "0.1.x",
     "grunt-contrib-cssmin": "0.6.x",
-    "grunt-contrib-concat": "0.3.x",
     "grunt-contrib-jshint": "0.6.x",
     "grunt-contrib-sass": "0.3.x",
     "grunt-contrib-uglify": "0.2.x",
