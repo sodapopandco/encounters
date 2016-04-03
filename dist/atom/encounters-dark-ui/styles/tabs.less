@@ -23,7 +23,7 @@
     position: relative;
     height: @tab-height;
     line-height: @tab-height;
-    color: @text-color;
+    color: @text-color-subtle;
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: inset -1px -1px 0 @base-01;
@@ -48,6 +48,7 @@
         color: inherit;
       }
     }
+
     &.modified:not(:hover) .close-icon {
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       right: 14px;

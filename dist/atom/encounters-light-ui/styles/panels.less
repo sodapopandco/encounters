@@ -35,6 +35,19 @@ atom-panel {
 
 status-bar {
   height: 24px;
+  background: @base-08;
+  color: @text-color-subtle;
+
+  a.current-path,
+  a.inline-block {
+    color: @text-color-subtle;
+    text-decoration: none;
+    transition: color .1s ease-in;
+
+    &:hover {
+      color: @text-color;
+    }
+  }
 
   .flexbox-repaint-hack {
     padding: 0 10px;
