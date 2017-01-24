@@ -2,8 +2,7 @@
 @import "ui-mixins";
 
 atom-text-editor {
-  &,
-  &::shadow {
+  & {
     .bracket-matcher .region {
       border-bottom: 1px solid saturate(@yellow-02, 25%);
     }
@@ -18,8 +17,7 @@ atom-text-editor[mini] {
   border-radius: @component-border-radius;
   padding-left: @component-padding/2;
 
-  &,
-  &::shadow {
+  & {
     font-family: @font-family;
 
     .placeholder-text {
@@ -33,8 +31,7 @@ atom-text-editor[mini] {
     }
   }
 
-  &.is-focused,
-  &.is-focused::shadow {
+  &.is-focused {
     background-color: #101010;
     .selection .region {
       background-color: @base-02;
