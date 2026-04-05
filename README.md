@@ -4,13 +4,21 @@ A simple colour palette for writing day or night. Maybe it’s a program to take
 
 ## Preview
 
-[http://encounters.io](http://encounters.io)
+[https://sodapopandco.github.io/encounters](https://sodapopandco.github.io/encounters)
 
 ## Editors
 
-* [Atom](http://atom.io)
-* [Sublime Text](http://www.sublimetext.com)
-* [TextMate](http://macromates.com)
+* [Sublime Text](https://www.sublimetext.com)
+* [TextMate](https://macromates.com)
+* [VS Code](https://code.visualstudio.com)
+* [Zed](https://zed.dev)
+
+## Terminals
+
+* [Ghostty](https://ghostty.org)
+* [Hyper](https://hyper.is)
+* [iTerm 2](https://iterm2.com)
+* [Terminal](https://support.apple.com/guide/terminal)
 
 ## Palette
 

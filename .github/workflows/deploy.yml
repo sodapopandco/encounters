@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Bundle themes for download
+        run: |
+          mkdir -p dist/sublime-text/Encounters
+          cp -f "dist/textmate/Encounters (Dark).tmTheme" dist/sublime-text/Encounters/
+          cp -f "dist/textmate/Encounters (Light).tmTheme" dist/sublime-text/Encounters/
+          mkdir -p dist/textmate/Encounters.tmbundle/Themes
+          cp -f "dist/textmate/Encounters (Dark).tmTheme" dist/textmate/Encounters.tmbundle/Themes/
+          cp -f "dist/textmate/Encounters (Light).tmTheme" dist/textmate/Encounters.tmbundle/Themes/
+          cp -f LICENSE README.md dist/
+          cd dist && zip -r ../public/encounters.zip ghostty hyper iterm2 sublime-text terminal textmate vscode zed LICENSE README.md && cd ..
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

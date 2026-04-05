@@ -1,0 +1,26 @@
+module.exports = {
+  config: {
+    foregroundColor: "#b0b0b0",
+    backgroundColor: "#181818",
+    borderColor: "#303030",
+    cursorColor: "#ffd440",
+    colors: {
+      black: "#181818",
+      red: "#ac0000",
+      green: "#008b00",
+      yellow: "#bf9400",
+      blue: "#0051ac",
+      magenta: "#740091",
+      cyan: "#007773",
+      white: "#b0b0b0",
+      lightBlack: "#606060",
+      lightRed: "#e14b4b",
+      lightGreen: "#49c249",
+      lightYellow: "#f3cd4c",
+      lightBlue: "#4b92e1",
+      lightMagenta: "#ae49c8",
+      lightCyan: "#48afac",
+      lightWhite: "#e0e0e0",
+    },
+  },
+};

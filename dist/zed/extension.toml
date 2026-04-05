@@ -1,0 +1,10 @@
+[package]
+name = "encounters"
+description = "A simple colour palette for writing day or night."
+version = "1.0.0"
+schema_version = 1
+authors = ["Sodapop & Co."]
+repository = "https://github.com/sodapopandco/encounters"
+
+[extension]
+themes = ["themes/encounters.json"]
