@@ -17,7 +17,7 @@ A simple colour palette for writing day or night. Maybe it’s a program to take
 
 * [Ghostty](https://ghostty.org)
 * [Hyper](https://hyper.is)
-* [iTerm 2](https://iterm2.com)
+* [iTerm2](https://iterm2.com)
 * [Terminal](https://support.apple.com/guide/terminal)
 
 ## Palette
